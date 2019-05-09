@@ -17,7 +17,7 @@ As of now, we're employing a very rudimentary deployment system, essentially scp
 
 The basic steps are highlighted hence:
 1. Build the site
-2. scp all contents of site into the site/ directory of the server home
+2. scp all contents of \_site/ into the site/ directory of the server home
 
 Suggestions welcome
 
@@ -25,25 +25,27 @@ Suggestions welcome
 
 ### Git Workflow
 
-https://musescore.org/en/handbook/developers-handbook/finding-your-way-around/git-workflow
-
 #### Summary
 
-1. Fork on GitHub (click Fork button) (if you don't have master access)
-2. Clone to computer, preferably use SSH URL (`git clone git@github.com:you/MuseScore.git`)
-3. Don't forget to cd into your repo: (`cd MuseScore/`)
-4. Set up remote upstream (`git remote add upstream git://github.com/musescore/MuseScore.git`) (for forks)
-5. Create a branch for new issue (`git checkout -b 404-new-feature`)
-6. Develop on issue branch. [Time passes, the main MuseScore repository accumulates new commits]
-7. Commit changes to your local issue branch. (`git add . ; git commit -m 'commit message'`)
-8. Fetch upstream (`git fetch upstream`) (for those with master access, fetch origin)
-9. Update local master (`git checkout master; git merge upstream/master`)
+00. Create an account on GitHub if you don't already have one.
+01. Fork this repo on GitHub (click Fork button) (if you don't have master access)
+02. Clone to computer (`git clone git://github.com/<your_username>/website_2019.git` for forks. If you have master access, use `git clone git://github.com/IIIT-ECell/website_2019.git`)
+03. Don't forget to cd into your repo: (`cd website_2019/`)
+04. Set up remote upstream (`git remote add upstream git://github.com/IIIT-ECell/website_2019.git`) (for forks).
+05. Create a branch for new issue. Branches with meaningful names are appreciated. (`git checkout -b 404-new-feature`)
+06. Develop on issue branch. (Time passes, the main repository accumulates new commits)
+07. Commit changes to your local issue branch. Meaningful commit messages are appreciated. Don't commit all your work at once and don't spam the commit history with 1000s of commits (`git add <file(s)>; git commit -m 'a nice commit message'`)
+08. Fetch upstream (`git fetch upstream`) (for those with master access, fetch origin)
+09. Update local master (`git checkout master; git merge upstream/master`)
 10. Rebase issue branch (`git checkout 404-new-feature; git rebase master`)
-11. Repeat steps 6-11 until dev is complete
+11. Repeat steps 6-11 until the work is finished.
 12. Push branch to GitHub (`git push origin 404-new-feature`)
 13. Start your browser, go to your GitHub repo, switch to "404-new-feature" branch and press the [Pull Request] button
+14. After making a pull request, it is not recommended to pull/merge anymore. If you absolutely have to make any changes to the code (a rebase for example), use `git push <remote> <branch> --force` to send the new commits to your branch, which also updates your pull request on GitHub.
+15. After the pull request has been merged, delete this branch locally and on remote. However, if you plan on doing similar work, you may keep it.
+16. Update your local master branch with the code that got merged (`git checkout master; git pull upstream master`)
 
-After having made a Pull Request don't pull/merge anymore, it'll mess up the commit history. If you (have to) rebase, use 'push --force' (`git push --force`) to send it up to your GitHub repository, this will update the PR too. Be careful not to do this while the core team is working on merging in your PR.
+*NOTE: if git:// doesn't work for you, try using https://*
 
 ### Keeping gh-pages up to date with master
 
