@@ -1,0 +1,91 @@
+---
+layout : page
+title : Blogs
+pagination: 
+  enabled: true
+  category: blogs
+---
+<!-- This page is not using layout/md format otherwise pagination will not work on this page. Pagination will only work on an index.html page -->
+<script src="../js/wordslice.js"></script>
+<script>
+window.manualSliceInterval = setInterval(window.manualSlice, 100);
+</script>
+<style>
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a {    
+    &:hover {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+ }
+
+.pagination {
+    text-align: center;
+ }
+
+@media (max-width: 767px){
+    .post-data{
+        margin-top: 20px;
+    }
+}
+
+.post-data hr{
+    height: 1px;
+    background-color: black;    
+    border: none;
+}
+
+</style> 
+ <br>
+<div class= "row">
+
+ {% for post in paginator.posts %}
+	
+	<div class ="col-md-6 sm-6 post-image">
+		<img class="img-fluid" src="images/{{post.img}}" alt="{{post.title}}">
+  </div>
+  <div class ="col-md-6 sm-6 post-data">
+    <b><h1><a href = "{{site.baseurl}}{{post.url}}" target ="_blank">{{post.title}}</a></h1></b>
+		<h5>{{post.author}}</h5>
+		<h6>{{post.date|date_to_string}}</h6>
+    <div class="post-content">{{post.content}}</div>
+    <b><a href ="{{site.baseurl}}{{post.url}}" target ="_blank">Read more</a></b>
+		<br>
+    <br>
+		<hr>
+	</div>
+	
+	{% endfor %} 
+
+</div>
+{% if paginator.total_pages > 1 %}
+ <div class="pagination row">
+  <div class="col-md-4 col-xs-4 col-sm-4">
+    {% if paginator.previous_page %}
+    
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><h2><i class="fa fa-angle-left"></i></h2>Previous post</a>
+
+    {% else %}
+    <h2><i class="fa fa-angle-left"></i></h2>Previous Page
+    {% endif %}
+  </div>
+  <div class="col-md-4 col-xs-4 col-sm-4">
+    <span class="page_number ">Page: {{ paginator.page }}</span>
+  </div>
+  <div class="col-md-4 col-xs-4 col-sm-4">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}"><h2><i class="fa fa-angle-right"></i></h2>Next Page</a>
+    {% else %}
+    <h2> <i class="fa fa-angle-right"></i></h2>Next Page
+    {% endif %}
+  </div>
+</div>
+ {% endif %}
