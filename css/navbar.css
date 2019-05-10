@@ -1,6 +1,11 @@
 :root {
     --nav-link-color: #000;
-    --nav-link-underline-color: #f00;
+    --nav-link-underline-color: #d43129;
+    --nav-bg: #1bbfb3;
+}
+
+#navbar {
+    background-color: var(--nav-bg) !important;
 }
 
 /* none of the flex properties helped align the nav contents to the right
@@ -51,4 +56,12 @@
 .show > .dropdown-menu.fade {
     pointer-events: auto;
     opacity: 1;
+}
+
+.dropdown-menu {
+    background: linear-gradient(to bottom, rgba(27, 191, 179, 0.8), #ffffff);
+}
+
+.dropdown-menu img {
+    width: 100%;
 }

@@ -10,6 +10,10 @@
       url: /talks.html
     - title: Workshops
       url: /workshops.html
+    - title: image
+      path: /assets/imgs/dummy.png
+      type: image
+      alttext: this is a picture
 - title: Participate
   url: /paticipate.html
 - title: Our Team
