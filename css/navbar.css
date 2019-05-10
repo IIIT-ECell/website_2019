@@ -1,5 +1,5 @@
 :root {
-    --nav-link-color: #000;
+    --nav-link-color: #fff;
     --nav-link-underline-color: #d43129;
     --nav-bg: #1bbfb3;
 }
@@ -19,11 +19,16 @@
 #navbarSupportedContent ul li.nav-item {
     position: relative;
     text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0 30px;
+}
+#navbarSupportedContent ul li.nav-item a {
     color: var(--nav-link-color);
 }
 
 #navbarSupportedContent ul li.nav-item:hover {
     color: var(--nav-link-color);
+    font-weight: bold;
 }
 
 #navbarSupportedContent ul li.nav-item:before {
@@ -52,6 +57,7 @@
     display: block;
     opacity: 0;
     pointer-events: none;
+    transition: 0.3s ease;
 }
 .show > .dropdown-menu.fade {
     pointer-events: auto;
@@ -64,4 +70,9 @@
 
 .dropdown-menu img {
     width: 100%;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
 }
