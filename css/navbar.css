@@ -9,6 +9,8 @@
     position: absolute;
     right: 0;
 }
+
+/* Animated underline below links */
 #navbarSupportedContent ul li.nav-item {
     position: relative;
     text-decoration: none;
@@ -38,4 +40,15 @@
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+/* Fade-in/-out bootstrap dropdowns */
+.dropdown-menu.fade {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+}
+.show > .dropdown-menu.fade {
+    pointer-events: auto;
+    opacity: 1;
 }
