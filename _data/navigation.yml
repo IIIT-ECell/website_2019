@@ -1,0 +1,18 @@
+- title: Home
+  url: /
+- title: Our work
+  sublinks:
+    - title: Events
+      url: /events.html
+    - title: Hackathons
+      url: /hackathons.html
+    - title: Talks
+      url: /talks.html
+    - title: Workshops
+      url: /workshops.html
+- title: Participate
+  url: /paticipate.html
+- title: Our Team
+  url: /team.html
+- title: Our Sponsors
+  url: /sponsors.html
