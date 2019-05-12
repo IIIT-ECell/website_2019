@@ -7,6 +7,23 @@ html, body {
 	padding-top: 10%;
 }
 
-bg-blue {
-	
+.push-bottom {
+	padding-bottom: 10%;
+}
+
+.bg-blue {
+	background-color: #002240;
+}
+
+footer h3 {
+	color: #fff;
+}
+
+footer a {
+	color: #A7D3FF;
+}
+
+footer a:hover {
+	color: #A7FFFD;
+	text-decoration: none;
 }
