@@ -16,7 +16,11 @@ html, body {
 }
 
 .curvy-footer {
-	max-height: 100px;
+}
+
+.curvy-footer svg{
+	background-position: center;
+	background-size: cover;
 }
 
 footer h3 {
