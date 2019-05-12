@@ -15,6 +15,10 @@ html, body {
 	background-color: #002240;
 }
 
+.curvy-footer {
+	max-height: 100px;
+}
+
 footer h3 {
 	color: #fff;
 }
