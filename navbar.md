@@ -1,0 +1,4 @@
+---
+layout: navbar
+permalink: /navbar/
+---

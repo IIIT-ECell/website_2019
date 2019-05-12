@@ -1,0 +1,33 @@
+- title: Home
+  url: /
+- title: Our work
+  sublinks:
+    - title: Events
+      url: /events.html
+    - title: Hackathons
+      url: /hackathons.html
+    - title: Talks
+      url: /talks.html
+    - title: Workshops
+      url: /workshops.html
+    - title: image
+      path: /assets/imgs/dummy.png
+      type: image
+      alttext: this is a picture
+- title: Participate
+  url: /paticipate.html
+  sublinks:
+    - title: Megathon
+      url: /megathon.html
+    - title: Startup Aid
+      url: /startupaid.html
+    - title: Fail! Talks
+      url: /fail.html
+    - title: image
+      path: /assets/imgs/dummy.png
+      type: image
+      alttext: this is a picture
+- title: Our Team
+  url: /team.html
+- title: Our Sponsors
+  url: /sponsors.html
