@@ -24,19 +24,32 @@ function manageDropdowns() {
             dropdown.classList.add(showClass);
             toggleBtn.setAttribute("expanded", "true");
             dropdownMenu.classList.add(showClass);
+            doNotFadeOutYet = true;
         });
+
+        dropdown.addEventListener("mouseover", function(){
+            doNotFadeOutYet = true;
+        });
+
         dropdown.addEventListener("mouseleave", function() {
             setTimeout(function() {
                 if (!doNotFadeOutYet) fadeOutDropdown();
             }, 100);
         });
+
         dropdownMenu.addEventListener("mouseenter", function() {
             doNotFadeOutYet = true;
         });
-        dropdownMenu.addEventListener("mouseleave", fadeOutDropdown);
+
+        dropdownMenu.addEventListener("mouseleave", function() {
+            setTimeout(function() {
+                if (!doNotFadeOutYet) fadeOutDropdown();
+            }, 100);
+        });
     });
 }
 
 function init() {
     manageDropdowns();
 }
+
