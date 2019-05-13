@@ -1,5 +1,3 @@
-{% include libraries.html %}
-<!--TODO: Convert this to includes when we have an explicit home layout -->
 <!--Adapted from: https://mycyberuniverse.com/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html-->
 <link rel="stylesheet" href="../css/navbar.css">
 <script src="../js/navbar.js"></script>
@@ -28,7 +26,7 @@
                                 {% if sublink.title == 'separator' %}
                                     <li role="separator" class="divider"></li>
                                 {% elsif sublink.title == 'image' %}
-                                    <li>
+                                    <li class="img-list-item">
                                         <img src="{{ sublink.path }}" alt="{{ sublink.alttext }}">
                                     </li>
                                 {% else %}

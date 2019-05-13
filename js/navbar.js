@@ -4,6 +4,17 @@ var documentLoadInterval = function() {
 };
 documentLoadInterval();
 
+function shouldManageDropdown() {
+    return window.innerWidth >= 1000;
+}
+
+function windowSizeAwareDropdownFn(fn) {
+    return function() {
+        if (!shouldManageDropdown()) return true;
+        fn();
+    };
+}
+
 function manageDropdowns() {
     var dropdowns = [...document.querySelectorAll("#navbarSupportedContent ul li.dropdown")],
         showClass = "show";
@@ -11,45 +22,59 @@ function manageDropdowns() {
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
-            doNotFadeOutYet = false;
+            awakeComponentsCount = 0,
+            dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
+            if (awakeComponentsCount) return;
             dropdown.classList.remove(showClass);
             toggleBtn.setAttribute("expanded", "false");
             dropdownMenu.classList.remove(showClass);
             doNotFadeOutYet = false;
         }
 
-        dropdown.addEventListener("mouseenter", function() {
-            dropdown.classList.add(showClass);
-            toggleBtn.setAttribute("expanded", "true");
-            dropdownMenu.classList.add(showClass);
-            doNotFadeOutYet = true;
-        });
+        dropdown.addEventListener(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                awakeComponentsCount++;
+                dropdown.classList.add(showClass);
+                toggleBtn.setAttribute("expanded", "true");
+                dropdownMenu.classList.add(showClass);
+            })
+        );
 
-        dropdown.addEventListener("mouseover", function(){
-            doNotFadeOutYet = true;
-        });
+        dropdown.addEventListener(
+            "mouseover",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
 
-        dropdown.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!doNotFadeOutYet) fadeOutDropdown();
-            }, 100);
-        });
+        dropdown.addEventListener(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                awakeComponentsCount--;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
 
-        dropdownMenu.addEventListener("mouseenter", function() {
-            doNotFadeOutYet = true;
-        });
+        dropdownMenu.addEventListener(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                awakeComponentsCount++;
+            })
+        );
 
-        dropdownMenu.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!doNotFadeOutYet) fadeOutDropdown();
-            }, 100);
-        });
+        dropdownMenu.addEventListener(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                awakeComponentsCount--;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
     });
 }
 
 function init() {
     manageDropdowns();
 }
-
