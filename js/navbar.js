@@ -22,10 +22,11 @@ function manageDropdowns() {
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
-            doNotFadeOutYet = false,
+            awakeComponentsCount = 0,
             dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
+            if (awakeComponentsCount) return;
             dropdown.classList.remove(showClass);
             toggleBtn.setAttribute("expanded", "false");
             dropdownMenu.classList.remove(showClass);
@@ -35,10 +36,10 @@ function manageDropdowns() {
         dropdown.addEventListener(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
+                awakeComponentsCount++;
                 dropdown.classList.add(showClass);
                 toggleBtn.setAttribute("expanded", "true");
                 dropdownMenu.classList.add(showClass);
-                doNotFadeOutYet = true;
             })
         );
 
@@ -52,25 +53,23 @@ function manageDropdowns() {
         dropdown.addEventListener(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
-                setTimeout(function() {
-                    if (!doNotFadeOutYet) fadeOutDropdown();
-                }, dropdownRemainAwakeTimeout);
+                awakeComponentsCount--;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
             })
         );
 
         dropdownMenu.addEventListener(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
-                doNotFadeOutYet = true;
+                awakeComponentsCount++;
             })
         );
 
         dropdownMenu.addEventListener(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
-                setTimeout(function() {
-                    if (!doNotFadeOutYet) fadeOutDropdown();
-                }, dropdownRemainAwakeTimeout);
+                awakeComponentsCount--;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
             })
         );
     });
