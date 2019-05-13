@@ -24,6 +24,7 @@
     font-weight: bold;
 }
 
+/* 2 rules are defined for a normal fade-in but a faster fade-out */
 #navbarSupportedContent ul li.nav-item:before {
     content: "";
     position: absolute;
@@ -38,6 +39,12 @@
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+}
+
+/* for a faster fade-out */
+#navbarSupportedContent ul li.nav-item:before:hover {
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
 }
 
 #navbarSupportedContent ul li.nav-item:hover:before {
