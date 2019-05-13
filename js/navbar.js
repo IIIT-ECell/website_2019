@@ -11,7 +11,8 @@ function manageDropdowns() {
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
-            doNotFadeOutYet = false;
+            doNotFadeOutYet = false,
+            dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
             dropdown.classList.remove(showClass);
@@ -27,14 +28,14 @@ function manageDropdowns() {
             doNotFadeOutYet = true;
         });
 
-        dropdown.addEventListener("mouseover", function(){
+        dropdown.addEventListener("mouseover", function() {
             doNotFadeOutYet = true;
         });
 
         dropdown.addEventListener("mouseleave", function() {
             setTimeout(function() {
                 if (!doNotFadeOutYet) fadeOutDropdown();
-            }, 100);
+            }, dropdownRemainAwakeTimeout);
         });
 
         dropdownMenu.addEventListener("mouseenter", function() {
@@ -44,12 +45,11 @@ function manageDropdowns() {
         dropdownMenu.addEventListener("mouseleave", function() {
             setTimeout(function() {
                 if (!doNotFadeOutYet) fadeOutDropdown();
-            }, 100);
+            }, dropdownRemainAwakeTimeout);
         });
     });
 }
 
 function init() {
-    manageDropdowns();
+    // manageDropdowns();
 }
-
