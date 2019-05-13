@@ -5,7 +5,7 @@ var documentLoadInterval = function() {
 documentLoadInterval();
 
 function shouldManageDropdown() {
-    return window.innerWidth >= 900;
+    return window.innerWidth >= 1000;
 }
 
 function windowSizeAwareDropdownFn(fn) {
