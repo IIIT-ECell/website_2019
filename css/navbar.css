@@ -45,6 +45,7 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
 @media (min-width: 900px) {
     /* Fade-in/-out bootstrap dropdowns */
     .dropdown-menu.fade {

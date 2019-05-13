@@ -4,6 +4,17 @@ var documentLoadInterval = function() {
 };
 documentLoadInterval();
 
+function shouldManageDropdown() {
+    return window.innerWidth >= 900;
+}
+
+function windowSizeAwareDropdownFn(fn) {
+    return function() {
+        if (!shouldManageDropdown()) return true;
+        fn();
+    };
+}
+
 function manageDropdowns() {
     var dropdowns = [...document.querySelectorAll("#navbarSupportedContent ul li.dropdown")],
         showClass = "show";
@@ -21,35 +32,50 @@ function manageDropdowns() {
             doNotFadeOutYet = false;
         }
 
-        dropdown.addEventListener("mouseenter", function() {
-            dropdown.classList.add(showClass);
-            toggleBtn.setAttribute("expanded", "true");
-            dropdownMenu.classList.add(showClass);
-            doNotFadeOutYet = true;
-        });
+        dropdown.addEventListener(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                dropdown.classList.add(showClass);
+                toggleBtn.setAttribute("expanded", "true");
+                dropdownMenu.classList.add(showClass);
+                doNotFadeOutYet = true;
+            })
+        );
 
-        dropdown.addEventListener("mouseover", function() {
-            doNotFadeOutYet = true;
-        });
+        dropdown.addEventListener(
+            "mouseover",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
 
-        dropdown.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!doNotFadeOutYet) fadeOutDropdown();
-            }, dropdownRemainAwakeTimeout);
-        });
+        dropdown.addEventListener(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                setTimeout(function() {
+                    if (!doNotFadeOutYet) fadeOutDropdown();
+                }, dropdownRemainAwakeTimeout);
+            })
+        );
 
-        dropdownMenu.addEventListener("mouseenter", function() {
-            doNotFadeOutYet = true;
-        });
+        dropdownMenu.addEventListener(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
 
-        dropdownMenu.addEventListener("mouseleave", function() {
-            setTimeout(function() {
-                if (!doNotFadeOutYet) fadeOutDropdown();
-            }, dropdownRemainAwakeTimeout);
-        });
+        dropdownMenu.addEventListener(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                setTimeout(function() {
+                    if (!doNotFadeOutYet) fadeOutDropdown();
+                }, dropdownRemainAwakeTimeout);
+            })
+        );
     });
 }
 
 function init() {
-    // manageDropdowns();
+    manageDropdowns();
 }
