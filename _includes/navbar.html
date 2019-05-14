@@ -22,6 +22,8 @@
                     <li class="nav-item dropdown {{ class }}">
                         <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
                         <ul class="dropdown-menu fade">
+                            <div class="dropdown-triangle"></div>
+                            <div class="sublinks">
                             {% for sublink in link.sublinks %}
                                 {% if sublink.title == 'separator' %}
                                     <li role="separator" class="divider"></li>
@@ -35,6 +37,7 @@
                                     </li>
                                 {% endif %}
                             {% endfor %}
+                            </div>
                         </ul>
                     </li>
                 {% else %}
