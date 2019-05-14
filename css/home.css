@@ -1,0 +1,30 @@
+.main-head {
+	position: relative;
+  	background: url("../assets/imgs/header.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+
+	height: 100%;
+}
+
+.rounded-card {
+    border-radius: 1rem!important
+}
+
+.card-width {
+	width: 60%;
+}
+
+@media (max-width: 768px) {
+	.card-width {
+		width: 95%;
+	}
+}
+
+.card-push-sides {
+	padding: 2rem;
+}
+
+
