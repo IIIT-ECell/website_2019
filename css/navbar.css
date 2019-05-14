@@ -1,5 +1,6 @@
 :root {
     --nav-link-color: #fff;
+    --dropdown-link-color: #000;
     --nav-link-underline-color: #d43129;
     --nav-bg: #1bbfb3;
 }
@@ -53,6 +54,13 @@
     transform: scaleX(1);
 }
 
+/* using !important since the selector would've been too specific
+ * selector: #navbarSupportedContent ul li.dropdown ul.dropdown-menu li a
+ */
+.dropdown-item {
+    color: var(--dropdown-link-color) !important;
+}
+
 @media (min-width: 1000px) {
     /* Fade-in/-out bootstrap dropdowns */
     .dropdown-menu.fade {
@@ -69,6 +77,9 @@
 
 .dropdown-menu {
     background: linear-gradient(to bottom, rgba(27, 191, 179, 0.8), #ffffff);
+    border-top: 0;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .dropdown-menu img {
@@ -84,3 +95,13 @@
 .dropdown-menu .img-list-item {
     text-align: center;
 }
+
+.dropdown-menu:before {
+    content: "";
+    width: 100%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0 12.5px 15px 12.5px;
+    border-color: transparent transparent #1bbfb4 transparent;
+}
+
