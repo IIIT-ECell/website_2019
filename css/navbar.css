@@ -3,7 +3,7 @@
     --dropdown-link-color: #000;
     --nav-link-underline-color: #d43129;
     --nav-bg: #1bbfb3;
-    --dropdown-color: rgba(27, 191, 179, 0.8)
+    --dropdown-color: rgba(27, 191, 179, 0.8);
 }
 
 #navbar {
@@ -82,10 +82,6 @@
     border-radius: 10px;
     width: 100%;
     margin-top: 2rem;
-
-    /* this padding is used to calculate offset for the
-     * `^` triangle in dropdown */
-    padding-top: 2rem;
 }
 
 .dropdown-menu img {
@@ -114,7 +110,7 @@
      *
      * the 1px is simply an offset
      */
-    margin-top: calc(-2rem + -21.7px + 1px);
+    margin-top: calc(-2rem + 2px);
 
     /* the following was generated from http://apps.eky.hk/css-triangle-generator */
     width: 0;
@@ -123,4 +119,3 @@
     border-width: 0 12.5px 21.7px 12.5px;
     border-color: transparent transparent var(--dropdown-color) transparent;
 }
-
