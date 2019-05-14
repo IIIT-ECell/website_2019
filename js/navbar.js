@@ -22,11 +22,11 @@ function manageDropdowns() {
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
-            awakeComponentsCount = 0,
+            doNotFadeOutYet = true;
             dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
-            if (awakeComponentsCount) return;
+            if (doNotFadeOutYet) return;
             dropdown.classList.remove(showClass);
             toggleBtn.setAttribute("expanded", "false");
             dropdownMenu.classList.remove(showClass);
@@ -36,7 +36,7 @@ function manageDropdowns() {
         dropdown.addEventListener(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
-                awakeComponentsCount++;
+                doNotFadeOutYet = true;
                 dropdown.classList.add(showClass);
                 toggleBtn.setAttribute("expanded", "true");
                 dropdownMenu.classList.add(showClass);
@@ -53,7 +53,7 @@ function manageDropdowns() {
         dropdown.addEventListener(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
-                awakeComponentsCount--;
+                doNotFadeOutYet = false;
                 setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
             })
         );
@@ -61,14 +61,14 @@ function manageDropdowns() {
         dropdownMenu.addEventListener(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
-                awakeComponentsCount++;
+                doNotFadeOutYet = true;
             })
         );
 
         dropdownMenu.addEventListener(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
-                awakeComponentsCount--;
+                doNotFadeOutYet = false;
                 setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
             })
         );
