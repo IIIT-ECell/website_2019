@@ -1,7 +1,7 @@
 .main-head {
 	position: relative;
-  	background: url("../assets/imgs/header.png");
-	background-position: bottom;
+  	background: url("../assets/imgs/header.svg");
+	background-position: top;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
