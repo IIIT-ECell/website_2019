@@ -8,6 +8,25 @@
 
 #navbar {
     background-color: var(--nav-bg) !important;
+    /* The curves donot appear when navbar is folded */
+}
+
+/* Bootstrap lg and xl width specification */
+@media (min-width: 992px){
+    #navbar{
+        background-color: var(--nav-bg) !important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 30% bottom/33% no-repeat,
+                    url(../assets/imgs/upper-circle-nav.svg) 98% top/33% no-repeat;
+    }
+}
+
+/* Positioning curves to look good on high-res displays */
+@media (min-width: 1500px){
+    #navbar{
+        background-color: var(--nav-bg) !important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 45% bottom/20% no-repeat,
+                    url(../assets/imgs/upper-circle-nav.svg) 95% top/20% no-repeat;
+    }
 }
 
 /* Animated underline below links */
