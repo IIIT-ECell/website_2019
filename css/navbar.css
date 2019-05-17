@@ -11,6 +11,10 @@
     /* The curves donot appear when navbar is folded */
 }
 
+.navbar-curves {
+    background-color: rgba(0, 34, 64, 0.8)!important;
+}
+
 @media (min-width: 992px){
     .navbar-curves{
         background-color: rgba(0, 34, 64, 0.8)!important;
