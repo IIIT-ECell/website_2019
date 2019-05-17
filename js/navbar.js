@@ -78,3 +78,13 @@ function manageDropdowns() {
 function init() {
     manageDropdowns();
 }
+
+$(document).on("scroll", function() {
+
+  if($(document).scrollTop()>25) {
+    $("nav").addClass("navbar-curves");
+  }
+  else {
+    $("nav").removeClass("navbar-curves");
+  }
+});

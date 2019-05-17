@@ -2,30 +2,33 @@
     --nav-link-color: #fff;
     --dropdown-link-color: #000;
     --nav-link-underline-color: #d43129;
-    --nav-bg: #1bbfb3;
+    --nav-bg: rgba(255,255,255,0);
     --dropdown-color: #fff;
 }
 
 #navbar {
-    background-color: var(--nav-bg) !important;
+    background-color: var(--nav-bg);
     /* The curves donot appear when navbar is folded */
 }
 
-/* Bootstrap lg and xl width specification */
 @media (min-width: 992px){
-    #navbar{
-        background-color: var(--nav-bg) !important;
+    .navbar-curves{
+        background-color: rgba(0, 34, 64, 0.8)!important;
         background: url(../assets/imgs/lower-circle-nav.svg) 30% bottom/33% no-repeat,
                     url(../assets/imgs/upper-circle-nav.svg) 98% top/33% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
     }
 }
 
 /* Positioning curves to look good on high-res displays */
 @media (min-width: 1500px){
-    #navbar{
-        background-color: var(--nav-bg) !important;
+    .navbar-curves{
+        background-color: rgba(0, 34, 64, 0.8)!important;
         background: url(../assets/imgs/lower-circle-nav.svg) 45% bottom/20% no-repeat,
                     url(../assets/imgs/upper-circle-nav.svg) 95% top/20% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
     }
 }
 
@@ -72,6 +75,11 @@
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+/* Class that is added on scroll */
+.navbar-shrink {
+    background-color: rgba(0, 34, 64, 0.8)!important;
 }
 
 /* using !important since the selector would've been too specific
