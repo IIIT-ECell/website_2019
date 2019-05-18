@@ -11,7 +11,7 @@
     - title: Workshops
       url: /workshops.html
     - title: image
-      path: /assets/imgs/dummy-1.png
+      path: /assets/imgs/dummy.png
       type: image
       alttext: this is a picture
 - title: Participate
@@ -24,7 +24,7 @@
     - title: Fail! Talks
       url: /fail.html
     - title: image
-      path: /assets/imgs/dummy-1.png
+      path: /assets/imgs/dummy.png
       type: image
       alttext: this is a picture
 - title: Our Team
