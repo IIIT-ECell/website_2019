@@ -2,12 +2,38 @@
     --nav-link-color: #fff;
     --dropdown-link-color: #000;
     --nav-link-underline-color: #d43129;
-    --nav-bg: #1bbfb3;
-    --dropdown-color: rgba(27, 191, 179, 0.8);
+    --nav-bg: rgba(255,255,255,0);
+    --dropdown-color: #fff;
 }
 
 #navbar {
-    background-color: var(--nav-bg) !important;
+    background-color: var(--nav-bg);
+    /* The curves donot appear when navbar is folded */
+}
+
+.navbar-curves {
+    background-color: rgba(0, 34, 64, 0.8)!important;
+}
+
+@media (min-width: 992px){
+    .navbar-curves{
+        background-color: rgba(0, 34, 64, 0.8)!important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 30% bottom/33% no-repeat,
+                    url(../assets/imgs/upper-circle-nav.svg) 98% top/33% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
+    }
+}
+
+/* Positioning curves to look good on high-res displays */
+@media (min-width: 1500px){
+    .navbar-curves{
+        background-color: rgba(0, 34, 64, 0.8)!important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 45% bottom/20% no-repeat,
+                    url(../assets/imgs/upper-circle-nav.svg) 95% top/20% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
+    }
 }
 
 /* Animated underline below links */
@@ -55,6 +81,11 @@
     transform: scaleX(1);
 }
 
+/* Class that is added on scroll */
+.navbar-shrink {
+    background-color: rgba(0, 34, 64, 0.8)!important;
+}
+
 /* using !important since the selector would've been too specific
  * selector: #navbarSupportedContent ul li.dropdown ul.dropdown-menu li a
  */
@@ -77,12 +108,16 @@
 }
 
 .dropdown-menu {
-    background: linear-gradient(to bottom, var(--dropdown-color), #ffffff);
+    background: rgba(255,255,255,0.8);
     border-top: 0;
     border-radius: 10px;
     width: 100%;
     margin-top: 2rem;
+
+    /* overriding bootstrap rule */
+    padding-top: 0 !important;
 }
+
 
 .dropdown-menu img {
     width: 100%;
@@ -98,24 +133,24 @@
     text-align: center;
 }
 
-.dropdown-menu:before {
-    content: "";
-    display: block;
+.dropdown-menu .sublinks {
+    padding-top: 2rem;
+}
+
+.dropdown-triangle {
     margin: 0 auto;
 
-    /* the 2rem comes from the padding mentioned above
-     * [padding-top given to dropdown-menu]
-     *
-     * the 21.7px came from the triangle height, source given below
+     /* the 21.7px came from the triangle height, source given below
      *
      * the 1px is simply an offset
      */
-    margin-top: calc(-2rem + 2px);
+    margin-top: calc(-21.7px + 1px);
 
     /* the following was generated from http://apps.eky.hk/css-triangle-generator */
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 12.5px 21.7px 12.5px;
-    border-color: transparent transparent var(--dropdown-color) transparent;
+    border-color: transparent transparent rgba(255,255,255,0.8) transparent;
 }
+
