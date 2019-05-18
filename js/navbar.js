@@ -1,8 +1,4 @@
-var documentLoadInterval = function() {
-    if (document.readyState == "complete") init();
-    else setInterval(documentLoadInterval, 10);
-};
-documentLoadInterval();
+$(document).ready(init);
 
 function shouldManageDropdown() {
     return window.innerWidth >= 1000;
@@ -80,11 +76,10 @@ function init() {
 }
 
 $(document).on("scroll", function() {
-
-  if($(document).scrollTop()>25) {
-    $("nav").addClass("navbar-curves");
-  }
-  else {
-    $("nav").removeClass("navbar-curves");
-  }
+    if($(document).scrollTop() > 0.85 * $(window).height()) {
+        $("nav").addClass("navbar-curves");
+    } else {
+        $("nav").removeClass("navbar-curves");
+    }
 });
+

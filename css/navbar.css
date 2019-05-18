@@ -2,22 +2,21 @@
     --nav-link-color: #fff;
     --dropdown-link-color: #000;
     --nav-link-underline-color: #d43129;
-    --nav-bg: rgba(255,255,255,0);
-    --dropdown-color: #fff;
+    --nav-bg-init: rgba(0, 34, 64, 0.4);
+    --nav-bg: rgba(0, 34, 64, 0.8);
 }
 
 #navbar {
-    background-color: var(--nav-bg);
-    /* The curves donot appear when navbar is folded */
-}
+    background-color: var(--nav-bg-init);
 
-.navbar-curves {
-    background-color: rgba(0, 34, 64, 0.8)!important;
+    /* for when curves go out */
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
 }
 
 @media (min-width: 992px){
-    .navbar-curves{
-        background-color: rgba(0, 34, 64, 0.8)!important;
+    .navbar-curves {
+        background-color: var(--nav-bg) !important;
         background: url(../assets/imgs/lower-circle-nav.svg) 30% bottom/33% no-repeat,
                     url(../assets/imgs/upper-circle-nav.svg) 98% top/33% no-repeat;
         -webkit-transition: 0.75s;
@@ -28,7 +27,7 @@
 /* Positioning curves to look good on high-res displays */
 @media (min-width: 1500px){
     .navbar-curves{
-        background-color: rgba(0, 34, 64, 0.8)!important;
+        background-color: var(--nav-bg) !important;
         background: url(../assets/imgs/lower-circle-nav.svg) 45% bottom/20% no-repeat,
                     url(../assets/imgs/upper-circle-nav.svg) 95% top/20% no-repeat;
         -webkit-transition: 0.75s;
