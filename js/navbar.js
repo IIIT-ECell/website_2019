@@ -88,7 +88,7 @@ function init() {
      */
     if ($("header").length) {
         $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 0.85 * $(window).height()) {
+            if ($(document).scrollTop() > 25) {
                 $("nav").addClass("navbar-curves");
             } else {
                 $("nav").removeClass("navbar-curves");
