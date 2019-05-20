@@ -25,7 +25,8 @@
     "scripts": {
         "pretty": "prettier --write \"./**/*.{js,css,html}\"",
         "pretty_test": "prettier --check \"./**/*.{js,css,html}\"",
-        "dist": "gulp"
+        "dist": "jekyll b && gulp",
+        "deploy": "npm run dist && scp -r _site/* ecell@ecell.iiit.ac.in:/home/ecell/site"
     },
     "husky": {
         "hooks": {
