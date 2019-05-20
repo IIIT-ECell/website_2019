@@ -16,11 +16,9 @@ function windowSizeAwareDropdownFn(fn) {
 }
 
 function manageDropdowns() {
-    var dropdowns = [
-            ...document.querySelectorAll(
-                "#navbarSupportedContent ul li.dropdown"
-            )
-        ],
+    var dropdowns = document.querySelectorAll(
+            "#navbarSupportedContent ul li.dropdown"
+        ),
         showClass = "show";
 
     dropdowns.forEach(function(dropdown) {
