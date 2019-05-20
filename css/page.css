@@ -1,6 +1,5 @@
 .main-head {
 	position: relative;
-  	background: url("../assets/imgs/header.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -11,7 +10,7 @@
 }
 
 .rounded-card {
-    border-radius: 1rem!important
+    border-radius: 1rem !important
 }
 
 .card-width {
@@ -27,5 +26,4 @@
 .card-push-sides {
 	padding: 2rem;
 }
-
 
