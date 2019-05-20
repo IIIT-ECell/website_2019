@@ -1,3 +1,7 @@
+/**
+ * @prettier
+ */
+
 $(document).ready(init);
 
 function shouldManageDropdown() {
@@ -12,14 +16,18 @@ function windowSizeAwareDropdownFn(fn) {
 }
 
 function manageDropdowns() {
-    var dropdowns = [...document.querySelectorAll("#navbarSupportedContent ul li.dropdown")],
+    var dropdowns = [
+            ...document.querySelectorAll(
+                "#navbarSupportedContent ul li.dropdown"
+            )
+        ],
         showClass = "show";
 
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
             doNotFadeOutYet = true;
-            dropdownRemainAwakeTimeout = 50;
+        dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
             if (doNotFadeOutYet) return;
@@ -82,7 +90,7 @@ function init() {
      */
     if ($("header").length) {
         $(document).on("scroll", function() {
-            if($(document).scrollTop() > 0.85 * $(window).height()) {
+            if ($(document).scrollTop() > 0.85 * $(window).height()) {
                 $("nav").addClass("navbar-curves");
             } else {
                 $("nav").removeClass("navbar-curves");
@@ -92,4 +100,3 @@ function init() {
         $("nav").addClass("navbar-curves");
     }
 }
-

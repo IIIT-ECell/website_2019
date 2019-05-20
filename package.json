@@ -18,9 +18,13 @@
         "pretty-quick": "^1.10.0"
     },
     "scripts": {
-        "precommit": "pretty-quick --staged",
-        "postcommit": "git update-index -g",
         "pretty": "prettier --write \"./**/*.{js,css}\"",
         "pretty_test": "prettier --check \"./**/*.{js,css,html}\""
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged",
+            "post-commit": "git update-index -g"
+        }
     }
 }
