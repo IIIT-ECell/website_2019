@@ -1,0 +1,120 @@
+- team: Overall Coordinators
+  heads:
+    - name: Ayush Shivani
+      img: AyushShivani_Head.png
+      fb: https://facebook.com/ayushshivani
+      in:
+      mail: ayush.shivani@students.iiit.ac.in 
+      phone: 9559932625
+    - name: Aishwarya Srivastava
+      img: AishwaryaSrivastava_Head.png
+      fb: https://www.facebook.com/aishwarya.srivastava.378
+      in:  https://www.linkedin.com/in/aishwarya-srivastava-498261155
+      mail: aishwarya.srivastava@research.iiit.ac.in
+      phone: 8179483672
+- team: Tech
+  heads: 
+    - name: Abhigyan Ghosh
+      img: AbhigyanGhosh_Tech.png
+      fb: https://www.facebook.com/abhigyanghosh30
+      in: https://www.linkedin.com/in/abhigyanghosh30
+      mail: abhigyanghosh30@gmail.com 
+      phone: 7981107289
+  members:
+    - name: Gaurang Tandon
+    - name: Yoogottam Khandelwal
+    - name: Jaidev Shriram
+    - name: Jivitesh Jain
+- team: Collaborations
+  heads:
+    - name: Atirek Kumar
+      img: AtirekKumar_EConnect.png
+      fb: https://www.facebook.com/atirek.kumar.9
+      in:
+      mail: atirek.kumar@research.iiit.ac.in
+      phone: 9454500100
+  members: 
+    - name: Mohee
+    - name: Sai Tanmay
+- team: Corporate
+  heads:
+    - name: Aditya Morolia
+      img: AdityaMorolia_Corporate.png
+      fb: https://www.facebook.com/TheCharmingSociopath
+      in: https://www.linkedin.com/in/aditya-morolia-234439112/
+      mail: aditya.morolia@gmail.com
+      phone: 9559404288
+  members:
+    - name: Sahil Bhatt
+    - name: Srinath Nair
+- team: Design
+  heads:
+    - name: Sarvesh Mehta
+      img: 
+      fb: sarvesh211999@gmail.com 
+      in:
+      mail: sarvesh211999@gmail.com
+      phone: 9685322873
+  members:
+    - name:
+- team: Events
+  heads:
+    - name: Zubair Abid
+      img: ZubairAbid_Events.png
+      fb: https://facebook.com/zubair.abid.15
+      in: https://www.linkedin.com/in/zubair-abid-670a16156
+      mail: zubairabid1999@gmail.com
+      phone: 9836826520
+    - name: Ishita Vohra
+      img: IshitaVohra_Events.png
+      fb: https://www.facebook.com/ishitavohra3110
+      in: https://www.linkedin.com/in/ishita-vohra-70b234159/
+      mail: ishitavohra3110@gmail.com
+      phone: 8288884712 
+  members:
+    - name:
+- team: Finance
+  heads:
+    - name: Pulkit Gera
+      img: PulkitGera_Finance.png
+      fb: https://www.facebook.com/pulkitgbs
+      in: https://www.linkedin.com/in/pulkit-gera-a29366155/
+      mail: pulkit.gera@research.iiit.ac.in
+      phone: 7683028990
+  members:
+    - name:
+- team: Operations
+  heads:
+    - name: Vaibhav Garg
+      img: VaibhavGarg_Operations.png
+      fb: https://www.facebook.com/vaibav.garg
+      in: 
+      mail: vaibhav.garg@students.iiit.ac.in
+      phone: 9915921857
+  members:
+    - name: Ansh Puvvada
+    - name: Bhavyajeet
+- team: Social Media
+  heads:
+    - name: Parth Goyal
+      img: 
+      fb: https://www.facebook.com/parth.goyal.944
+      in: https://www.linkedin.com/in/parth-goyal-32aa75163/
+      mail: parth.goyal@research.iiit.ac.in
+      phone: 7615023179
+  members:
+    - name:
+- team: Marketing
+  heads:
+    - name: Priyank Modi
+      img:
+      fb: https://www.facebook.com/priyankmodi99
+      mail: priyank.modi@research.iiit.ac.in
+      phone: 8328145692
+    - name: Saumya Shah
+      img:
+      fb: https://www.facebook.com/profile.php?id=100017840562779
+      mail: shahsaumya00@gmail.com
+      phone: 8639031142
+  members:
+    - name:
