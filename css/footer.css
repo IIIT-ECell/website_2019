@@ -1,34 +1,39 @@
-html, body {
-	height: 100%;
-	width: 100%;
+/**
+ * @prettier
+ */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
 .push-upper {
-	padding-top: 10%;
+    padding-top: 10%;
 }
 
 .push-bottom {
-	padding-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 .bg-blue {
-	background-color: #002240;
+    background-color: #002240;
 }
 
-.curvy-footer svg{
-	background-position: center;
-	background-size: cover;
+.curvy-footer svg {
+    background-position: center;
+    background-size: cover;
 }
 
 footer h3 {
-	color: #fff;
+    color: #fff;
 }
 
 footer a {
-	color: #A7D3FF;
+    color: #a7d3ff;
 }
 
 footer a:hover {
-	color: #A7FFFD;
-	text-decoration: none;
+    color: #a7fffd;
+    text-decoration: none;
 }
