@@ -35,19 +35,20 @@
 		</div>
 	</div>
 
-	<div class="container" id="tech">
-		
+	{% for team in site.data.team %}
+	
+	<div class="container" id="{{team.team}}">
 		<hr>
-		<h1>Tech Team</h1>
+		<h1>{{ team.team }}</h1>
 
 		<div class="container-fluid py-5">
 			<div class="row">
+			{% for head in team.heads %}
 				<div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded-circle bg-primary" height="250">
+					<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="250">
 				</div>
-
+			{% endfor %}
 				<div class="col-12 col-md-6">
-
 					<div class="py-4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem.
 					</div>
@@ -56,13 +57,15 @@
 						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-light" height="50" data-toggle="tooltip" data-placement="top" title="Abhigyan but grey">
 						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-warning" height="50" data-toggle="tooltip" data-placement="top" title="He wants to be yellow right now">
 						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-success" height="50" data-toggle="tooltip" data-placement="top" title="Why so green Abhigyan">
-					</div>
-							
-				</div>				
+					</div>	
+				</div>
 			</div>
 		</div>
-
 	</div>
+
+	{% endfor %}
+ 
+
 
     {% include footer.html %}
 
