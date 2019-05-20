@@ -4,7 +4,11 @@
 {% include libraries.html %}
 <body>
     {% include navbar.html %}
-    {% include header.html %}
+    {% if page.headerImg %}
+        {% include header.html %}
+    {% else %}
+        <div class="my-5 py-5">&nbsp;</div>
+    {% endif %}
     {{ page.content }}
     {% include footer.html %}
 </body>

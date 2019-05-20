@@ -73,13 +73,23 @@ function manageDropdowns() {
 
 function init() {
     manageDropdowns();
-}
 
-$(document).on("scroll", function() {
-    if($(document).scrollTop() > 0.85 * $(window).height()) {
-        $("nav").addClass("navbar-curves");
+    /*
+     * if header is defined, then manage navbar curves on scroll otherwise just display them
+     *
+     * !IMPORTANT: i'm assuming that <header> will only be used to define the whole header image part
+     *              and nothing else in this whole website
+     */
+    if ($("header").length) {
+        $(document).on("scroll", function() {
+            if($(document).scrollTop() > 0.85 * $(window).height()) {
+                $("nav").addClass("navbar-curves");
+            } else {
+                $("nav").removeClass("navbar-curves");
+            }
+        });
     } else {
-        $("nav").removeClass("navbar-curves");
+        $("nav").addClass("navbar-curves");
     }
-});
+}
 
