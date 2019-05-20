@@ -24,8 +24,8 @@ function manageDropdowns() {
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
             dropdownMenu = dropdown.querySelector(".dropdown-menu"),
-            doNotFadeOutYet = true;
-        dropdownRemainAwakeTimeout = 50;
+            doNotFadeOutYet = true,
+            dropdownRemainAwakeTimeout = 50;
 
         function fadeOutDropdown() {
             if (doNotFadeOutYet) return;
