@@ -1,7 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: page
+headerImg: header.svg
+title: E-Cell IIIT-H
+cardTitle: Demystifying Entreprebuership
+cardContent: Supporting Text is an essential part of a website. This part is crucial to make the title 'Demystifying Entrepreneurship' click with an audience. Do not screw it up :)
 
-layout: home
-title: E-Cell IIIT Hyderabad
 ---
+
+Whoo!
+
