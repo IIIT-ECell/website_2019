@@ -1,10 +1,8 @@
-- monial:
-    - name: "Gaurang"
-    - designation: "speedforces"
-    - text: "I love the E-CELL WEBSITE"
-    - profilepic: "dummy.png"
-- monial:
-    - name: "Yoogottam"
-    - designation: "Vimboi"
-    - text: "Dk about Ecell but I love vim!"
-    - profilepic: "dummy.png"
+- name: "Gaurang"
+  designation: "speedforces"
+  text: "I love the E-CELL WEBSITE"
+  profilepic: "dummy.png"
+- name: "Yoogottam"
+  designation: "Vimboi"
+  text: "Dk about Ecell but I love vim!"
+  profilepic: "dummy.png"
