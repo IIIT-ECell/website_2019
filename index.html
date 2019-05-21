@@ -43,9 +43,9 @@ cardContent: Supporting Text is an essential part of a website. This part is cru
 
 <div class="testimonial-container">
     {% assign moniallist = site.data.testimonials %}
-    {% for tesimonial in moniallist %}
+    {% for testimonial in moniallist %}
         <div class="person-info">
-            <img src="assets/imgs/{{testimonial.profilepic}}" alt="Profile picture of {{testimonial.name}}">
+            <img src="assets/imgs/{{ testimonial.profilepic }}" alt="Profile picture of {{ testimonial.name }}">
             <b>{{testimonial.name}}</b>
             <b>{{testimonial.designation}}</b>
         </div>
