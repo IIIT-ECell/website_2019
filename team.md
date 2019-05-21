@@ -4,5 +4,5 @@
 
 layout: team
 title: E-Cell IIIT Hyderabad Team
-permalink: /team/
+permalink: /team
 ---

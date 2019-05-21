@@ -54,9 +54,9 @@
 					</div>
 
 					<div class="team-members">
-						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-light" height="50" data-toggle="tooltip" data-placement="top" title="Abhigyan but grey">
-						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-warning" height="50" data-toggle="tooltip" data-placement="top" title="He wants to be yellow right now">
-						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-success" height="50" data-toggle="tooltip" data-placement="top" title="Why so green Abhigyan">
+						{% for member in team.members %}
+						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded {{ member.bg }}" height="50" data-toggle="tooltip" data-placement="top" title="{{ member.name }}">
+						{% endfor %}
 					</div>	
 				</div>
 			</div>

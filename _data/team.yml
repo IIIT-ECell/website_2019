@@ -22,9 +22,13 @@
       phone: 7981107289
   members:
     - name: Gaurang Tandon
+      bg: bg-light
     - name: Yoogottam Khandelwal
+      bg: bg-warning
     - name: Jaidev Shriram
+      bg: bg-danger
     - name: Jivitesh Jain
+      bg: bg-light
 - team: Collaborations
   heads:
     - name: Atirek Kumar
@@ -35,7 +39,9 @@
       phone: 9454500100
   members: 
     - name: Mohee
+      bg: bg-warning
     - name: Sai Tanmay
+      bg: bg-danger
 - team: Corporate
   heads:
     - name: Aditya Morolia
@@ -46,7 +52,9 @@
       phone: 9559404288
   members:
     - name: Sahil Bhatt
+      bg: bg-danger
     - name: Srinath Nair
+      bg: bg-warning
 - team: Design
   heads:
     - name: Sarvesh Mehta
@@ -56,7 +64,12 @@
       mail: sarvesh211999@gmail.com
       phone: 9685322873
   members:
-    - name:
+    - name: Jai Bardhan
+      bg: bg-light
+    - name: Ahish Deshpande
+      bg: bg-danger 
+    - name: Jyoti Sunkara
+      bg: bg-primary
 - team: Events
   heads:
     - name: Zubair Abid
@@ -72,7 +85,10 @@
       mail: ishitavohra3110@gmail.com
       phone: 8288884712 
   members:
-    - name:
+    - name: Kanish Anand
+      bg: bg-danger
+    - name: Sridhar M
+      bg: bg-light
 - team: Finance
   heads:
     - name: Pulkit Gera
@@ -82,7 +98,10 @@
       mail: pulkit.gera@research.iiit.ac.in
       phone: 7683028990
   members:
-    - name:
+    - name: Shivam
+      bg: bg-warning
+    - name: Loay Rashid
+      bg: bg-danger
 - team: Operations
   heads:
     - name: Vaibhav Garg
@@ -93,7 +112,9 @@
       phone: 9915921857
   members:
     - name: Ansh Puvvada
+      bg: bg-danger
     - name: Bhavyajeet
+      bg: bg-primary
 - team: Social Media
   heads:
     - name: Parth Goyal
@@ -103,7 +124,10 @@
       mail: parth.goyal@research.iiit.ac.in
       phone: 7615023179
   members:
-    - name:
+    - name: Amogh Tiwari
+      bg: bg-danger
+    - name: Mallika
+      bg: bg-primary
 - team: Marketing
   heads:
     - name: Priyank Modi
@@ -117,7 +141,10 @@
       mail: shahsaumya00@gmail.com
       phone: 8639031142
   members:
-    - name:
+    - name: Anirudh
+      bg: bg-warning
+    - name: Sudhansh
+      bg: bg-danger
 - team: Team Affairs
   heads:
     - name: Subbulakshmi RS
@@ -132,5 +159,9 @@
       in: https://www.linkedin.com/in/arnav-kapoor-338601153/
       mail: arnav.kapoor@research.iiit.ac.in
       phone: 9554421386
-
+  members:
+      - name: Naren 
+        bg: bg-light
+      - name: Arindam
+        bg: bg-danger
         
