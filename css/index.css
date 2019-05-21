@@ -38,3 +38,21 @@ body {
 .para-left {
     float: left;
 }
+
+/* Testimonial box work */
+
+.testimonial-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.testimonial-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.testimonial-container .profilepic {
+    width: 50px;
+    height: 50px;
+}
+

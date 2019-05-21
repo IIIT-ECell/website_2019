@@ -7,6 +7,10 @@ cardContent: Supporting Text is an essential part of a website. This part is cru
 ---
 
 <link type="text/css" href="../css/index.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../js/index.js"></script>
 <div class="container-fluid tiles-container">
     <div class="row tile-row tile-row-left bg-warning">
         <div class="para para-left">
@@ -44,13 +48,15 @@ cardContent: Supporting Text is an essential part of a website. This part is cru
 <div class="testimonial-container">
     {% assign moniallist = site.data.testimonials %}
     {% for testimonial in moniallist %}
-        <div class="person-info">
-            <img src="assets/imgs/{{ testimonial.profilepic }}" alt="Profile picture of {{ testimonial.name }}">
-            <b>{{testimonial.name}}</b>
-            <b>{{testimonial.designation}}</b>
-        </div>
-        <div class="text">
-            {{testimonial.text}}
+        <div class="testimonial">
+            <div class="person-info">
+                <img class="profilepic" src="assets/imgs/{{ testimonial.profilepic }}" alt="Profile picture of {{ testimonial.name }}">
+                <b class="name">{{testimonial.name}}</b>
+                <b class="designation">{{testimonial.designation}}</b>
+            </div>
+            <div class="text">
+                {{testimonial.text}}
+            </div>
         </div>
     {% endfor %}
 </div>
