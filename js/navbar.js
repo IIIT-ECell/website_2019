@@ -21,14 +21,52 @@ function manageDropdowns() {
 
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
-            dropdownMenu = dropdown.querySelector(".dropdown-menu");
+            dropdownMenu = dropdown.querySelector(".dropdown-menu"),
+            doNotFadeOutYet = true,
+            dropdownRemainAwakeTimeout = 50;
 
-        $(toggleBtn).on("mouseenter", function() {
-            $(dropdownMenu).show(fadeInOutOptions);
-        });
-        $(toggleBtn).on("mouseleave", function() {
-            $(dropdownMenu).hide(fadeInOutOptions);
-        });
+        function fadeOutDropdown() {
+            if (doNotFadeOutYet) return;
+            $(dropdownMenu).slideUp(fadeInOutOptions);
+        }
+
+        $(toggleBtn).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+                $(dropdownMenu).slideDown(fadeInOutOptions);
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseover",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
     });
 }
 
