@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.tiles-container {
+    width: 90%;
+    position: relative;
+    max-width: 1300px;
+}
+.tile-row {
+    width: 90%;
+    position: relative;
+    margin-top: 10px;
+}
+.para {
+    max-width: 90vw;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    width: 80%;
+}
+.image {
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 3px;
+    width: 20%;
+    height: 100%; /* this allows for all fancy alignments of the image */
+    position: relative;
+}
+.image-right,
+.para-right,
+.tile-row-right {
+    float: right;
+}
+.image-left,
+.para-left {
+    float: left;
+}
