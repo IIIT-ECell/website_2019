@@ -1,0 +1,36 @@
+---
+layout: page
+headerImg: header.svg
+title: Sponsors
+cardTitle: Our Sponsors and Partners
+cardContent:  Supporting Text is an essential part of a website. This part is crucial to make the title 'Demystifying Entrepreneurship' click with an audience. Do not screw it up 
+permalink: /sponsors
+---
+<link type="text/css" href="../css/index.css" rel="stylesheet" />
+
+<div class="container tiles">
+    <div class="row">
+        <div class="col-md-12">
+            <p>Some text about why someone should sponsor us. We need
+                money for parties. Sponsor us. Sponsor us. Sponsor us.
+                Sponsor us. Sponsor us. Sponsor us. Sponsor us. Sponsor us.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Our Associates</h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for associate in site.data.sponsors %}
+        <!-- {% assign associates = sponsors_list %} -->
+            <!-- {% for associate in associates %} -->
+            <div class="col-md-3">
+                <img src="/assets/imgs/sponsors/{{ associate.logo }}" alt="{{ associate.name }}">
+                <p>{{ associate.name }}</p>
+            </div>
+            <!-- {% endfor %} -->
+        {% endfor %}
+    </div>
+</div>
