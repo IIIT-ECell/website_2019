@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+{% include libraries.html %}
+
+<link rel="stylesheet" type="text/css" href="../css/team.css">
+
+<body>
+    {% include navbar.html %}
+
+    <header class="w-100 h-75">
+        <div class="container-fluid h-100 main-head">
+            <div class="row h-100">
+                <div class="col text-center d-flex align-items-center justify-content-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col text-white">
+                                <h1>Our Associates and Sponsors</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>			
+        </div>
+    </header>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+</html>
