@@ -23,8 +23,8 @@
         "pretty-quick": "^1.10.0"
     },
     "scripts": {
-        "pretty": "prettier --write \"./**/*.{js,css,html}\"",
-        "pretty_test": "prettier --check \"./**/*.{js,css,html}\"",
+        "pretty": "prettier --write \"./**/*.{js,css}\"",
+        "pretty_test": "prettier --check \"./**/*.{js,css}\"",
         "dist": "jekyll b && gulp",
         "deploy": "npm run dist && scp -r _site/* ecell@ecell.iiit.ac.in:/home/ecell/site"
     },

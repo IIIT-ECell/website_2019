@@ -1,7 +1,3 @@
-/**
- * @prettier
- */
-
 $(document).ready(init);
 
 function shouldManageDropdown() {
