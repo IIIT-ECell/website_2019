@@ -1,68 +1,60 @@
-# - associates:
-#   - logo: cie.iiit.ac.in.png
-#     name: CIE
-#   - logo: t-hub.co.png
-#     name: T-Hub 
-#   - logo: www.iiit.ac.in.png
-#     name: IIIT-H Foundation
-# - partners:
-#   - logo: iiitd.ecell.io.png
-#     name: E-Cell IIIT-D
-#   - logo: ecell-iimb.png
-#     name: E-Cell IIMB 
-#   - logo: www.ecell.in.png
-#     name: E-Cell IIT-B
-# - sponsors:
-#   - logo: 4yuva.png
-#     name: 4yuva
-#   - logo: festpav.png
-#     name: festpav
-#   - logo: sheteam.jpg
-#     name: sheteam
-#   - logo: amazon.png
-#     name: amazon
-#   - logo: ibm.png
-#     name: ibm
-#   - logo: stumagz.png
-#     name: stumagz
-#   - logo: authbase.png
-#     name: authbase
-#   - logo: techfest.png
-#     name: techfest
-#   - logo: capgemini.png
-#     name: capgemini
-#   - logo: inc42.png
-#     name: inc42
-#   - logo: tech.png
-#     name: tech
-#   - logo: joveo.png
-#     name: joveo
-#   - logo: dbs.png
-#     name: dbs
-#   - logo: lovelychocos-logo
-#     name: lovelychocos.png
-#   - logo: uber.jpeg
-#     name: uber
-#   - logo: DO.png
-#     name: DO
-#   - logo: meraevents.jpg
-#     name: meraevents
-#   - logo: uni.jpg
-#     name: uni
-#   - logo: easports.png
-#     name: easports
-#   - logo: photriya.png
-#     name: photriya
-#   - logo: pwc.png
-#     name: pwc
-- logo: uni.jpg
-  name: uni
-
-- logo: easports.png
-  name: easports
-
-- logo: photriya.png
-  name: photriya
-  
-- logo: pwc.png
-  name: pwc
+- sponsors: Associates
+  members:
+  - logo: cie.iiit.ac.in.png
+    name: CIE
+  - logo: t-hub.co.png
+    name: T-Hub 
+  - logo: www.iiit.ac.in.png
+    name: IIIT-H Foundation
+- sponsors: Partners
+  members:
+  - logo: iiitd.ecell.io.png
+    name: E-Cell IIIT-D
+  - logo: ecell-iimb.png
+    name: E-Cell IIMB 
+  - logo: www.ecell.in.png
+    name: E-Cell IIT-B
+- sponsors: Sponsors
+  members:
+  - logo: 4yuva.png
+    name: 4yuva
+  - logo: festpav.png
+    name: festpav
+  - logo: sheteam.jpg
+    name: sheteam
+  - logo: amazon.png
+    name: amazon
+  - logo: ibm.png
+    name: ibm
+  - logo: stumagz.png
+    name: stumagz
+  - logo: authbase.png
+    name: authbase
+  - logo: techfest.png
+    name: techfest
+  - logo: capgemini.png
+    name: capgemini
+  - logo: inc42.png
+    name: inc42
+  - logo: tech.png
+    name: tech
+  - logo: joveo.png
+    name: joveo
+  - logo: dbs.png
+    name: dbs
+  - logo: lovelychocos-logo.png
+    name: lovelychocos
+  - logo: uber.jpeg
+    name: uber
+  - logo: DO.png
+    name: DO
+  - logo: meraevents.jpg
+    name: meraevents
+  - logo: uni.jpg
+    name: uni
+  - logo: easports.png
+    name: easports
+  - logo: photriya.png
+    name: photriya
+  - logo: pwc.png
+    name: pwc
