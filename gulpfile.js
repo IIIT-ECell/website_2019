@@ -1,7 +1,3 @@
-/**
- * @prettier
- */
-
 "use strict";
 
 let autoprefixer = require("gulp-autoprefixer"),
