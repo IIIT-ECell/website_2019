@@ -2,8 +2,8 @@
 layout: page
 headerImg: header.svg
 title: Sponsors
-cardTitle: Our Sponsors and Partners
-cardContent:  Supporting Text is an essential part of a website. This part is crucial to make the title 'Demystifying Entrepreneurship' click with an audience. Do not screw it up 
+cardTitle: Our Partners and Associates
+# cardContent:  Supporting Text is an essential part of a website. This part is crucial to make the title 'Demystifying Entrepreneurship' click with an audience. Do not screw it up 
 permalink: /sponsors
 ---
 <link type="text/css" href="../css/index.css" rel="stylesheet" />
@@ -26,8 +26,12 @@ permalink: /sponsors
     </div>
     <div class="row">
         {% for member in sponsor.members %}
+        {% if sponsor.sponsors == "Sponsors" %}
+            <div class="col-md-3 p-3 text-center">
+        {% else %}
             <div class="col-md-4 p-3 text-center">
-                <img class="img-fluid" style="max-height: 150px;" src="/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
+        {% endif %}
+                    <img class="img-fluid" style="max-height: 150px;" src="/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
                 <!-- <p>{{ member.name }}</p> -->
             </div>
         {% endfor %}
