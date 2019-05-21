@@ -57,11 +57,11 @@
 #navbarSupportedContent ul li.nav-item:before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 80%;
     max-width: 200px;
     height: 2px;
     bottom: 0;
-    left: 0;
+    left: 10%;
     background-color: var(--nav-link-underline-color);
     visibility: hidden;
     -webkit-transform: scaleX(0);
@@ -92,20 +92,6 @@
  */
 .dropdown-item {
     color: var(--dropdown-link-color) !important;
-}
-
-@media (min-width: 1000px) {
-    /* Fade-in/-out bootstrap dropdowns */
-    .dropdown-menu.fade {
-        display: block;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.25s ease;
-    }
-    .show > .dropdown-menu.fade {
-        pointer-events: auto;
-        opacity: 1;
-    }
 }
 
 .dropdown-menu {
