@@ -46,3 +46,24 @@
   visibility: visible;
   opacity: 1;
 }
+
+.palette-bg-green {
+  background-color: #1BBFB3;
+}
+
+.palette-bg-red {
+  background-color: #DD5E58;
+}
+
+.palette-bg-blue {
+  background-color: #3B6FC1;
+}
+
+.palette-bg-grey {
+  background-color: #ebebeb
+}
+
+.team-img {
+  border: 8px solid white;
+  box-shadow: 0 0 10px rgb(200, 200, 200);
+}

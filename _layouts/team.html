@@ -39,12 +39,12 @@ layout: page
 	<div class="row">
 		<div class="col text-center">
 			<figure class="figure">
-				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle bg-primary" height="225">
+				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey team-img" height="225">
 				 <figcaption class="figure-caption">Aishwarya Srivastava</figcaption>
 			</figure>
 
 			<figure class="figure">
-				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle bg-light" height="225">
+				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red team-img" height="225">
 				<figcaption class="figure-caption">Ayush Shivani</figcaption>
 			</figure>
 		</div>
@@ -65,13 +65,13 @@ layout: page
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} team-img" height="225">
 						<div class="tooltip-content">
 							Social Media Icons
 						</div>
 					</div>
 
-					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
 				</figure>
 
 
@@ -83,12 +83,12 @@ layout: page
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} team-img" height="225">
 						<div class="tooltip-content">
 							Social Media Icons
 						</div>
 					</div>
-					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
 			</div>			
@@ -101,7 +101,7 @@ layout: page
 
 				<div class="team-members">
 					{% for member in team.members %}
-					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded {{ member.bg }} img-responsive" height="50">
+					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-{{member.bg}} img-responsive" height="50">
 					{% endfor %}
 				</div>
 			</div>

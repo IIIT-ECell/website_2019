@@ -6,7 +6,7 @@
         in: https://www.linkedin.com/in/abhigyanghosh30
         mail: abhigyanghosh30@gmail.com
         phone: 7981107289
-        bg: bg-dark-blue
+        bg: blue
   members:
       - name: Gaurang Tandon
         bg: bg-light
@@ -24,7 +24,7 @@
         in:
         mail: atirek.kumar@research.iiit.ac.in
         phone: 9454500100
-        bg: bg-danger
+        bg: red
   members:
       - name: Mohee
         bg: bg-warning
@@ -38,7 +38,7 @@
         in: https://www.linkedin.com/in/aditya-morolia-234439112/
         mail: aditya.morolia@gmail.com
         phone: 9559404288
-        bg: bg-success
+        bg: green
   members:
       - name: Sahil Bhatt
         bg: bg-danger
@@ -53,14 +53,14 @@
         in: https://www.linkedin.com/in/zubair-abid-670a16156
         mail: zubairabid1999@gmail.com
         phone: 9836826520
-        bg: bg-light
+        bg: grey
       - name: Ishita Vohra
         img: IshitaVohra_Events.png
         fb: https://www.facebook.com/ishitavohra3110
         in: https://www.linkedin.com/in/ishita-vohra-70b234159/
         mail: ishitavohra3110@gmail.com
         phone: 8288884712
-        bg: bg-dark
+        bg: red
   members:
       - name: Kanish Anand
         bg: bg-danger
@@ -74,7 +74,7 @@
         in: https://www.linkedin.com/in/pulkit-gera-a29366155/
         mail: pulkit.gera@research.iiit.ac.in
         phone: 7683028990
-        bg: bg-primary
+        bg: green
   members:
       - name: Shivam
         bg: bg-warning
@@ -88,7 +88,7 @@
         in:
         mail: vaibhav.garg@students.iiit.ac.in
         phone: 9915921857
-        bg: bg-dark-blue
+        bg: blue
   members:
       - name: Ansh Puvvada
         bg: bg-danger
@@ -102,7 +102,7 @@
         in: https://www.linkedin.com/in/parth-goyal-32aa75163/
         mail: parth.goyal@research.iiit.ac.in
         phone: 7615023179
-        bg: bg-warning
+        bg: red
   members:
       - name: Amogh Tiwari
         bg: bg-danger
@@ -116,13 +116,13 @@
         fb: https://www.facebook.com/priyankmodi99
         mail: priyank.modi@research.iiit.ac.in
         phone: 8328145692
-        bg: bg-light
+        bg: grey
       - name: Saumya Shah
         img: SaumyaShah_Marketing.png
         fb: https://www.facebook.com/profile.php?id=100017840562779
         mail: shahsaumya00@gmail.com
         phone: 8639031142
-        bg: bg-danger
+        bg: blue
   members:
       - name: Anirudh
         bg: bg-warning
@@ -137,14 +137,14 @@
         in: https://www.linkedin.com/in/subbulakshmi-rs-760561166/
         mail: subbulakshmi.r@students.iiit.ac.in
         phone: 8148102418
-        bg: bg-success
+        bg: green
       - name: Arnav Kapoor
         img: ArnavKapoor_TAC.png
         fb: https://www.facebook.com/arnkapoor
         in: https://www.linkedin.com/in/arnav-kapoor-338601153/
         mail: arnav.kapoor@research.iiit.ac.in
         phone: 9554421386
-        bg: bg-dark
+        bg: red
   members:
       - name: Naren
         bg: bg-light
@@ -158,7 +158,7 @@
         in:
         mail: sarvesh211999@gmail.com
         phone: 9685322873
-        bg: bg-danger
+        bg: red
   members:
       - name: Ahish
         bg: bg-light
