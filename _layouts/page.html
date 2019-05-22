@@ -6,10 +6,10 @@
     {% include navbar.html %}
     {% if page.headerImg %}
         {% include header.html %}
-    {% else %}
+    {% elsif page.noTopSpacing != true %}
         <div class="my-5 py-5">&nbsp;</div>
     {% endif %}
-    {{ page.content }}
+    {{ content }}
     {% include footer.html %}
 </body>
 </html>
