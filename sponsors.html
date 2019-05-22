@@ -1,0 +1,39 @@
+---
+layout: sponsors
+title: Sponsors
+permalink: /sponsors
+noTopSpacing: true
+---
+<link type="text/css" href="../css/index.css" rel="stylesheet" />
+
+<div class="container tiles">
+    <div class="row p-3">
+        <div class="col-md-12">
+            <h2>Some text about why someone should sponsor us. We need
+                money for parties. Sponsor us. Sponsor us. Sponsor us.
+                Sponsor us. Sponsor us. Sponsor us. Sponsor us. Sponsor us.
+            </h2>
+        </div>
+    </div>
+    <hr>
+    {% for sponsor in site.data.sponsors %}
+    <div class="row p-3">
+        <div class="col-md-12">
+            <h1>Our {{ sponsor.sponsors }} </h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for member in sponsor.members %}
+        {% if sponsor.sponsors == "Sponsors" %}
+            <div class="col-md-3 p-3 text-center">
+        {% else %}
+            <div class="col-md-4 p-3 text-center">
+        {% endif %}
+                    <img class="img-fluid" style="max-height: 150px;" src="/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
+                <!-- <p>{{ member.name }}</p> -->
+            </div>
+        {% endfor %}
+    </div>
+    <hr>
+    {% endfor %}
+</div>
