@@ -64,16 +64,12 @@
       mail: sarvesh211999@gmail.com
       phone: 9685322873
   members:
-    - name: Jai Bardhan
       bg: bg-light
     - name: Ahish Deshpande
       bg: bg-danger 
     - name: Jyoti Sunkara
       bg: bg-primary
 - team: Events
-  heads:
-    - name: Zubair Abid
-      img: ZubairAbid_Events.png
       fb: https://facebook.com/zubair.abid.15
       in: https://www.linkedin.com/in/zubair-abid-670a16156
       mail: zubairabid1999@gmail.com

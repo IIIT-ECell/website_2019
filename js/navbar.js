@@ -1,7 +1,3 @@
-/**
- * @prettier
- */
-
 $(document).ready(init);
 
 function shouldManageDropdown() {
@@ -19,7 +15,9 @@ function manageDropdowns() {
     var dropdowns = document.querySelectorAll(
             "#navbarSupportedContent ul li.dropdown"
         ),
-        showClass = "show";
+        fadeInOutOptions = {
+            duration: 150
+        };
 
     dropdowns.forEach(function(dropdown) {
         var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
@@ -29,30 +27,25 @@ function manageDropdowns() {
 
         function fadeOutDropdown() {
             if (doNotFadeOutYet) return;
-            dropdown.classList.remove(showClass);
-            toggleBtn.setAttribute("expanded", "false");
-            dropdownMenu.classList.remove(showClass);
-            doNotFadeOutYet = false;
+            $(dropdownMenu).slideUp(fadeInOutOptions);
         }
 
-        dropdown.addEventListener(
+        $(toggleBtn).on(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
                 doNotFadeOutYet = true;
-                dropdown.classList.add(showClass);
-                toggleBtn.setAttribute("expanded", "true");
-                dropdownMenu.classList.add(showClass);
+                $(dropdownMenu).slideDown(fadeInOutOptions);
             })
         );
 
-        dropdown.addEventListener(
+        $(toggleBtn).on(
             "mouseover",
             windowSizeAwareDropdownFn(function() {
                 doNotFadeOutYet = true;
             })
         );
 
-        dropdown.addEventListener(
+        $(toggleBtn).on(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
                 doNotFadeOutYet = false;
@@ -60,14 +53,14 @@ function manageDropdowns() {
             })
         );
 
-        dropdownMenu.addEventListener(
+        $(dropdownMenu).on(
             "mouseenter",
             windowSizeAwareDropdownFn(function() {
                 doNotFadeOutYet = true;
             })
         );
 
-        dropdownMenu.addEventListener(
+        $(dropdownMenu).on(
             "mouseleave",
             windowSizeAwareDropdownFn(function() {
                 doNotFadeOutYet = false;
