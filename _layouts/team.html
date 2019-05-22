@@ -66,9 +66,9 @@ layout: page
 				<figure class="figure">
 					<div class="tooltip-social">
 						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
-						<span class="tooltip-content">
+						<div class="tooltip-content">
 							Social Media Icons
-						</span>
+						</div>
 					</div>
 
 					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
@@ -82,7 +82,12 @@ layout: page
 			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center member">
 				{% for head in team.heads %}
 				<figure class="figure">
-					<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
+					<div class="tooltip-social">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
+						<div class="tooltip-content">
+							Social Media Icons
+						</div>
+					</div>
 					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
