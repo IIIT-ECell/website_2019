@@ -55,21 +55,10 @@
       bg: bg-danger
     - name: Srinath Nair
       bg: bg-warning
-- team: Design
-  heads:
-    - name: Sarvesh Mehta
-      img: 
-      fb: sarvesh211999@gmail.com 
-      in:
-      mail: sarvesh211999@gmail.com
-      phone: 9685322873
-  members:
-      bg: bg-light
-    - name: Ahish Deshpande
-      bg: bg-danger 
-    - name: Jyoti Sunkara
-      bg: bg-primary
 - team: Events
+  heads:
+    - name: Zubair Abid
+      img: ZubairAbid_Events.png
       fb: https://facebook.com/zubair.abid.15
       in: https://www.linkedin.com/in/zubair-abid-670a16156
       mail: zubairabid1999@gmail.com
@@ -160,4 +149,18 @@
         bg: bg-light
       - name: Arindam
         bg: bg-danger
-        
+- team: Design
+  heads:
+    - name: Sarvesh Mehta
+      img: 
+      fb: sarvesh211999@gmail.com 
+      in:
+      mail: sarvesh211999@gmail.com
+      phone: 9685322873
+  members:
+    - name: Ahish
+      bg: bg-light
+    - name: Ahish Deshpande
+      bg: bg-danger 
+    - name: Jyoti Sunkara
+      bg: bg-primary
