@@ -9,13 +9,13 @@
         bg: blue
   members:
       - name: Gaurang Tandon
-        bg: bg-light
+        bg: grey
       - name: Yoogottam Khandelwal
-        bg: bg-warning
+        bg: green
       - name: Jaidev Shriram
-        bg: bg-danger
+        bg: red
       - name: Jivitesh Jain
-        bg: bg-light
+        bg: blue
 - team: Collaborations
   heads:
       - name: Atirek Kumar
@@ -27,9 +27,9 @@
         bg: red
   members:
       - name: Mohee
-        bg: bg-warning
+        bg: green
       - name: Sai Tanmay
-        bg: bg-danger
+        bg: grey
 - team: Corporate
   heads:
       - name: Aditya Morolia
@@ -41,9 +41,9 @@
         bg: green
   members:
       - name: Sahil Bhatt
-        bg: bg-danger
+        bg: grey
       - name: Srinath Nair
-        bg: bg-warning
+        bg: red
 - team: Events
   multiple: true
   heads:
@@ -63,9 +63,9 @@
         bg: red
   members:
       - name: Kanish Anand
-        bg: bg-danger
+        bg: blue
       - name: Sridhar M
-        bg: bg-light
+        bg: green
 - team: Finance
   heads:
       - name: Pulkit Gera
@@ -77,9 +77,9 @@
         bg: green
   members:
       - name: Shivam
-        bg: bg-warning
+        bg: blue
       - name: Loay Rashid
-        bg: bg-danger
+        bg: grey
 - team: Operations
   heads:
       - name: Vaibhav Garg
@@ -91,9 +91,9 @@
         bg: blue
   members:
       - name: Ansh Puvvada
-        bg: bg-danger
+        bg: green
       - name: Bhavyajeet
-        bg: bg-primary
+        bg: red
 - team: Social Media
   heads:
       - name: Parth Goyal
@@ -105,9 +105,9 @@
         bg: red
   members:
       - name: Amogh Tiwari
-        bg: bg-danger
+        bg: green
       - name: Mallika
-        bg: bg-primary
+        bg: grey
 - team: Marketing
   multiple: true
   heads:
@@ -125,9 +125,9 @@
         bg: blue
   members:
       - name: Anirudh
-        bg: bg-warning
+        bg: red
       - name: Sudhansh
-        bg: bg-danger
+        bg: green
 - team: Team Affairs
   multiple: true
   heads:
@@ -147,9 +147,9 @@
         bg: red
   members:
       - name: Naren
-        bg: bg-light
+        bg: grey
       - name: Arindam
-        bg: bg-danger
+        bg: blue
 - team: Design
   heads:
       - name: Sarvesh Mehta
@@ -161,8 +161,8 @@
         bg: red
   members:
       - name: Ahish
-        bg: bg-light
+        bg: blue
       - name: Ahish Deshpande
-        bg: bg-danger
+        bg: green
       - name: Jyoti Sunkara
-        bg: bg-primary
+        bg: grey

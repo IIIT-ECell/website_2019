@@ -48,7 +48,7 @@
 }
 
 .palette-bg-green {
-  background-color: #1BBFB3;
+  background-color: #4db6ac;
 }
 
 .palette-bg-red {
@@ -63,7 +63,13 @@
   background-color: #ebebeb
 }
 
-.team-img {
+
+.head-img {
   border: 8px solid white;
   box-shadow: 0 0 10px rgb(200, 200, 200);
+  height: 225px;
+}
+
+.member-img {
+  height: 100px;
 }

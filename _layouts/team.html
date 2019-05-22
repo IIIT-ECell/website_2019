@@ -39,12 +39,12 @@ layout: page
 	<div class="row">
 		<div class="col text-center">
 			<figure class="figure">
-				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey team-img" height="225">
+				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey head-img">
 				 <figcaption class="figure-caption">Aishwarya Srivastava</figcaption>
 			</figure>
 
 			<figure class="figure">
-				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red team-img" height="225">
+				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red head-img">
 				<figcaption class="figure-caption">Ayush Shivani</figcaption>
 			</figure>
 		</div>
@@ -61,11 +61,11 @@ layout: page
 		<div class="row">
 
 			{% if team.multiple %}
-			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center member">
+			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} team-img" height="225">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
 						<div class="tooltip-content">
 							Social Media Icons
 						</div>
@@ -79,11 +79,11 @@ layout: page
 				{% endfor %}
 			</div>
 			{% else %}
-			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center member">
+			<div class="col-12 col-md-5 d-flex text-center justify-content-center align-items-center member">
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} team-img" height="225">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
 						<div class="tooltip-content">
 							Social Media Icons
 						</div>
@@ -101,7 +101,7 @@ layout: page
 
 				<div class="team-members">
 					{% for member in team.members %}
-					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded bg-{{member.bg}} img-responsive" height="50">
+					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img">
 					{% endfor %}
 				</div>
 			</div>
