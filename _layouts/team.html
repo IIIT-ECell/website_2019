@@ -64,7 +64,7 @@ layout: page
 			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center member">
 				{% for head in team.heads %}
 				<figure class="figure">
-					<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle bg-primary" height="225">
+					<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
 					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
 				</figure>
 
@@ -75,7 +75,7 @@ layout: page
 			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center member">
 				{% for head in team.heads %}
 				<figure class="figure">
-					<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle bg-primary" height="225">
+					<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle {{head.bg}}" height="225">
 					<figcaption class="figure-caption text-center">Team Head: {{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
