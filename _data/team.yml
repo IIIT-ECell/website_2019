@@ -1,166 +1,166 @@
 - team: Overall Coordinators
   heads:
-    - name: Ayush Shivani
-      img: AyushShivani_Head.png
-      fb: https://facebook.com/ayushshivani
-      in:
-      mail: ayush.shivani@students.iiit.ac.in 
-      phone: 9559932625
-    - name: Aishwarya Srivastava
-      img: AishwaryaSrivastava_Head.png
-      fb: https://www.facebook.com/aishwarya.srivastava.378
-      in:  https://www.linkedin.com/in/aishwarya-srivastava-498261155
-      mail: aishwarya.srivastava@research.iiit.ac.in
-      phone: 8179483672
+      - name: Ayush Shivani
+        img: AyushShivani_Head.png
+        fb: https://facebook.com/ayushshivani
+        in:
+        mail: ayush.shivani@students.iiit.ac.in
+        phone: 9559932625
+      - name: Aishwarya Srivastava
+        img: AishwaryaSrivastava_Head.png
+        fb: https://www.facebook.com/aishwarya.srivastava.378
+        in: https://www.linkedin.com/in/aishwarya-srivastava-498261155
+        mail: aishwarya.srivastava@research.iiit.ac.in
+        phone: 8179483672
 - team: Tech
-  heads: 
-    - name: Abhigyan Ghosh
-      img: AbhigyanGhosh_Tech.png
-      fb: https://www.facebook.com/abhigyanghosh30
-      in: https://www.linkedin.com/in/abhigyanghosh30
-      mail: abhigyanghosh30@gmail.com 
-      phone: 7981107289
+  heads:
+      - name: Abhigyan Ghosh
+        img: AbhigyanGhosh_Tech.png
+        fb: https://www.facebook.com/abhigyanghosh30
+        in: https://www.linkedin.com/in/abhigyanghosh30
+        mail: abhigyanghosh30@gmail.com
+        phone: 7981107289
   members:
-    - name: Gaurang Tandon
-      bg: bg-light
-    - name: Yoogottam Khandelwal
-      bg: bg-warning
-    - name: Jaidev Shriram
-      bg: bg-danger
-    - name: Jivitesh Jain
-      bg: bg-light
+      - name: Gaurang Tandon
+        bg: bg-light
+      - name: Yoogottam Khandelwal
+        bg: bg-warning
+      - name: Jaidev Shriram
+        bg: bg-danger
+      - name: Jivitesh Jain
+        bg: bg-light
 - team: Collaborations
   heads:
-    - name: Atirek Kumar
-      img: AtirekKumar_EConnect.png
-      fb: https://www.facebook.com/atirek.kumar.9
-      in:
-      mail: atirek.kumar@research.iiit.ac.in
-      phone: 9454500100
-  members: 
-    - name: Mohee
-      bg: bg-warning
-    - name: Sai Tanmay
-      bg: bg-danger
+      - name: Atirek Kumar
+        img: AtirekKumar_EConnect.png
+        fb: https://www.facebook.com/atirek.kumar.9
+        in:
+        mail: atirek.kumar@research.iiit.ac.in
+        phone: 9454500100
+  members:
+      - name: Mohee
+        bg: bg-warning
+      - name: Sai Tanmay
+        bg: bg-danger
 - team: Corporate
   heads:
-    - name: Aditya Morolia
-      img: AdityaMorolia_Corporate.png
-      fb: https://www.facebook.com/TheCharmingSociopath
-      in: https://www.linkedin.com/in/aditya-morolia-234439112/
-      mail: aditya.morolia@gmail.com
-      phone: 9559404288
+      - name: Aditya Morolia
+        img: AdityaMorolia_Corporate.png
+        fb: https://www.facebook.com/TheCharmingSociopath
+        in: https://www.linkedin.com/in/aditya-morolia-234439112/
+        mail: aditya.morolia@gmail.com
+        phone: 9559404288
   members:
-    - name: Sahil Bhatt
-      bg: bg-danger
-    - name: Srinath Nair
-      bg: bg-warning
+      - name: Sahil Bhatt
+        bg: bg-danger
+      - name: Srinath Nair
+        bg: bg-warning
 - team: Events
   heads:
-    - name: Zubair Abid
-      img: ZubairAbid_Events.png
-      fb: https://facebook.com/zubair.abid.15
-      in: https://www.linkedin.com/in/zubair-abid-670a16156
-      mail: zubairabid1999@gmail.com
-      phone: 9836826520
-    - name: Ishita Vohra
-      img: IshitaVohra_Events.png
-      fb: https://www.facebook.com/ishitavohra3110
-      in: https://www.linkedin.com/in/ishita-vohra-70b234159/
-      mail: ishitavohra3110@gmail.com
-      phone: 8288884712 
+      - name: Zubair Abid
+        img: ZubairAbid_Events.png
+        fb: https://facebook.com/zubair.abid.15
+        in: https://www.linkedin.com/in/zubair-abid-670a16156
+        mail: zubairabid1999@gmail.com
+        phone: 9836826520
+      - name: Ishita Vohra
+        img: IshitaVohra_Events.png
+        fb: https://www.facebook.com/ishitavohra3110
+        in: https://www.linkedin.com/in/ishita-vohra-70b234159/
+        mail: ishitavohra3110@gmail.com
+        phone: 8288884712
   members:
-    - name: Kanish Anand
-      bg: bg-danger
-    - name: Sridhar M
-      bg: bg-light
+      - name: Kanish Anand
+        bg: bg-danger
+      - name: Sridhar M
+        bg: bg-light
 - team: Finance
   heads:
-    - name: Pulkit Gera
-      img: PulkitGera_Finance.png
-      fb: https://www.facebook.com/pulkitgbs
-      in: https://www.linkedin.com/in/pulkit-gera-a29366155/
-      mail: pulkit.gera@research.iiit.ac.in
-      phone: 7683028990
+      - name: Pulkit Gera
+        img: PulkitGera_Finance.png
+        fb: https://www.facebook.com/pulkitgbs
+        in: https://www.linkedin.com/in/pulkit-gera-a29366155/
+        mail: pulkit.gera@research.iiit.ac.in
+        phone: 7683028990
   members:
-    - name: Shivam
-      bg: bg-warning
-    - name: Loay Rashid
-      bg: bg-danger
+      - name: Shivam
+        bg: bg-warning
+      - name: Loay Rashid
+        bg: bg-danger
 - team: Operations
   heads:
-    - name: Vaibhav Garg
-      img: VaibhavGarg_Operations.png
-      fb: https://www.facebook.com/vaibav.garg
-      in: 
-      mail: vaibhav.garg@students.iiit.ac.in
-      phone: 9915921857
+      - name: Vaibhav Garg
+        img: VaibhavGarg_Operations.png
+        fb: https://www.facebook.com/vaibav.garg
+        in:
+        mail: vaibhav.garg@students.iiit.ac.in
+        phone: 9915921857
   members:
-    - name: Ansh Puvvada
-      bg: bg-danger
-    - name: Bhavyajeet
-      bg: bg-primary
+      - name: Ansh Puvvada
+        bg: bg-danger
+      - name: Bhavyajeet
+        bg: bg-primary
 - team: Social Media
   heads:
-    - name: Parth Goyal
-      img: ParthGoyal_Social.png
-      fb: https://www.facebook.com/parth.goyal.944
-      in: https://www.linkedin.com/in/parth-goyal-32aa75163/
-      mail: parth.goyal@research.iiit.ac.in
-      phone: 7615023179
+      - name: Parth Goyal
+        img: ParthGoyal_Social.png
+        fb: https://www.facebook.com/parth.goyal.944
+        in: https://www.linkedin.com/in/parth-goyal-32aa75163/
+        mail: parth.goyal@research.iiit.ac.in
+        phone: 7615023179
   members:
-    - name: Amogh Tiwari
-      bg: bg-danger
-    - name: Mallika
-      bg: bg-primary
+      - name: Amogh Tiwari
+        bg: bg-danger
+      - name: Mallika
+        bg: bg-primary
 - team: Marketing
   heads:
-    - name: Priyank Modi
-      img: PriyankModi_Marketing.png
-      fb: https://www.facebook.com/priyankmodi99
-      mail: priyank.modi@research.iiit.ac.in
-      phone: 8328145692
-    - name: Saumya Shah
-      img: SaumyaShah_Marketing.png
-      fb: https://www.facebook.com/profile.php?id=100017840562779
-      mail: shahsaumya00@gmail.com
-      phone: 8639031142
+      - name: Priyank Modi
+        img: PriyankModi_Marketing.png
+        fb: https://www.facebook.com/priyankmodi99
+        mail: priyank.modi@research.iiit.ac.in
+        phone: 8328145692
+      - name: Saumya Shah
+        img: SaumyaShah_Marketing.png
+        fb: https://www.facebook.com/profile.php?id=100017840562779
+        mail: shahsaumya00@gmail.com
+        phone: 8639031142
   members:
-    - name: Anirudh
-      bg: bg-warning
-    - name: Sudhansh
-      bg: bg-danger
+      - name: Anirudh
+        bg: bg-warning
+      - name: Sudhansh
+        bg: bg-danger
 - team: Team Affairs
   heads:
-    - name: Subbulakshmi RS
-      img: SubbulakshmiRS_TAC.png
-      fb: https://www.facebook.com/profile.php?id=100004840905710
-      in: https://www.linkedin.com/in/subbulakshmi-rs-760561166/
-      mail: subbulakshmi.r@students.iiit.ac.in
-      phone: 8148102418
-    - name: Arnav Kapoor
-      img: ArnavKapoor_TAC.png
-      fb: https://www.facebook.com/arnkapoor
-      in: https://www.linkedin.com/in/arnav-kapoor-338601153/
-      mail: arnav.kapoor@research.iiit.ac.in
-      phone: 9554421386
+      - name: Subbulakshmi RS
+        img: SubbulakshmiRS_TAC.png
+        fb: https://www.facebook.com/profile.php?id=100004840905710
+        in: https://www.linkedin.com/in/subbulakshmi-rs-760561166/
+        mail: subbulakshmi.r@students.iiit.ac.in
+        phone: 8148102418
+      - name: Arnav Kapoor
+        img: ArnavKapoor_TAC.png
+        fb: https://www.facebook.com/arnkapoor
+        in: https://www.linkedin.com/in/arnav-kapoor-338601153/
+        mail: arnav.kapoor@research.iiit.ac.in
+        phone: 9554421386
   members:
-      - name: Naren 
+      - name: Naren
         bg: bg-light
       - name: Arindam
         bg: bg-danger
 - team: Design
   heads:
-    - name: Sarvesh Mehta
-      img: 
-      fb: sarvesh211999@gmail.com 
-      in:
-      mail: sarvesh211999@gmail.com
-      phone: 9685322873
+      - name: Sarvesh Mehta
+        img:
+        fb: sarvesh211999@gmail.com
+        in:
+        mail: sarvesh211999@gmail.com
+        phone: 9685322873
   members:
-    - name: Ahish
-      bg: bg-light
-    - name: Ahish Deshpande
-      bg: bg-danger 
-    - name: Jyoti Sunkara
-      bg: bg-primary
+      - name: Ahish
+        bg: bg-light
+      - name: Ahish Deshpande
+        bg: bg-danger
+      - name: Jyoti Sunkara
+        bg: bg-primary

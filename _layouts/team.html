@@ -1,73 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-{% include libraries.html %}
-
+---
+layout: page
+---
 <link rel="stylesheet" type="text/css" href="../css/team.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<body>
-
-	{% include navbar.html %}
-
-	<header class="w-100 h-75">
-		<div class="container-fluid h-100 main-head">
-			<div class="row h-100">
-				<div class="col text-center d-flex align-items-center justify-content-center">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col text-white">
-								<h1>Team</h1>
-							</div>
+<header class="w-100 h-75">
+	<div class="container-fluid h-100 main-head">
+		<div class="row h-100">
+			<div class="col text-center d-flex align-items-center justify-content-center">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col text-white">
+							<h1>Team</h1>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
-	</header>
+	</div>
+</header>
 
-	<div class="container py-5">
+<div class="container py-5">
+	<div class="row">
+		<div class="col text-center">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem. Etiam sit amet ipsum vel sapien fermentum pulvinar. Vestibulum feugiat lorem eget diam efficitur, in vestibulum est sollicitudin. Morbi vestibulum, elit elementum bibendum commodo, mauris purus interdum purus, vitae tempor nisl odio sed sapien. Donec placerat vel est aliquam porttitor. Nullam sed ipsum in neque pulvinar sodales. Vivamus nec vestibulum arcu. Fusce suscipit sapien a dapibus convallis. Aliquam id sapien non elit malesuada pellentesque. Nulla porta risus non risus condimentum, in vestibulum nunc varius. Quisque ac vulputate libero, sit amet eleifend tortor. Donec vel auctor magna. Nunc quis quam sollicitudin, tincidunt erat at, convallis est. Nam sit amet dictum dui.
+		</div>
+	</div>
+</div>
+
+{% for team in site.data.team %}
+
+<div class="container" id="{{team.team}}">
+	<hr>
+	<h1>{{ team.team }}</h1>
+
+	<div class="container-fluid py-5">
 		<div class="row">
-			<div class="col text-center">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem. Etiam sit amet ipsum vel sapien fermentum pulvinar. Vestibulum feugiat lorem eget diam efficitur, in vestibulum est sollicitudin. Morbi vestibulum, elit elementum bibendum commodo, mauris purus interdum purus, vitae tempor nisl odio sed sapien. Donec placerat vel est aliquam porttitor. Nullam sed ipsum in neque pulvinar sodales. Vivamus nec vestibulum arcu. Fusce suscipit sapien a dapibus convallis. Aliquam id sapien non elit malesuada pellentesque. Nulla porta risus non risus condimentum, in vestibulum nunc varius. Quisque ac vulputate libero, sit amet eleifend tortor. Donec vel auctor magna. Nunc quis quam sollicitudin, tincidunt erat at, convallis est. Nam sit amet dictum dui. 
+		{% for head in team.heads %}
+			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+				<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="250">
 			</div>
-		</div>
-	</div>
-
-	{% for team in site.data.team %}
-	
-	<div class="container" id="{{team.team}}">
-		<hr>
-		<h1>{{ team.team }}</h1>
-
-		<div class="container-fluid py-5">
-			<div class="row">
-			{% for head in team.heads %}
-				<div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-					<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="250">
+		{% endfor %}
+			<div class="col-12 col-md-6">
+				<div class="py-4">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem.
 				</div>
-			{% endfor %}
-				<div class="col-12 col-md-6">
-					<div class="py-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem.
-					</div>
 
-					<div class="team-members">
-						{% for member in team.members %}
-						<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded {{ member.bg }}" height="50" data-toggle="tooltip" data-placement="top" title="{{ member.name }}">
-						{% endfor %}
-					</div>	
+				<div class="team-members">
+					{% for member in team.members %}
+					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded {{ member.bg }}" height="50" data-toggle="tooltip" data-placement="top" title="{{ member.name }}">
+					{% endfor %}
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	{% endfor %}
- 
-
-
-    {% include footer.html %}
-
-</body>
-</html>
+{% endfor %}
