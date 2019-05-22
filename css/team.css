@@ -1,11 +1,11 @@
 .main-head {
-	position: relative;
-  	background: url("../assets/imgs/team.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
+    position: relative;
+    background: url("../assets/imgs/team.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 
-	height: 100%;
-	width: auto;
+    height: 100%;
+    width: auto;
 }
