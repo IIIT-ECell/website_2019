@@ -8,11 +8,10 @@ function resize() {
         $(".member").removeClass("d-flex");
     }
 
-
-    if($(window).width() < 768){
-        $('.team-members').addClass('text-center');
-    }else{
-        $('.team-members').removeClass('text-center');
+    if ($(window).width() < 768) {
+        $(".team-members").addClass("text-center");
+    } else {
+        $(".team-members").removeClass("text-center");
     }
 }
 
