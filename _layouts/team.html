@@ -36,14 +36,25 @@ layout: page
 
 	<div class="container-fluid py-5">
 		<div class="row">
-		{% for head in team.heads %}
-			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-				<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="250">
+
+			{% if team.multiple %}
+			<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+				{% for head in team.heads %}
+				<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="225">
+				<div style="padding-right: 10px;"></div>
+				{% endfor %}
 			</div>
-		{% endfor %}
+			{% else %}
+			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+				{% for head in team.heads %}
+				<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="225">
+				{% endfor %}
+			</div>			
+			{% endif %}
+		
 			<div class="col-12 col-md-6">
 				<div class="py-4">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor.
 				</div>
 
 				<div class="team-members">
