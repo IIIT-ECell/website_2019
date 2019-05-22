@@ -42,6 +42,7 @@
       - name: Srinath Nair
         bg: bg-warning
 - team: Events
+  multiple: true
   heads:
       - name: Zubair Abid
         img: ZubairAbid_Events.png
@@ -100,6 +101,7 @@
       - name: Mallika
         bg: bg-primary
 - team: Marketing
+  multiple: true
   heads:
       - name: Priyank Modi
         img: PriyankModi_Marketing.png
@@ -117,6 +119,7 @@
       - name: Sudhansh
         bg: bg-danger
 - team: Team Affairs
+  multiple: true
   heads:
       - name: Subbulakshmi RS
         img: SubbulakshmiRS_TAC.png
