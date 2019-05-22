@@ -6,7 +6,7 @@
     {% include navbar.html %}
     {% if page.headerImg %}
         {% include header.html %}
-    {% else %}
+    {% elsif page.noTopSpacing != true %}
         <div class="my-5 py-5">&nbsp;</div>
     {% endif %}
     {{ content }}
