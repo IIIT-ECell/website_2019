@@ -1,7 +1,3 @@
-/**
- * @prettier
- */
-
 :root {
     --nav-link-color: #fff;
     --dropdown-link-color: #000;
@@ -41,20 +37,17 @@
     }
 }
 
-/* Animated underline below links */
 #navbarSupportedContent ul li.nav-item {
     position: relative;
     text-decoration: none;
     font-size: 1.25rem;
     padding: 0 30px;
 }
-#navbarSupportedContent ul li.nav-item a {
-    color: var(--nav-link-color);
-}
 
+/* Animated underline below links */
+#navbarSupportedContent ul li.nav-item a,
 #navbarSupportedContent ul li.nav-item:hover {
     color: var(--nav-link-color);
-    font-weight: bold;
 }
 
 /* 2 rules are defined for a normal fade-in but a faster fade-out */
@@ -96,20 +89,6 @@
  */
 .dropdown-item {
     color: var(--dropdown-link-color) !important;
-}
-
-@media (min-width: 1000px) {
-    /* Fade-in/-out bootstrap dropdowns */
-    .dropdown-menu.fade {
-        display: block;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.25s ease;
-    }
-    .show > .dropdown-menu.fade {
-        pointer-events: auto;
-        opacity: 1;
-    }
 }
 
 .dropdown-menu {
