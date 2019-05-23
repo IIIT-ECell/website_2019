@@ -63,12 +63,14 @@ footer a:hover {
 .fa-facebook:hover {
     background: var(--fb-col);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .fa-instagram:hover {
     background: var(--insta-col);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
