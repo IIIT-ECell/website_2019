@@ -26,6 +26,10 @@ body {
         margin-right: 0;
     }
 
+    .image img {
+        margin: 0;
+    }
+
     .stats-display {
         display: none;
     }
