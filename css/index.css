@@ -15,8 +15,18 @@ body {
     width: 75%;
     position: relative;
     margin: 2rem 10px;
-    background-color: rgb(228, 200, 129);
     border-radius: 2rem;
+}
+
+.row-megathon {
+    background-color: rgb(228, 200, 129);
+}
+.row-fail {
+    background-color: rgba(212, 49, 41, 47%);
+}
+.row-startup {
+    color: white;
+    background-color: #185a9d;
 }
 
 @media (max-width: 900px) {
@@ -34,7 +44,7 @@ body {
         display: none;
     }
 
-    .container-fluid .row {
+    .container-fluid.tiles-container .row {
         margin-top: 2rem !important;
         margin-bottom: 2rem !important;
     }
@@ -76,6 +86,10 @@ body {
     margin-bottom: 1.2rem !important;
     color: #002142;
     font-family: "CustomHeading", sans-serif;
+}
+
+.row-startup .para-head {
+    color: white;
 }
 
 .para-text {
@@ -157,7 +171,6 @@ body {
     width: 90%;
     max-width: 750px;
     margin: 4rem auto;
-    margin-top: 8rem;
     padding: 2rem 0;
     border: 8px solid teal;
     border-radius: 2rem;
