@@ -1,18 +1,33 @@
+@import url("fonts.css");
+
 html,
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
+
 .tiles-container {
-    width: 90%;
     position: relative;
     max-width: 1300px;
 }
+
 .tile-row {
-    width: 90%;
+    width: 75%;
     position: relative;
-    margin-top: 10px;
+    margin: 10px;
 }
+
+@media (max-width: 900px) {
+    .tile-row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .stats-display {
+        display: none;
+    }
+}
+
 .para {
     max-width: 90vw;
     box-sizing: border-box;
@@ -29,6 +44,7 @@ body {
     height: 100%; /* this allows for all fancy alignments of the image */
     position: relative;
 }
+
 .image-right,
 .para-right,
 .tile-row-right {
@@ -39,16 +55,75 @@ body {
     float: left;
 }
 
-/* Testimonial box work */
-
-.testimonial-container {
-    width: 50%;
-    margin: 0 auto;
+.para-head {
+    font-weight: bold;
+    margin-bottom: 1.2rem !important;
+    color: #002142;
+    font-family: "MegathonBoxHeading", sans-serif;
 }
 
+.para-text {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+}
+
+.cta-btn {
+    display: block;
+    padding: 10px 60px;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem !important;
+    background: #185a9d;
+    /* background: linear-gradient(90deg, #185a9d, #43cea2); */
+    color: white;
+}
+
+/* at small device, remove image and display text full center */
+@media (max-width: 550px) {
+    .para {
+        width: 100%;
+        max-width: 100%;
+    }
+    .image {
+        display: none;
+    }
+    .para-head {
+        text-align: center;
+    }
+    .cta-btn {
+        margin: 1.2rem auto 3rem auto !important;
+    }
+}
+
+/* Specific positioning */
+.megathon-image {
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
+.stats-display {
+    position: absolute;
+    right: 0;
+    bottom: -15%;
+    color: #185a9d;
+}
+
+.row-megathon {
+    background-color: rgba(40, 205, 193, 0.47);
+}
+
+/* Testimonial box */
+
 .testimonial-container {
-    width: 50%;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 750px;
+    margin: 4rem auto;
+    margin-top: 8rem;
+    padding: 2rem 0;
+    border: 1px solid black;
+    border-radius: 2rem;
 }
 
 .testimonial-container .profilepic {
@@ -56,3 +131,57 @@ body {
     height: 50px;
 }
 
+.testimonial-container .person-info > div,
+.testimonial-container .text {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.testimonial-container .profilepic img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 100%;
+    background-color: white;
+}
+
+.person-info {
+    max-width: 40%;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.testimonial-container .text {
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .testimonial-container .text {
+        font-size: 1rem;
+    }
+}
+
+.testimonial-container .person-info .profilepic {
+    width: 75px;
+    height: 75px;
+}
+
+.testimonial-container .person-info .name,
+.testimonial-container .person-info .designation {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
