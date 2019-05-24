@@ -6,6 +6,12 @@
     --nav-bg: rgba(0, 34, 64, 0.8);
 }
 
+h1,
+h2,
+h3 {
+    font-family: "CustomHeading", sans-serif;
+}
+
 #navbar {
     background-color: var(--nav-bg-init);
 

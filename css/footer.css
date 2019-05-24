@@ -1,3 +1,29 @@
+:root {
+    --fb-col: linear-gradient(
+        to bottom,
+        #18affe,
+        #139ff7,
+        #1197f6,
+        #0b86ed,
+        #0476e6,
+        #0168e1,
+        #0064e0,
+        #0062e1,
+        #075cd9
+    );
+    --insta-col: linear-gradient(
+        to bottom left,
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #f77737,
+        #fcaf45
+    );
+    --twit-col: #1da1f2;
+    --yt-col: #ff0000;
+}
+
 html,
 body {
     height: 100%;
@@ -32,4 +58,26 @@ footer a {
 footer a:hover {
     color: #a7fffd;
     text-decoration: none;
+}
+
+.fa-facebook:hover {
+    background: var(--fb-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-instagram:hover {
+    background: var(--insta-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter:hover {
+    color: var(--twit-col);
+}
+
+.fa-youtube:hover {
+    color: var(--yt-col);
 }
