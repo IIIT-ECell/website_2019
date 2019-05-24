@@ -1,11 +1,74 @@
 .main-head {
-	position: relative;
-  	background: url("../assets/imgs/team.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
+    position: relative;
+    background: url("../assets/imgs/team.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 
-	height: 100%;
-	width: auto;
+    height: 100%;
+    width: auto;
+}
+
+.tooltip-social {
+    position: relative;
+}
+
+.tooltip-social .tooltip-content {
+    visibility: hidden;
+    width: 100%;
+    background-color: rgba(40, 205, 193, 0.47);
+    color: #002240;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.tooltip-social .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(40, 205, 193, 0.47) transparent transparent transparent;
+}
+
+.tooltip-social:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.palette-bg-green {
+    background-color: #4db6ac;
+}
+
+.palette-bg-red {
+    background-color: #dd5e58;
+}
+
+.palette-bg-blue {
+    background-color: #3b6fc1;
+}
+
+.palette-bg-grey {
+    background-color: #ebebeb;
+}
+
+.head-img {
+    border: 8px solid white;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    height: 225px;
+}
+
+.member-img {
+    height: 100px;
 }

@@ -4,6 +4,8 @@ layout: page
 <link rel="stylesheet" type="text/css" href="../css/team.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/team.js"></script>
+
 <header class="w-100 h-75">
 	<div class="container-fluid h-100 main-head">
 		<div class="row h-100">
@@ -28,6 +30,27 @@ layout: page
 	</div>
 </div>
 
+<div class="container py-5">
+	<div class="row py-5">
+		<div class="col text-center">
+			<h1>Overall Coordinators</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col text-center">
+			<figure class="figure">
+				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey head-img">
+				 <figcaption class="figure-caption">Aishwarya Srivastava</figcaption>
+			</figure>
+
+			<figure class="figure">
+				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red head-img">
+				<figcaption class="figure-caption">Ayush Shivani</figcaption>
+			</figure>
+		</div>
+	</div>
+</div>
+
 {% for team in site.data.team %}
 
 <div class="container" id="{{team.team}}">
@@ -36,19 +59,49 @@ layout: page
 
 	<div class="container-fluid py-5">
 		<div class="row">
-		{% for head in team.heads %}
-			<div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-				<img src="../assets/imgs/team/{{head.img}}" class="rounded-circle bg-primary" height="250">
+
+			{% if team.multiple %}
+			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
+				{% for head in team.heads %}
+				<figure class="figure">
+					<div class="tooltip-social">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
+						<div class="tooltip-content">
+							Social Media Icons
+						</div>
+					</div>
+
+					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
+				</figure>
+
+
+				<div style="padding-right: 10px;"></div>
+				{% endfor %}
 			</div>
-		{% endfor %}
+			{% else %}
+			<div class="col-12 col-md-5 d-flex text-center justify-content-center align-items-center member">
+				{% for head in team.heads %}
+				<figure class="figure">
+					<div class="tooltip-social">
+						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
+						<div class="tooltip-content">
+							Social Media Icons
+						</div>
+					</div>
+					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
+				</figure>
+				{% endfor %}
+			</div>			
+			{% endif %}
+		
 			<div class="col-12 col-md-6">
 				<div class="py-4">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor.
 				</div>
 
 				<div class="team-members">
 					{% for member in team.members %}
-					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded {{ member.bg }}" height="50" data-toggle="tooltip" data-placement="top" title="{{ member.name }}">
+					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img">
 					{% endfor %}
 				</div>
 			</div>
