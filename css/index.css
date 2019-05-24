@@ -129,6 +129,12 @@ body {
     right: 102%;
     color: #185a9d;
 }
+.stats-display-startup {
+    width: fit-content;
+    top: 50%;
+    left: 102%;
+    color: #185a9d;
+}
 
 .row-megathon {
     background-color: rgba(40, 205, 193, 0.47);
@@ -137,9 +143,6 @@ body {
 .row-fail {
     /*because of the participants text thing*/
     margin-top: calc(10px + 6%);
-}
-
-.fail-image {
 }
 
 /* Testimonial box */
