@@ -34,8 +34,9 @@ body {
         display: none;
     }
 
-    .row-fail {
-        margin-top: 2rem;
+    .container-fluid .row {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
 }
 
@@ -95,6 +96,10 @@ body {
     color: white;
 }
 
+.row-fail .cta-btn {
+    margin-left: 60% !important;
+}
+
 /* at small device, remove image and display text full center */
 @media (max-width: 550px) {
     .para {
@@ -125,14 +130,14 @@ body {
 }
 .stats-display-fail {
     width: fit-content;
-    top: 0;
-    right: 102%;
+    left: 3%;
+    bottom: -13%;
     color: #185a9d;
 }
 .stats-display-startup {
     width: fit-content;
-    top: 50%;
-    left: 102%;
+    right: 3%;
+    bottom: -13%;
     color: #185a9d;
 }
 
@@ -140,9 +145,10 @@ body {
     background-color: rgba(40, 205, 193, 0.47);
 }
 
+/* add extra margin due to stats display */
 .row-fail {
-    /*because of the participants text thing*/
-    margin-top: calc(10px + 6%);
+    margin-top: calc(2rem + 4%);
+    margin-bottom: calc(2rem + 4%);
 }
 
 /* Testimonial box */
