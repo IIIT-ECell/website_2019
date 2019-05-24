@@ -100,18 +100,16 @@ body {
 }
 
 .cta-btn {
-    display: block;
     padding: 10px 60px;
     border-radius: 1.5rem;
     font-size: 1.5rem;
     margin-top: 1.2rem !important;
     background: #185a9d;
-    /* background: linear-gradient(90deg, #185a9d, #43cea2); */
     color: white;
 }
 
-.row-fail .cta-btn {
-    margin-left: 60% !important;
+.row-fail .cta-btn-container {
+    text-align: right;
 }
 
 /* at small device, remove image and display text full center */
@@ -171,6 +169,7 @@ body {
     width: 90%;
     max-width: 750px;
     margin: 4rem auto;
+    margin-top: 6rem;
     padding: 2rem 0;
     border: 8px solid teal;
     border-radius: 2rem;
