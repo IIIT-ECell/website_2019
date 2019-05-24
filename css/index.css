@@ -14,17 +14,24 @@ body {
 .tile-row {
     width: 75%;
     position: relative;
-    margin: 10px;
+    margin: 2rem 10px;
+    background-color: rgb(228, 200, 129);
+    border-radius: 2rem;
 }
 
 @media (max-width: 900px) {
     .tile-row {
         width: 100%;
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .stats-display {
         display: none;
+    }
+
+    .row-fail {
+        margin-top: 2rem;
     }
 }
 
@@ -43,6 +50,10 @@ body {
     width: 20%;
     height: 100%; /* this allows for all fancy alignments of the image */
     position: relative;
+}
+
+.stats-display {
+    position: absolute;
 }
 
 .image-right,
@@ -103,15 +114,28 @@ body {
     margin-top: -30%;
 }
 
-.stats-display {
-    position: absolute;
+.stats-display-megathon {
     right: 0;
     bottom: -15%;
+    color: #185a9d;
+}
+.stats-display-fail {
+    width: fit-content;
+    top: 0;
+    right: 102%;
     color: #185a9d;
 }
 
 .row-megathon {
     background-color: rgba(40, 205, 193, 0.47);
+}
+
+.row-fail {
+    /*because of the participants text thing*/
+    margin-top: calc(10px + 6%);
+}
+
+.fail-image {
 }
 
 /* Testimonial box */
@@ -122,7 +146,7 @@ body {
     margin: 4rem auto;
     margin-top: 8rem;
     padding: 2rem 0;
-    border: 1px solid black;
+    border: 8px solid teal;
     border-radius: 2rem;
 }
 
