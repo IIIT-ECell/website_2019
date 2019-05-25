@@ -5,24 +5,33 @@ layout: page
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 
 <div class="container">
-	<div class="card">
-	  <div class="card-header palette-bg-green">
-	    <h1>UniSpotter</h1>
-	  </div>
-	  <div class="card-body">
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-12 col-md-8 text-justify">
-	    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem. Etiam sit amet ipsum vel sapien fermentum pulvinar. Vestibulum feugiat lorem eget diam efficitur, in vestibulum est sollicitudin. Morbi vestibulum, elit elementum bibendum commodo, mauris purus interdum purus, vitae tempor nisl odio sed sapien.
-	    			<br><br>
-	    			<a href="#" class="btn btn-light">Read More</a>
-	    		</div>
+	{% for post in site.posts %}
+		<div class="row">
+			<div class="col">
+				<div class="card">
+				  <div class="card-header palette-bg-{{ post.bg }}">
+				    <h1>{{ post.title }}</h1>
+				  </div>
+				  <div class="card-body">
+				    <div class="container">
+				    	<div class="row">
+				    		<div class="col-12 col-md-8 text-justify">
+				    			{{ post.content|slice:0,350 }}
+				    			...
+				    			<br><br>
+				    			<a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
+				    		</div>
 
-	    		<div class="col-12 col-md-4">
-	    			<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
-	    		</div>
-	    	</div>
-	    </div>
-	  </div>
-	</div>
+				    		<div class="col-12 col-md-4">
+				    			<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
+				    		</div>
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-3">&nbsp;</div>
+	{% endfor %}
 </div>

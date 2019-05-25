@@ -5,6 +5,7 @@ title : An Interaction With Mr. Ronnie Screwvala
 categories : events talk_session
 img : ronnie.jpg 
 permalink: /:categories/:title.html
+bg : green
 
 ---
 
