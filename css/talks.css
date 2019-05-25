@@ -1,12 +1,16 @@
 .card {
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.card-header {
+	border-radius: 0px;
 }
 
 .palette-bg-green {
-    background-color: #99E7E2;
+    background-color: #99e7e2;
 }
 
 .palette-bg-red {
