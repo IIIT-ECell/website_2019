@@ -16,7 +16,7 @@ layout: page
 				    <div class="container">
 				    	<div class="row">
 				    		<div class="col-12 col-md-8 text-justify">
-				    			{{ post.content|slice:0,350 }}
+				    			{{ post.content | truncatewords:50 }}
 				    			...
 				    			<br><br>
 				    			<a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
