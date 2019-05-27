@@ -2,3 +2,8 @@
     font-family: "CustomHeading";
     src: url(../assets/fonts/OPTIAuvantGothic-Medium.woff) format("woff");
 }
+
+@font-face {
+    font-family: "BodyFont";
+    src: url(../assets/fonts/MuseoSansForDell-Regular.woff) format("woff");
+}
