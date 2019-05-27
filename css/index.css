@@ -103,8 +103,11 @@ body {
     padding: 10px 60px;
     border-radius: 1.5rem;
     margin-top: 1.2rem !important;
-    background: #185a9d;
     color: white;
+}
+
+.cta-btn:hover {
+	color: white;
 }
 
 .row-fail .cta-btn-container {
@@ -244,4 +247,36 @@ body {
 .testimonial-container .person-info .designation {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.palette-bg-green {
+    background-color: #1BBFB3;
+}
+
+.palette-bg-green:hover {
+    background-color: #4db6ac;
+}
+
+.txt-green {
+	color: #1BBFB3;
+}
+
+.palette-bg-red {
+    background-color: #D43129;
+}
+
+.palette-bg-red:hover {
+	background-color: #dd5e58;
+}
+
+.palette-bg-blue {
+    background-color: #002240;
+}
+
+.palette-bg-blue:hover {
+	background-color: #084880;
+}
+
+.palette-bg-grey {
+    background-color: #ebebeb;
 }
