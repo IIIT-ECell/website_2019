@@ -29,7 +29,7 @@ body {
     background-color: #185a9d;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     .tile-row {
         width: 100%;
         margin-left: 0;
@@ -178,14 +178,54 @@ body {
 
 /* Testimonial box */
 
+#testimonial-parent {
+    /* to give space to the stats text above*/
+    margin-top: 8rem;
+
+    /* because the ancestor must be a positioned element for absolute positioning to work */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .testimonial-container {
-    width: 90%;
-    max-width: 750px;
-    margin: 4rem auto;
-    margin-top: 6rem;
-    padding: 2rem 0;
-    border: 8px solid teal;
+    background-color: white;
+    border: 1px solid rgb(197, 197, 197);
     border-radius: 2rem;
+
+    width: 50%;
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: absolute;
+    top: 6rem;
+    left: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonial-container {
+        position: absolute;
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .testimonial-container {
+        position: absolute;
+        top: -3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial-container {
+        position: static;
+    }
+
+    #testimonial-parent {
+        margin: 2rem 0;
+    }
 }
 
 .testimonial-container .profilepic {
@@ -228,7 +268,7 @@ body {
 }
 
 .testimonial-container .text {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
@@ -245,7 +285,7 @@ body {
 .testimonial-container .person-info .name,
 .testimonial-container .person-info .designation {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .palette-bg-green {
