@@ -6,6 +6,10 @@
     --nav-bg: rgba(0, 34, 64, 0.8);
 }
 
+body {
+    font-family: "BodyFont" !important;
+}
+
 h1,
 h2,
 h3 {

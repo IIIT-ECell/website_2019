@@ -14,17 +14,39 @@ body {
 .tile-row {
     width: 75%;
     position: relative;
-    margin: 10px;
+    margin: 2rem 10px;
+    border-radius: 2rem;
+}
+
+.row-megathon {
+    background-color: rgb(228, 200, 129);
+}
+.row-fail {
+    background-color: rgba(212, 49, 41, 47%);
+}
+.row-startup {
+    color: white;
+    background-color: #185a9d;
 }
 
 @media (max-width: 900px) {
     .tile-row {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .image img {
         margin: 0;
     }
 
     .stats-display {
         display: none;
+    }
+
+    .container-fluid.tiles-container .row {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
 }
 
@@ -45,6 +67,10 @@ body {
     position: relative;
 }
 
+.stats-display {
+    position: absolute;
+}
+
 .image-right,
 .para-right,
 .tile-row-right {
@@ -62,22 +88,29 @@ body {
     font-family: "CustomHeading", sans-serif;
 }
 
+.row-startup .para-head {
+    color: white;
+}
+
 .para-text {
     text-align: justify;
-    font-size: 1.2rem;
     margin-top: 1.2rem !important;
     margin-bottom: 1.2rem !important;
 }
 
 .cta-btn {
-    display: block;
     padding: 10px 60px;
     border-radius: 1.5rem;
-    font-size: 1.5rem;
     margin-top: 1.2rem !important;
-    background: #185a9d;
-    /* background: linear-gradient(90deg, #185a9d, #43cea2); */
     color: white;
+}
+
+.cta-btn:hover {
+    color: white;
+}
+
+.row-fail .cta-btn-container {
+    text-align: right;
 }
 
 /* at small device, remove image and display text full center */
@@ -93,7 +126,7 @@ body {
         text-align: center;
     }
     .cta-btn {
-        margin: 1.2rem auto 3rem auto !important;
+        margin: 1.2rem auto 3rem calc($spacer * 3) !important;
     }
 }
 
@@ -103,15 +136,44 @@ body {
     margin-top: -30%;
 }
 
-.stats-display {
-    position: absolute;
+.stats-display-megathon {
     right: 0;
     bottom: -15%;
     color: #185a9d;
 }
 
+.fail-image {
+    margin-left: -30%;
+    margin-top: -40%;
+}
+
+.stats-display-fail {
+    width: fit-content;
+    left: 3%;
+    bottom: -13%;
+    color: #185a9d;
+}
+
+.startup-image {
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
+.stats-display-startup {
+    width: fit-content;
+    right: 3%;
+    bottom: -13%;
+    color: #185a9d;
+}
+
 .row-megathon {
     background-color: rgba(40, 205, 193, 0.47);
+}
+
+/* add extra margin due to stats display */
+.row-fail {
+    margin-top: calc(2rem + 4%);
+    margin-bottom: calc(2rem + 4%);
 }
 
 /* Testimonial box */
@@ -120,9 +182,9 @@ body {
     width: 90%;
     max-width: 750px;
     margin: 4rem auto;
-    margin-top: 8rem;
+    margin-top: 6rem;
     padding: 2rem 0;
-    border: 1px solid black;
+    border: 8px solid teal;
     border-radius: 2rem;
 }
 
@@ -184,4 +246,36 @@ body {
 .testimonial-container .person-info .designation {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.palette-bg-green {
+    background-color: #1bbfb3;
+}
+
+.palette-bg-green:hover {
+    background-color: #4db6ac;
+}
+
+.txt-green {
+    color: #1bbfb3;
+}
+
+.palette-bg-red {
+    background-color: #d43129;
+}
+
+.palette-bg-red:hover {
+    background-color: #dd5e58;
+}
+
+.palette-bg-blue {
+    background-color: #002240;
+}
+
+.palette-bg-blue:hover {
+    background-color: #084880;
+}
+
+.palette-bg-grey {
+    background-color: #ebebeb;
 }
