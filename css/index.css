@@ -107,7 +107,7 @@ body {
 }
 
 .cta-btn:hover {
-	color: white;
+    color: white;
 }
 
 .row-fail .cta-btn-container {
@@ -250,7 +250,7 @@ body {
 }
 
 .palette-bg-green {
-    background-color: #1BBFB3;
+    background-color: #1bbfb3;
 }
 
 .palette-bg-green:hover {
@@ -258,15 +258,15 @@ body {
 }
 
 .txt-green {
-	color: #1BBFB3;
+    color: #1bbfb3;
 }
 
 .palette-bg-red {
-    background-color: #D43129;
+    background-color: #d43129;
 }
 
 .palette-bg-red:hover {
-	background-color: #dd5e58;
+    background-color: #dd5e58;
 }
 
 .palette-bg-blue {
@@ -274,7 +274,7 @@ body {
 }
 
 .palette-bg-blue:hover {
-	background-color: #084880;
+    background-color: #084880;
 }
 
 .palette-bg-grey {
