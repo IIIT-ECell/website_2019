@@ -126,7 +126,7 @@ body {
         text-align: center;
     }
     .cta-btn {
-        margin: 1.2rem auto 3rem auto !important;
+        margin: 1.2rem auto 3rem calc($spacer * 3) !important;
     }
 }
 
