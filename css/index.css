@@ -139,12 +139,24 @@ body {
     bottom: -15%;
     color: #185a9d;
 }
+
+.fail-image {
+    margin-left: -30%;
+    margin-top: -40%;
+}
+
 .stats-display-fail {
     width: fit-content;
     left: 3%;
     bottom: -13%;
     color: #185a9d;
 }
+
+.startup-image {
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
 .stats-display-startup {
     width: fit-content;
     right: 3%;
