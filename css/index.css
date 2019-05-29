@@ -194,14 +194,16 @@ body {
     border: 1px solid rgb(197, 197, 197);
     border-radius: 2rem;
 
-    width: 50%;
     max-width: 750px;
 
     margin: 0 auto;
     padding: 2rem 0;
     position: absolute;
     top: 6rem;
-    left: 25%;
+    /* this hack works for horizontal alignment :) */
+    /* https://stackoverflow.com/questions/16758102 */
+    left: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -220,7 +222,9 @@ body {
 
 @media screen and (max-width: 992px) {
     .testimonial-container {
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     #testimonial-parent {
