@@ -79,7 +79,7 @@
 .member-img-social {
     width: 100%;
     height: 100%;
-    transition: 0.5s ease;
+    transition: 0.1s ease;
     visibility: hidden;
     position: absolute;
     top: 50%;
