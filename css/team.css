@@ -146,6 +146,8 @@
 
 .photo-name {
     font-size: 1rem;
+    /* slightly black text */
+    color: rgb(25, 25, 25);
 }
 
 .head-img {
@@ -188,4 +190,12 @@
     .team-members {
         justify-content: space-evenly;
     }
+}
+
+#overallcoord {
+    text-align: center;
+}
+
+#overallcoord .row .col-12 {
+    margin: 0 auto;
 }
