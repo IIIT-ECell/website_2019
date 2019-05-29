@@ -79,6 +79,14 @@
     width: 24%;
 }
 
+.team-members {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 992px) and (min-width: 769px), (max-width: 502px) {
     .team-member {
         width: 49%;
