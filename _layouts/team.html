@@ -30,32 +30,10 @@ layout: page
 	</div>
 </div>
 
-<div class="container py-5">
-	<hr>
-	<div class="row py-5">
-		<div class="col text-center">
-			<h1>Overall Coordinators</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col text-center">
-			<figure class="figure">
-				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey head-img">
-				 <figcaption class="figure-caption text-muted photo-name">Aishwarya Srivastava</figcaption>
-			</figure>
-
-			<figure class="figure">
-				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red head-img">
-				<figcaption class="figure-caption text-muted photo-name">Ayush Shivani</figcaption>
-			</figure>
-		</div>
-	</div>
-</div>
-
 {% for team in site.data.team %}
 
 <div class="container" id="{{team.team}}">
-	<hr>
+<hr>
 	<h1>{{ team.team }}</h1>
 
 	<div class="container-fluid py-5">

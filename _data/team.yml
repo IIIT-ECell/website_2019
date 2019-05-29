@@ -1,3 +1,21 @@
+- team: Overall Coordinators
+  id: overallcoord
+  heads:
+      - name: Ayush Shivani
+        img: AyushShivani_Head.png
+        fb: https://facebook.com/ayushshivani
+        in:
+        mail: ayush.shivani@students.iiit.ac.in
+        phone: 9559932625
+        bg: grey
+      - name: Aishwarya Srivastava
+        img: AishwaryaSrivastava_Head.png
+        fb: https://www.facebook.com/aishwarya.srivastava.378
+        in: https://www.linkedin.com/in/aishwarya-srivastava-498261155
+        mail: aishwarya.srivastava@research.iiit.ac.in
+        phone: 9559932625
+        bg: red
+
 - team: Tech
   heads:
       - name: Abhigyan Ghosh
