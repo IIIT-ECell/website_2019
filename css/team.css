@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 .main-head {
     position: relative;
     background: url("../assets/imgs/team.svg");
@@ -17,7 +19,7 @@
 .tooltip-social .tooltip-content {
     visibility: hidden;
     width: 100%;
-    background-color: rgba(40, 205, 193, 0.47);
+    background-color: rgba(40, 205, 194, 0.95);
     color: #002240;
     text-align: center;
     border-radius: 6px;
@@ -39,12 +41,34 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(40, 205, 193, 0.47) transparent transparent transparent;
+    border-color: rgba(40, 205, 193, 0.95) transparent transparent transparent;
 }
 
 .tooltip-social:hover .tooltip-content {
     visibility: visible;
     opacity: 1;
+}
+
+.tooltip-social-icon {
+    vertical-align: middle;
+}
+
+.tooltip-social .fab,
+.tooltip-social .fa {
+    color: #185a9d !important;
+    vertical-align: middle;
+}
+
+.tooltip-social .fa:hover {
+    color: #002142 !important;
+}
+
+.tooltip-social .fab:hover {
+    color: #002142 !important;
+    background: initial;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
 }
 
 .palette-bg-green {
@@ -63,10 +87,15 @@
     background-color: #ebebeb;
 }
 
+.photo-name {
+    font-size: 1rem;
+}
+
 .head-img {
     border: 8px solid white;
     box-shadow: 0 0 10px rgb(200, 200, 200);
     height: 225px;
+    margin: 0 0.5rem;
 }
 
 .member-img {

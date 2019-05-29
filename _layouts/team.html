@@ -24,13 +24,14 @@ layout: page
 
 <div class="container py-5">
 	<div class="row">
-		<div class="col text-center">
+		<div class="col text-justify">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor. Nam scelerisque, arcu ac feugiat mattis, purus dolor placerat diam, quis vestibulum leo turpis id odio. Aliquam a ligula quis felis sollicitudin sagittis vulputate tempor lorem. Etiam sit amet ipsum vel sapien fermentum pulvinar. Vestibulum feugiat lorem eget diam efficitur, in vestibulum est sollicitudin. Morbi vestibulum, elit elementum bibendum commodo, mauris purus interdum purus, vitae tempor nisl odio sed sapien. Donec placerat vel est aliquam porttitor. Nullam sed ipsum in neque pulvinar sodales. Vivamus nec vestibulum arcu. Fusce suscipit sapien a dapibus convallis. Aliquam id sapien non elit malesuada pellentesque. Nulla porta risus non risus condimentum, in vestibulum nunc varius. Quisque ac vulputate libero, sit amet eleifend tortor. Donec vel auctor magna. Nunc quis quam sollicitudin, tincidunt erat at, convallis est. Nam sit amet dictum dui.
 		</div>
 	</div>
 </div>
 
 <div class="container py-5">
+	<hr>
 	<div class="row py-5">
 		<div class="col text-center">
 			<h1>Overall Coordinators</h1>
@@ -40,12 +41,12 @@ layout: page
 		<div class="col text-center">
 			<figure class="figure">
 				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey head-img">
-				 <figcaption class="figure-caption">Aishwarya Srivastava</figcaption>
+				 <figcaption class="figure-caption text-muted photo-name">Aishwarya Srivastava</figcaption>
 			</figure>
 
 			<figure class="figure">
 				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red head-img">
-				<figcaption class="figure-caption">Ayush Shivani</figcaption>
+				<figcaption class="figure-caption text-muted photo-name">Ayush Shivani</figcaption>
 			</figure>
 		</div>
 	</div>
@@ -67,14 +68,14 @@ layout: page
 					<div class="tooltip-social">
 						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
 						<div class="tooltip-content">
-							<li class="list-inline-item"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
-							<li class="list-inline-item"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-instagram"></i></h3></a></li>
-							<li class="list-inline-item"><a href="mailto:{{head.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a></li>
-							<li class="list-inline-item"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
+							<li class="list-inline-item tooltip-social-icon"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
+							<li class="list-inline-item tooltip-social-icon"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
+							<li class="list-inline-item tooltip-social-icon"><a href="mailto:{{head.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a></li>
+							<li class="list-inline-item tooltip-social-icon"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
 						</div>
 					</div>
 
-					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center text-muted photo-name">{{head.name}}</figcaption>
 				</figure>
 
 
@@ -89,12 +90,12 @@ layout: page
 						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
 						<div class="tooltip-content">
 							<li class="list-inline-item"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
-							<li class="list-inline-item"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-instagram"></i></h3></a></li>
+							<li class="list-inline-item"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
 							<li class="list-inline-item"><a href="mailto:{{head.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a></li>
 							<li class="list-inline-item"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
 						</div>
 					</div>
-					<figcaption class="text-center">{{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center text-muted photo-name">{{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
 			</div>
@@ -109,7 +110,7 @@ layout: page
 					{% for member in team.members %}
 						<div class="team-member">
 							<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}"><br>
-							<a href="#" class="text-muted">{{member.name}}</a>
+							<a href="#" class="text-muted photo-name">{{member.name}}</a>
 						</div>
 					{% endfor %}
 				</div>
