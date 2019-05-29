@@ -103,7 +103,8 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
     <div style="clear: both;"></div>
 </div>
 <div id="testimonial-parent">
-    <div class="testimonial-container carousel slide" data-ride="carousel">
+    <!-- id is necessary for carousel controls to work -->
+    <div id="testimonial-container" class="testimonial-container carousel slide" data-ride="carousel">
         {% assign moniallist = site.data.testimonials %}
         <ol class="carousel-indicators">
             {% assign num = 0 %}

@@ -30,32 +30,13 @@ layout: page
 	</div>
 </div>
 
-<div class="container py-5">
-	<hr>
-	<div class="row py-5">
-		<div class="col text-center">
-			<h1>Overall Coordinators</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col text-center">
-			<figure class="figure">
-				<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="figure-img rounded-circle palette-bg-grey head-img">
-				 <figcaption class="figure-caption text-muted photo-name">Aishwarya Srivastava</figcaption>
-			</figure>
-
-			<figure class="figure">
-				<img src="../assets/imgs/team/AyushShivani_Head.png" class=" figure-img rounded-circle palette-bg-red head-img">
-				<figcaption class="figure-caption text-muted photo-name">Ayush Shivani</figcaption>
-			</figure>
-		</div>
-	</div>
-</div>
-
 {% for team in site.data.team %}
-
-<div class="container" id="{{team.team}}">
-	<hr>
+{%assign idUse = team.team %}
+{% if team.id %}\
+	{%assign idUse = team.id %}
+{% endif %}
+<div class="container" id="{{idUse}}">
+<hr>
 	<h1>{{ team.team }}</h1>
 
 	<div class="container-fluid py-5">
@@ -75,9 +56,8 @@ layout: page
 						</div>
 					</div>
 
-					<figcaption class="figure-caption text-center text-muted photo-name">{{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center photo-name">{{head.name}}</figcaption>
 				</figure>
-
 
 				<div style="padding-right: 10px;"></div>
 				{% endfor %}
@@ -95,39 +75,41 @@ layout: page
 							<li class="list-inline-item tooltip-social-icon"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
 						</div>
 					</div>
-					<figcaption class="figure-caption text-center text-muted photo-name">{{head.name}}</figcaption>
+					<figcaption class="figure-caption text-center photo-name">{{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
 			</div>
 			{% endif %}
 
-			<div class="col-12 col-md-6">
-				<div class="py-4">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor.
-				</div>
+			{% if team.id != "overallcoord" %}
+				<div class="col-12 col-md-6">
+					<div class="py-4">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor.
+					</div>
 
-				<div class="team-members">
-					{% for member in team.members %}
-						<div class="team-member">
-							<div class="member-img-container">
-								<div class="member-img-social">
-									<div class="member-img-social-row">
-										<a href="{{member.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a>
-										<a href="{{member.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a>
+					<div class="team-members">
+						{% for member in team.members %}
+							<div class="team-member">
+								<div class="member-img-container">
+									<div class="member-img-social">
+										<div class="member-img-social-row">
+											<a href="{{member.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a>
+											<a href="{{member.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a>
+										</div>
+										<div class="member-img-social-row">
+											<a href="mailto:{{member.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a>
+											<a href="tel:{{member.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a>
+										</div>
 									</div>
-									<div class="member-img-social-row">
-										<a href="mailto:{{member.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a>
-										<a href="tel:{{member.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a>
-									</div>
+									<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}">
 								</div>
-								<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}">
+								<br>
+								<span class="text-muted photo-name">{{member.name}}</span>
 							</div>
-							<br>
-							<span class="text-muted photo-name">{{member.name}}</span>
-						</div>
-					{% endfor %}
+						{% endfor %}
+					</div>
 				</div>
-			</div>
+			{% endif %}
 		</div>
 	</div>
 </div>

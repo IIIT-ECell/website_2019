@@ -79,7 +79,7 @@
 .member-img-social {
     width: 100%;
     height: 100%;
-    transition: 0.5s ease;
+    transition: 0.1s ease;
     visibility: hidden;
     position: absolute;
     top: 50%;
@@ -146,6 +146,8 @@
 
 .photo-name {
     font-size: 1rem;
+    /* slightly black text */
+    color: rgb(25, 25, 25);
 }
 
 .head-img {
@@ -188,4 +190,12 @@
     .team-members {
         justify-content: space-evenly;
     }
+}
+
+#overallcoord {
+    text-align: center;
+}
+
+#overallcoord .row .col-12 {
+    margin: 0 auto;
 }
