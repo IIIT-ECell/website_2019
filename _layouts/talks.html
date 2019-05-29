@@ -5,33 +5,51 @@ layout: page
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
 
 <div class="container">
-	{% for post in site.posts %}
-		<div class="row">
-			<div class="col">
-				<div class="card">
-				  <div class="card-header palette-bg-{{ post.bg }}">
-				    <h1>{{ post.title }}</h1>
-				  </div>
-				  <div class="card-body">
-				    <div class="container">
-				    	<div class="row">
-				    		<div class="col-12 col-md-8 text-justify">
-				    			{{ post.content | truncatewords:50 }}
-				    			...
-				    			<br><br>
-				    			<a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
-				    		</div>
+  {% assign alternator = 1 %}
+  {% for post in site.posts %}
+    {% if post.path contains 'talks' %}
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header palette-bg-{{ post.bg }}">
+            <h1>{{ post.title }}</h1>
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                {% if alternator == 1 %}
+                  <div class="col-12 col-md-8 text-justify">
+                    {{ post.content | truncatewords:50 }}
+                    ...
+                    <br><br>
+                    <a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
+                  </div>
 
-				    		<div class="col-12 col-md-4">
-				    			<img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
-				    		</div>
-				    	</div>
-				    </div>
-				  </div>
-				</div>
-			</div>
-		</div>
+                  <div class="col-12 col-md-4">
+                    <img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
+                  </div>
+                  {% assign alternator = 0 %}
+                {% else %}
+                  <div class="col-12 col-md-4">
+                    <img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
+                  </div>
 
-		<div class="py-3">&nbsp;</div>
-	{% endfor %}
+                  <div class="col-12 col-md-8 text-justify">
+                    {{ post.content | truncatewords:50 }}
+                    ...
+                    <br><br>
+                    <a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
+                  </div>
+                  {% assign alternator = 1 %}
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-3">&nbsp;</div>
+    {% endif %}
+  {% endfor %}
 </div>
