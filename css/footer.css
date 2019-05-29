@@ -81,3 +81,8 @@ footer a:hover {
 .fa-youtube:hover {
     color: var(--yt-col);
 }
+
+/* almost white color */
+.footer-text {
+    color: rgb(230, 230, 230);
+}
