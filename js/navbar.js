@@ -91,15 +91,3 @@ function init() {
         $("nav").addClass("navbar-curves");
     }
 }
-
-function openNav() {
-    $("#fullNav").css("height", "100%");
-    $("#fullNav").css("z-index", "200");
-    $("nav").css("z-index", "0");
-}
-
-function closeNav() {
-    $("#fullNav").css("height", "0%");
-    $("#fullNav").css("z-index", "0");
-    $("nav").css("z-index", "200");
-}
