@@ -2,32 +2,32 @@
   url: /
 - title: Our work
   sublinks:
-    - title: Events
-      url: /events.html
-    - title: Hackathons
-      url: /hackathons.html
-    - title: Talks
-      url: /talks.html
-    - title: Workshops
-      url: /workshops.html
-    - title: image
-      path: /assets/imgs/dummy.png
-      type: image
-      alttext: this is a picture
+      - title: Events
+        url: /events
+      - title: Hackathons
+        url: /hackathons
+      - title: Talks
+        url: /talks
+      - title: Workshops
+        url: /workshops
+      - title: image
+        path: /assets/imgs/dummy.png
+        type: image
+        alttext: this is a picture
 - title: Participate
   url: /paticipate.html
   sublinks:
-    - title: Megathon
-      url: /megathon.html
-    - title: Startup Aid
-      url: /startupaid.html
-    - title: Fail! Talks
-      url: /fail.html
-    - title: image
-      path: /assets/imgs/dummy.png
-      type: image
-      alttext: this is a picture
+      - title: Megathon
+        url: https://megathon.in
+      - title: Startup Aid
+        url: /startupaid
+      - title: Fail! Talks
+        url: /fail
+      - title: image
+        path: /assets/imgs/dummy.png
+        type: image
+        alttext: this is a picture
 - title: Our Team
-  url: /team.html
+  url: /team
 - title: Our Sponsors
-  url: /sponsors.html
+  url: /sponsors
