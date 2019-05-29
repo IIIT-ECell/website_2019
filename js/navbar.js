@@ -20,8 +20,8 @@ function manageDropdowns() {
         };
 
     dropdowns.forEach(function(dropdown) {
-        var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
-            dropdownMenu = dropdown.querySelector(".dropdown-menu"),
+        var toggleBtn = dropdown.querySelector("nav.dropdown-toggle"),
+            dropdownMenu = dropdown.querySelector("nav.dropdown-menu"),
             doNotFadeOutYet = true,
             dropdownRemainAwakeTimeout = 50;
 
@@ -90,4 +90,16 @@ function init() {
     } else {
         $("nav").addClass("navbar-curves");
     }
+}
+
+function openNav() {
+    $("#fullNav").css("height", "100%");
+    $("#fullNav").css("z-index", "200");
+    $("nav").css("z-index", "0");
+}
+
+function closeNav() {
+    $("#fullNav").css("height", "0%");
+    $("#fullNav").css("z-index", "0");
+    $("nav").css("z-index", "200");
 }

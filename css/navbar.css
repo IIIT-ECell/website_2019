@@ -91,19 +91,14 @@ h3 {
     transform: scaleX(1);
 }
 
-/* Class that is added on scroll */
-.navbar-shrink {
-    background-color: rgba(0, 34, 64, 0.8) !important;
-}
-
 /* using !important since the selector would've been too specific
  * selector: #navbarSupportedContent ul li.dropdown ul.dropdown-menu li a
  */
-.dropdown-item {
+nav .dropdown-item {
     color: var(--dropdown-link-color) !important;
 }
 
-.dropdown-menu {
+nav .dropdown-menu {
     background: rgba(255, 255, 255, 0.8);
     border-top: 0;
     border-radius: 10px;
@@ -114,25 +109,25 @@ h3 {
     padding-top: 0 !important;
 }
 
-.dropdown-menu img {
+nav .dropdown-menu img {
     width: 100%;
     max-width: 150px;
 }
 
-.dropdown-menu .dropdown-item:hover {
+nav .dropdown-menu .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
 }
 
-.dropdown-menu .img-list-item {
+nav .dropdown-menu .img-list-item {
     text-align: center;
 }
 
-.dropdown-menu .sublinks {
+nav .dropdown-menu .sublinks {
     padding-top: 2rem;
 }
 
-.dropdown-triangle {
+nav .dropdown-triangle {
     margin: 0 auto;
 
     /* the 21.7px came from the triangle height, source given below
@@ -147,4 +142,52 @@ h3 {
     border-style: solid;
     border-width: 0 12.5px 21.7px 12.5px;
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 34, 64, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.overlay a {
+    padding: 1%;
+    text-decoration: none;
+    font-size: 150%;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #3683d1 !important;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    font-size: 200%;
+}
+
+@media (max-width: 992px) {
+    .overlay .closebtn {
+        right: 10%;
+        top: 5%;
+    }
 }

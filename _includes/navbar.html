@@ -1,13 +1,14 @@
 <!--Adapted from: https://mycyberuniverse.com/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html-->
 
 <link rel="stylesheet" href="{{ site.url }}/css/navbar.css">
+<link rel="stylesheet" href="{{ site.url }}/css/fonts.css">
 <script src="{{ site.url }}/js/navbar.js"></script>
 
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
     <a class="navbar-brand" href="#">
         <img src="{{site.baseurl}}/assets/imgs/ecell-logo.png" height="57">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" onclick="openNav(); return false;" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -53,3 +54,27 @@
         </ul>
     </div>
 </nav>
+
+
+<div class="overlay" id="fullNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+                {% if link.sublinks %}
+                    <div class="nav-item dropdown full-dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="{{link.title}}">{{ link.title }}</a>
+                        <div class="dropdown-menu">
+                            {% for sublink in link.sublinks %}
+                                {% if sublink.title != 'image' %}
+                                    <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{sublink.title}}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% else %}
+                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                {% endif %}
+        {% endfor %}
+    </div>
+</div>
