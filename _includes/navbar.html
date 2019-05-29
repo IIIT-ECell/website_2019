@@ -1,4 +1,21 @@
 <!--Adapted from: https://mycyberuniverse.com/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html-->
+<!-- 
+⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿
+⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿
+⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿
+⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
+ -->
+
 
 <link rel="stylesheet" href="{{ site.url }}/css/navbar.css">
 <link rel="stylesheet" href="{{ site.url }}/css/fonts.css">
@@ -8,7 +25,7 @@
     <a class="navbar-brand" href="#">
         <img src="{{site.baseurl}}/assets/imgs/ecell-logo.png" height="57">
     </a>
-    <button class="navbar-toggler" onclick="openNav(); return false;" type="button">
+    <button class="navbar-toggler" onclick="$('.modal').modal('show');" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -55,26 +72,32 @@
     </div>
 </nav>
 
+<div class="modal" tabindex="-1" role="dialog" id="fullNav">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
 
-<div class="overlay" id="fullNav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
+        <button type="button" class="close float-right txt-dark" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <br>
+
         {% assign links = site.data.navigation %}
         {% for link in links %}
                 {% if link.sublinks %}
-                    <div class="nav-item dropdown full-dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="{{link.title}}">{{ link.title }}</a>
-                        <div class="dropdown-menu">
-                            {% for sublink in link.sublinks %}
-                                {% if sublink.title != 'image' %}
-                                    <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{sublink.title}}</a>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
+                    <a class="nav-link nav-link-disabled" href="#">{{ link.title }} ></a>
+                    {% for sublink in link.sublinks %}
+                        {% if sublink.title != 'image' %}
+                            <a class="dropdown-item nav-sublink" href="{{ site.baseurl }}{{ sublink.url }}">{{sublink.title}}</a>
+                        {% endif %}
+                    {% endfor %}
                 {% else %}
-                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    <a class="nav-link nav-link-bold" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 {% endif %}
         {% endfor %}
+      </div>
+
     </div>
+  </div>
 </div>

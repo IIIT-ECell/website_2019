@@ -20,8 +20,8 @@ function manageDropdowns() {
         };
 
     dropdowns.forEach(function(dropdown) {
-        var toggleBtn = dropdown.querySelector("nav.dropdown-toggle"),
-            dropdownMenu = dropdown.querySelector("nav.dropdown-menu"),
+        var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
+            dropdownMenu = dropdown.querySelector(".dropdown-menu"),
             doNotFadeOutYet = true,
             dropdownRemainAwakeTimeout = 50;
 
@@ -91,3 +91,9 @@ function init() {
         $("nav").addClass("navbar-curves");
     }
 }
+
+$(window).resize(function() {
+    if ($(window).width() > 992) {
+        $("#fullNav").modal("hide");
+    }
+});

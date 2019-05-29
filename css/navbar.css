@@ -143,3 +143,37 @@ nav .dropdown-triangle {
     border-width: 0 12.5px 21.7px 12.5px;
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
 }
+
+#fullNav {
+    animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes blowUpModal {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav-link-bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #084880;
+}
+
+.nav-link-bold:hover {
+    font-weight: bold;
+    color: rgba(0, 34, 64, 1);
+}
+
+.nav-link-disabled {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.nav-link-disabled:hover {
+    color: grey;
+    font-size: 1.5rem;
+}
