@@ -97,9 +97,9 @@ layout: page
 					<figcaption class="figure-caption text-center">{{head.name}}</figcaption>
 				</figure>
 				{% endfor %}
-			</div>			
+			</div>
 			{% endif %}
-		
+
 			<div class="col-12 col-md-6">
 				<div class="py-4">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien tellus, tincidunt ac nisi vel, varius tincidunt dolor.
@@ -107,7 +107,10 @@ layout: page
 
 				<div class="team-members">
 					{% for member in team.members %}
-					<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img">
+						<div class="team-member">
+							<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}"><br>
+							<a href="#" class="text-muted">{{member.name}}</a>
+						</div>
 					{% endfor %}
 				</div>
 			</div>
