@@ -1,8 +1,8 @@
 ---
 layout: page
 ---
-<link rel="stylesheet" type="text/css" href="../css/talks.css">
-<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/talks.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/fonts.css">
 
 <div class="container">
   {% assign alternator = 1 %}
@@ -22,23 +22,23 @@ layout: page
                     {{ post.content | truncatewords:50 }}
                     ...
                     <br><br>
-                    <a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
+                    <a href="{{ post.url }}" class="btn btn-light">Read More</a>
                   </div>
 
                   <div class="col-12 col-md-4">
-                    <img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
+                    <img src="{{ site.baseurl }}/assets/imgs/eventsimages/{{post.img}}" class="rounded img-fluid" height="250">
                   </div>
                   {% assign alternator = 0 %}
                 {% else %}
                   <div class="col-12 col-md-4">
-                    <img src="../assets/imgs/team/AishwaryaSrivastava_Head.png" class="rounded" height="250">
+                    <img src="{{ site.baseurl }}/assets/imgs/eventsimages/{{post.img}}" class="rounded img-fluid" height="250">
                   </div>
 
                   <div class="col-12 col-md-8 text-justify">
                     {{ post.content | truncatewords:50 }}
                     ...
                     <br><br>
-                    <a href="{{ post.permalink }}" class="btn btn-light">Read More</a>
+                    <a href="{{ post.url }}" class="btn btn-light">Read More</a>
                   </div>
                   {% assign alternator = 1 %}
                 {% endif %}
