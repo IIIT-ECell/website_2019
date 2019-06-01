@@ -2,8 +2,6 @@
   url: /
 - title: Our work
   sublinks:
-      - title: Events
-        url: /events
       - title: Hackathons
         url: /hackathons
       - title: Talks
