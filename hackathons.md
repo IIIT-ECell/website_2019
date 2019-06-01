@@ -1,0 +1,4 @@
+---
+layout: hackathons
+permalink: /hackathons/
+---
