@@ -1,0 +1,26 @@
+.card {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.card-header {
+    border-radius: 0px;
+}
+
+.palette-bg-green {
+    background-color: #99e7e2;
+}
+
+.palette-bg-red {
+    background-color: #dd5e58;
+}
+
+.palette-bg-blue {
+    background-color: #3b6fc1;
+}
+
+.palette-bg-grey {
+    background-color: #ebebeb;
+}
