@@ -195,7 +195,7 @@ body {
     border-radius: 2rem;
 
     max-width: 750px;
-
+    height: 20rem;
     margin: 0 auto;
     padding: 2rem 0;
     position: absolute;
@@ -273,7 +273,7 @@ body {
 }
 
 .testimonial-container .text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 600px) {
