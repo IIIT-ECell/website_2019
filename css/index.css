@@ -250,11 +250,6 @@ body {
     width: fit-content;
 }
 
-.testimonial-container .profilepic img {
-    width: 100%;
-    height: 100%;
-}
-
 .carousel-inner {
     height: 100%;
     width: 70%;
@@ -288,8 +283,12 @@ body {
 }
 
 .testimonial-container .person-info .profilepic {
-    width: 75px;
-    height: 75px;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-container .profilepic img {
+    height: 100%;
 }
 
 .testimonial-container .person-info .name,
