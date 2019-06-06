@@ -213,7 +213,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
     .testimonial-container {
         position: absolute;
         top: -3rem;
