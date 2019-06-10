@@ -6,6 +6,11 @@ body {
     width: 100vw;
 }
 
+.img-fluid {
+    max-width: 125%;
+    height: auto;
+}
+
 .tiles-container {
     position: relative;
     max-width: 1300px;
@@ -132,8 +137,8 @@ body {
 
 /* Specific positioning */
 .megathon-image {
-    margin-left: 30%;
-    margin-top: -30%;
+    margin-left: 0%;
+    margin-top: -10%;
 }
 
 .stats-display-megathon {
@@ -143,8 +148,8 @@ body {
 }
 
 .fail-image {
-    margin-left: -30%;
-    margin-top: -40%;
+    margin-left: -25%;
+    margin-top: -10%;
 }
 
 .stats-display-fail {
@@ -155,8 +160,8 @@ body {
 }
 
 .startup-image {
-    margin-left: 30%;
-    margin-top: -30%;
+    margin-left: 0%;
+    margin-top: -10%;
 }
 
 .stats-display-startup {
