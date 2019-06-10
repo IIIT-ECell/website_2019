@@ -4,7 +4,7 @@ title: Sponsors
 permalink: /sponsors
 noTopSpacing: true
 ---
-<link type="text/css" href="../css/index.css" rel="stylesheet" />
+<link type="text/css" href="{{ site.baseurl }}/css/index.css" rel="stylesheet" />
 
 <div class="container tiles">
     <div class="row p-3">
@@ -35,7 +35,7 @@ noTopSpacing: true
         {% else %}
             <div class="col-md-4 p-3 text-center">
         {% endif %}
-                    <img class="img-fluid" style="max-height: 150px;" src="/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
+                    <img class="img-fluid" style="max-height: 150px;" src="{{ site.baseurl }}/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
                 <!-- <p>{{ member.name }}</p> -->
             </div>
         {% endfor %}

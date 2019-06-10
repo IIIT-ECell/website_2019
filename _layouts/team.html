@@ -4,7 +4,7 @@ layout: page
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/team.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/team.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/team.js"></script>
 
 <header class="w-100 h-75">
 	<div class="container-fluid h-100 main-head">
@@ -37,7 +37,7 @@ layout: page
 
 {% for team in site.data.team %}
 {%assign idUse = team.team %}
-{% if team.id %}\
+{% if team.id %}
 	{%assign idUse = team.id %}
 {% endif %}
 <div class="container" id="{{idUse}}">
@@ -52,7 +52,7 @@ layout: page
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
 						<div class="tooltip-content">
 							<li class="list-inline-item tooltip-social-icon"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
 							<li class="list-inline-item tooltip-social-icon"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
@@ -72,7 +72,7 @@ layout: page
 				{% for head in team.heads %}
 				<figure class="figure">
 					<div class="tooltip-social">
-						<img src="../assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
 						<div class="tooltip-content">
 							<li class="list-inline-item tooltip-social-icon"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
 							<li class="list-inline-item tooltip-social-icon"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
@@ -106,7 +106,7 @@ layout: page
 											<a href="tel:{{member.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a>
 										</div>
 									</div>
-									<img src="../assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}">
+									<img src="{{ site.baseurl }}/assets/imgs/team/AbhigyanGhosh_Tech.png" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}">
 								</div>
 								<br>
 								<span class="text-muted photo-name">{{member.name}}</span>
