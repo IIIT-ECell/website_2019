@@ -4,6 +4,7 @@ let autoprefixer = require("gulp-autoprefixer"),
     cleanCSS = require("gulp-clean-css"),
     gulp = require("gulp"),
     htmlmin = require("gulp-htmlmin"),
+    rmEmptyLines = require("gulp-remove-empty-lines"),
     uglify = require("gulp-uglify");
 
 gulp.task("styles", function() {
@@ -27,9 +28,12 @@ gulp.task("pages", function() {
         .pipe(
             htmlmin({
                 collapseWhiteSpace: true,
-                removeComments: true
+                removeComments: true,
+                collapseInlineTagWhitespace: true,
+                preserveLineBreaks: true
             })
         )
+        .pipe(rmEmptyLines())
         .pipe(gulp.dest("."));
 });
 
