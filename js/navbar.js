@@ -96,7 +96,7 @@ function animateModal() {
     });
 
     $("#close-modal").click(() => {
-        $(".modal").fadeOut();
+        $(".modal").modal("hide");
     });
 }
 
@@ -108,6 +108,6 @@ function init() {
 
 $(window).resize(function() {
     if ($(window).width() > 992) {
-        $("#fullNav").modal("hide");
+        $("#sideNav").modal("hide");
     }
 });
