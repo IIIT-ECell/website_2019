@@ -148,18 +148,6 @@ nav .dropdown-triangle {
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
 }
 
-@keyframes slide-left {
-    0% {
-        left: 80vw;
-    }
-    85% {
-        left: -10vw;
-    }
-    100% {
-        left: 0;
-    }
-}
-
 .nav-link-bold {
     font-weight: bold;
     font-size: 1.5rem;
