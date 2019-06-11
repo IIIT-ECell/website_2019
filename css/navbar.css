@@ -160,16 +160,6 @@ nav .dropdown-triangle {
     }
 }
 
-.modal.show {
-    animation: slide-left 0.3s ease-out;
-}
-
-.modal-content {
-    width: 75vw;
-    height: 98vh;
-    float: right;
-}
-
 .nav-link-bold {
     font-weight: bold;
     font-size: 1.5rem;
@@ -191,12 +181,11 @@ nav .dropdown-triangle {
     font-size: 1.5rem;
 }
 
-/* adapted from https://codepen.io/bootpen/pen/jbbaRa;
-    does not still fade in or fade out */
-.modal .modal-dialog {
+/* adapted from https://codepen.io/bootpen/pen/jbbaRa */
+.modal.right .modal-dialog {
     position: fixed;
     margin: auto;
-    width: 300px;
+    width: 320px;
     height: 100%;
     -webkit-transform: translate3d(0%, 0, 0);
     -ms-transform: translate3d(0%, 0, 0);
@@ -204,23 +193,23 @@ nav .dropdown-triangle {
     transform: translate3d(0%, 0, 0);
 }
 
-.modal .modal-body {
-    padding: 15px 15px 80px;
-}
-
-.modal .modal-content {
+.modal.right .modal-content {
     height: 100%;
     overflow-y: auto;
 }
 
-.modal.fade .modal-dialog {
-    right: -320px;
-    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-    transition: opacity 0.3s linear, left 0.3s ease-out;
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
 }
 
-.modal.fade.show .modal-dialog {
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
     right: 0;
 }
