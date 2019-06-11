@@ -1,7 +1,7 @@
 "use strict";
 
 let autoprefixer = require("gulp-autoprefixer"),
-    csso = require("gulp-csso"),
+    cleanCSS = require("gulp-clean-css"),
     gulp = require("gulp"),
     htmlmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify");
@@ -21,7 +21,7 @@ gulp.task("styles", function() {
     return gulp
         .src("./_site/css/*.css", { base: "./" })
         .pipe(autoprefixer({ browsers: SUPPORTED_BROWSERS }))
-        .pipe(csso())
+        .pipe(cleanCSS())
         .pipe(gulp.dest("."));
 });
 

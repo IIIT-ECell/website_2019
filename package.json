@@ -15,7 +15,7 @@
     "devDependencies": {
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
-        "gulp-csso": "^3.0.1",
+        "gulp-clean-css": "^4.2.0",
         "gulp-htmlmin": "^5.0.1",
         "gulp-uglify": "^3.0.2",
         "husky": "^2.3.0",
