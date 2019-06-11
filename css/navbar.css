@@ -144,8 +144,17 @@ nav .dropdown-triangle {
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
 }
 
-#fullNav {
-    animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+.modal-content {
+    animation: slide-left 0.3s ease-in forwards;
+}
+
+@keyframes slide-left {
+    from {
+        left: 80vw;
+    }
+    to {
+        left: 0;
+    }
 }
 
 @keyframes blowUpModal {
@@ -155,6 +164,12 @@ nav .dropdown-triangle {
     100% {
         transform: scale(1);
     }
+}
+
+.modal-content {
+    width: 75vw;
+    height: 98vh;
+    float: right;
 }
 
 .nav-link-bold {
