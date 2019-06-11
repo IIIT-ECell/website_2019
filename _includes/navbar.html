@@ -25,7 +25,7 @@
     <a class="navbar-brand" href="#">
         <img src="{{site.baseurl}}/assets/imgs/ecell-logo.png" height="57">
     </a>
-    <button class="navbar-toggler" onclick="$('.modal').modal('show');" type="button">
+    <button class="navbar-toggler" id="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -77,7 +77,7 @@
     <div class="modal-content">
       <div class="modal-body">
 
-        <button type="button" class="close float-right txt-dark" data-dismiss="modal" aria-label="Close">
+        <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
 

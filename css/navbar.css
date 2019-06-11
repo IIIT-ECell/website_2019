@@ -144,26 +144,20 @@ nav .dropdown-triangle {
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
 }
 
-.modal-content {
-    animation: slide-left 0.3s ease-in forwards;
-}
-
 @keyframes slide-left {
-    from {
+    0% {
         left: 80vw;
     }
-    to {
+    85% {
+        left: -10vw;
+    }
+    100% {
         left: 0;
     }
 }
 
-@keyframes blowUpModal {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+.modal.show {
+    animation: slide-left 0.3s ease-out;
 }
 
 .modal-content {

@@ -70,9 +70,7 @@ function manageDropdowns() {
     });
 }
 
-function init() {
-    manageDropdowns();
-
+function manageCurves() {
     /*
      * if header is defined, then manage navbar curves on scroll otherwise just display them
      *
@@ -90,6 +88,22 @@ function init() {
     } else {
         $("nav").addClass("navbar-curves");
     }
+}
+
+function animateModal() {
+    $("#navbar-toggler").click(() => {
+        $(".modal").modal("show");
+    });
+
+    $("#close-modal").click(() => {
+        $(".modal").fadeOut();
+    });
+}
+
+function init() {
+    manageDropdowns();
+    manageCurves();
+    animateModal();
 }
 
 $(window).resize(function() {
