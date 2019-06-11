@@ -90,20 +90,9 @@ function manageCurves() {
     }
 }
 
-function animateModal() {
-    $("#navbar-toggler").click(() => {
-        $(".modal").modal("show");
-    });
-
-    $("#close-modal").click(() => {
-        $(".modal").modal("hide");
-    });
-}
-
 function init() {
     manageDropdowns();
     manageCurves();
-    animateModal();
 }
 
 $(window).resize(function() {
