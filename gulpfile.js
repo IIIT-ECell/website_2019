@@ -10,7 +10,7 @@ let autoprefixer = require("gulp-autoprefixer"),
 gulp.task("styles", function() {
     return gulp
         .src("./_site/css/*.css", { base: "./" })
-        .pipe(autoprefixer({ browsers: ["last 99 versions"], cascase: false }))
+        .pipe(autoprefixer({ browsers: ["last 99 versions"], cascade: false }))
         .pipe(cleanCSS())
         .pipe(gulp.dest("."));
 });
