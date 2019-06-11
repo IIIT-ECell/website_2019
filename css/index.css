@@ -195,7 +195,6 @@ body {
     border-radius: 2rem;
 
     max-width: 750px;
-    height: 20rem;
     margin: 0 auto;
     padding: 2rem 0;
     position: absolute;
@@ -239,8 +238,13 @@ body {
 }
 
 .testimonial-container .profilepic {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+
+.testimonial-container .profilepic img {
+    height: 100%;
 }
 
 .testimonial-container .person-info > div,
@@ -262,9 +266,9 @@ body {
 }
 
 .person-info {
-    max-width: 40%;
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 .carousel-control-prev-icon,
@@ -273,28 +277,27 @@ body {
 }
 
 .testimonial-container .text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
     .testimonial-container .text {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
-}
 
-.testimonial-container .person-info .profilepic {
-    width: 100%;
-    text-align: center;
-}
-
-.testimonial-container .profilepic img {
-    height: 100%;
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 85%;
+    }
+    .carousel-inner {
+        width: 95%;
+    }
 }
 
 .testimonial-container .person-info .name,
 .testimonial-container .person-info .designation {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .palette-bg-green {
