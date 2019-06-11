@@ -26,6 +26,10 @@ h3 {
     transition: 0.75s;
 }
 
+#navbar-toggler {
+    cursor: pointer;
+}
+
 @media (min-width: 992px) {
     .navbar-curves {
         background-color: var(--nav-bg) !important;
@@ -91,19 +95,14 @@ h3 {
     transform: scaleX(1);
 }
 
-/* Class that is added on scroll */
-.navbar-shrink {
-    background-color: rgba(0, 34, 64, 0.8) !important;
-}
-
 /* using !important since the selector would've been too specific
  * selector: #navbarSupportedContent ul li.dropdown ul.dropdown-menu li a
  */
-.dropdown-item {
+nav .dropdown-item {
     color: var(--dropdown-link-color) !important;
 }
 
-.dropdown-menu {
+nav .dropdown-menu {
     background: rgba(255, 255, 255, 0.8);
     border-top: 0;
     border-radius: 10px;
@@ -114,25 +113,25 @@ h3 {
     padding-top: 0 !important;
 }
 
-.dropdown-menu img {
+nav .dropdown-menu img {
     width: 100%;
     max-width: 150px;
 }
 
-.dropdown-menu .dropdown-item:hover {
+nav .dropdown-menu .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
 }
 
-.dropdown-menu .img-list-item {
+nav .dropdown-menu .img-list-item {
     text-align: center;
 }
 
-.dropdown-menu .sublinks {
+nav .dropdown-menu .sublinks {
     padding-top: 2rem;
 }
 
-.dropdown-triangle {
+nav .dropdown-triangle {
     margin: 0 auto;
 
     /* the 21.7px came from the triangle height, source given below
@@ -147,4 +146,58 @@ h3 {
     border-style: solid;
     border-width: 0 12.5px 21.7px 12.5px;
     border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+}
+
+.nav-link-bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #084880;
+}
+
+.nav-link-bold:hover {
+    font-weight: bold;
+    color: rgba(0, 34, 64, 1);
+}
+
+.nav-link-disabled {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.nav-link-disabled:hover {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+/* adapted from https://codepen.io/bootpen/pen/jbbaRa */
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+    right: 0;
 }
