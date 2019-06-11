@@ -6,21 +6,10 @@ let autoprefixer = require("gulp-autoprefixer"),
     htmlmin = require("gulp-htmlmin"),
     uglify = require("gulp-uglify");
 
-const SUPPORTED_BROWSERS = [
-    "ff >= 30",
-    "chrome >= 34",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4.4",
-    // felt cute, might delete later
-    "ie >= 10"
-];
-
 gulp.task("styles", function() {
     return gulp
         .src("./_site/css/*.css", { base: "./" })
-        .pipe(autoprefixer({ browsers: SUPPORTED_BROWSERS }))
+        .pipe(autoprefixer({ browsers: ["last 99 versions"], cascase: false }))
         .pipe(cleanCSS())
         .pipe(gulp.dest("."));
 });
