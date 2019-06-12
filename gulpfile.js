@@ -1,27 +1,17 @@
 "use strict";
 
 let autoprefixer = require("gulp-autoprefixer"),
-    csso = require("gulp-csso"),
+    cleanCSS = require("gulp-clean-css"),
     gulp = require("gulp"),
     htmlmin = require("gulp-htmlmin"),
+    rmEmptyLines = require("gulp-remove-empty-lines"),
     uglify = require("gulp-uglify");
-
-const SUPPORTED_BROWSERS = [
-    "ff >= 30",
-    "chrome >= 34",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4.4",
-    // felt cute, might delete later
-    "ie >= 10"
-];
 
 gulp.task("styles", function() {
     return gulp
         .src("./_site/css/*.css", { base: "./" })
-        .pipe(autoprefixer({ browsers: SUPPORTED_BROWSERS }))
-        .pipe(csso())
+        .pipe(autoprefixer({ browsers: ["last 99 versions"], cascade: false }))
+        .pipe(cleanCSS())
         .pipe(gulp.dest("."));
 });
 
@@ -38,9 +28,12 @@ gulp.task("pages", function() {
         .pipe(
             htmlmin({
                 collapseWhiteSpace: true,
-                removeComments: true
+                removeComments: true,
+                collapseInlineTagWhitespace: true,
+                preserveLineBreaks: true
             })
         )
+        .pipe(rmEmptyLines())
         .pipe(gulp.dest("."));
 });
 

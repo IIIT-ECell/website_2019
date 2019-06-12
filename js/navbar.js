@@ -70,9 +70,7 @@ function manageDropdowns() {
     });
 }
 
-function init() {
-    manageDropdowns();
-
+function manageCurves() {
     /*
      * if header is defined, then manage navbar curves on scroll otherwise just display them
      *
@@ -91,3 +89,14 @@ function init() {
         $("nav").addClass("navbar-curves");
     }
 }
+
+function init() {
+    manageDropdowns();
+    manageCurves();
+}
+
+$(window).resize(function() {
+    if ($(window).width() > 992) {
+        $("#sideNav").modal("hide");
+    }
+});
