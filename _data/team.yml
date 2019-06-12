@@ -17,6 +17,7 @@
         bg: red
 
 - team: Tech
+  text: Noobs sit and wait for inspiration. We just get up and go to work.
   heads:
       - name: Abhigyan Ghosh
         img: AbhigyanGhosh_Tech.png
@@ -35,6 +36,7 @@
       - name: Jivitesh Jain
         bg: blue
 - team: Collaborations
+  text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   heads:
       - name: Atirek Kumar
         img: AtirekKumar_EConnect.png
@@ -49,6 +51,7 @@
       - name: Sai Tanmay
         bg: grey
 - team: Corporate
+  text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
   heads:
       - name: Aditya Morolia
         img: AdityaMorolia_Corporate.png
@@ -64,6 +67,7 @@
         bg: red
 - team: Events
   multiple: true
+  text: If something is important enough, you do it even if the odds aren't in your favour <br> - Elon Musk
   heads:
       - name: Zubair Abid
         img: ZubairAbid_Events.png
@@ -85,6 +89,7 @@
       - name: Sridhar M
         bg: green
 - team: Finance
+  text: "Rule No.1: Never lose money.<br> Rule No.2: Never forget rule No.1. <br> - Warren Buffet"
   heads:
       - name: Pulkit Gera
         img: PulkitGera_Finance.png
@@ -99,6 +104,7 @@
       - name: Loay Rashid
         bg: grey
 - team: Operations
+  text: We are what we repeatedly do. Excellence, then, is not an act, but a habit. <br>- Aristotle
   heads:
       - name: Vaibhav Garg
         img: VaibhavGarg_Operations.png
@@ -113,6 +119,7 @@
       - name: Bhavyajeet
         bg: red
 - team: Social Media
+  text: Don't use social media to impress people; use it to impact people <br> - Dave Willis
   heads:
       - name: Parth Goyal
         img: ParthGoyal_Social.png
@@ -127,6 +134,7 @@
       - name: Mallika
         bg: grey
 - team: Marketing
+  text: Good marketing makes the company look smart, great marketing makes the customer feel smart. <br> - Joe Chernov
   multiple: true
   heads:
       - name: Priyank Modi
@@ -148,6 +156,7 @@
         bg: green
 - team: Team Affairs
   multiple: true
+  text: Coming together is a beginning. Keeping together is progress. Working together is success. <br>- Henry Ford
   heads:
       - name: Subbulakshmi RS
         img: SubbulakshmiRS_TAC.png
@@ -169,6 +178,7 @@
       - name: Arindam
         bg: blue
 - team: Design
+  text: "Design is not just what it looks like and feels like. Design is how it works. <br> - Steve Jobs"
   heads:
       - name: Sarvesh Mehta
         img:
