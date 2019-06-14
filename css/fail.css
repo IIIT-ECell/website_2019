@@ -41,6 +41,7 @@ a{
 html {
     scroll-behavior: smooth;
     font-size: 2vh;
+    width: 100%;
 }
 
 /* #back-vid {
@@ -268,4 +269,34 @@ h3 {
     bottom: 0;
     left: 0;
     text-align: center;
+}
+
+#contact {
+    background-color: #001f3f;
+    /* background-image: url("http://www.open.edu/openlearn/ocw/pluginfile.php/1048644/mod_resource/content/0/a174_1_cover_image_1_edited.jpg"); */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    text-transform: uppercase;
+    padding-top: 80px !important;
+}
+
+#contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container .row {
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container .row .col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
