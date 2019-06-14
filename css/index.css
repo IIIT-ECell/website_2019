@@ -241,6 +241,10 @@ body {
     .testimonial-container {
         width: 95%;
     }
+
+    h1{
+        font-size: 1.5rem;
+    }
 }
 
 .testimonial-container .profilepic {
