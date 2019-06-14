@@ -118,20 +118,45 @@ body {
     text-align: right;
 }
 
-/* at small device, remove image and display text full center */
-@media (max-width: 550px) {
+/* at small device, display text and image full center */
+@media (max-width: 768px) {
     .para {
         width: 100%;
         max-width: 100%;
     }
-    .image {
-        display: none;
-    }
     .para-head {
         text-align: center;
+        margin-top: 0 !important;
     }
     .cta-btn {
         margin: 1.2rem auto 3rem calc($spacer * 3) !important;
+    }
+
+    .image-left,
+    .image-right {
+        float: none;
+    }
+
+    .image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .image img {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    .row.tile-row {
+        padding: 1rem;
+    }
+
+    .para-text {
+        margin-left: 0 !important;
+        margin-right: 0 !important ;
+    }
+    .cta-btn-container {
+        text-align: center !important;
     }
 }
 
@@ -242,7 +267,7 @@ body {
         width: 95%;
     }
 
-    h1{
+    h1 {
         font-size: 1.5rem;
     }
 }
