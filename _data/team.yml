@@ -201,14 +201,14 @@
   members:
       - name: Amogh Tiwari
         bg: green
-        img:
+        img: Amogh.png
         fb:
         in:
         mail:
         phone:
       - name: Mallika
         bg: grey
-        img:
+        img: Mallika.png
         fb:
         in:
         mail:
@@ -232,14 +232,14 @@
   members:
       - name: Anirudh
         bg: red
-        img:
+        img: Anirudh.png
         fb:
         in:
         mail:
         phone:
       - name: Sudhansh
         bg: green
-        img:
+        img: Sudhansh.png
         fb:
         in:
         mail:
@@ -265,14 +265,14 @@
   members:
       - name: Naren
         bg: grey
-        img:
+        img: Naren.png
         fb:
         in:
         mail:
         phone:
       - name: Arindam
         bg: blue
-        img:
+        img: Arindam.png
         fb:
         in:
         mail:
@@ -288,23 +288,23 @@
         phone: 9685322873
         bg: red
   members:
-      - name: Ahish
+      - name: Jai
         bg: blue
-        img:
+        img: Jai.png
         fb:
         in:
         mail:
         phone:
       - name: Ahish Deshpande
         bg: green
-        img:
+        img: Ahish.png
         fb:
         in:
         mail:
         phone:
       - name: Jyoti Sunkara
         bg: grey
-        img:
+        img: Jyoti.png
         fb:
         in:
         mail:
