@@ -2,7 +2,8 @@
 layout : blog
 title : UNIspotter
 categories : events talk_session
-img : unispotter.jpg 
+img : unispotter.jpg
+bg: green
 permalink : /:categories/:title.html
 
 ---

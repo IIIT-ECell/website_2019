@@ -2,7 +2,8 @@
 layout : blog
 title : Talk on Financial Education 
 categories : events talk_session
-img : gyandhan.jpg 
+img : gyandhan.jpg
+bg: blue
 permalink : /:categories/:title.html
 
 ---

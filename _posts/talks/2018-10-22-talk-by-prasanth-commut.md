@@ -2,7 +2,8 @@
 layout : blog
 title : Talk by Prasanth Garapati
 categories : events talk_session
-img : talk_prasanth_commut.jpg 
+img : talk_prasanth_commut.jpg
+bg: grey
 permalink : /:categories/:title.html
 
 ---

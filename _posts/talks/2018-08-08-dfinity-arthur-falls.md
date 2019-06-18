@@ -3,6 +3,7 @@ layout: blog
 title: Talk by Arthur Falls
 categories: events talk_session
 img: dfinity_arthur.jpg
+bg: green
 permalink : /:categories/:title.html
 
 ---

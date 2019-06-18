@@ -4,6 +4,7 @@ title : Zero To One Crore
 img : zerotoone.png
 categories : events workshops 
 permalink : /:categories/:title.html
+bg: blue
 
 ---
 

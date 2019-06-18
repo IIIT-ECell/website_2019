@@ -3,6 +3,7 @@ layout : blog
 title : Talk by Nikhil Chandwani and team
 categories : events talk_session
 img : talk_nikhil.jpg
+bg: red
 permalink : /:categories/:title.html
 
 ---
