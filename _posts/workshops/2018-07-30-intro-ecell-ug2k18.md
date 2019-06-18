@@ -4,7 +4,7 @@ title: Introduction of E-Cell to UG2k18
 categories: events workshops
 img: intro18.jpg
 permalink: /:categories/:title.html
-
+bg: grey
 ---
 
 The semester was off to a great start with the E-Cell introducing itself to the youngest batch of IIIT-H as part of their induction into the system.

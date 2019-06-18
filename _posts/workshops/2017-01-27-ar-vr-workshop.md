@@ -5,6 +5,7 @@ categories : events workshops
 img : arvr.jpg
 link : https://felicity.iiit.ac.in/talks-and-worksh%E2%80%A6/arvr/register/
 permalink : /:categories/:title.html
+bg: green
 
 ---
 
