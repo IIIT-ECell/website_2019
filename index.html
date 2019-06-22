@@ -67,7 +67,7 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
                 Dutee Chand, Viiveck Verma.
             </p>
             <div class="cta-btn-container">
-                <a href="/fail"><button class="m-5 btn palette-bg-red cta-btn">Explore</button></a>
+                <a href="{{site.baseurl}}/fail"><button class="m-5 btn palette-bg-red cta-btn">Explore</button></a>
             </div>
         </div>
         <div class="stats-display stats-display-fail">
@@ -87,7 +87,7 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
                 program.
             </p>
             <div class="cta-btn-container">
-                <a href="/startup-aid">
+                <a href="{{site.baseurl}}/startup-aid">
                     <button class="m-5 btn palette-bg-blue cta-btn">Explore</button>
                 </a>
             </div>
@@ -151,3 +151,11 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
         </a>
     </div>
 </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.row',{delay:300,reset:true});
+    ScrollReveal().reveal('.para',{delay:500,reset:true});
+    ScrollReveal().reveal('.image',{delay:700,reset:true});
+    ScrollReveal().reveal('.card',{delay:500,reset:true});
+
+</script>
