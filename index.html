@@ -67,7 +67,7 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
                 Dutee Chand, Viiveck Verma.
             </p>
             <div class="cta-btn-container">
-                <a href="/fail"><button class="m-5 btn palette-bg-red cta-btn">Explore</button></a>
+                <a href="{{site.baseurl}}/fail"><button class="m-5 btn palette-bg-red cta-btn">Explore</button></a>
             </div>
         </div>
         <div class="stats-display stats-display-fail">
@@ -87,7 +87,7 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
                 program.
             </p>
             <div class="cta-btn-container">
-                <a href="/startup-aid">
+                <a href="{{site.baseurl}}/startup-aid">
                     <button class="m-5 btn palette-bg-blue cta-btn">Explore</button>
                 </a>
             </div>
@@ -104,6 +104,44 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
     <!-- this is necessary to keep container height contain all its rows -->
     <div style="clear: both;"></div>
 </div>
+
+<!-- Contact Form by Jivitesh copied from contact-form-2 -->
+
+<div class="container-fluid contact-us mt-5">
+    <div class="row">
+        <div class="col text-center p-5">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-11 backbox">
+            <form action="https://formspree.io/abhigyan.ghosh.research@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="inp-name">Name</label>
+                <input type="text" name="name" class="form-control" id="inp-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="inp-email">Email address</label>
+                <input type="email" name="_replyto" class="form-control" id="inp-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="inp-subject">Subject</label>
+                <input name="subject" type="text" class="form-control" id="inp-subject" placeholder="Subject">
+            </div>
+
+            <div class="form-group">
+                <label for="inp-message">Message</label>
+                <textarea name="message" class="form-control" id="inp-message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" value="send">Submit</button>
+            <input type="hidden" name="_cc" value="ecell@iiit.ac.in" />
+                <input type="hidden" name="_next" value="{{site.baseurl}}"/>
+        </form>
+        </div>
+    </div>
+</div>
+
+
 <div id="testimonial-parent">
     <!-- id is necessary for carousel controls to work -->
     <div id="testimonial-container" class="testimonial-container carousel slide" data-ride="carousel">
@@ -151,3 +189,13 @@ cardContent: At E-Cell, we aim to inspire university students to start their own
         </a>
     </div>
 </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.row',{delay:200,easing:'ease-in-out'});
+    ScrollReveal().reveal('.para',{delay:250,easing:'ease-in-out'});
+    ScrollReveal().reveal('.image',{delay:300,easing:'ease-in-out'});
+    ScrollReveal().reveal('.main-head',{delay:200,easing:'ease-in-out'});
+    ScrollReveal().reveal('.card',{delay:250,easing:'ease-in-out'});
+    ScrollReveal().reveal('#testimonial-parent',{delay: 250, easing: 'ease-in-out'})
+
+</script>

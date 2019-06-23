@@ -9,36 +9,40 @@ noTopSpacing: true
     <div class="row p-3">
         <div class="col-md-12">
             <p>We realise that we need to associate ourselves with great companies to
-                grow and reach more and more people. With this aim in mind, each year we conduct 
-                many events which aim at bringing the students closer to the industry so that they 
-                come up with their own unique solutions to the problems in each sector. All these 
-                events do require a lot of funding to be successful. 
-                It is our sponsors who help us in our endeavours not only monetarily but also 
-                with their experience. If you would like to sponsor us, reach out to us at 
-                <a href="mailto:ecell@iiit.ac.in">ecell@iiit.ac.in</a>   
-                We would love to hear back from you. 
+                grow and reach more and more people. With this aim in mind, each year we conduct
+                many events which aim at bringing the students closer to the industry so that they
+                come up with their own unique solutions to the problems in each sector. All these
+                events do require a lot of funding to be successful.
+                It is our sponsors who help us in our endeavours not only monetarily but also
+                with their experience. If you would like to sponsor us, reach out to us at
+                <a href="mailto:ecell@iiit.ac.in">ecell@iiit.ac.in</a>
+                We would love to hear back from you.
             </p>
         </div>
     </div>
     <hr>
     {% for sponsor in site.data.sponsors %}
-    <div class="row p-3">
-        <div class="col-md-12">
-            <h1>Our {{ sponsor.sponsors }} </h1>
-        </div>
-    </div>
-    <div class="row">
-        {% for member in sponsor.members %}
-        {% if sponsor.sponsors == "Sponsors" %}
-            <div class="col-md-3 p-3 text-center">
-        {% else %}
-            <div class="col-md-4 p-3 text-center">
-        {% endif %}
-                    <img class="img-fluid" style="max-height: 150px;" src="{{ site.baseurl }}/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
-                <!-- <p>{{ member.name }}</p> -->
+        <div class="row p-3">
+            <div class="col-md-12">
+                <h1>Our {{ sponsor.sponsors }} </h1>
             </div>
-        {% endfor %}
-    </div>
-    <hr>
+        </div>
+        <div class="row">
+            {% for member in sponsor.members %}
+                {% if sponsor.sponsors == "Sponsors" %}
+                    <div class="col-md-3 p-3 text-center">
+                {% else %}
+                    <div class="col-md-4 p-3 text-center">
+                {% endif %}
+                        <img class="img-fluid" style="max-height: 150px;" src="{{ site.baseurl }}/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
+                    </div>
+            {% endfor %}
+        </div>
+        <hr>
     {% endfor %}
 </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.col-md-3',{interval:300});
+    ScrollReveal().reveal('.col-md-4',{interval:300});
+</script>

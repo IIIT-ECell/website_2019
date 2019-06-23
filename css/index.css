@@ -1,3 +1,7 @@
+---
+
+---
+
 html,
 body {
     height: 100vh;
@@ -363,3 +367,27 @@ body {
 .palette-bg-grey {
     background-color: #ebebeb;
 }
+.contact-us {
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.185),
+            rgba(255, 255, 255, 0.185)
+        ),
+        url('{{site.baseurl}}/assets/imgs/undraw-world.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(100% + 9rem);
+    background-position-y: -9rem;
+    margin-top: 0;
+}
+
+.contact-us .backbox {
+    /* background-color: rgba(16, 138, 149, 0.678); */
+    background-color: rgba(0, 34, 64, 0.637);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0rem auto;
+    /* margin-bottom: 0; */
+    color: white;
+}
+    

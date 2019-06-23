@@ -52,7 +52,7 @@
                                     <li role="separator" class="divider"></li>
                                 {% elsif sublink.title == 'image' %}
                                     <li class="img-list-item">
-                                        <img src="{{ sublink.path }}" alt="{{ sublink.alttext }}">
+                                        <img src="{{site.baseurl}}{{ sublink.path }}" alt="{{ sublink.alttext }}">
                                     </li>
                                 {% else %}
                                     <li>
