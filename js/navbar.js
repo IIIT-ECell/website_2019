@@ -1,4 +1,4 @@
-$(document).ready(init);
+window.onload = init;
 
 function shouldManageDropdown() {
     return window.innerWidth >= 1000;
@@ -95,8 +95,8 @@ function init() {
     manageCurves();
 }
 
-$(window).resize(function() {
+window.onresize = function() {
     if ($(window).width() > 992) {
         $("#sideNav").modal("hide");
     }
-});
+};
