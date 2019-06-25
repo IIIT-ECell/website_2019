@@ -224,7 +224,7 @@ body {
     background-color: white;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 2rem;
-
+    height: inherit;
     max-width: 750px;
     margin: 0 auto;
     padding: 2rem 0;
