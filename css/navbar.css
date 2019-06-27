@@ -8,6 +8,13 @@
     --nav-bg: rgba(0, 34, 64, 0.8);
 }
 
+::selection {
+  background: rgba(40, 205, 193, 0.47);; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(40, 205, 193, 0.47); /* Gecko Browsers */
+}
+
 body {
     font-family: "BodyFont" !important;
 }
