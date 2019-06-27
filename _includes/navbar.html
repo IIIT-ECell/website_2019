@@ -42,8 +42,9 @@
                     {% assign scrtext = '<span class="sr-only">(current)</span>' %}
                 {% endif %}
                 {% if link.sublinks %}
+                {% capture link_url %}{% include functions/process_url.html url=link.url %}{% endcapture %}
                     <li class="nav-item dropdown {{ class }}">
-                        <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                        <a href="{{ link_url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <div class="dropdown-triangle"></div>
                             <div class="sublinks">
@@ -55,8 +56,9 @@
                                         <img src="{{site.baseurl}}{{ sublink.path }}" alt="{{ sublink.alttext }}">
                                     </li>
                                 {% else %}
+                                {% capture sublink_url %}{% include functions/process_url.html url=sublink.url %}{% endcapture %}
                                     <li>
-                                        <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                        <a class="dropdown-item" href="{{ sublink_url }}">{{ sublink.title }}</a>
                                     </li>
                                 {% endif %}
                             {% endfor %}

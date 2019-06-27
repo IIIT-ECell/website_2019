@@ -1,0 +1,6 @@
+{% capture first_char %}{{ include.url | slice: 0 }}{% endcapture %}
+{% if first_char == "/" %}
+    {{ site.baseurl | append: include.url }}
+{% else %}
+    {{ include.url }}
+{% endif %}
