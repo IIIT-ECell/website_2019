@@ -22,6 +22,7 @@ body {
     position: relative;
     margin: 2rem 10px;
     border-radius: 2rem;
+    margin-bottom: 4rem;
 }
 
 .row-megathon {
@@ -33,6 +34,7 @@ body {
 .row-startup {
     color: white;
     background-color: #185a9d;
+    margin-bottom: 6rem;
 }
 
 @media (max-width: 992px) {
@@ -204,7 +206,7 @@ body {
 /* add extra margin due to stats display */
 .row-fail {
     margin-top: calc(2rem + 4%);
-    margin-bottom: calc(2rem + 4%);
+    margin-bottom: 7rem;
 }
 
 /* Testimonial box */
