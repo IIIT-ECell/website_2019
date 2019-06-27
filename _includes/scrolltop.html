@@ -42,7 +42,29 @@
 }
 </style>
 <script>
-  document.onload = function(){
+        function throttle(func, time) {
+       var timeout, hadCalledInBetween;
+
+        return function() {
+            if (!timeout) {
+                func.apply(this, arguments);
+
+                timeout = setTimeout(function() {
+                    if (hadCalledInBetween) {
+                        func.apply(this, arguments);
+                        hadCalledInBetween = false;
+                    }
+                    timeout = null;
+                }, time);
+            } else {
+                hadCalledInBetween = true;
+            }
+        };
+    }
+
+
+
+ window.onload = function(){
   const $win = $(window),
         $jump = $(document.getElementById("jump")),
         $jumpicon = $(document.getElementById("jumpicon")),
@@ -66,11 +88,14 @@
             scrollTop: 0
         }, 500);
     });
+
+    checkScroll();
+    $win.on("scroll load resize", throttle( checkScroll, 100));
   };
     </script>
 
 <div>
-  <a href="javascript:" id="jump">
+  <a href="javascript:" id="jump" class="hiddenJumpIcon">
     <i class="fa fa-chevron-up" id="jumpicon"></i>
   </a>
 </div>
