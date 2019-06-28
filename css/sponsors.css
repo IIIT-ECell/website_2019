@@ -1,11 +1,12 @@
+---
+---
 .main-head {
     position: relative;
-    background: url("../assets/imgs/team.svg");
+    background: url("{{site.baseurl}}/assets/imgs/sponsor.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-
     height: 100%;
     width: auto;
 }
