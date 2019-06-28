@@ -25,7 +25,7 @@
         path: /assets/imgs/dummy.png
         type: image
         alttext: this is a picture
-- title: Our Team
-  url: /team.html
 - title: Our Sponsors
   url: /sponsors.html
+- title: Our Team
+  url: /team.html

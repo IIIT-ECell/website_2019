@@ -1,4 +1,4 @@
-window.onload = init;
+$(document).ready(init);
 
 function shouldManageDropdown() {
     return window.innerWidth >= 1000;
