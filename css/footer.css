@@ -86,3 +86,14 @@ footer a:hover {
 .footer-text {
     color: rgb(230, 230, 230);
 }
+
+.img-responsive {
+    max-height: 5rem;
+}
+
+/* #footer-image {
+    background: url('https://researchweb.iiit.ac.in/~abhigyan.ghosh/assets/community.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
