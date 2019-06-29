@@ -263,6 +263,10 @@ body {
     #testimonial-parent {
         margin: 2rem 0;
     }
+
+    .image-right, .para-right, .tile-row-right {
+        float: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
