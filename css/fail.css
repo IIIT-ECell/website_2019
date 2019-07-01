@@ -300,3 +300,12 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
+/* from custom-bootstrap.css */
+a:link{
+    color:white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
