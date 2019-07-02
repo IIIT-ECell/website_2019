@@ -18,10 +18,6 @@
     name: E-Cell IITH
   - logo: aifmb.png
     name: Asian Institute of Family Managed Business
-  - logo: tie-silicon-logo.png
-    name: TiE
-  - logo: gyandhan.png
-    name: GyanDhan
 
 - sponsors: Sponsors
   members:
@@ -79,3 +75,21 @@
     name: Hello Curry
   - logo: HE_logo.png
     name: Hackerearth
+  - logo: tie-silicon-logo.png
+    name: TiE
+  - logo: gyandhan.png
+    name: GyanDhan
+  - logo: hackmania.png
+    name:  Hackmania
+  - logo: hyderabadangels.png
+    name: Hyderabad Angels
+  - logo: lean_in.svg
+    name: Lean In
+  - logo: the_august_fest.svg
+    name: The August Fest
+  - logo: kloudless.png
+    name: kloudless
+  - logo: invision_logo_pink.svg
+    name: InVision
+  - logo: the_indian_talks.png
+    name: The Indian Talks
