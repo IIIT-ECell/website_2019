@@ -14,47 +14,82 @@
     name: E-Cell IIMB 
   - logo: www.ecell.in.png
     name: E-Cell IIT-B
+  - logo: ecelliith.png
+    name: E-Cell IITH
+  - logo: aifmb.png
+    name: Asian Institute of Family Managed Business
+
 - sponsors: Sponsors
   members:
-  - logo: 4yuva.png
-    name: 4yuva
-  - logo: festpav.png
-    name: festpav
-  - logo: sheteam.jpg
-    name: sheteam
   - logo: amazon.png
     name: amazon
   - logo: ibm.png
     name: ibm
-  - logo: stumagz.png
-    name: stumagz
-  - logo: authbase.png
-    name: authbase
-  - logo: techfest.png
-    name: techfest
-  - logo: capgemini.png
-    name: capgemini
-  - logo: inc42.png
-    name: inc42
-  - logo: tech.png
-    name: tech
-  - logo: joveo.png
-    name: joveo
-  - logo: dbs.png
-    name: dbs
-  - logo: lovelychocos-logo.png
-    name: lovelychocos
-  - logo: uber.jpeg
-    name: uber
-  - logo: DO.png
-    name: DO
-  - logo: meraevents.jpg
-    name: meraevents
-  - logo: uni.jpg
-    name: uni
-  - logo: easports.png
-    name: easports
-  - logo: photriya.png
-    name: photriya
   - logo: pwc.png
     name: pwc
+  - logo: uber.jpeg
+    name: uber
+  - logo: capgemini.png
+    name: capgemini
+  - logo: joveo.png
+    name: joveo
+  - logo: DO.png
+    name: DO
+  - logo: dbs.png
+    name: dbs
+  - logo: easports.png
+    name: easports
+  - logo: redbullcom-logo.svg
+    name: RedBull
+  - logo: tech.png
+    name: tech
+  - logo: techfest.png
+    name: techfest
+  - logo: sheteam.jpg
+    name: sheteam
+  - logo: stumagz.png
+    name: stumagz
+  - logo: meraevents.jpg
+    name: meraevents
+  - logo: 4yuva.png
+    name: 4yuva
+  - logo: inc42.png
+    name: inc42
+  - logo: insider.in.png
+    name: insider.in
+  - logo: festpav.png
+    name: festpav
+  - logo: photriya.png
+    name: photriya
+  - logo: lovelychocos-logo.png
+    name: lovelychocos
+  - logo: authbase.png
+    name: authbase
+  - logo: uni.jpg
+    name: uni
+  - logo: fintapp1.png
+    name: Fintapp
+  - logo: wichplease.jpg
+    name: Wich Please
+  - logo: hellocurry.png
+    name: Hello Curry
+  - logo: HE_logo.png
+    name: Hackerearth
+  - logo: tie-silicon-logo.png
+    name: TiE
+  - logo: gyandhan.png
+    name: GyanDhan
+  - logo: hackmania.png
+    name:  Hackmania
+  - logo: hyderabadangels.png
+    name: Hyderabad Angels
+  - logo: lean_in.svg
+    name: Lean In
+  - logo: the_august_fest.svg
+    name: The August Fest
+  - logo: kloudless.png
+    name: kloudless
+  - logo: invision_logo_pink.svg
+    name: InVision
+  - logo: the_indian_talks.png
+    name: The Indian Talks
