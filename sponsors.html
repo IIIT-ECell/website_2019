@@ -30,9 +30,9 @@ noTopSpacing: true
         <div class="row">
             {% for member in sponsor.members %}
                 {% if sponsor.sponsors == "Sponsors" %}
-                    <div class="col-md-3 p-3 text-center">
+                    <div class="col-md-3 p-3 text-center my-auto">
                 {% else %}
-                    <div class="col-md-4 p-3 text-center">
+                    <div class="col-md-4 p-3 text-center my-auto">
                 {% endif %}
                         <img class="img-fluid" style="max-height: 150px;" src="{{ site.baseurl }}/assets/imgs/sponsors/{{ member.logo }}" alt="{{ member.name }}">
                     </div>
