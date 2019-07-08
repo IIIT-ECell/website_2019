@@ -1,6 +1,8 @@
 ---
 ---
-
+.card-width{
+    background-color: #FF99A5;
+}
 .main-head{
     position: relative;
     background: url('{{ site.baseurl }}/assets/imgs/ca.svg');
