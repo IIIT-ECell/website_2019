@@ -1,22 +1,24 @@
 ---
 ---
+body{
+    color: #0C2F00;
+}
 .card-width{
-    background-color: #FF99A5;
+    background-color: white;
 }
 .main-head{
     position: relative;
-    background: url('{{ site.baseurl }}/assets/imgs/ca.svg');
+    background: url('{{ site.baseurl }}/assets/imgs/ca_alt.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     height: 100%;
     width: auto;
-    color: #1b1b1d;
 }
 
 .card-hover:hover{
-    background-color: #01294D;
+    background-color: #829413;
     color: white;
 }
 
@@ -26,7 +28,7 @@
 }
 @media(min-width:768px){
     .main-head{
-        background-size: initial;
+        background-size: cover;
         background-position: right;
     }
 }
