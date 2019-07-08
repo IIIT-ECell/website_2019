@@ -14,6 +14,12 @@
     width: auto;
     color: #1b1b1d;
 }
+
+.card-hover:hover{
+    background-color: #01294D;
+    color: white;
+}
+
 .page-title{
     background: white;
     border-radius: 5px;
