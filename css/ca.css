@@ -1,0 +1,29 @@
+---
+---
+
+.main-head{
+    position: relative;
+    background: url('{{ site.baseurl }}/assets/imgs/ca.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    color: #1b1b1d;
+}
+.page-title{
+    background: white;
+    border-radius: 5px;
+}
+@media(min-width:768px){
+    .main-head{
+        background-size: initial;
+        background-position: right;
+    }
+}
+@media(max-width:424px){
+    .card-title{
+        font-size: 1.7rem;
+    }
+}
