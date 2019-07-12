@@ -17,8 +17,13 @@ body{
     width: auto;
 }
 
-.card-hover:hover{
+.card-hover-medgreen:hover{
     background-color: #829413;
+    color: white;
+}
+
+.card-hover-deepblue:hover{
+    background-color: #002240;
     color: white;
 }
 
@@ -35,5 +40,8 @@ body{
 @media(max-width:424px){
     .card-title{
         font-size: 1.7rem;
+    }
+    .display-4{
+        font-size: 2rem;
     }
 }
