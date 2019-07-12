@@ -1,0 +1,35 @@
+<style>
+    #banner{
+        position: fixed;
+        bottom: 0px;
+        z-index: 5;
+        background: #007899;
+        background: linear-gradient(-60deg, rgba(0, 120, 153, 0.5) 0%, rgba(103, 180, 111, 1) 100%);
+    }
+    a,h1,p {
+        color: #1b1b1d;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+</style>
+<div class="container-fluid" id="banner">
+    <div class="row">
+        <div class="col text-right">
+            <a id="close-button"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="row pb-2">
+        <div class="col">
+            <a href="{{site.baseurl}}/ca.html">
+                <h1>Become a part of something big!</h1>
+                <p class="lead">Join our CA programme today!</p>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("close-button").addEventListener("click",function(){
+        document.getElementById("banner").style.display="none";
+    });
+</script>
