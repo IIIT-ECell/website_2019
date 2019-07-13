@@ -1,10 +1,13 @@
 <style>
     #banner{
         position: fixed;
+        width: 50vw;
         bottom: 0px;
+        margin-left: 25vw;
         z-index: 5;
         background: #007899;
         background: linear-gradient(-60deg, rgba(0, 120, 153, 0.5) 0%, rgba(103, 180, 111, 1) 100%);
+        margin-bottom: 5px;
     }
     a,h1,p {
         color: #1b1b1d;
@@ -12,10 +15,16 @@
     a:hover {
         text-decoration: none;
     }
+    @media(max-width:1439px){
+        #banner{
+            width: 80vw;
+            margin-left: 10vw; 
+        }
+    }
 </style>
-<div class="container-fluid" id="banner">
+<div class="container-fluid rounded-card" id="banner">
     <div class="row">
-        <div class="col text-right">
+        <div class="col-12 text-right">
             <a id="close-button"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
         </div>
     </div>
