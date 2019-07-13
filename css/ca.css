@@ -1,14 +1,15 @@
 ---
 ---
-body{
-    color: #0C2F00;
+
+body {
+    color: #0c2f00;
 }
-.card-width{
+.card-width {
     background-color: white;
 }
-.main-head{
+.main-head {
     position: relative;
-    background: url('{{ site.baseurl }}/assets/imgs/ca_alt.svg');
+    background: url("{{ site.baseurl }}/assets/imgs/ca_alt.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -17,31 +18,74 @@ body{
     width: auto;
 }
 
-.card-hover-medgreen:hover{
+.card-hover-medgreen:hover {
     background-color: #829413;
     color: white !important;
 }
 
-.card-hover-deepblue:hover{
+.card-hover-deepblue:hover {
     background-color: #002240;
     color: white !important;
 }
 
-.page-title{
+.page-title {
     background: white;
     border-radius: 5px;
 }
-@media(min-width:768px){
-    .main-head{
+
+.ca-link {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #0c2f00;
+}
+
+.ca-link:hover {
+    background-color: #0c2f00;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 3rem;
+}
+
+.join-us {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    font-size: 2rem;
+
+    padding-top: 3rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+@media (max-width: 1200px) {
+    .join-us {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-head {
         background-size: cover;
         background-position: right;
     }
 }
-@media(max-width:424px){
-    .card-title{
+
+@media (max-width: 768px) {
+    .join-us {
+        width: 90%;
+    }
+}
+
+@media (max-width: 424px) {
+    .card-title {
         font-size: 1.7rem;
     }
-    .display-4{
+    .display-4 {
         font-size: 2rem;
     }
 }
