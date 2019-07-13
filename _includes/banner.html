@@ -4,33 +4,41 @@
         bottom: 0px;
         z-index: 5;
         background: #007899;
-        background: linear-gradient(-60deg, rgba(0, 120, 153, 0.5) 0%, rgba(103, 180, 111, 1) 100%);
+        background: white;
         margin-bottom: 5px;
+        border: 5px solid black;
     }
     a{
         color:black;
     }
     a:hover {
         text-decoration: none;
+        color: black;
+    }
+    #close-button {
+        margin-top: 5%!important;
+        cursor: pointer!important;
     }
 
 </style>
-<div class="container-fluid rounded-card" id="banner">
-    <div class="row">
-        <div class="col-12 text-right">
-            <a id="close-button"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row pb-2">
-            <div class="col">
-                <a href="{{site.baseurl}}/ca.html">
-                    <h1>Become a part of something big!</h1>
-                    <p class="lead">Join our CA programme today!</p>
-                </a>
+<div class="mx-auto w-100 d-flex justify-content-center">
+    <div class="container rounded-card text-center" id="banner">
+        <div class="row">
+            <div class="col-12 text-right">
+                <p id="close-button font-weight-bold cursor-pointer btn">&times;</p>
             </div>
         </div>
-    </div>    
+        <div class="container">
+            <div class="row pb-2">
+                <div class="col">
+                    <a href="{{site.baseurl}}/ca.html" class="d-inline-block">
+                        <h3  class="font-weight-bold d-md-inline px-2 ">Become a part of something big!</h3>
+                        <p class="lead btn palette-bg-blue cta-btn">Join our CA programme today!</p>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </div>
 </div>
 <script>
     document.getElementById("close-button").addEventListener("click",function(){
