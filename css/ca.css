@@ -19,12 +19,12 @@ body{
 
 .card-hover-medgreen:hover{
     background-color: #829413;
-    color: white;
+    color: white !important;
 }
 
 .card-hover-deepblue:hover{
     background-color: #002240;
-    color: white;
+    color: white !important;
 }
 
 .page-title{
