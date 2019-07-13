@@ -27,7 +27,7 @@
         "pretty": "prettier --write \"./**/*.{js,css}\"",
         "pretty_test": "prettier --check \"./**/*.{js,css}\"",
         "dist": "bundle exec jekyll b && gulp",
-        "deploy": "npm run dist && scp -r _site/* ecell@ecell.iiit.ac.in:/home/ecell/site"
+        "deploy": "npm run dist && scp -r _site/* ecell@ecell.iiit.ac.in:/home/ecell/site && ssh -t ecell@ecell.iiit.ac.in './update.sh'"
     },
     "husky": {
         "hooks": {

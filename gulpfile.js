@@ -3,7 +3,7 @@
 let autoprefixer = require("gulp-autoprefixer"),
     cleanCSS = require("gulp-clean-css"),
     gulp = require("gulp"),
-    htmlmin = require("gulp-htmlmin"),
+    //    htmlmin = require("gulp-htmlmin"),
     rmEmptyLines = require("gulp-remove-empty-lines"),
     uglify = require("gulp-uglify");
 
@@ -23,8 +23,10 @@ gulp.task("scripts", function() {
 });
 
 gulp.task("pages", function() {
-    return gulp
-        .src("./_site/**/*.html", { base: "./" })
+    return (
+        gulp
+            .src("./_site/**/*.html", { base: "./" })
+            /*
         .pipe(
             htmlmin({
                 collapseWhiteSpace: true,
@@ -33,8 +35,10 @@ gulp.task("pages", function() {
                 preserveLineBreaks: true
             })
         )
-        .pipe(rmEmptyLines())
-        .pipe(gulp.dest("."));
+        */
+            .pipe(rmEmptyLines())
+            .pipe(gulp.dest("."))
+    );
 });
 
 gulp.task("default", gulp.series("styles", "scripts", "pages"));
