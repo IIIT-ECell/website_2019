@@ -8,19 +8,19 @@ noTopSpacing: true
 <div class="container p-5" id="about">
     <div class="row">
         <div class="col p-5 text-center">
-            <h1 class="p-3">About Us</h1>
+            <h1 class="py-3">About Us</h1>
         </div>
     </div>
     <div class="row">
         <div class="col col-lg-8 col-md-10 col-xs-11 mx-auto text-justify">
             <p>
-                Entrepreneurship Cell, IIIT-Hyderabad is a non-profit organization run by students, and was established with the idea of creating, manifesting and guiding the entrepreneurial spirit in the student community across India and to encourage them to be successful entrepreneurs. As part of this mission, E-Cell, IIIT-Hyderabad wishes to reach out to colleges and engage students in events designed and conducted by the E-Cell that promises to invoke curiosity and enthusiasm towards entrepreneurship.
+            Entrepreneurship Cell, IIIT-Hyderabad is a non-profit organization run by students, and was established with the idea of creating, manifesting and guiding the entrepreneurial spirit in the student community across India and to encourage them to be successful entrepreneurs. As part of this mission, E-Cell, IIIT-Hyderabad wishes to reach out to colleges and engage students in events designed and conducted by the E-Cell that promises to invoke curiosity and enthusiasm towards entrepreneurship.
             </p>   
             <p>
-                E-Cell, IIIT-Hyderabad conducts several events, seminars and workshops all through the year, both for students of and beyond our college for the purpose of cultivating an entrepreneurial spirit within youngsters. The very purpose of the events are to let young minds explore and demystify the idea of entrepreneurship.
+            E-Cell, IIIT-Hyderabad conducts several events, seminars and workshops all through the year, both for students of and beyond our college for the purpose of cultivating an entrepreneurial spirit within youngsters. The very purpose of the events are to let young minds explore and demystify the idea of entrepreneurship.
             </p>
             <p>
-                The Campus Ambassador program has been designed in a way that puts skill development as a top priority. E-Cell wishes their ambassadors to be well-equipped to help advance the culture of entrepreneurship on their campus. The Campus Ambassadors, would be the face of E-Cell, IIIT-Hyderabad in their college. The skill-set that Campus Ambassadors would acquire through becoming a part of this program, would enable them to be better leaders and of course, give them an edge over their peers when it comes to their know-hows on entrepreneurship. Register now for the Campus Ambassador Program, win amazing goodies and other exciting incentives!
+            The Campus Ambassador program has been designed in a way that puts skill development as a top priority. E-Cell wishes their ambassadors to be well-equipped to help advance the culture of entrepreneurship on their campus. The Campus Ambassadors, would be the face of E-Cell, IIIT-Hyderabad in their college. The skill-set that Campus Ambassadors would acquire through becoming a part of this program, would enable them to be better leaders and of course, give them an edge over their peers when it comes to their know-hows on entrepreneurship. Register now for the Campus Ambassador Program, win amazing goodies and other exciting incentives!
             </p>
         </div>
     </div>
@@ -28,7 +28,7 @@ noTopSpacing: true
 <div class="container p-5" id="reasons">
     <div class="row">
         <div class="col p-5 text-center">
-            <h1 class="p-3">Incentives</h1>
+            <h1 class="py-3">Incentives</h1>
         </div>
     </div>
     <div class="row">
@@ -126,7 +126,7 @@ noTopSpacing: true
 <div class="container" id="associates">
     <div class="row">
         <div class="col p-5 text-center">
-            <h1 class="p-3">Our Partners</h1>
+            <h1 class="py-3">Our Partners</h1>
         </div>
     </div>
     <div class="row">
@@ -145,50 +145,22 @@ noTopSpacing: true
 <div class="container" id="contact">
     <div class="row">
         <div class="col p-5 text-center">
-            <h1 class="p-3">FAQs</h1>
+            <h1 class="py-3">FAQs</h1>
         </div>
     </div>
     <div class="row">
+        {% for faq in site.data.ca_faq %}
         <div class="col-12">
-            <div class="card rounded-card">
+            <div class="card rounded-card mb-5">
                 <h3 class="px-2 m-2">
-                    What does E-Cell expect Campus Ambassadors to do?
+                    {{ faq.question }}
                 </h3>
                 <p class="p-2 m-2">
-                    Campus Ambassadors are the face of E-Cell, IIIT Hyderabad in their campus. We expect them to extend our reach by sharing our event promotion materials with the student community of their college, help us increase participation in our events by getting more registrations from their college, create awareness and improve the culture of entrepreneurship on their campus.
+                {{ faq.answer }}
                 </p>
             </div>
         </div>
-        <div class="col-12">
-            <div class="card rounded-card">
-                <h3 class="px-2 m-2">
-                    Why join the Campus Ambassador Programme?
-                </h3>
-                <p class="p-2 m-2">
-                The Campus Ambassador Programme is designed in a way that puts skill development as a top priority. The skill-set that Campus Ambassadors would acquire through becoming a part of this program, would enable them to be better leaders and of course, give them an edge over their peers when it comes to their know-hows on entrepreneurship. Besides skill development, the Campus Ambassadors enjoy several other incentives including free access to all events and workshops organised by us, a fixed amount for each registration for our events from your college, a certificate from E-Cell and also our top performing Campus Ambassadors win exciting goodies from our gifting partners.
-                </p>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="card rounded-card">
-                <h3 class="px-2 m-2">
-                    Would we have to work outside the college campus or prepare promotional materials?
-                </h3>
-                <p class="p-2 m-2">
-                No. Your work is to help us extend our reach only on your college campus. Also, promotional materials will be prepared by us and shared with you through WhatsApp or Facebook groups that you will be a part of.
-                </p>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="card rounded-card">
-                <h3 class="px-2 m-2">
-                    What are the requirements to become a Campus Ambassador?
-                </h3>
-                <p class="p-2 m-2">
-                    Any college student can apply for the Campus Ambassador Programme.
-                </p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
