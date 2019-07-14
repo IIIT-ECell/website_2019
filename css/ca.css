@@ -46,14 +46,14 @@ body {
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem;
-    color: #0c2f00;
+    color: white !important;
+    background: #002240;
     transition: 0.5s ease;
     border-radius: 3rem;
 }
 
 .ca-link:hover {
-    background-color: #0c2f00;
-    color: white !important;
+    cursor: pointer;
     text-decoration: none;
 }
 
