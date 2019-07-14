@@ -3,6 +3,9 @@
 {% include head.html %}
 <body>
     {% include navbar.html %}
+    {% if page.url != "/ca" %}
+        {% include banner.html %}
+    {% endif %}
     {% if page.headerImg %}
         {% include header.html %}
     {% elsif page.noTopSpacing != true %}
