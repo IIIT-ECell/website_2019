@@ -6,6 +6,7 @@
 
     width: 100%;
     padding: 2rem;
+    border-radius: 10px;
 
     z-index: 5;
 
@@ -42,4 +43,23 @@ a:hover {
     #banner {
         padding: 1rem;
     }
+}
+
+.cta-btn {
+    padding: 10px 60px;
+    border-radius: 1.5rem;
+    margin-top: 1.2rem !important;
+    color: white;
+}
+
+.cta-btn:hover {
+    color: white;
+}
+
+.palette-bg-blue {
+    background-color: #002240;
+}
+
+.palette-bg-blue:hover {
+    background-color: #084880;
 }
