@@ -1,18 +1,22 @@
 "use strict";
 
 let autoprefixer = require("gulp-autoprefixer"),
-    cleanCSS = require("gulp-clean-css"),
+    //    cleanCSS = require("gulp-clean-css"),
     gulp = require("gulp"),
     //    htmlmin = require("gulp-htmlmin"),
     rmEmptyLines = require("gulp-remove-empty-lines"),
     uglify = require("gulp-uglify");
 
 gulp.task("styles", function() {
-    return gulp
-        .src("./_site/css/*.css", { base: "./" })
-        .pipe(autoprefixer({ browsers: ["last 99 versions"], cascade: false }))
-        .pipe(cleanCSS())
-        .pipe(gulp.dest("."));
+    return (
+        gulp
+            .src("./_site/css/*.css", { base: "./" })
+            .pipe(
+                autoprefixer({ browsers: ["last 99 versions"], cascade: false })
+            )
+            //   .pipe(cleanCSS())
+            .pipe(gulp.dest("."))
+    );
 });
 
 gulp.task("scripts", function() {

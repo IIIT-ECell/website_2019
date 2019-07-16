@@ -71,6 +71,10 @@ body {
     margin: 2rem auto;
 }
 
+.partners {
+    justify-content: center;
+}
+
 @media (max-width: 1200px) {
     .join-us {
         width: 75%;

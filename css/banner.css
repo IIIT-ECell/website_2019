@@ -1,0 +1,45 @@
+#banner {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    padding: 2rem;
+
+    z-index: 5;
+
+    background: white;
+
+    margin-bottom: 5px;
+    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer !important;
+}
+
+.banner-heading {
+    margin: 0 auto !important;
+}
+
+@media (max-width: 500px) {
+    #banner {
+        padding: 1rem;
+    }
+}

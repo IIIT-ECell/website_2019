@@ -131,9 +131,7 @@ noTopSpacing: true
             <h1 class="py-3">Our Partners</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3 col-sm-6 my-auto">
-        </div>
+    <div class="row partners">
         <div class="col-md-3 col-sm-6 my-auto">
             <img class="img-fluid" src="/assets/imgs/sponsors/embibe.svg">
         </div>
@@ -141,6 +139,7 @@ noTopSpacing: true
             <img class="img-fuild" src="/assets/imgs/sponsors/internshaala.svg">
         </div>
         <div class="col-md-3 col-sm-6 my-auto">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/imgs/sponsors/hellointern.png" alt="HelloIntern">
         </div>
     </div>
 </div>
@@ -153,7 +152,7 @@ noTopSpacing: true
     <div class="row">
         {% for faq in site.data.ca_faq %}
         <div class="col-12">
-            <div class="faq-main-card card rounded-card mb-5">
+            <div class="faq-main-card card rounded-card mb-5 card-hover-medgreen">
                 <h3 class="px-2 m-2">
                     {{ faq.question }}
                 </h3>

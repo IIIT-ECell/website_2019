@@ -1,46 +1,19 @@
-<style>
-    #banner{
-        position: fixed;
-        bottom: 0px;
-        z-index: 5;
-        background: #007899;
-        background: white;
-        margin-bottom: 5px;
-        border: 5px solid black;
-    }
-    a{
-        color:black;
-    }
-    a:hover {
-        text-decoration: none;
-        color: black;
-    }
-    #close-button {
-        cursor: pointer!important;
-    }
+<link rel="stylesheet" href="{{ site.baseurl }}/css/banner.css">
 
-</style>
-<div class="mx-auto w-100 d-flex justify-content-center">
-    <div class="container rounded-card text-center" id="banner">
-        <div class="row">
-            <div class="col-12 text-right">
-                <p id="close-button" class=" font-weight-bold">&times;</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row pb-2">
-                <div class="col">
-                    <a href="{{site.baseurl}}/ca.html" class="d-inline-block">
-                        <h3  class="font-weight-bold d-md-inline px-2 ">Become a part of something big!</h3>
-                        <p class="lead btn palette-bg-blue cta-btn">Join our CA programme today!</p>
-                    </a>
-                </div>
-            </div>
-        </div>    
+<div id="banner" class="rounded-card mx-auto container">
+    <i id="close-button" class="fa fa-times"></i>
+    <div class="banner-content">
+        <a href="{{ site.baseurl }}/ca">
+            <h3 class="font-weight-bold px-2 banner-heading text-center">
+                Become a part of something big!
+            </h3>
+            <div class="lead btn palette-bg-blue cta-btn w-100">Join our CA programme</div>
+        </a>
     </div>
 </div>
+
 <script>
-    document.getElementById("close-button").addEventListener("click",function(){
-        document.getElementById("banner").style.display="none";
-    });
+    $("#close-button").click(() => {
+        $("#banner").hide();
+    })
 </script>
