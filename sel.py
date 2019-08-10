@@ -2,6 +2,7 @@
 Install chromedriver from here https://sites.google.com/a/chromium.org/chromedriver/downloads for your chrome version
 Run pip install selenium xlrd in working directory
 Fill your username below
+I assume the list of CAs is in your home directory as ~/cas.csv.
 """
 
 import csv
@@ -22,6 +23,7 @@ HOME = "/home/" + YOUR_USER_NAME  # don't change these
 howzhackfile = HOME + '/Downloads/howzhack-registered.xlsx'
 answerCSV = HOME + "/answer.csv"
 leaderCSV = HOME + "/leader.csv"
+caCSV = HOME + "/cas.csv"
 
 
 def csv_from_excel():
@@ -86,29 +88,35 @@ try:
 finally:
     driver.quit()
 
-# then open the file and convert to csv
+    # then open the file and convert to csv
 csv_from_excel()
 
 with open(answerCSV) as f:
     # this is a list of dictionaries
     result = [{k: v for k, v in row.items()}
               for row in csv.DictReader(f, skipinitialspace=True)]
+    caCodeToName = {}
+    with open(caCSV) as f2:
+        result2 = [{k: v for k, v in row.items()}
+                   for row in csv.DictReader(f2, skipinitialspace=True)]
+
+        for ca in result2:
+            caCodeToName[ca["CA Code"].lower()] = ca["Name"]
+
     caCounts = {}
-    caNames = {}
     for reg in result:
-        ca = reg["CA Code"]
+        ca = reg["CA Code"].lower()
         if ca:
             if caCounts.get(ca):
                 caCounts[ca] += 1
             else:
                 caCounts[ca] = 1
-                caNames[ca] = reg["Name"]
     caCounts = [(k, v) for k, v in caCounts.items()]
     caCounts = sorted(caCounts, key=lambda x: x[1], reverse=True)
     leaderboard = []
     for ca in caCounts:
         ans = {}
-        ans["Name"] = caNames[ca[0]]
+        ans["Name"] = caCodeToName[ca[0]]
         ans["Points"] = ca[1]
         leaderboard.append(ans)
 
