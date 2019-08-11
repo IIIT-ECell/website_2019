@@ -77,16 +77,19 @@ function manageCurves() {
      * !IMPORTANT: i'm assuming that <header> will only be used to define the whole header image part
      *              and nothing else in this whole website
      */
+
+    let $navbar = $("#navbar");
+
     if ($("header").length) {
         $(document).on("scroll", function() {
             if ($(document).scrollTop() > 25) {
-                $("nav").addClass("navbar-curves");
+                $navbar.addClass("navbar-curves");
             } else {
-                $("nav").removeClass("navbar-curves");
+                $navbar.removeClass("navbar-curves");
             }
         });
     } else {
-        $("nav").addClass("navbar-curves");
+        $navbar.addClass("navbar-curves");
     }
 }
 

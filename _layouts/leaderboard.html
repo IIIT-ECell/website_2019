@@ -33,33 +33,8 @@ layout: page
         <tbody id="table_body">
         </tbody>
     </table>
+
+    <nav aria-label="pagination for leaderboard">
+        <ul id="pagination" class="pagination"></ul>
+    </nav>
 </div>
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            type: "GET",
-            url: "/assets/ca/leader.csv",
-            dataType: "text",
-            success: function(data) {processData(data);}
-        });
-    });
-    function processData(allText){
-        var allTextLines = allText.split(/\r\n|\n/);
-
-        for(var i=0; i<allTextLines.length; i++){
-            var data = allTextLines[i].split(',')
-            
-            var row = document.createElement('tr');
-            var name = document.createElement('td');
-            var score = document.createElement('td');
-
-            name.innerHTML = data[0];
-            score.innerHTML = data[1];
-
-            row.appendChild(name);
-            row.appendChild(score);
-            document.getElementById('table_body').appendChild(row);
-
-        }
-    }
-</script>
