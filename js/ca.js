@@ -1,89 +1,93 @@
-let leaderboardData = null,
-    allTextLines;
+(function() {
+    let leaderboardData = null,
+        allTextLines;
 
-const entriesPerPage = 50;
+    const entriesPerPage = 20;
 
-$(document).ready(function() {
-    $.ajax({
-        type: "GET",
-        url: "/assets/ca/leader.csv",
-        dataType: "text",
-        success: function(data) {
-            leaderboardData = data;
-            allTextLines = leaderboardData.split(/\r\n|\n/);
+    $(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "/assets/ca/leader.csv",
+            dataType: "text",
+            success: function(data) {
+                leaderboardData = data;
+                allTextLines = leaderboardData.split(/\r\n|\n/);
 
-            processData();
+                processData();
+            }
+        });
+    });
+
+    function makePaginationNav(currentPage, totalPages) {
+        let disablePrev = currentPage === 1,
+            disableNext = currentPage === totalPages,
+            $pageNav = $("#pagination"),
+            $prev = $("<li>", {
+                class: `page-item ${disablePrev ? "disabled" : ""}`
+            }),
+            $next = $("<li>", {
+                class: `page-item ${disableNext ? "disabled" : ""}`
+            });
+
+        $prev.click(() => {
+            processData((currentPage - 2) * entriesPerPage);
+        });
+        $prev.append(`<span class="page-link">&laquo</span>`);
+
+        $next.click(() => {
+            processData(currentPage * entriesPerPage);
+        });
+        $next.append(`<span class="page-link">&raquo</span>`);
+
+        $pageNav.empty();
+        $pageNav.append($prev);
+
+        for (let i = 1; i <= totalPages; i++) {
+            let $navItem = $("<li>", {
+                class: `page-item ${i === currentPage ? "active" : ""}`
+            });
+
+            $navItem.append(`<span class="page-link">${i}</span>`);
+            $navItem.click(() => {
+                processData((i - 1) * entriesPerPage);
+            });
+
+            $pageNav.append($navItem);
         }
-    });
-});
 
-function makePaginationNav(currentPage, totalPages) {
-    let addPrev = currentPage != 1,
-        addNext = currentPage != totalPages,
-        $pageNav = $("#pagination"),
-        $prev = $("<li>", { class: `page-item ${addPrev ? "" : "disabled"}` }),
-        $next = $("<li>", { class: `page-item ${addNext ? "" : "disabled"}` });
-
-    console.log(currentPage, totalPages);
-
-    $prev.click(() => {
-        processData((currentPage - 2) * entriesPerPage);
-    });
-    $prev.append(`<span class="page-link">&laquo</span>`);
-
-    $next.click(() => {
-        processData(currentPage * entriesPerPage);
-    });
-    $next.append(`<span class="page-link">&raquo</span>`);
-
-    $pageNav.empty();
-    $pageNav.append($prev);
-
-    for (let i = 1; i <= totalPages; i++) {
-        let $navItem = $("<li>", {
-            class: `page-item ${i === currentPage ? "active" : ""}`
-        });
-
-        $navItem.append(`<span class="page-link">${i}</span>`);
-        $navItem.click(() => {
-            processData((i - 1) * entriesPerPage);
-        });
-
-        $pageNav.append($navItem);
+        $pageNav.append($next);
     }
 
-    $pageNav.append($next);
-}
+    function processData(startIndex = -1) {
+        if (startIndex < 0) startIndex = 0;
 
-function processData(startIndex = -1) {
-    if (startIndex < 0) startIndex = 0;
+        let endIndex = startIndex + entriesPerPage;
 
-    let endIndex = startIndex + entriesPerPage;
+        if (endIndex < 0 || endIndex >= allTextLines.length)
+            endIndex = allTextLines.length - 1;
 
-    if (endIndex < 0 || endIndex >= allTextLines.length)
-        endIndex = allTextLines.length - 1;
+        let currentPage = Math.floor(startIndex / entriesPerPage) + 1,
+            totalPages = Math.floor(allTextLines.length / entriesPerPage) + 1,
+            $tableBody = $("#table_body");
 
-    let currentPage = Math.floor(startIndex / entriesPerPage) + 1,
-        totalPages = Math.floor(allTextLines.length / entriesPerPage) + 1,
-        $tableBody = $("#table_body");
+        makePaginationNav(currentPage, totalPages);
 
-    makePaginationNav(currentPage, totalPages);
+        $tableBody.empty();
 
-    $tableBody.empty();
+        for (let i = startIndex; i <= endIndex; i++) {
+            let data = allTextLines[i].split(",");
 
-    for (let i = startIndex; i <= endIndex; i++) {
-        let data = allTextLines[i].split(",");
+            let $row = $("<tr>"),
+                $name = $("<td>"),
+                $score = $("<td>");
 
-        let $row = $("<tr>"),
-            $name = $("<td>"),
-            $score = $("<td>");
+            $name.html(data[0]);
+            $score.html(data[1]);
 
-        $name.html(data[0]);
-        $score.html(data[1]);
+            $row.append($name);
+            $row.append($score);
 
-        $row.append($name);
-        $row.append($score);
-
-        $tableBody.append($row);
+            $tableBody.append($row);
+        }
     }
-}
+})();
