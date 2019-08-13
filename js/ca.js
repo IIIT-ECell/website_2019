@@ -7,7 +7,7 @@
     $(document).ready(function() {
         $.ajax({
             type: "GET",
-            url: "/assets/ca/leader.csv",
+            url: "/leader.csv",
             dataType: "text",
             success: function(data) {
                 leaderboardData = data;
