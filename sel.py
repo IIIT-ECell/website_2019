@@ -18,7 +18,7 @@ from selenium import webdriver
 from time import sleep
 
 
-YOUR_USER_NAME = "gt"  # CHANGE THIS
+YOUR_USER_NAME = "ecell"  # CHANGE THIS
 HOME = "/home/" + YOUR_USER_NAME  # don't change these
 howzhackfile = HOME + '/Downloads/howzhack-registered.xlsx'
 answerCSV = HOME + "/answer.csv"
@@ -44,23 +44,25 @@ def csv_from_excel():
 
 
 options = Options()
-options.add_experimental_option("prefs", {
-    "download.default_directory": "~",
-    "download.prompt_for_download": False,
-    "download.directory_upgrade": True,
-    # "safebrowsing.enabled": True
-})
-
+download_path = './output/'
+options.headless = True
+# options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+# options.add_argument('start-maximized')
+prefs = {'download.default_directory' : download_path}
+options.add_experimental_option('prefs', prefs)
 # Create a new instance of the Firefox driver
+
 driver = webdriver.Chrome(options=options)
 
-# go to the google home page
+driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
+params = {'cmd': 'Page.setDownloadBehavior', 'params': {'behavior': 'allow', 'downloadPath': download_path}}
+command_result = driver.execute("send_command", params)
+
 driver.get(
     "https://sprint.hackerearth.com/challenges/hackathon/admin/howzhack/registrations/users/")
 
-# the page is ajaxy so the title is originally this:
 print(driver.title)
-
 # find the element that's name attribute is q (the google search box)
 email = driver.find_element_by_id("id_email")
 passw = driver.find_element_by_id("id_password")
@@ -82,6 +84,7 @@ try:
     btn = driver.find_element_by_css_selector(".page-data a.btn-blue")
     btn.click()
 
+    print("Download started")
     # wait for download
     sleep(3)
 
@@ -89,6 +92,7 @@ finally:
     driver.quit()
 
     # then open the file and convert to csv
+print("converting excel to csv")
 csv_from_excel()
 
 with open(answerCSV) as f:
@@ -130,3 +134,4 @@ with open(answerCSV) as f:
     for leader in leaderboard:
         writer.writerow([leader["Name"], leader["Points"]])
     csv_file.close()
+print("finished success")
