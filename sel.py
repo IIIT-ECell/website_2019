@@ -20,7 +20,7 @@ from time import sleep
 
 YOUR_USER_NAME = "ecell"  # CHANGE THIS
 HOME = "/home/" + YOUR_USER_NAME  # don't change these
-howzhackfile = HOME + '/Downloads/howzhack-registered.xlsx'
+howzhackfile = HOME + '/output/howzhack-registered.xlsx'
 answerCSV = HOME + "/answer.csv"
 leaderCSV = HOME + "/leader.csv"
 caCSV = HOME + "/cas.csv"
@@ -44,7 +44,7 @@ def csv_from_excel():
 
 
 options = Options()
-download_path = './output/'
+download_path = HOME + "/output"
 options.headless = True
 # options.add_argument('--headless')
 options.add_argument('--no-sandbox')
@@ -78,6 +78,7 @@ try:
     if os.path.isfile(howzhackfile):
         os.remove(howzhackfile)
         os.remove(answerCSV)
+        print("Previous howzhack file found and deleted")
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
     WebDriverWait(driver, 10).until(EC.title_contains("HOWZHACK"))
 
