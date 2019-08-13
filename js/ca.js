@@ -81,7 +81,8 @@
                 $name = $("<td>"),
                 $score = $("<td>");
 
-            $name.html(data[0]);
+            $name.html(data[0].toLowerCase());
+            // Converting to lower case so that capitalise using CSS works
             $score.html(data[1]);
 
             $row.append($name);
