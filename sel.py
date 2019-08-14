@@ -5,6 +5,7 @@ Fill your username below
 I assume the list of CAs is in your home directory as ~/cas.csv.
 """
 
+import re
 import csv
 import xlrd
 import os
@@ -49,14 +50,16 @@ options.headless = True
 # options.add_argument('--headless')
 options.add_argument('--no-sandbox')
 # options.add_argument('start-maximized')
-prefs = {'download.default_directory' : download_path}
+prefs = {'download.default_directory': download_path}
 options.add_experimental_option('prefs', prefs)
 # Create a new instance of the Firefox driver
 
 driver = webdriver.Chrome(options=options)
 
-driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
-params = {'cmd': 'Page.setDownloadBehavior', 'params': {'behavior': 'allow', 'downloadPath': download_path}}
+driver.command_executor._commands["send_command"] = (
+    "POST", '/session/$sessionId/chromium/send_command')
+params = {'cmd': 'Page.setDownloadBehavior', 'params': {
+    'behavior': 'allow', 'downloadPath': download_path}}
 command_result = driver.execute("send_command", params)
 
 driver.get(
@@ -77,9 +80,10 @@ passw.submit()
 try:
     if os.path.isfile(howzhackfile):
         os.remove(howzhackfile)
+        print("Previous howzhack file found and deleted")
     if os.path.isfile(answerCSV):
         os.remove(answerCSV)
-        print("Previous howzhack file found and deleted")
+        print("Previous answer csv file found and deleted")
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
     WebDriverWait(driver, 10).until(EC.title_contains("HOWZHACK"))
 
@@ -120,11 +124,21 @@ with open(answerCSV) as f:
     caCounts = [(k, v) for k, v in caCounts.items()]
     caCounts = sorted(caCounts, key=lambda x: x[1], reverse=True)
     leaderboard = []
+    blockedWords = ["language", "good", "no", "Howzhack"]
+    blockedRegexes = list(
+        map(lambda x: re.compile("\\b" + x + "\\b", re.I), blockedWords))
+
     for ca in caCounts:
         ans = {}
-        ans["Name"] = caCodeToName[ca[0]]
-        ans["Points"] = ca[1]
-        leaderboard.append(ans)
+        dont = False
+        for word in blockedRegexes:
+            if re.search(word, ca[0]):
+                dont = True
+                break
+        if not dont:
+            ans["Name"] = ca[0]
+            ans["Points"] = ca[1]
+            leaderboard.append(ans)
 
     csv_file = None
     try:
