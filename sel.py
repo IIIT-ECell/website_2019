@@ -77,8 +77,10 @@ passw.submit()
 try:
     if os.path.isfile(howzhackfile):
         os.remove(howzhackfile)
-        os.remove(answerCSV)
         print("Previous howzhack file found and deleted")
+    if os.path.isfile(answerCSV):
+        os.remove(answerCSV)
+        print("Previous answer csv file found and deleted")
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
     WebDriverWait(driver, 10).until(EC.title_contains("HOWZHACK"))
 
@@ -119,11 +121,19 @@ with open(answerCSV) as f:
     caCounts = [(k, v) for k, v in caCounts.items()]
     caCounts = sorted(caCounts, key=lambda x: x[1], reverse=True)
     leaderboard = []
+    blockedWords = ["language", "good"]
+
     for ca in caCounts:
         ans = {}
-        ans["Name"] = caCodeToName[ca[0]]
-        ans["Points"] = ca[1]
-        leaderboard.append(ans)
+        dont = False
+        for word in blockedWords:
+            if word in ca[0]:
+                dont = True
+                break
+        if not dont:
+            ans["Name"] = ca[0]
+            ans["Points"] = ca[1]
+            leaderboard.append(ans)
 
     csv_file = None
     try:
