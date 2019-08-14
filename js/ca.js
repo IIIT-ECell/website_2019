@@ -82,13 +82,16 @@
             let data = allTextLines[i].split(",");
 
             let $row = $("<tr>"),
+                $rank = $("<td>"),
                 $name = $("<td>"),
                 $score = $("<td>");
 
+            $rank.html(i + 1);
             $name.html(data[0].toLowerCase());
             // Converting to lower case so that capitalise using CSS works
             $score.html(data[1]);
 
+            $row.append($rank);
             $row.append($name);
             $row.append($score);
 
