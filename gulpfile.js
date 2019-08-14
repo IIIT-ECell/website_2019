@@ -5,7 +5,7 @@ let autoprefixer = require("gulp-autoprefixer"),
     gulp = require("gulp"),
     //    htmlmin = require("gulp-htmlmin"),
     rmEmptyLines = require("gulp-remove-empty-lines"),
-    uglify = require("gulp-uglify");
+    terser = require("gulp-terser");
 
 gulp.task("styles", function() {
     return (
@@ -22,7 +22,7 @@ gulp.task("styles", function() {
 gulp.task("scripts", function() {
     return gulp
         .src("./_site/js/*.js", { base: "./" })
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(gulp.dest("."));
 });
 

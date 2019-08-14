@@ -29,14 +29,18 @@
                 class: `page-item ${disableNext ? "disabled" : ""}`
             });
 
-        $prev.click(() => {
-            processData((currentPage - 2) * entriesPerPage);
-        });
+        if (!disablePrev) {
+            $prev.click(() => {
+                processData((currentPage - 2) * entriesPerPage);
+            });
+        }
         $prev.append(`<span class="page-link">&laquo</span>`);
 
-        $next.click(() => {
-            processData(currentPage * entriesPerPage);
-        });
+        if (!disableNext) {
+            $next.click(() => {
+                processData(currentPage * entriesPerPage);
+            });
+        }
         $next.append(`<span class="page-link">&raquo</span>`);
 
         $pageNav.empty();
