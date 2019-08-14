@@ -3,6 +3,8 @@ layout: page
 ---
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/ca.css">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
+<script type="text/javascript" src="{{ site.baseurl }}/js/ca.js"></script>
+
 <header class="w-100 h-100">
     <div class="container-fluid h-100">
         <div class="row h-100 jumbotron jumbotron-fluid main-head">
@@ -195,4 +197,27 @@ layout: page
        target="_blank">
         Join us now!
     </a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col p-5 text-center">
+            <h1 class="py-3">Leaderboard</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center align-items-center text-center">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Score</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboard">
+              </tbody>
+            </table>
+        </div>
+    </div>
 </div>

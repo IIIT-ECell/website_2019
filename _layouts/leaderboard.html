@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/ca.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
+<script type="text/javascript" src="{{ site.baseurl }}/js/ca.js"></script>
+
+<header class="w-100 h-100">
+    <div class="container-fluid h-100">
+        <div class="row h-100 jumbotron jumbotron-fluid main-head">
+            <div class="col-xl-8 col-lg-8 col-md-9 col-12 h-100 w-100">
+                <div class="container-fluid d-flex align-items-center justify-content-center w-100 h-100">
+                    <div class="card text-center rounded-card card-width w-50 main-card">
+                        <div class="card-body card-push-sides">
+                            <img class="img-fluid" style="width: 50%" src="/assets/imgs/logos/logo-ecell_iiith-orange.png">
+                            <h1 class="display-4">{{ page.title }}</h1>
+                            <p class="lead">Leaderboard</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container leaderboard mt-5">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Registrations</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+        </tbody>
+    </table>
+
+    <nav aria-label="pagination for leaderboard" class="text-center d-flex justify-content-center">
+        <ul id="pagination" class="pagination"></ul>
+    </nav>
+</div>

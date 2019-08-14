@@ -77,6 +77,7 @@ passw.submit()
 try:
     if os.path.isfile(howzhackfile):
         os.remove(howzhackfile)
+    if os.path.isfile(answerCSV):
         os.remove(answerCSV)
         print("Previous howzhack file found and deleted")
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
