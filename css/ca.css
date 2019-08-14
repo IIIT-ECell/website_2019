@@ -143,18 +143,21 @@ body {
     font-family: CustomHeading, sans-serif;
 }
 
+.leaderboard thead tr th {
+    border: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+}
+
 .leaderboard thead tr th:first-child {
     border-top-left-radius: 1rem;
     border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     padding-left: 1.2rem;
 }
 .leaderboard thead tr th:last-child {
     border-top-right-radius: 1rem;
     border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     padding-right: 1.2rem;
 }
 
