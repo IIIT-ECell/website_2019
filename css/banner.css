@@ -5,15 +5,15 @@
     right: 0;
 
     width: 100%;
-    
+
     padding: 2rem;
     margin-bottom: 5px;
-    
+
     z-index: 5;
-    
+
     display: flex;
     justify-content: center;
-    
+
     border-radius: 2rem;
     background: linear-gradient(to right, #92fe9ded, #00c9ffed);
     color: black;
@@ -55,11 +55,6 @@
         flex: 1 1 0 !important;
         width: 0 !important;
     }
-}
-
-a, a:hover {
-    text-decoration: none;
-    color: inherit !important;
 }
 
 .ticket-btn {
