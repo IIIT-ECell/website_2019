@@ -33,6 +33,10 @@
     name: capgemini
   - logo: joveo.png
     name: joveo
+  - logo: qc_logo_flt_rgb_blu_pos.png
+    name: Qualcomm
+  - logo: Micron logo_blue.png
+    name: Micron
   - logo: DO.png
     name: DO
   - logo: dbs.png
@@ -41,6 +45,8 @@
     name: easports
   - logo: redbullcom-logo.svg
     name: RedBull
+  - logo: monster.png
+    name: Monster
   - logo: tech.png
     name: tech
   - logo: techfest.png
