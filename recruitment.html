@@ -13,41 +13,46 @@ cardTitle: Recruitment Form
     </div>
     <div class="row">
         <div class="col-md-6 col-11 backbox">
-            <form action="https://formspree.io/abhigyan.ghosh.research@gmail.com" method="POST">
+            <div action="https://formspree.io/abhigyan.ghosh.research@gmail.com" method="POST">
             <div class="form-group">
                 <label for="inp-name">Full Name</label>
                 <input type="text" name="name" class="form-control" id="inp-name" placeholder="Name">
             </div>
             <div class="form-group">
-                <label for="inp-rollno">Roll Number</label>
+                <label for="inp-rollno"><br>Roll Number</label>
                 <input type="number" maxlength="10" name="rollno" class="form-control" id="inp-rollno" placeholder="Roll Number">
             </div>
             <div class="form-group">
-                <label for="inp-email">Email address</label>
+                <label for="inp-email"><br>Email address</label>
                 <input type="email" name="_replyto" class="form-control" id="inp-email" placeholder="Email">
             </div>
             <div class="form-group">
-                <label for="inp-phoneno">Phone Number</label>
+                <label for="inp-phoneno"><br>Phone Number</label>
                 <input type="number" maxlength="10" name="phoneno" class="form-control" id="inp-phoneno" placeholder="10-digit Indian Number">
             </div>
             <div class="form-group">
-                <label for="inp-question1">Why do you wish to be a part of E-Cell ?</label>
+                <label for="inp-question1"><br>Why do you wish to be a part of E-Cell ?</label>
                 <textarea name="question1" class="form-control" id="inp-question1" rows="3"></textarea>
             </div>
+            <br>
+            <label for="inp-deptchoice">Which departments are you interested to be a part of ? (Max 3 choices)<br><br></label>                    
+                <div class="row" style="padding-left: 20px;">
+                    <div class="col-6">    
+                        <input type="checkbox" class="form-check-input text-center"  name="c1" id="option1"><label class="form-check-label" value="Events" for="option1">Events</label><br>
+                        <input type="checkbox" class="form-check-input text-center"  name="c2" id="option2"><label class="form-check-label" value="Operations" for="option1">Operations</label><br>
+                        <input type="checkbox" class="form-check-input text-center"  name="c3" id="option3"><label class="form-check-label" value="Design" for="option1">Design</label><br>
+                        <input type="checkbox" class="form-check-input text-center"  name="c4" id="option4"><label class="form-check-label" value="Finance" for="option1">Finance</label><br>
+                        <input type="checkbox" class="form-check-input text-center"  name="c5" id="option5"><label class="form-check-label" value="HR" for="option1">HR and Team Building</label><br>
+                    </div>
+                    <div class="col-6">
+                        <input type="checkbox" name="c6" class="form-check-input" id="option6"><label class="form-check-label" value="Social" for="option1">Social Media and PR</label><br>
+                        <input type="checkbox" name="c7" class="form-check-input" id="option7"><label class="form-check-label" value="Marketing" for="option1">Marketing</label><br>
+                        <input type="checkbox" name="c7" class="form-check-input" id="option8"><label class="form-check-label" value="Corporate" for="option1">Corporate Relations</label><br>
+                        <input type="checkbox" name="c7" class="form-check-input" id="option9"><label class="form-check-label" value="Collaborations" for="option1">Collaborations</label><br>
+                    </div>
+                </div>
             <div class="form-group">
-                <label for="inp-deptchoice">Which departments are you interested to be a part of ? (Max 3 choices)</label>
-                    <input type="checkbox" name="c1" class="form-control" value="1">Events
-                    <input type="checkbox" name="c2" class="form-control" value="2">Operations
-                    <input type="checkbox" name="c3" class="form-control" value="3">Design
-                    <input type="checkbox" name="c4" class="form-control" value="4">Finance
-                    <input type="checkbox" name="c5" class="form-control" value="5">HR and Team Building
-                    <input type="checkbox" name="c6" class="form-control" value="6">Social Media and PR
-                    <input type="checkbox" name="c7" class="form-control" value="7">Marketing
-                    <input type="checkbox" name="c7" class="form-control" value="8">Corporate Relations
-                    <input type="checkbox" name="c7" class="form-control" value="9">Collaborations
-            </div>
-            <div class="form-group">
-                <label for="inp-question2">Having witnessed the events conducted by E-Cell over the past year. Identify ways to improve them and/or suggest other possible events. (Please ponder over this question and answer)</label>
+                <label for="inp-question2"><br>Having witnessed the events conducted by E-Cell over the past year. Identify ways to improve them and/or suggest other possible events. (Please ponder over this question and answer)</label>
                 <textarea name="question2" class="form-control" id="inp-question2" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" value="send">Submit</button>
