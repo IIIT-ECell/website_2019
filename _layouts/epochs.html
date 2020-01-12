@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Epochs</title>
     {% include libraries.html %}
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/ephocs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/epochs.css">
 </head>
 <div >
 
 <!--NavBar (Sits on Top)-->
-<nav class="navbar navbar-expand-lg navbar-light container">
-    <a class="navbar-brand" href="#"><img src="" class="image-fluid"alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto text-right">
-        <a class="nav-item nav-link p-4" href="#">C-Works <!--span class="sr-only">(current)</span--></a>
-        <a class="nav-item nav-link p-4" href="#">E-Summit</a>
-        <a class="nav-item nav-link p-4" href="#">Startup Aid</a>
-        <a class="nav-item nav-link p-4" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </div>
-    </div>
-</nav>
-<br>
-<br>
-<!--Landing Page-->
-<div class="container landing pt-5 vh-100">
-    <img src="" class="image-fluid" alt="Landing Image"></img>
-</div>
-<!--Content-->
-<div class="container pt-5 vh-100 d-flex">
-    <div class="row justify-content-start my-auto">
-        <div class="col-8 p-3">
-            <h1>First Column</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#"><img src="{{site.baseurl}}/assets/imgs/logos/epoch-1-plain.svg" class="img-thumbnail"alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto text-right">
+            <a class="nav-item nav-link pr-4" href="{{ site.baseurl }}/cworks">C-Works</a>
+            <a class="nav-item nav-link pr-4" href="{{ site.baseurl }}/e-summit">E-Summit</a>
+            <a class="nav-item nav-link pr-4" href="{{ site.baseurl }}/startup-aid">Startup Aid</a>
+          </div>
         </div>
-    </div>
-</div>
-<div class="container pt-5 vh-100 d-flex">
-    <div class="row justify-content-end text-right my-auto">
-            <div class="col-8 p-3">
-                <h1>Second Column</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </nav>
+    <!--Landing Page-->
+    <div id="fullpage">
+
+        <div class="section" id="landing">
+        </div>
+        <!--Content-->
+        <div class="section cover_noback container">
+            <div class="row p-1 justify-content-start">
+                <div class="col-md-8 p-3 text-justify">
+                    <h1>Startup Aid</h1>
+                    <p>
+                        Always wanted to have your own start up? Here’s your chance.<br>E-Cell IIIT-H presents to you the first event in Epoch-Startup Aid. Startup Aid is a 4-sprint program aimed to help IIIT students polish raw ideas in their minds into something which they can take to an investor and probably convert the idea into a profitable startup. The program provides a golden opportunity to learn the different aspects of a startup and make connections with industry experts and entreprenurs.<br>Additionally, top 3 teams get a cash prize of 20K each.<br>For registration and further details: <a href="{{ site.baseurl }}/startup-aid">Click Here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section cover_noback container">
+            <div class="row p-1 justify-content-end">
+                <div class="col-md-8 p-3 text-justify">
+                    <h1>Campus Works</h1>
+                    <p>
+                        ECell's newest initiative seamlessly connects startups with a passionate student workforce through an online internship portal. Exclusive to IIIT students, Campus works lets startups recruit students year round - connecting IIIT's finest with budding entreprenurship ventures. ECell guarantees that experiences through the campus works will be extremely enriching and rewarding, with monetary benefits as well, for the next generation of leaders.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section cover_noback container">  
+            <div class="row p-1 justify-content-start">
+                <div class="col-md-8 p-3 text-justify">
+                    <h1>E-Summit</h1>
+                    <p>
+                        E-Summit will see startups and investors come together for a 2-day event that would mark the conclusion of Epoch 2020. The event will have 2 important keynote speakers, both experts in their own fields. Filled with talks, workshops and pitching sessions, E-Summit promises to give a real-world exposure to the winners of Startup-Aid while simultaneously engaging startup enthusiasts in an inclusive experience like none other!
+                    </p>
+                </div>
+            </div>  
+        </div>
+        <!--Footer-->
+        <div class="section fp-auto-height" id="contact">
+            <div class="row text-center">
+                <div class="col-xs-12 col-md-12 col-sm-12">
+                    <ul class="list-inline pt-3">
+                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.facebook.com/ecell.iiithyd/" target="_blank"><h2><i class="fab fa-facebook"></i></h2></a></li>
+                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.instagram.com/ecell_iiith/" target="_blank"><h2><i class="fab fa-instagram"></i></h2></a></li>
+                        <li class="list-inline-item p-2"><a class="faficon" href="https://twitter.com/ecell_iiithyd" target="_blank"><h2><i class="fab fa-twitter"></i></h2></a></li>
+                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.youtube.com/channel/UCE8mniuxsSH_SVYTmKWxtfA" target="_blank"><h2><i class="fab fa-youtube"></i></h2></a></li>
+                        <li class="list-inline-item p-2"><a class="faficon" href="https://github.com/IIIT-ECell" target="_blank"><h2><i class="fab fa-github"></i></h2></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container pt-5 vh-100 d-flex">    
-    <div class="row justify-content-start my-auto">
-        <div class="col-8 p-3">
-            <h1>Third Column</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<!--Footer-->
-<div class="container-fluid footer">
-    <div class="row">
-        <div class="col-12 text-center">
-            <ul class="list-inline pt-3">
-                <li class="list-inline-item p-2 "><a href="https://www.facebook.com/ecell.iiithyd/" target="_blank"><h1><i class="fab fa-facebook footer-element"></i></h1></a></li>
-                <li class="list-inline-item p-2 "><a href="https://www.instagram.com/ecell_iiith/" target="_blank"><h1><i class="fab fa-instagram footer-element"></i></h1></a></li>
-                <li class="list-inline-item p-2 "><a href="https://twitter.com/ecell_iiithyd" target="_blank"><h1><i class="fab fa-twitter footer-element"></i></h1></a></li>
-                <li class="list-inline-item p-2 "><a href="https://www.youtube.com/channel/UCE8mniuxsSH_SVYTmKWxtfA" target="_blank"><h1><i class="fab fa-youtube footer-element"></i></h1></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" ></script>
+<!-- <script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js" ></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
 <script>
-    
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            parallax: false,
+            anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+            controlArrows: false,
+            navigation:true,
+            navigationPosition: 'right',
+        });
+        // methods
+        $.fn.fullpage.setAllowScrolling(true);
+    });
 </script>
+
 </html>
