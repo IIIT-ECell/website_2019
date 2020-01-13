@@ -1,7 +1,10 @@
 ---
 ---
+html {
+    scroll-behavior: smooth;
+}
 body{
-    background-image: url(../assets/imgs/textures/pattern.png);
+    background-image: url("{{site.baseurl}}/assets/imgs/textures/pattern.png");
     background-color: #1f1f1f;
     color: #bba559 !important;
 }
@@ -37,4 +40,8 @@ a{
 
 .fab{
     color: #bba559;
+}
+
+.navbar{
+    z-index: 10;
 }
