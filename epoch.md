@@ -1,6 +1,6 @@
 ---
 layout: epochs
 title: Epochs
-permalink: /epochs/
+permalink: /epoch/
 noTopSpacing: true
 ---

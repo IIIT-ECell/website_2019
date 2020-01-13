@@ -23,8 +23,8 @@
         url: /startup-aid
       - title: Fail! Talks
         url: /fail
-      - title: Epochs
-        url: /epochs
+      - title: Epoch
+        url: /epoch
       - title: image
         path: /assets/imgs/participate.png
         type: image
