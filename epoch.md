@@ -1,6 +1,6 @@
 ---
-layout: epochs
-title: Epochs
+layout: epoch
+title: epoch
 permalink: /epoch/
 noTopSpacing: true
 ---
