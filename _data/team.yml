@@ -4,7 +4,7 @@
       - name: Ayush Shivani
         img: AyushShivani_Head.png
         fb: https://facebook.com/ayushshivani
-        in:
+        in: https://www.linkedin.com/in/ayush-shivani-745a4316b/
         mail: ayush.shivani@students.iiit.ac.in
         phone: 9559932625
         bg: grey
@@ -22,23 +22,23 @@
       - name: Atirek Kumar
         img: AtirekKumar_EConnect.png
         fb: https://www.facebook.com/atirek.kumar.9
-        in:
+        in: https://www.linkedin.com/in/atirek-ak/
         mail: atirek.kumar@research.iiit.ac.in
         phone: 9454500100
         bg: red
   members:
-      - name: Mohee
+      - name: Mohee Datta Gupta
         img: Mohee.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/mohee.dattagupta
+        in: https://www.linkedin.com/in/mohee-datta-gupta-964460189/
+        mail: mohee.datta@research.iiit.ac.in
         phone:
         bg: green
       - name: Sai Tanmay
         img: Sai_Tanmay.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/saitanmay.chakkera.3
+        in: https://www.linkedin.com/in/sai-tanmay-reddy-chakkera-66b12a170/
+        mail: sai.tanmay@students.iiit.ac.in
         phone:
         bg: grey
 - team: Corporate
@@ -55,16 +55,16 @@
       - name: Sahil Bhatt
         bg: grey
         img: Sahil.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/sahil.bhatt.3998263
+        in: https://www.linkedin.com/in/sahil-bhatt-3932b5185/
+        mail: sahil.bhatt@research.iiit.ac.in
         phone:
-      - name: Srinath Nair
+      - name: Srinath Nair 
         bg: red
         img: Srinath.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/s.nath10
+        in: https://www.linkedin.com/in/srinath-nair-1930ba165/
+        mail: srinath.nair@research.iiit.ac.in
         phone:
 - team: Events
   multiple: true
@@ -88,16 +88,16 @@
       - name: Kanish Anand
         bg: blue
         img: Kanish.png
-        fb:
-        in:
-        mail:
-        phone:
+        fb: https://www.facebook.com/kanish.anand.14
+        in: https://www.linkedin.com/in/kanish-anand-54aa71182/
+        mail: kanish.anand@students.iiit.ac.in
+        phone: 
       - name: Sridhar M
         bg: green
         img: Sridhar.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/Sridhar.Mallareddy
+        in: https://www.linkedin.com/in/sridhar-m-b96a34129/
+        mail: sridhar.m@research.iiit.ac.in
         phone:
 
 - team: Finance
@@ -111,19 +111,19 @@
         phone: 7683028990
         bg: green
   members:
-      - name: Shivam
+      - name: Shivam Mangale
         bg: blue
         img: Shivam.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/shivam.mangale.50
+        in: https://www.linkedin.com/in/shivam-mangale-9a4286190/
+        mail: shivam.mangale@students.iiit.ac.in
         phone:
       - name: Loay Rashid
         bg: grey
         img: Loay.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/loay.rashid.1
+        in: 
+        mail: loay.rashid@students.iiit.ac.in
         phone:
 
 - team: Marketing
@@ -143,19 +143,19 @@
         phone: 8639031142
         bg: blue
   members:
-      - name: Anirudh
+      - name: Anirudh Palutla
         bg: red
         img: Anirudh.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/majorkey420
+        in: https://www.linkedin.com/in/anirudh-palutla-42653b191/
+        mail: anirudh.palutla@research.iiit.ac.in
         phone:
-      - name: Sudhansh
+      - name: Sudhansh Yelishetty
         bg: green
         img: Sudhansh.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/profile.php?id=100007895388393
+        in: https://www.linkedin.com/in/sudhansh-yelishetty-7241b5181/
+        mail: sudhansh.yelishetty@students.iiit.ac.in
         phone:
 
 - team: Operations
@@ -164,7 +164,7 @@
       - name: Vaibhav Garg
         img: VaibhavGarg_Operations.png
         fb: https://www.facebook.com/vaibav.garg
-        in:
+        in: https://www.linkedin.com/in/vaibhav-garg2303/
         mail: vaibhav.garg@students.iiit.ac.in
         phone: 9915921857
         bg: blue
@@ -172,17 +172,17 @@
       - name: Ansh Puvvada
         bg: green
         img: Ansh.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/ansh.puvvada
+        in: https://www.linkedin.com/in/ansh-puvvada-9071a2191/
+        mail: ansh.puvvada@students.iiit.ac.in
         phone:
-      - name: Bhavyajeet
+      - name: Bhavyajeet Singh
         bg: red
         img: Bhavyajeet.png
-        fb:
-        in:
-        mail:
-        phone:
+        fb: https://www.facebook.com/bhavyajeet.singh.1
+        in: 
+        mail: bhavyajeet.singh@research.iiit.ac.in
+        phone: 
 
 - team: Social Media
   text: Don't use social media to impress people; use it to impact people <br> - Dave Willis
@@ -198,16 +198,16 @@
       - name: Amogh Tiwari
         bg: green
         img: Amogh.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/amogh.tiwari.77
+        in: https://www.linkedin.com/in/amogh-tiwari-b370a856/
+        mail: amogh.tiwari@research.iiit.ac.in
         phone:
-      - name: Mallika
+      - name: Aryan Agarwal
         bg: grey
-        img: Mallika.png
-        fb:
-        in:
-        mail:
+        img: Kanish.png
+        fb: https://www.facebook.com/aryan.agarwal.167
+        in: https://www.linkedin.com/in/aryan-agarwal-2441a019a/
+        mail: aryan.agarwal@students.iiit.ac.in
         phone:
 
 - team: Team Affairs
@@ -229,12 +229,12 @@
         phone: 9554421386
         bg: red
   members:
-      - name: Naren
+      - name: Naren Akash R J
         bg: grey
         img: Naren.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/narenakash.rj
+        in: https://www.linkedin.com/in/narenakash-rj/
+        mail: naren.akash@research.iiit.ac.in
         phone:
 
 - team: Tech
@@ -250,31 +250,31 @@
   members:
       - name: Gaurang Tandon
         img: Gaurang.png
-        fb:
-        in:
-        mail:
-        phone:
+        fb: https://www.facebook.com/gaurang.tandon.31
+        in: https://www.linkedin.com/in/gaurangtandon/
+        mail: gaurang.tandon@students.iiit.ac.in
+        phone: 
         bg: grey
       - name: Yoogottam Khandelwal
         img: Yoogottam.png
         fb: https://www.facebook.com/yoogottamk
-        in:
-        mail:
+        in: https://www.linkedin.com/in/yoogottamk/
+        mail: yoogottam.khandelwal@students.iiit.ac.in
         phone:
         bg: green
       - name: Jaidev Shriram
         img: Jaidev.png
-        fb:
-        in:
-        mail:
+        fb: https://www.facebook.com/jaidev.shriram
+        in: https://www.linkedin.com/in/jaidev-shriram/
+        mail: jaidev.shriram@students.iiit.ac.in
         phone:
         bg: red
       - name: Jivitesh Jain
         img: Jivitesh.png
-        fb:
-        in:
-        mail:
-        phone:
+        fb: https://www.facebook.com/jivitesh.jain.121
+        in: https://www.linkedin.com/in/jiviteshjain/
+        mail: jivitesh.jain@students.iiit.ac.in
+        phone: 
         bg: blue
 
 - team: Design
@@ -283,29 +283,29 @@
       - name: Sarvesh Mehta
         img: Sarvesh.png
         fb: sarvesh211999@gmail.com
-        in:
+        in: https://www.linkedin.com/in/sarvesh-mehta-59b11417b/
         mail: sarvesh211999@gmail.com
         phone: 9685322873
-        bg: red
+        bg: red 
   members:
-      - name: Jai
+      - name: Jai Bardhan
         bg: blue
         img: Jai.png
-        fb:
-        in:
-        mail:
-        phone:
+        fb: https://www.facebook.com/jai.bardhan.52
+        in: https://www.linkedin.com/in/jai-bardhan-716801171/
+        mail: jai.bardhan@research.iiit.ac.in
+        phone: 
       - name: Ahish Deshpande
         bg: green
         img: Ahish.png
-        fb:
-        in:
-        mail:
-        phone:
-      - name: Jyoti Sunkara
+        fb: https://www.facebook.com/ahish.deshpande.14 
+        in: https://www.linkedin.com/in/ahish-deshpande-72a995165/
+        mail: ahish.deshpande@students.iiit.ac.in
+        phone: 
+      - name: Shivansh Rakesh
         bg: grey
-        img: Jyoti.png
-        fb:
-        in:
-        mail:
-        phone:
+        img: Jaidev.png
+        fb: https://www.facebook.com/shivansh.bksc
+        in: https://www.linkedin.com/in/shivanshrakesh/
+        mail: shivansh.rakesh@students.iiit.ac.in
+        phone: 9507035044
