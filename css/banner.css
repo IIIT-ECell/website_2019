@@ -58,7 +58,8 @@
 
 .ticket-btn {
     flex: 1 1 0;
-    width: 100%;
+    width: 40%;
+    font-size: 2rem;
     padding: 10px 30px;
     border-radius: 1.5rem;
     margin-top: 1.2rem !important;
@@ -66,6 +67,12 @@
     margin-right: 5px;
     background-color: #002240;
     color: white !important;
+}
+
+@media (max-width: 800px) {
+    .ticket-btn {
+        width: 100%;
+    }
 }
 
 .ticket-btn:hover {
