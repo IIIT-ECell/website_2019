@@ -6,48 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>E-Summit</title>
 {% include libraries.html %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/esummit.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/esummit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script type="text/javascript" src="{{ site.baseurl }}/js/esummit.js"></script>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<a class="navbar-brand" href="#">E-Summit IIIT-H</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav my-2">
-<li class="nav-item active">
-<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">About</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Events
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="#">Event 1</a>
-<a class="dropdown-item" href="#">Event 2</a>
-<a class="dropdown-item" href="#">Event 3</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-3">
+        <a class="navbar-brand h5 p-2" href="{{ site.baseurl }}/esummit">E-Summit IIIT-H</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mx-3">
+            <li class="nav-item active mx-3">
+              <a class="nav-link h5 p-2" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+                <a class="nav-link p-2 dropdown-toggle bg-dark active h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+                <div class="dropdown-menu bg-dark mx-3 h5" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item p-2 text-white" href="#">Event1</a>
+                    <a class="dropdown-item p-2 text-white" href="#">Event2</a>
+                    <a class="dropdown-item p-2 text-white" href="#">Event3</a>
+                </div>
+            </li>
+                <li class="nav-item active mx-3 h5">
+                    <a class="nav-link p-2" href="#">Contact Us</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+<div class="landing">
+    <div class="headertext text-center">
+        <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1>
+        <br>
+        <div class="container">
+            <hr size="8" noshade>
+        </div>
+        <br>
+        <h2>Stay Tuned For More Updates</h2>
+    </div>
+
 </div>
-</li>
-</ul>
-</div>
-</nav>
-<div class="landing container">
-<div class="row">
-<div class="col align-self-center">
-E-Summit IIIT - H
-</div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--div class="bg-dark">
+
+</div-->
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 ---
-layout: epoch
-title: epoch
-permalink: /epoch/
+layout: esummit
+title: esummit
+permalink: /esummit/
 noTopSpacing: true
 ---

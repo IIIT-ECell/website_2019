@@ -1,11 +1,37 @@
 .landing{
-    background-image: url('{{site.baseurl}}/assets/imgs/eventsimages/Esummit-bg.jpeg');
-    height: 800px;
-    background-attachment: fixed;
-    background-position: center;
+    background: url('../assets/imgs/eventsimages/Esummit-bg.jpeg');
+    height: 920px;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
+    background-attachment: fixed;
+    background-position: center;
     text-align: center;
     }
+.headertext{
+        position: relative;
+        z-index: 1000;
+        top: 30%;
+}
+
+h1{
+        font-family: "Raleway",sans-serif;
+        font-size: 4vw;
+        font-weight: bolder;
+}
+h2{
+    font-family: "Raleway",sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color:#202020;
+    transition: 0.5s;
+}
+@media only screen and (max-device-width: 1366px) {
+    .landing {
+        background-attachment: scroll;
+    }
+}
     
