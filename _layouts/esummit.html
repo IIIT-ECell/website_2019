@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>E-Summit</title>
-{% include libraries.html %}
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/esummit.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script type="text/javascript" src="{{ site.baseurl }}/js/esummit.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-Summit</title>
+  {% include libraries.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/esummit.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script type="text/javascript" src="{{ site.baseurl }}/js/esummit.js"></script>
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark p-3">
-        <a class="navbar-brand h5 p-2" href="{{ site.baseurl }}/esummit">E-Summit IIIT-H</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mx-3">
-            <li class="nav-item active mx-3">
-              <a class="nav-link h5 p-2" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown mx-3">
-                <a class="nav-link p-2 dropdown-toggle bg-dark active h5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Events
-                </a>
-                <div class="dropdown-menu bg-dark mx-3 h5" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item p-2 text-white" href="#">Event1</a>
-                    <a class="dropdown-item p-2 text-white" href="#">Event2</a>
-                    <a class="dropdown-item p-2 text-white" href="#">Event3</a>
-                </div>
-            </li>
-                <li class="nav-item active mx-3 h5">
-                    <a class="nav-link p-2" href="#">Contact Us</a>
-                </li>
-          </ul>
+  {% include navbar.html %}
+  <div class="overlay">
+    <div class="landing vh-100 d-flex">
+      <div class="container-fluid my-auto">
+        <div class="row d-flex">
+          <div class="col-md-6 my-auto">
+            <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
+            <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
+          </div>
+          <div class="col-md-6 my-auto text-white text-left">
+            <h1 class="raleway">e-summit<br><span class="text-red">2020</span></h1>
+          </div>
         </div>
-      </nav>
-<div class="landing">
-    <div class="headertext text-center">
-        <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1>
-        <br>
-        <div class="container">
-            <hr size="8" noshade>
+        <div class="row d-flex">
+          <div class="col-12 my-auto text-white">
+            <h1>Coming Soon</h1>
+          </div>
         </div>
-        <br>
-        <h2>Stay Tuned For More Updates</h2>
+      </div>
     </div>
+    {% include footer.html %}
+  </div>
 
-</div>
-<!--div class="bg-dark">
 
-</div-->
 </body>
 
 </html>
