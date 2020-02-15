@@ -1,0 +1,11 @@
+.landing{
+    background-image: url('{{site.baseurl}}/assets/imgs/eventsimages/Esummit-bg.jpeg');
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    }
+    
