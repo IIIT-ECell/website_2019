@@ -1,0 +1,27 @@
+body{
+    background: url('../assets/imgs/back/landscape-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+.overlay{
+    background-position: fixed;
+    background-color: rgba(11, 14, 47, 0.8);
+}
+.no-back{
+    background: none;
+}
+.text-red{
+    color: red;
+}
+.raleway{
+    font-family: Raleway;
+    font-size: 10vmin;
+    font-weight: bolder;
+}
+
+#esummit-landing-logo{
+    max-height: 40vmin;
+}
