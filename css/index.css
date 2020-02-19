@@ -379,7 +379,7 @@ body {
             rgba(255, 255, 255, 0.4),
             rgba(255, 255, 255, 0.4)
         ),
-        url("{{site.baseurl}}/assets/imgs/undraw-world.svg");
+        url("/assets/imgs/undraw-world.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: calc(100% + 9rem);

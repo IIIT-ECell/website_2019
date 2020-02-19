@@ -2,7 +2,7 @@
 ---
 .main-head {
     position: relative;
-    background: url("{{site.baseurl}}/assets/imgs/sponsor.svg");
+    background: url("/assets/imgs/sponsor.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;

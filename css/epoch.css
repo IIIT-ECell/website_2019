@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url("{{site.baseurl}}/assets/imgs/textures/pattern.png");
+    background-image: url("/assets/imgs/textures/pattern.png");
     background-color: #1f1f1f;
     color: #bba559 !important;
 }
@@ -24,7 +24,7 @@ body {
     border: none;
 }
 #landing {
-    background: url("{{ site.baseurl }}/assets/imgs/logos/epoch-1-plain.svg");
+    background: url("/assets/imgs/logos/epoch-1-plain.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

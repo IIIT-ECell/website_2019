@@ -9,7 +9,7 @@ body {
 }
 .main-head {
     position: relative;
-    background: url("{{ site.baseurl }}/assets/imgs/ca_alt.svg");
+    background: url("/assets/imgs/ca_alt.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
