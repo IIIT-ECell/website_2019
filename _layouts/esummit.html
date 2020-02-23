@@ -14,29 +14,39 @@
 
 <body>
   {% include navbar.html %}
-  <div class="overlay">
-    <div class="landing vh-100 d-flex">
-      <div class="container-fluid my-auto">
-        <div class="row d-flex">
-          <div class="col-md-6 my-auto">
-            <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
-            <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
-          </div>
-          <div class="col-md-6 my-auto text-white text-left">
-            <h1 class="raleway">e-summit<br><span class="text-red">2020</span></h1>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+      <div class="slide d-flex">
+        <div class="overlay d-flex">
+          <div class="container-fluid my-auto">
+            <div class="row d-flex">
+              <div class="col-md-6 my-auto">
+                <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
+                <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
+              </div>
+              <div class="col-md-6 my-auto text-white text-left">
+                <h1 class="raleway">e-summit<br><span class="text-red">2020</span></h1>
+              </div>
+            </div>
+            <div class="row d-flex">
+              <div class="col-12 my-auto text-white">
+                <h1>Coming Soon</h1>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-12 my-auto text-white">
-            <h1>Coming Soon</h1>
+        <div class="arrow d-flex container-fluid">
+          <div class="col-12 my-auto">
+            <a href="#footer">
+              <i class="fas fa-chevron-right display-2 text-white"></i>
+            </a>
           </div>
         </div>
       </div>
+      <div class="slide" id="footer">
+      </div>
     </div>
-    {% include footer.html %}
   </div>
-
-
 </body>
 
 </html>

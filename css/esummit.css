@@ -1,14 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     background: url('../assets/imgs/back/landscape-3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     text-align: center;
+}
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
 }
 .overlay{
     background-position: fixed;
+    width: 90vw;
     background-color: rgba(11, 14, 47, 0.8);
+}
+.arrow{
+    width:10vmax;
 }
 .no-back{
     background: none;
