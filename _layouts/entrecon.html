@@ -9,44 +9,103 @@
   {% include libraries.html %}
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/entrecon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <script type="text/javascript" src="{{ site.baseurl }}/js/esummit.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/js/entrecon.js"></script>
 </head>
 
 <body>
   {% include navbar.html %}
-  <div class="outer-wrapper">
-    <div class="wrapper">
-      <div class="slide d-flex">
-        <div class="overlay d-flex">
-          <div class="container-fluid my-auto">
-            <div class="row d-flex">
-              <div class="col-md-6 my-auto">
-                <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
-                <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
-              </div>
-              <div class="col-md-6 my-auto text-white text-left">
-                <h1 class="raleway">EntreCon<br><span class="text-red">2020</span></h1>
-              </div>
-            </div>
-            <div class="row d-flex">
-              <div class="col-12 my-auto text-white">
-                <h1>Coming Soon</h1>
-              </div>
-            </div>
-          </div>
+  <div class="horislide container-fluid" id="sect1">
+    <br><br><br><br><br><br><br><br>
+      <div class="row align-items-centre d-flex">
+        <div class="col-md-6 my-auto">
+          <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
+          <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
         </div>
-        <div class="arrow d-flex container-fluid">
-          <div class="col-12 my-auto">
-            <a href="#footer">
-              <i class="fas fa-chevron-right display-2 text-white"></i>
-            </a>
-          </div>
+        <div class="aln col-md-6 my-auto text-white">
+          <h1 class="raleway">EntreCon<br><span class="text-red">2020</span></h1>
+        </div>
+      </div>
+      <br><br>
+      <div class="row align-items-end d-flex">
+        <div class="col-12 my-auto text-white">
+            <h1>A b o u t &nbsp; U s</h1>
+        </div>
+        <div class="col-12 my-auto">
+          <a href="#sect2">
+            <i class="fas fa-chevron-right display-2 text-white"></i>
+          </a>
+        </div>
+      </div>
+  </div>
+  <!--div class="arrow d-flex container-fluid">
         </div>
       </div>
       <div class="slide" id="footer">
       </div>
+    </div-->
+    <div class="horislide" id="sect_gap1"></div>
+    <div class="horislide container-fluid" id="sect2">
+      <br><br><br><br><br>
+      <div class="row align-items-start d-flex">
+          <div class="col align-self-centre my-5 text-white text-centre">
+            <h2 class="raleway">About <span class="text-red">Us</span></h2>
+          </div>
+        </div>
+        <div class="row align-items-centre d-flex">
+          <div class="col-md-12 mx-5 px-5 my-5 text-white">
+            <p class="mx-5 text">
+           EntreCon 2020, organized by E-Cell, IIIT Hyderabad, is a platform that brings 
+           together influential names in the industry, investors and people who are a part 
+           of India's rapidly growing startup ecosystem. Held on the 14th and 15th March 2020, 
+           at the IIIT Hyderabad campus, this convention is being organized with the objective 
+           of providing a great networking experience as well as a good opportunity to connect 
+           and discuss ideas for a better tomorrow.<br><br>
+           <span class="text-red" style="font-weight: bold;">Venue:</span> &nbsp;IIIT - Hyderabad<br>
+           <span class="text-red" style="font-weight: bold;">Date:</span> &nbsp;14<sup>th</sup> & 15<sup>th</sup> March 2020<br>
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-end d-flex">
+          <div class="col-6 mt-5 text-white text-centre">
+            <h1>H o m e</h1>
+          </div>
+          <div class="col-6 mt-5 text-white text-centre">
+            <h1>E v e n t s</h1>
+          </div>
+          <div class="col-6 my-auto">
+            <a href="#sect1">
+              <i class="fas fa-chevron-left display-3 text-white"></i>
+            </a>
+          </div>
+          <div class="col-6 my-auto">
+            <a href="#sect3">
+              <i class="fas fa-chevron-right display-3 text-white"></i>
+            </a>
+          </div>
+        </div>
     </div>
-  </div>
+
+    <div class="horislide" id="sect_gap2"></div>
+    
+    <div class="horislide container-fluid" id="sect3">
+        <div class="row d-flex">
+          <div class="col-md-6 my-auto">
+            <!-- <h1>E - S u m m i t &nbsp;@&nbsp; I I I T &nbsp;-&nbsp; H y d e r a b a d</h1> -->
+            <img class="img-fluid" id="esummit-landing-logo" src="/assets/imgs/logos/E-Summit-icon.svg">
+          </div>
+          <div class="col-md-6 my-auto text-white text-left">
+            <h1 class="raleway">EntreCon<br><span class="text-red">2020</span></h1>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-12 my-auto text-white">
+            <h1>Coming Soon</h1>
+            <br>
+            <a href="#sect1"> Section 1</a>
+            <a href="#sect2"> Section 2</a>
+          </div>
+        </div>
+    </div>
 </body>
 
 </html>

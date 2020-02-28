@@ -8,27 +8,13 @@ body{
     background-attachment: fixed;
     background-position: top;
     text-align: center;
-}
-.slide {
-    width: 100vw;
-    height: 100vh;
-}
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-.outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    width:500vw;
     position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
 }
+
 .overlay{
     background-position: fixed;
     width: 90vw;
@@ -51,4 +37,34 @@ body{
 
 #esummit-landing-logo{
     max-height: 40vmin;
+}
+
+.horislide{
+    margin:0px;
+    bottom:0px;
+    width:100vw;
+    float:left;
+    height:100%;
+}
+
+@media screen and (max-width:768px){
+    .aln{
+        text-align:center;
+    }
+
+    .text{
+    font-size: 18px;
+    text-align: justify;
+}
+}
+
+@media screen and (min-width:769px){
+    .aln{
+        text-align:left;
+    }
+
+    .text{
+    font-size: 24px;
+    text-align: justify;
+}
 }
