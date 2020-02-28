@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: url('../assets/imgs/back/landscape-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    text-align: center;
+    width:500vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.overlay{
+    background-position: fixed;
+    width: 90vw;
+    background-color: rgba(11, 14, 47, 0.8);
+}
+.arrow{
+    width:10vmax;
+}
+.no-back{
+    background: none;
+}
+.text-red{
+    color: red;
+}
+.raleway{
+    font-family: Raleway;
+    font-size: 10vmin;
+    font-weight: bolder;
+}
+
+#esummit-landing-logo{
+    max-height: 40vmin;
+}
+
+.horislide{
+    margin:0px;
+    bottom:0px;
+    width:100vw;
+    float:left;
+    height:100%;
+}
+
+.darken{
+    background-color: rgba(11,14,47,0.8);
+    border-radius: 20px;
+}
+.horislide a:not(.lst){
+    color: white;
+}
+.horislide a:hover{
+    color: red;
+    transition: 0.5s;
+}
+@media screen and (max-width:768px){
+    .aln{
+        text-align:center;
+    }
+}
+
+@media screen and (min-width:769px){
+    .aln{
+        text-align:left;
+    }
+}
+
+@media screen and (max-width: 1450px)
+{
+    .text{
+        font-size: 18px;
+        text-align: justify;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+}
+@media screen and (min-width: 1451px)
+{
+    .text{
+        font-size: 28px;
+        text-align: justify;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+}
