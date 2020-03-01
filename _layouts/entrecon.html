@@ -9,14 +9,14 @@
   {% include libraries.html %}
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/entrecon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <script type="text/javascript" src="{{ site.baseurl }}/js/esummit.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/js/entrecon.js"></script>
 </head>
 
 <body>
   {% include navbar.html %}
   <div class="outer-wrapper">
     <div class="wrapper">
-      <div class="slide d-flex">
+      <div class="slide d-flex" id="home">
         <div class="overlay d-flex">
           <div class="container-fluid my-auto">
             <div class="row d-flex">
@@ -37,20 +37,20 @@
         </div>
         <div class="arrow d-flex container-fluid">
           <div class="col-12 my-auto">
-            <a href="#footer">
-              <i class="fas fa-chevron-right display-2 text-white"></i>
+            <a class="hvr" href="#about">
+              <i class="fas fa-chevron-right display-2 "></i>
             </a>
           </div>
         </div>
       </div>
-      <div class="slide d-flex">
-        <div class="contanier my-auto p-5">
-          <div class="row justify-content-center">
-            <div class="col-md-3 text-center text-red">
-              <h1>About Us</h1>
+      <div class="slide d-flex" id="about">
+        <div class="container my-auto p-5">
+          <div class="row justify-content-center dbg py-3">
+            <div class="col-md-4 text-center text-white px-3">
+              <h1 class="raleway">About <span class="text-red">Us</span></h1>
             </div>
-            <div class="col-md-7">
-              <p>
+            <div class="col-md-8 text-white px-3">
+              <p class="text py-3">
                 EntreCon 2020, organized by E-Cell, IIIT Hyderabad, is a platform that brings 
                 together influential names in the industry, investors and people who are a part 
                 of India's rapidly growing startup ecosystem. Held on the 14th and 15th March 2020, 
@@ -60,9 +60,59 @@
               </p>
             </div>
           </div>
+          <div class="row align-items-end d-flex">
+            <div class="col-6 mt-5 text-white text-centre py-3">
+              <h3>H o m e</h3>
+            </div>
+            <div class="col-6 mt-5 text-white text-centre py-3">
+              <h3>E v e n t s</h3>
+            </div>
+            <div class="col-6 my-auto py-1">
+              <a class="hvr" href="#home">
+                <i class="fas fa-chevron-left display-4 "></i>
+              </a>
+            </div>
+            <div class="col-6 my-auto py-1">
+              <a class="hvr" href="#footer">
+                <i class="fas fa-chevron-right display-4 "></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slide" id="footer">
+        <div class="container my-auto p-3">
+          <div class="row justify-content-center pl-2 pt-4">
+            <div class="col-12 text-center text-white px-3 pt-5">
+              <h1 class="raleway">Events <span class="text-red">Schedule</span></h1>
+            </div>
+          </div>
+          <div class="row dbg py-2 mx-0 px-0 d-flex">
+            <div class="col-12 mx-3">
+            <ul class="list-group bg-transparent text-white text-left">
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Inaugration Ceremony <span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 5 PM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Plenary Talk<span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 7 PM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Dinner & Networking<span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 8 PM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Startup Pitching Session<span class="text-red" style="float: right;"> 15<sup>th</sup> Mar, 10 AM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Series of Parallel Workshops<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 11 AM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Startup Showcase<span class="text-red" style="float: right;"> 15<sup>th</sup> Mar, 1 PM onwards</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">B - Plan Competition<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 1 PM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Guest Talks by Investors & Startup Founders<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 2 PM</span></li>
+              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Panel Discussion<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 4 PM</span></li>
+            </ul> 
+            </div>
+        </div>
+          <div class="row align-items-end d-flex">
+            <div class="col-12 mt-5 text-white text-centre py-3">
+              <h3>H o m e</h3>
+            </div>
+            <div class="col-12 my-auto py-1">
+              <a class="hvr" href="#home">
+                <i class="fas fa-chevron-left display-4 "></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -8,6 +8,9 @@ body{
     background-attachment: fixed;
     background-position: top;
     text-align: center;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
 }
 .slide {
     width: 100vw;
@@ -16,7 +19,7 @@ body{
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 300vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
@@ -34,14 +37,33 @@ body{
     width: 90vw;
     background-color: rgba(11, 14, 47, 0.8);
 }
+
+.dbg{
+    background-color: rgba(11,14,47,0.8);
+    border-radius: 15px;
+}
+
 .arrow{
     width:10vmax;
+}
+.arrow2{
+    width:5vmax;
 }
 .no-back{
     background: none;
 }
 .text-red{
     color: red;
+}
+.text{
+    
+}
+a.hvr{
+    color:white;
+}
+a.hvr:hover{
+    color:red;
+    transition: 0.5s;
 }
 .raleway{
     font-family: Raleway;
