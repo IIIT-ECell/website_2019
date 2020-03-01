@@ -1,8 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-body{
-    background: url('../assets/imgs/back/landscape-3.png');
+body {
+    background: url("../assets/imgs/back/landscape-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,45 +33,44 @@ body{
     overflow-x: hidden;
     position: absolute;
 }
-.overlay{
+.overlay {
     background-position: fixed;
     width: 90vw;
     background-color: rgba(11, 14, 47, 0.8);
 }
 
-.dbg{
-    background-color: rgba(11,14,47,0.8);
+.dbg {
+    background-color: rgba(11, 14, 47, 0.8);
     border-radius: 15px;
 }
 
-.arrow{
-    width:10vmax;
+.arrow {
+    width: 10vmax;
 }
-.arrow2{
-    width:5vmax;
+.arrow2 {
+    width: 5vmax;
 }
-.no-back{
+.no-back {
     background: none;
 }
-.text-red{
+.text-red {
     color: red;
 }
-.text{
-    
+.text {
 }
-a.hvr{
-    color:white;
+a.hvr {
+    color: white;
 }
-a.hvr:hover{
-    color:red;
+a.hvr:hover {
+    color: red;
     transition: 0.5s;
 }
-.raleway{
+.raleway {
     font-family: Raleway;
     font-size: 10vmin;
     font-weight: bolder;
 }
 
-#esummit-landing-logo{
+#esummit-landing-logo {
     max-height: 40vmin;
 }

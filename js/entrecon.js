@@ -1,15 +1,20 @@
 $(function() {
-    $("ul.nav a").bind("click", function(event) {
-        let targetPixel = $($(this).attr("href")).offset().left;
+    $("a.hvr").on("click", function(event) {
+        const targetID = this.dataset.to;
 
-        // neither of the following scrolls smooth
+        if (!targetID) return true;
 
-        // $(".outer-wrapper").scrollTop(target);
-        $(".outer-wrapper").animate(
-            { scrollLeft: targetPixel },
-            1500,
-            "easeInOutExpo"
-        );
+        let targetPixel = $(targetID).offset().left;
+
+        $(".outer-wrapper").animate({ scrollTop: targetPixel }, 1000);
+
+        // these don't work
+        // $(".outer-wrapper").scrollTop(targetPixel);
+        // window.scroll({
+        // 	top: targetPixel,
+        // 	left: 0,
+        // 	behavior: 'smooth'
+        //   });
         event.preventDefault();
     });
 });
