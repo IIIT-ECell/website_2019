@@ -4,7 +4,14 @@ $(function() {
 
         if (!targetID) return true;
 
-        let targetPixel = $(targetID).offset().left;
+        var obj = $(targetID);
+        var childPos = obj.offset();
+        var parentPos = obj.parent().offset();
+        var childOffset = {
+            top: childPos.top - parentPos.top,
+            left: childPos.left - parentPos.left
+        };
+        let targetPixel = childOffset.left;
 
         $(".outer-wrapper").animate({ scrollTop: targetPixel }, 1000);
 
