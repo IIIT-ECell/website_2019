@@ -11,10 +11,12 @@ body{
     top: 0px;
     left: 0px;
     bottom: 0px;
+    overflow: hidden;
 }
 .slide {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .wrapper {
     display: flex;
@@ -22,6 +24,7 @@ body{
     width: 300vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
+    overflow: hidden;
 }
 .outer-wrapper {
     width: 100vh;
@@ -31,11 +34,13 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
+    overflow: hidden;
 }
 .overlay{
     background-position: fixed;
     width: 90vw;
     background-color: rgba(11, 14, 47, 0.8);
+    overflow: hidden;
 }
 
 .dbg{
@@ -45,9 +50,11 @@ body{
 
 .arrow{
     width:10vmax;
+    overflow: hidden;
 }
 .arrow2{
     width:5vmax;
+    overflow: hidden;
 }
 .no-back{
     background: none;
@@ -73,4 +80,5 @@ a.hvr:hover{
 
 #esummit-landing-logo{
     max-height: 40vmin;
+    overflow: hidden;
 }
