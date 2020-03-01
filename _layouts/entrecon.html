@@ -88,17 +88,11 @@
             </div>
           </div>
           <div class="row dbg py-2 mx-0 px-0 d-flex">
-            <div class="col-12 mx-3">
-            <ul class="list-group bg-transparent text-white text-left">
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Inaugration Ceremony <span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 5 PM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Plenary Talk<span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 7 PM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Dinner & Networking<span class=" text-red" style="float: right;"> 14<sup>th</sup> Mar, 8 PM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Startup Pitching Session<span class="text-red" style="float: right;"> 15<sup>th</sup> Mar, 10 AM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Series of Parallel Workshops<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 11 AM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Startup Showcase<span class="text-red" style="float: right;"> 15<sup>th</sup> Mar, 1 PM onwards</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">B - Plan Competition<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 1 PM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Guest Talks by Investors & Startup Founders<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 2 PM</span></li>
-              <li class="list-group-item bg-transparent border border-left-0 border-right-0 border-dark pb-3">Panel Discussion<span class=" text-red" style="float: right;"> 15<sup>th</sup> Mar, 4 PM</span></li>
+            <div class="col-12">
+            <ul class="list-container text-white text-left">
+              {% for event in site.data.entrecon-events %}
+                <li class="timeline-item"><span class="timeline-time">{{ event.time }}</span><span class="timeline-title">{{ event.title }}</span></li>
+              {% endfor %}
             </ul>
             </div>
         </div>
