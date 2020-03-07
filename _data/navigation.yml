@@ -25,6 +25,8 @@
         url: /fail
       - title: Epoch
         url: /epoch
+      - title: EntreCon
+        url: /entrecon
       - title: image
         path: /assets/imgs/participate.png
         type: image

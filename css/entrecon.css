@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: url("../assets/imgs/back/landscape-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.slide {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.overlay {
+    background-position: fixed;
+    width: 90vw;
+    background-color: rgba(11, 14, 47, 0.8);
+}
+
+.dbg {
+    background-color: rgba(11, 14, 47, 0.8);
+    border-radius: 15px;
+}
+
+.arrow {
+    width: 10vmax;
+}
+.arrow2 {
+    width: 5vmax;
+}
+.no-back {
+    background: none;
+}
+.text-red {
+    color: red;
+}
+
+a.hvr {
+    color: white;
+}
+a.hvr:hover {
+    color: red;
+    transition: 0.5s;
+}
+.raleway {
+    font-family: Raleway;
+    font-size: 10vmin;
+    font-weight: bolder;
+}
+
+#esummit-landing-logo {
+    max-height: 40vmin;
+}
+
+.list-container {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.timeline-time::before {
+    position: absolute;
+    top: calc(1rem - 2.5px);
+    left: 0;
+    content: "";
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid orange;
+    width: 0;
+    height: 0;
+}
+
+.timeline-item {
+    border-left: 3px solid orange;
+    border-bottom: 2px solid orange;
+    position: relative;
+}
+
+.timeline-time {
+    display: block;
+    color: red;
+    padding: 1rem;
+}
+
+.timeline-title {
+    display: block;
+    padding: 1rem;
+}
+
+@media (max-width: 400px) {
+    .fas.fa-chevron-right.display-2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .timeline-time::before {
+        border: 0;
+    }
+
+    .timeline-title {
+        display: block;
+        padding: 0.5rem 1rem 0.5rem 0;
+
+        border-bottom: 3px solid orange;
+        border-right: 3px solid orange;
+
+        text-align: right;
+    }
+
+    .timeline-time {
+        border-right: none;
+        padding: 0.5rem 0;
+    }
+
+    .timeline-item {
+        border: 0;
+    }
+}
