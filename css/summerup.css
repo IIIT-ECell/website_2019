@@ -1,0 +1,179 @@
+---
+---
+
+body {
+    color: #0f2d34;
+}
+.card-width {
+    background-color: white;
+}
+.main-head {
+    position: relative;
+    background: url("{{ site.baseurl }}/assets/imgs/summerup.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+
+.incentive-card {
+    transition: 0.5s ease;
+}
+
+.faq-main-card {
+    padding: 10px;
+}
+
+.card-hover-medgreen:hover {
+    background-color: #255068;
+    color: white !important;
+}
+
+.card-hover-deepblue:hover {
+    background-color: #002240;
+    color: white !important;
+}
+
+.page-title {
+    background: white;
+    border-radius: 5px;
+}
+
+.ca-link {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white !important;
+    background: #002240;
+    transition: 0.5s ease;
+    border-radius: 3rem;
+}
+
+.ca-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.join-us {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    font-size: 2rem;
+
+    padding-top: 3rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+.partners {
+    justify-content: center;
+}
+
+.page-link {
+    font-size: 1.5rem;
+}
+
+.page-link:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .join-us {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-head {
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .join-us {
+        width: 90%;
+    }
+
+    .main-card {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 424px) {
+    .card-title {
+        font-size: 1.7rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .main-card {
+        width: 100% !important;
+    }
+}
+
+/* LEADERBOARD */
+
+.leaderboard td {
+    text-transform: capitalize !important;
+}
+
+.leaderboard .table-hover tbody tr:hover {
+    background-color: #25506880;
+}
+
+.leaderboard table tr td:last-child,
+.leaderboard table tr th:last-child {
+    text-align: right;
+}
+
+.leaderboard thead tr {
+    background-color: #255068;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: CustomHeading, sans-serif;
+}
+
+.leaderboard thead tr th {
+    border: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+}
+
+.leaderboard thead tr th:first-child {
+    border-top-left-radius: 1rem;
+    border: none;
+    padding-left: 1.2rem;
+}
+.leaderboard thead tr th:last-child {
+    border-top-right-radius: 1rem;
+    border: none;
+    padding-right: 1.2rem;
+}
+
+.leaderboard tbody tr:last-child {
+    border-bottom: solid 3px #255068;
+}
+
+.pagination .page-link {
+    font-size: 1rem !important;
+}
+
+.pagination li.active .page-link {
+    background-color: #255068;
+    border-color: #255068;
+}
+
+.pagination li .page-link {
+    color: #0c2f00;
+}
