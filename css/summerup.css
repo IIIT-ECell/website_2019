@@ -17,6 +17,22 @@ body {
     height: 100%;
     width: auto;
 }
+@media (min-width: 801px) {
+    .wrap-pic {
+        width: 50%;
+        margin-right: -30%;
+        word-wrap: break-word;
+        float: right;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrap-pic {
+        visibility: hidden;
+        margin-right: 0%;
+    }
+}
 
 .incentive-card {
     transition: 0.5s ease;
