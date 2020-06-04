@@ -1,20 +1,20 @@
 - team: Overall Coordinators
   id: overallcoord
   heads:
-      - name: Ayush Shivani
-        img: AyushShivani_Head.png
-        fb: https://facebook.com/ayushshivani
-        in: https://www.linkedin.com/in/ayush-shivani-745a4316b/
-        mail: ayush.shivani@students.iiit.ac.in
-        phone: 9559932625
-        bg: grey
-      - name: Aishwarya Srivastava
-        img: AishwaryaSrivastava_Head.png
-        fb: https://www.facebook.com/aishwarya.srivastava.378
-        in: https://www.linkedin.com/in/aishwarya-srivastava-498261155
-        mail: aishwarya.srivastava@research.iiit.ac.in
-        phone: 9559932625
+      - name: Amogh Tiwari
+        bg: green
+        img: Amogh_2020.jpg
+        fb: https://www.facebook.com/amogh.tiwari.77
+        in: https://www.linkedin.com/in/amogh-tiwari-b370a856/
+        mail: amogh.tiwari@research.iiit.ac.in
+        phone: 8800344604
+      - name: Srinath Nair
         bg: red
+        img: Srinath_2020.jpg
+        fb: https://www.facebook.com/s.nath10
+        in: https://www.linkedin.com/in/srinath-nair-1930ba165/
+        mail: srinath.nair@research.iiit.ac.in
+        phone: 8075028806
 
 - team: Collaborations
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
@@ -59,7 +59,7 @@
         in: https://www.linkedin.com/in/sahil-bhatt-3932b5185/
         mail: sahil.bhatt@research.iiit.ac.in
         phone:
-      - name: Srinath Nair 
+      - name: Srinath Nair
         bg: red
         img: Srinath.png
         fb: https://www.facebook.com/s.nath10
@@ -91,7 +91,7 @@
         fb: https://www.facebook.com/kanish.anand.14
         in: https://www.linkedin.com/in/kanish-anand-54aa71182/
         mail: kanish.anand@students.iiit.ac.in
-        phone: 
+        phone:
       - name: Sridhar M
         bg: green
         img: Sridhar.png
@@ -122,7 +122,7 @@
         bg: grey
         img: Loay.png
         fb: https://www.facebook.com/loay.rashid.1
-        in: 
+        in:
         mail: loay.rashid@students.iiit.ac.in
         phone:
 
@@ -180,9 +180,9 @@
         bg: red
         img: Bhavyajeet.png
         fb: https://www.facebook.com/bhavyajeet.singh.1
-        in: 
+        in:
         mail: bhavyajeet.singh@research.iiit.ac.in
-        phone: 
+        phone:
 
 - team: Social Media
   text: Don't use social media to impress people; use it to impact people <br> - Dave Willis
@@ -253,7 +253,7 @@
         fb: https://www.facebook.com/gaurang.tandon.31
         in: https://www.linkedin.com/in/gaurangtandon/
         mail: gaurang.tandon@students.iiit.ac.in
-        phone: 
+        phone:
         bg: grey
       - name: Yoogottam Khandelwal
         img: Yoogottam.png
@@ -274,7 +274,7 @@
         fb: https://www.facebook.com/jivitesh.jain.121
         in: https://www.linkedin.com/in/jiviteshjain/
         mail: jivitesh.jain@students.iiit.ac.in
-        phone: 
+        phone:
         bg: blue
 
 - team: Design
@@ -286,7 +286,7 @@
         in: https://www.linkedin.com/in/sarvesh-mehta-59b11417b/
         mail: sarvesh211999@gmail.com
         phone: 9685322873
-        bg: red 
+        bg: red
   members:
       - name: Jai Bardhan
         bg: blue
@@ -294,14 +294,14 @@
         fb: https://www.facebook.com/jai.bardhan.52
         in: https://www.linkedin.com/in/jai-bardhan-716801171/
         mail: jai.bardhan@research.iiit.ac.in
-        phone: 
+        phone:
       - name: Ahish Deshpande
         bg: green
         img: Ahish.png
-        fb: https://www.facebook.com/ahish.deshpande.14 
+        fb: https://www.facebook.com/ahish.deshpande.14
         in: https://www.linkedin.com/in/ahish-deshpande-72a995165/
         mail: ahish.deshpande@students.iiit.ac.in
-        phone: 
+        phone:
       - name: Shivansh Rakesh
         bg: grey
         img: Jaidev.png

@@ -8,7 +8,7 @@ body {
 }
 
 .img-fluid {
-    max-width: 125%;
+    max-width: 110%;
     height: auto;
     border-radius: 1rem;
 }
@@ -264,7 +264,9 @@ body {
         margin: 2rem 0;
     }
 
-    .image-right, .para-right, .tile-row-right {
+    .image-right,
+    .para-right,
+    .tile-row-right {
         float: none;
     }
 }
