@@ -69,11 +69,13 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     color: white !important;
-    background: #002240;
     transition: 0.5s ease;
     border-radius: 3rem;
 }
 
+.disable{
+    background-color: #c0c0bf;
+}
 .ca-link:hover {
     cursor: pointer;
     text-decoration: none;
