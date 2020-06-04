@@ -29,6 +29,7 @@ body {
 
 @media (max-width: 800px) {
     .wrap-pic {
+        width: 0%;
         visibility: hidden;
         margin-right: 0%;
     }
