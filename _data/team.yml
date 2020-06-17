@@ -89,7 +89,7 @@
         phone: 9810244576
         bg: grey
       - name: Tushar Jain
-        img: Naren.png
+        img: Tushar_2020.jpg
         fb: https://www.facebook.com/profile.php?id=100024881437234
         in: 
         mail: tushar.jain@students.iiit.ac.in
@@ -100,7 +100,7 @@
   text: Noobs sit and wait for inspiration. We just get up and go to work.
   heads:
       - name: Jivitesh Jain
-        img: Naren.png
+        img: Jivitesh_2020.jpeg
         fb: https://www.facebook.com/jivitesh.jain.121
         in: https://www.linkedin.com/in/jiviteshjain/
         mail: jivitesh.jain@students.iiit.ac.in
@@ -148,6 +148,34 @@
         mail: kanish.anand@students.iiit.ac.in
         phone: 6239854647
   members:
+      - name: Apoorva Thirupathi
+        img: Apoorva_2020.jpeg
+        fb: https://m.facebook.com/profile.php?id=100024635658729
+        in: 
+        mail: apoorva.thirupathi@research.iiit.ac.in
+        phone: 8106009977
+        bg: green
+      - name: Sridhar M
+        img: Sridhar_2020.jpg
+        fb: https://www.facebook.com/Sridhar.Mallareddy
+        in: https://www.linkedin.com/in/sridhar-m-b96a34129/
+        mail: sridhar.m@research.iiit.ac.in
+        phone: 8602425144
+        bg: green
+      - name: Mohee Datta Gupta
+        img: Naren.png
+        fb: https://www.facebook.com/mohee.dattagupta
+        in: https://www.linkedin.com/in/mohee-datta-gupta-964460189/
+        mail: mohee.datta@research.iiit.ac.in
+        phone: 9831331103
+        bg: green
+      - name: Sai Tanmay
+        img: Naren.png
+        fb: https://www.facebook.com/saitanmay.chakkera.3
+        in: https://www.linkedin.com/in/sai-tanmay-reddy-chakkera-66b12a170/
+        mail: sai.tanmay@students.iiit.ac.in
+        phone: 8309152780
+        bg: green
       - name: Pahulpreet Singh
         img: Pahulpreet_2020.jpg
         fb: https://www.facebook.com/pahulpreetsingh001
@@ -182,7 +210,7 @@
         phone: 9502684240
   members:
       - name: Keshav Bajaj
-        img: Naren.png
+        img: Keshav_2020.jpg
         fb: https://www.facebook.com/keshav.bajaj.9887
         in: 
         mail: keshav.bajaj@research.iiit.ac.in
@@ -207,6 +235,13 @@
         mail: ahish.deshpande@students.iiit.ac.in
         phone: 9381567844
   members:
+      - name: Shivansh Rakesh
+        img: Shivansh_2020.jpg
+        fb: https://www.facebook.com/shivansh.bksc
+        in: https://www.linkedin.com/in/shivanshrakesh/
+        mail: shivansh.rakesh@students.iiit.ac.in
+        phone: 9507035044
+        bg: green
       - name: Ritvik Aryan Kalra
         img: Naren.png
         fb: https://www.facebook.com/ritvikaryan.kalra
@@ -215,7 +250,7 @@
         phone: 8218002256
         bg: green
       - name: Sanjai Kumaran
-        img: Naren.png
+        img: Sanjai_2020.jpg
         fb: https://www.facebook.com/sanjusanjai2002
         in:
         mail: sanjai.kumaran@research.iiit.ac.in
@@ -263,7 +298,7 @@
         phone: 8141399661
         bg: grey
       - name: Venkat Adithya
-        img: Naren.png
+        img: Venkat_2020.jpg
         fb: https://www.facebook.com/venkatadithya.amula
         in: 
         mail: venkat.adithya@research.iiit.ac.in
