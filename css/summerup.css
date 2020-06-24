@@ -74,7 +74,11 @@ body {
 }
 
 .disable{
-    background-color: #c0c0bf;
+    background-color: #002240;
+}
+
+.disable:hover{
+    background-color: #000000;
 }
 .ca-link:hover {
     cursor: pointer;
