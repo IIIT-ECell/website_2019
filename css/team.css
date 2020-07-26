@@ -40,13 +40,6 @@
 
 
 
-.head-img {
-    border: 8px solid white;
-    box-shadow: 0 0 10px rgb(200, 200, 200);
-    height: 225px;
-    margin: 0 0.5rem;
-}
-
 
 .team-member {
     display: inline-block;
@@ -102,7 +95,7 @@
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 320px;
+    min-width: 360px;
     max-width: 480px;
     max-height: 360px;
     width: 48%;
@@ -211,7 +204,7 @@ figure.effect-layla figcaption::after {
 
 figure.effect-layla h2 {
     opacity: 0;
-    padding-top: 26%;
+    padding-top: 20%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
