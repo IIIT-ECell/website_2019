@@ -160,6 +160,7 @@
 }
 
 .grid figure p {
+    color: black;
     letter-spacing: 1px;
     font-size: 68.5%;   
 }
@@ -172,8 +173,7 @@ figure.effect-layla figcaption{
 }
 
 figure.effect-layla figcaption h2{
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: black;
+    color: black;
 }
 
 figure.effect-layla figcaption::before,
@@ -249,7 +249,7 @@ figure.effect-layla p, figure.effect-layla a {
 }
 
 figure.effect-layla:hover img {
-    opacity: 0.8;
+    opacity: 0.5;
     filter: grayscale(90%);
     transition: 0.5s;
     -webkit-transform: translate3d(0,0,0);
@@ -283,5 +283,5 @@ figure.effect-layla:hover img {
     color:white
 }
 .focus:hover{
-    color: #3b6fc1;
+    color: black;
 }
