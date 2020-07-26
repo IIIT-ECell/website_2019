@@ -2,8 +2,12 @@
 layout: page
 ---
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/team.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/team.js"></script>
 
 <header class="w-100 h-75">
@@ -25,7 +29,8 @@ layout: page
 <div class="container py-5">
 	<div class="row">
 		<div class="col text-justify">
-			"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a civilization work."
+			"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a
+			civilization work."
 		</div>
 	</div>
 	<div class="row">
@@ -38,89 +43,139 @@ layout: page
 {% for team in site.data.team %}
 {%assign idUse = team.team %}
 {% if team.id %}
-	{%assign idUse = team.id %}
+{%assign idUse = team.id %}
 {% endif %}
-<div class="container" id="{{idUse}}">
-<hr>
-	<h1>{{ team.team }}</h1>
+<div class=" algn container" id="{{idUse}}">
+	<hr>
+	<h1 style="text-align: center;">{{ team.team }}</h1>
 
 	<div class="container-fluid py-5">
-		<div class="row">
-
-			{% if team.multiple %}
+		<div class="row align-self-center" style="float: centre;">
 			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
 				{% for head in team.heads %}
-				<figure class="figure">
-					<div class="tooltip-social">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img" height="225">
-						<div class="tooltip-content">
-							<li class="list-inline-item tooltip-social-icon"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="mailto:{{head.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
-						</div>
-					</div>
-
-					<figcaption class="figure-caption text-center photo-name">{{head.name}}</figcaption>
-				</figure>
-
-				<div style="padding-right: 10px;"></div>
-				{% endfor %}
-			</div>
-			{% else %}
-			<div class="col-12 col-md-5 d-flex text-center justify-content-center align-items-center member">
-				{% for head in team.heads %}
-				<figure class="figure">
-					<div class="tooltip-social">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" class="figure-img rounded-circle palette-bg-{{head.bg}} head-img">
-						<div class="tooltip-content">
-							<li class="list-inline-item tooltip-social-icon"><a href="{{head.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="{{head.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="mailto:{{head.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a></li>
-							<li class="list-inline-item tooltip-social-icon"><a href="tel:{{head.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a></li>
-						</div>
-					</div>
-					<figcaption class="figure-caption text-center photo-name">{{head.name}}</figcaption>
-				</figure>
-				{% endfor %}
-			</div>
-			{% endif %}
-
-			{% if team.id != "overallcoord" %}
-				<div class="col-12 col-md-6">
-					<div class="py-4">
-						{{ team.text }}
-					</div>
-
-					<div class="team-members">
-						{% for member in team.members %}
-							<div class="team-member">
-								<div class="member-img-container">
-									<div class="member-img-social">
-										<div class="member-img-social-row">
-											<a href="{{member.fb}}" target="_blank"><h3><i class="fab fa-facebook"></i></h3></a>
-											<a href="{{member.in}}" target="_blank"><h3><i class="fab fa-linkedin"></i></h3></a>
-										</div>
-										<div class="member-img-social-row">
-											<a href="mailto:{{member.mail}}" target="_blank"><h3><i class="fa fa-envelope"></i></h3></a>
-											<a href="tel:{{member.phone}}" target="_blank"><h3><i class="fa fa-phone"></i></h3></a>
-										</div>
-									</div>
-									<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}" class="rounded palette-bg-{{member.bg}} img-responsive member-img" alt="{{member.name}}">
-								</div>
-								<br>
-								<span class="text-muted photo-name">{{member.name}}</span>
-							</div>
-						{% endfor %}
-					</div>
+				<div class="grid my-0 py-0">
+					<figure class="effect-layla">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}">
+						<figcaption>
+							<h2>{{head.name}}</h2>
+							{% if team.id != "overallcoord" %}
+							<p><strong>Team Head</strong></p>
+							{% else %}
+							<br><br>
+							{% endif %}
+							<a class="focus" href="{{head.fb}}" target="_blank">
+								<h3><i class="fab fa-facebook"></i></h3>
+							</a>
+							<a class="focus" href="{{head.in}}" target="_blank">
+								<h3><i class="fab fa-linkedin"></i></h3>
+							</a>
+							<a class="focus" href="mailto:{{head.mail}}" target="_blank">
+								<h3><i class="fa fa-envelope"></i></h3>
+							</a>
+							<a class="focus" href="tel:{{head.phone}}" target="_blank">
+								<h3><i class="fa fa-phone"></i></h3>
+							</a>
+						</figcaption>
+					</figure>
 				</div>
-			{% endif %}
+				{% endfor %}
+			</div>
+			<br>
 		</div>
+		{% if team.id != "overallcoord" %}
+		{% if team.team == "Events and Operations" %}
+		<div class="row align-self-center">
+			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
+				{% for member in team.members %}
+				{% if member.name == "Sai<br>Tanmay" %}
+				</div>
+				</div>
+		<div class="row align-self-center py-0 my-0">
+			<div class="col-12 py-0 my-0 col-md-6 d-flex text-center justify-content-center align-items-center member">
+				<div class="grid">
+					<figure class="effect-layla">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
+						<figcaption>
+							<h2>{{member.name}}</h2>
+							<p><strong>Team Member</strong></p>
+							<a class="focus" href="{{member.fb}}" target="_blank">
+								<h3><i class="fab fa-facebook"></i></h3>
+							</a>
+							<a class="focus" href="{{member.in}}" target="_blank">
+								<h3><i class="fab fa-linkedin"></i></h3>
+							</a>
+							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
+								<h3><i class="fa fa-envelope"></i></h3>
+							</a>
+							<a class="focus" href="tel:{{member.phone}}" target="_blank">
+								<h3><i class="fa fa-phone"></i></h3>
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				{% else %}
+				<div class="grid">
+					<figure class="effect-layla">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
+						<figcaption>
+							<h2>{{member.name}}</h2>
+							<p><strong>Team Member</strong></p>
+							<a class="focus" href="{{member.fb}}" target="_blank">
+								<h3><i class="fab fa-facebook"></i></h3>
+							</a>
+							<a class="focus" href="{{member.in}}" target="_blank">
+								<h3><i class="fab fa-linkedin"></i></h3>
+							</a>
+							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
+								<h3><i class="fa fa-envelope"></i></h3>
+							</a>
+							<a class="focus" href="tel:{{member.phone}}" target="_blank">
+								<h3><i class="fa fa-phone"></i></h3>
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+		{% else %}
+		<div class="row align-self-center">
+			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
+				{% for member in team.members %}
+				<div class="grid">
+					<figure class="effect-layla">
+						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
+						<figcaption>
+							<h2>{{member.name}}</h2>
+							<p><strong>Team Member</strong></p>
+							<a class="focus" href="{{member.fb}}" target="_blank">
+								<h3><i class="fab fa-facebook"></i></h3>
+							</a>
+							<a class="focus" href="{{member.in}}" target="_blank">
+								<h3><i class="fab fa-linkedin"></i></h3>
+							</a>
+							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
+								<h3><i class="fa fa-envelope"></i></h3>
+							</a>
+							<a class="focus" href="tel:{{member.phone}}" target="_blank">
+								<h3><i class="fa fa-phone"></i></h3>
+							</a>
+						</figcaption>
+					</figure>
+				</div>
+
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+		{% endif %}
 	</div>
+</div>
 </div>
 
 {% endfor %}
 <script>
-	ScrollReveal().reveal('.member',{interval:300,easing:'ease-in-out'});
-	ScrollReveal().reveal('.team-member',{interval:300, easing:'ease-in-out'});
+	ScrollReveal().reveal('.member', { interval: 300, easing: 'ease-in-out' });
+	ScrollReveal().reveal('.team-member', { interval: 300, easing: 'ease-in-out' });
 </script>

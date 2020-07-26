@@ -1,14 +1,14 @@
 - team: Overall Coordinators
   id: overallcoord
   heads:
-      - name: Amogh Tiwari
+      - name: Amogh<br>Tiwari
         bg: green
         img: Amogh_2020.jpg
         fb: https://www.facebook.com/amogh.tiwari.77
         in: https://www.linkedin.com/in/amogh-tiwari-b370a856/
         mail: amogh.tiwari@research.iiit.ac.in
         phone: 8800344604
-      - name: Srinath Nair
+      - name: Srinath<br>Nair
         bg: red
         img: Srinath_2020.jpg
         fb: https://www.facebook.com/s.nath10
@@ -19,7 +19,7 @@
 - team: Collaborations
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   heads:
-      - name: Naren Akash R J
+      - name: Naren<br>Akash<br>R J
         img: Naren_2020.jpg
         fb: https://www.facebook.com/narenakash.rj
         in: https://www.linkedin.com/in/narenakash-rj/
@@ -27,28 +27,28 @@
         phone: 6383701983
         bg: red
   members:
-      - name: Arihanth Srikar
+      - name: Arihanth<br>Srikar
         img: Arihanth_2020.jpeg
         fb: https://www.facebook.com/arihanth.srikar
         in: 
         mail: arihanth.srikar@research.iiit.ac.in
         phone: 9480197574
         bg: green
-      - name: Ashwin Rao
+      - name: Ashwin<br>Rao
         img: Ashwin_2020.jpg
         fb: https://www.facebook.com/profile.php?id=100004783275431
         in:
         mail: ashwin.rao@students.iiit.ac.in
         phone: 9663397740
         bg: grey
-      - name: Sriram Devata
+      - name: Sriram<br>Devata
         img: Sriram_2020.jpg
         fb: https://www.facebook.com/Sriram.Devata.Sriram.Devata.Sriram.Devata
         in: 
         mail: sriram.devata@research.iiit.ac.in
         phone: 6309297141
         bg: green
-      - name: Shaswat Goel
+      - name: Shaswat<br>Goel
         img: Naren.png
         fb: https://www.facebook.com/es0t3r1c
         in:
@@ -59,14 +59,14 @@
 - team: Corporate Relations
   text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
   heads:
-      - name: Sahil Bhatt
+      - name: Sahil <br> Bhatt
         bg: red
         img: Sahil_2020.jpeg
         fb: https://www.facebook.com/sahil.bhatt.3998263
         in: https://www.linkedin.com/in/sahil-bhatt-3932b5185/
         mail: sahil.bhatt@research.iiit.ac.in
         phone: 9662498919
-      - name: Naren Akash R J
+      - name: Naren<br>Akash<br>R J
         img: Naren_2020.jpg
         fb: https://www.facebook.com/narenakash.rj
         in: https://www.linkedin.com/in/narenakash-rj/
@@ -74,21 +74,21 @@
         phone: 6383701983
         bg: grey
   members:
-      - name: Harshwardhan Prasad
+      - name: Harsh<br>wardhan<br>Prasad
         img: Harshwardhan_2020.jpg
         fb: https://www.facebook.com/harsh.prasad.79
         in: 
         mail: harshwardhan.prasad@students.iiit.ac.in
         phone: 9028002828
         bg: green
-      - name: Naman Ahuja
+      - name: Naman<br>Ahuja
         img: Naman_2020.jpeg
         fb: https://www.facebook.com/naman.ahuja.568
         in:
         mail: naman.ahuja@students.iiit.ac.in
         phone: 9810244576
         bg: grey
-      - name: Tushar Jain
+      - name: Tushar<br>Jain
         img: Tushar_2020.jpg
         fb: https://www.facebook.com/profile.php?id=100024881437234
         in: 
@@ -99,14 +99,14 @@
 - team: Tech
   text: Noobs sit and wait for inspiration. We just get up and go to work.
   heads:
-      - name: Jivitesh Jain
+      - name: Jivitesh<br>Jain
         img: Jivitesh_2020.jpeg
         fb: https://www.facebook.com/jivitesh.jain.121
         in: https://www.linkedin.com/in/jiviteshjain/
         mail: jivitesh.jain@students.iiit.ac.in
         phone: 9711267621
         bg: blue
-      - name: Yoogottam Khandelwal
+      - name: Yoogottam<br>Khandelwal
         img: Yoogottam_2020.jpeg
         fb: https://www.facebook.com/yoogottamk
         in: https://www.linkedin.com/in/yoogottamk/
@@ -114,15 +114,15 @@
         phone: 8697904406
         bg: green
   members:
-      - name: Aakash Jain
+      - name: Aakash<br>Jain
         img: Aakash_2020.jpeg
         fb: https://www.facebook.com/profile.php?id=100008311955597
         in: 
         mail: aakash.jain@students.iiit.ac.in
         phone: 9390326968
         bg: green
-      - name: Kshitijaa Jaglan
-        img: Naren.png
+      - name: Kshitijaa<br>Jaglan
+        img: Kshitijaa_2020.jpg
         fb: https://www.facebook.com/kshitijaa.jaglan.31
         in:
         mail: kshitijaa.jaglan@research.iiit.ac.in
@@ -133,14 +133,14 @@
   multiple: true
   text: If something is important enough, you do it even if the odds aren't in your favour <br> - Elon Musk
   heads:
-      - name: Bhavyajeet Singh
+      - name: Bhavyajeet<br>Singh
         bg: green
         img: Bhavyajeet_2020.jpeg
         fb: https://www.facebook.com/bhavyajeet.singh.1
         in:
         mail: bhavyajeet.singh@research.iiit.ac.in
         phone: 9720038855
-      - name: Kanish Anand
+      - name: Kanish<br>Anand
         bg: blue
         img: Kanish_2020.jpeg
         fb: https://www.facebook.com/kanish.anand.14
@@ -148,49 +148,49 @@
         mail: kanish.anand@students.iiit.ac.in
         phone: 6239854647
   members:
-      - name: Apoorva Thirupathi
+      - name: Apoorva<br>Thirupathi
         img: Apoorva_2020.jpeg
         fb: https://m.facebook.com/profile.php?id=100024635658729
         in: 
         mail: apoorva.thirupathi@research.iiit.ac.in
         phone: 8106009977
         bg: green
-      - name: Sridhar M
+      - name: Sridhar<br>M
         img: Sridhar_2020.jpg
         fb: https://www.facebook.com/Sridhar.Mallareddy
         in: https://www.linkedin.com/in/sridhar-m-b96a34129/
         mail: sridhar.m@research.iiit.ac.in
         phone: 8602425144
         bg: green
-      - name: Mohee Datta Gupta
+      - name: Mohee<br>Datta<br>Gupta
         img: Mohee_2020.jpeg
         fb: https://www.facebook.com/mohee.dattagupta
         in: https://www.linkedin.com/in/mohee-datta-gupta-964460189/
         mail: mohee.datta@research.iiit.ac.in
         phone: 9831331103
         bg: green
-      - name: Sai Tanmay
+      - name: Sai<br>Tanmay
         img: SaiTanmay_2020.jpg
         fb: https://www.facebook.com/saitanmay.chakkera.3
         in: https://www.linkedin.com/in/sai-tanmay-reddy-chakkera-66b12a170/
         mail: sai.tanmay@students.iiit.ac.in
         phone: 8309152780
         bg: green
-      - name: Pahulpreet Singh
+      - name: Pahulpreet<br>Singh
         img: Pahulpreet_2020.jpg
         fb: https://www.facebook.com/pahulpreetsingh001
         in: 
         mail: pahulpreet.singh@research.iiit.ac.in
         phone: 8683051351
         bg: green
-      - name: Pooja Desur
+      - name: Pooja<br>Desur
         img: Pooja_2020.jpeg
         fb: https://www.facebook.com/profile.php?id=100009894364010
         in:
         mail: pooja.desur@students.iiit.ac.in
         phone: 9980677602
         bg: grey
-      - name: Vaibhav Kashera
+      - name: Vaibhav<br>Kashera
         img: Vaibhav_2020.jpg
         fb: https://www.facebook.com/Vkashera1
         in: 
@@ -201,7 +201,7 @@
 - team: Finance
   text: "Rule No.1: Never lose money.<br> Rule No.2: Never forget rule No.1. <br> - Warren Buffet"
   heads:
-      - name: Loay Rashid
+      - name: Loay<br>Rashid
         bg: grey
         img: Loay_2020.jpg
         fb: https://www.facebook.com/loay.rashid.1
@@ -209,14 +209,14 @@
         mail: loay.rashid@students.iiit.ac.in
         phone: 9502684240
   members:
-      - name: Keshav Bajaj
+      - name: Keshav<br>Bajaj
         img: Keshav_2020.jpg
         fb: https://www.facebook.com/keshav.bajaj.9887
         in: 
         mail: keshav.bajaj@research.iiit.ac.in
         phone: 8529774123
         bg: green
-      - name: Shaurya Dewan
+      - name: Shaurya<br>Dewan
         img: Shaurya_2020.jpg
         fb: https://www.facebook.com/shaurya.dewan.77
         in:
@@ -227,7 +227,7 @@
 - team: Design
   text: "Design is not just what it looks like and feels like. Design is how it works. <br> - Steve Jobs"
   heads:
-      - name: Ahish Deshpande
+      - name: Ahish<br>Deshpande
         bg: green
         img: Ahish_2020.jpeg
         fb: https://www.facebook.com/ahish.deshpande.14
@@ -235,28 +235,28 @@
         mail: ahish.deshpande@students.iiit.ac.in
         phone: 9381567844
   members:
-      - name: Shivansh Rakesh
+      - name: Shivansh<br>Rakesh
         img: Shivansh_2020.jpg
         fb: https://www.facebook.com/shivansh.bksc
         in: https://www.linkedin.com/in/shivanshrakesh/
         mail: shivansh.rakesh@students.iiit.ac.in
         phone: 9507035044
         bg: green
-      - name: Ritvik Aryan Kalra
+      - name: Ritvik<br>Aryan<br>Kalra
         img: Ritvik_2020.jpeg
         fb: https://www.facebook.com/ritvikaryan.kalra
         in: 
         mail: ritvik.kalra@research.iiit.ac.in
         phone: 8218002256
         bg: green
-      - name: Sanjai Kumaran
+      - name: Sanjai<br>Kumaran
         img: Sanjai_2020.jpg
         fb: https://www.facebook.com/sanjusanjai2002
         in:
         mail: sanjai.kumaran@research.iiit.ac.in
         phone: 9943790250
         bg: grey
-      - name: Saravanan Senthil
+      - name: Saravanan<br>Senthil
         img: Saru_2020.jpeg
         fb: https://www.facebook.com/saru.d2
         in:
@@ -268,14 +268,14 @@
   text: Good marketing makes the company look smart, great marketing makes the customer feel smart. <br> - Joe Chernov
   multiple: true
   heads:
-      - name: Anirudh Palutla
+      - name: Anirudh<br>Palutla
         bg: red
         img: Anirudh_2020.jpg
         fb: https://www.facebook.com/majorkey420
         in: https://www.linkedin.com/in/anirudh-palutla-42653b191/
         mail: anirudh.palutla@research.iiit.ac.in
         phone: 7799806577
-      - name: Ansh Puvvada
+      - name: Ansh<br>Puvvada
         bg: green
         img: Ansh_2020.jpg
         fb: https://www.facebook.com/ansh.puvvada
@@ -283,21 +283,21 @@
         mail: ansh.puvvada@students.iiit.ac.in
         phone: 8074474100
   members:
-      - name: Aravind Narayanan
+      - name: Aravind<br>Narayanan
         img: Aravind_2020.jpg
         fb: https://www.facebook.com/aravind.narayanan.758
         in: 
         mail: aravind.narayanan@students.iiit.ac.in
         phone: 7396943564
         bg: green
-      - name: Tejasvi Chebrolu
+      - name: Tejasvi<br>Chebrolu
         img: Tejasvi_2020.jpg
         fb: https://www.facebook.com/teja.chebrolu.3
         in:
         mail: tejasvi.chebrolu@research.iiit.ac.in
         phone: 8141399661
         bg: grey
-      - name: Venkat Adithya
+      - name: Venkat<br>Adithya
         img: Venkat_2020.jpg
         fb: https://www.facebook.com/venkatadithya.amula
         in: 
@@ -308,7 +308,7 @@
 - team: Social Media
   text: Don't use social media to impress people; use it to impact people <br> - Dave Willis
   heads:
-      - name: Aryan Agarwal
+      - name: Aryan<br>Agarwal
         bg: grey
         img: Aryan_2020.jpeg
         fb: https://www.facebook.com/aryan.agarwal.167
@@ -316,14 +316,14 @@
         mail: aryan.agarwal@students.iiit.ac.in
         phone: 9978965669
   members:
-      - name: Hemant Suresh
+      - name: Hemant<br>Suresh
         img: Hemant_2020.jpeg
         fb: https://www.facebook.com/neucleye
         in: 
         mail: hemant.suresh@students.iiit.ac.in
         phone: 9390341866
         bg: green
-      - name: Hrishi Narayan
+      - name: Hrishi<br>Narayan
         img: Hrishi_2020.jpg
         fb: https://www.facebook.com/hrishi.narayanan.14
         in:
@@ -335,14 +335,14 @@
   multiple: true
   text: Coming together is a beginning. Keeping together is progress. Working together is success. <br>- Henry Ford
   heads:
-      - name: Ansh Puvvada
+      - name: Ansh<br>Puvvada
         bg: green
         img: Ansh_2020.jpg
         fb: https://www.facebook.com/ansh.puvvada
         in: https://www.linkedin.com/in/ansh-puvvada-9071a2191/
         mail: ansh.puvvada@students.iiit.ac.in
         phone: 8074474100
-      - name: Bhavyajeet Singh
+      - name: Bhavyajeet<br>Singh
         bg: green
         img: Bhavyajeet_2020.jpeg
         fb: https://www.facebook.com/bhavyajeet.singh.1
@@ -350,14 +350,14 @@
         mail: bhavyajeet.singh@research.iiit.ac.in
         phone: 9720038855
   members:
-      - name: Aman Rajmeel
+      - name: Aman<br>Rajmeel
         img: Aman_2020.jpg
         fb: 
         in: 
         mail: aman.rajmeel@students.iiit.ac.in
         phone: 6350497176
         bg: green
-      - name: Eshan Gupta
+      - name: Eshan<br>Gupta
         img: Eshan_2020.jpg
         fb: https://www.facebook.com/EG1616
         in:
