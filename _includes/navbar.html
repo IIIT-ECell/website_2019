@@ -17,14 +17,14 @@
  -->
 
 
-<link rel="stylesheet" href="{{ site.baseurl }}/css/navbar.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/fonts.css">
-<script src="{{ site.baseurl }}/js/navbar.js"></script>
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<script src="/js/navbar.js"></script>
 
 
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
     <a class="navbar-brand" href="https://ecell.iiit.ac.in/">
-        <img src="{{site.baseurl}}/assets/imgs/ecell-logo.png" height="57">
+        <img src="/assets/imgs/ecell-logo.png" height="57">
     </a>
     <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
         <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                                     <li role="separator" class="divider"></li>
                                 {% elsif sublink.title == 'image' %}
                                     <li class="img-list-item">
-                                        <img src="{{site.baseurl}}{{ sublink.path }}" alt="{{ sublink.alttext }}">
+                                        <img src="{{ sublink.path }}" alt="{{ sublink.alttext }}">
                                     </li>
                                 {% else %}
                                 {% capture sublink_url %}{% include functions/process_url.html url=sublink.url %}{% endcapture %}
@@ -67,7 +67,7 @@
                     </li>
                 {% else %}
                     <li class="nav-item {{ class }}">
-                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} {{ scrtext }}</a>
+                        <a class="nav-link" href="{{ link.url }}">{{ link.title }} {{ scrtext }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
@@ -91,11 +91,11 @@
                         <a class="nav-link nav-link-disabled" href="#">{{ link.title }} ></a>
                         {% for sublink in link.sublinks %}
                             {% if sublink.title != 'image' %}
-                                <a class="dropdown-item nav-sublink" href="{{ site.baseurl }}{{ sublink.url }}">{{sublink.title}}</a>
+                                <a class="dropdown-item nav-sublink" href="{{ sublink.url }}">{{sublink.title}}</a>
                             {% endif %}
                         {% endfor %}
                     {% else %}
-                        <a class="nav-link nav-link-bold" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                        <a class="nav-link nav-link-bold" href="{{ link.url }}">{{ link.title }}</a>
                     {% endif %}
             {% endfor %}
         </div>

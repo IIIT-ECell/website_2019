@@ -53,11 +53,11 @@ window.manualSliceInterval = setInterval(window.manualSlice, 100);
 		<img class="img-fluid" src="images/{{post.img}}" alt="{{post.title}}">
   </div>
   <div class ="col-md-6 sm-6 post-data">
-    <b><h1><a href = "{{site.baseurl}}{{post.url}}" target ="_blank">{{post.title}}</a></h1></b>
+    <b><h1><a href = "{{post.url}}" target ="_blank">{{post.title}}</a></h1></b>
 		<h5>{{post.author}}</h5>
 		<h6>{{post.date|date_to_string}}</h6>
     <div class="post-content">{{post.content}}</div>
-    <b><a href ="{{site.baseurl}}{{post.url}}" target ="_blank">Read more</a></b>
+    <b><a href ="{{post.url}}" target ="_blank">Read more</a></b>
 		<br>
     <br>
 		<hr>
