@@ -278,3 +278,24 @@ figure.effect-layla:hover img {
 .focus:hover{
     color: black;
 }
+
+i.fab, i.fa {
+    color: black;
+}
+
+i.fab:hover, i.fa:hover {
+    color: #444;
+}
+
+@media (max-width: 420px) {
+    .col-12, .algn.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .grid figure {
+        min-width: 90vw;
+        height: 90vw;
+    }
+
+}
