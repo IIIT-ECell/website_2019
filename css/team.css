@@ -298,6 +298,7 @@ i.fab:hover, i.fa:hover {
         min-width: 90vw;
         width: 100%;
         margin: auto;
+        margin-bottom: 2vw;
     }
 
     figure.effect-layla figcaption{
