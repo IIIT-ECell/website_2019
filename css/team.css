@@ -110,6 +110,7 @@
     min-height: 100%;
     max-width: 100%;
     opacity: 1;
+    object-fit: contain;
 }
 
 .grid figure figcaption {
@@ -162,7 +163,7 @@ figure.effect-layla img {
     height: 390px;
 }
 figure.effect-layla figcaption{
-    padding: 3em;
+    padding: 3rem;
 }
 
 figure.effect-layla figcaption h2{
@@ -277,4 +278,29 @@ figure.effect-layla:hover img {
 }
 .focus:hover{
     color: black;
+}
+
+i.fab, i.fa {
+    color: black;
+}
+
+i.fab:hover, i.fa:hover {
+    color: #444;
+}
+
+@media (max-width: 420px) {
+    .col-12, .algn.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .grid figure {
+        min-width: 90vw;
+        width: 100%;
+        margin: auto;
+    }
+
+    figure.effect-layla figcaption{
+        padding: 1rem;
+    }
 }
