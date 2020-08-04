@@ -110,6 +110,7 @@
     min-height: 100%;
     max-width: 100%;
     opacity: 1;
+    object-fit: contain;
 }
 
 .grid figure figcaption {
@@ -162,7 +163,7 @@ figure.effect-layla img {
     height: 390px;
 }
 figure.effect-layla figcaption{
-    padding: 3em;
+    padding: 3rem;
 }
 
 figure.effect-layla figcaption h2{
@@ -295,7 +296,11 @@ i.fab:hover, i.fa:hover {
 
     .grid figure {
         min-width: 90vw;
-        height: 90vw;
+        width: 100%;
+        margin: auto;
     }
 
+    figure.effect-layla figcaption{
+        padding: 1rem;
+    }
 }
