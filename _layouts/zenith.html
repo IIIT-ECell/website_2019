@@ -1,0 +1,115 @@
+---
+layout: page
+---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/zenith.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/index.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+
+<header class="w-100 h-100">
+    <div class="container-fluid h-100">
+        <div class="row h-100 jumbotron jumbotron-fluid main-head">
+            <div class="col-xl-8 col-lg-8 col-md-9 col-12 h-100 w-100">
+                <div class="container-fluid d-flex align-items-center justify-content-center w-100 h-100">
+                    <div class="card text-center rounded-card card-width w-50 main-card">
+                        <div class="card-body card-push-sides">
+                            <img class="img-fluid" style="width: 50%"
+                                src="/assets/imgs/logos/logo-ecell_iiith-white.png">
+                            <p class="lead clr">presents</p>
+                            <h1 class="clrhead mt-4">ZENITH</h1>
+                            <hr class="my-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class=" clr2 container p-5" id="about">
+    <div class="row">
+        <div class="col p-5 text-center">
+            <h1 class="py-3 clr">About Zenith</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class=" clr col col-lg-8 col-md-10 col-xs-11 mx-auto text-justify">
+            <p>
+                E-Cell proudly presents its brand new and explosive event, ZENITH. The first ever tech fest organized by E-Cell, ZENITH brings to you a variety of novel events sure to spark your
+                interest, ultimately culminating with an expansive <img src="{{ site.baseurl }}/assets/imgs/The_head.png" alt="head picture" class="wrap-pic img-fluid "></img>Hackathon!
+                <br><br>
+                ZENITH launches on Sunday, the 18<sup>th</sup> of October. The events will span a 2 week period, upto the 31<sup>st</sup> of October.
+                <br><br>
+                Be sure to stay updated and be on the lookout for further details about the various events which will be posted soon on all E-Cell
+                platforms!    
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="col px-5 pt-0 pb-2 text-center">
+        <h1 class="py-3 clr">Timeline</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="timeline">
+        <div class="containertime left">
+            <div class="contenttime">
+                <h2>18<sup>th</sup> October</h2>
+                <h4 class="clr mt-4">Panel Discussion</h4>
+            </div>
+        </div>
+        <div class="containertime right">
+            <div class="contenttime">
+                <h2>21<sup>st</sup> - 24<sup>th</sup> October</h2>
+                <h4 class="clr mt-4">Game Day</h4>
+            </div>
+        </div>
+        <div class="containertime left">
+            <div class="contenttime">
+                <h2>25<sup>th</sup> October</h2>
+                <h4 class="clr mt-4">Alumni Talk</h4>
+            </div>
+        </div>
+        <div class="containertime right">
+            <div class="contenttime">
+                <h2>28<sup>th</sup> October</h2>
+                <h4 class="clr mt-4">Coding Contest</h4>
+            </div>
+        </div>
+        <div class="containertime left">
+            <div class="contenttime">
+                <h2>31<sup>st</sup> Oct - 1<sup>st</sup> Nov</h2>
+                <h4 class="clr mt-4">Hackathon</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid tiles-container col-sm-12 col-md-11 my-5">
+    <div class="join-us card-width" id="endhead" onmouseover="hoverend('Individual Events Releasing Soon!')"
+        onmouseout="hoverend('Stay Tuned for More Information!')">
+        <h1 class="px-2 m-2" id="endcard">Stay Tuned for More Information!</h1>
+        <br>
+    </div>
+</div>
+<script>
+    function hoverend(description) {
+        document.getElementById('endcard').innerHTML = description;
+    }
+    ScrollReveal().reveal('.row', { delay: 200, easing: 'ease-in-out' });
+    ScrollReveal().reveal('.para', { delay: 250, easing: 'ease-in-out' });
+    ScrollReveal().reveal('.image', { delay: 300, easing: 'ease-in-out' });
+    ScrollReveal().reveal('.main-head', { delay: 200, easing: 'ease-in-out' });
+    ScrollReveal().reveal('.card', { delay: 250, easing: 'ease-in-out' });
+    ScrollReveal().reveal('#testimonial-parent', { delay: 250, easing: 'ease-in-out' })
+    /*var docWidth = document.documentElement.offsetWidth;
+    [].forEach.call(
+        document.querySelectorAll('*'),
+        function (el) {
+            if (el.offsetWidth > docWidth) {
+                console.log(el);
+            }
+        }
+    );*/
+</script>
