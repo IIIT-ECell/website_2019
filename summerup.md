@@ -1,6 +1,6 @@
 ---
 layout: summerup
-title: SummerUP
+title: SummerUp
 noTopSpacing: true
 permalink: /summerup/
 ---
