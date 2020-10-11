@@ -15,6 +15,8 @@
 - title: Our Events
   url: /paticipate.html
   sublinks:
+      - title: Zenith
+        url: /zenith
       - title: SummerUp
         url: /summerup
       - title: Campus Ambassador
