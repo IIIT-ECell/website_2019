@@ -12,10 +12,10 @@
         path: /assets/imgs/dummy.png
         type: image
         alttext: this is a picture
-- title: Participate
+- title: Our Events
   url: /paticipate.html
   sublinks:
-      - title: SummerUP
+      - title: SummerUp
         url: /summerup
       - title: Campus Ambassador
         url: /ca

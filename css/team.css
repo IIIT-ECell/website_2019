@@ -55,22 +55,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 992px) and (min-width: 769px), (max-width: 502px) {
-    .team-member {
-        width: 49%;
-    }
-    .team-members {
-        justify-content: space-evenly;
-    }
-}
-@media (max-width: 768px) and (min-width: 503px) {
-    .team-member {
-        width: 24%;
-    }
-    .team-members {
-        justify-content: space-evenly;
-    }
-}
+
 
 .algn{
     text-align: center;
@@ -90,34 +75,70 @@
 }
 
 /* Common style */
-.grid figure {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 360px;
-    max-width: 480px;
-    max-height: 360px;
-    width: 48%;
-    text-align: center;
-    cursor: pointer;
-}
+@media (max-width:950px),(min-width:1501px){
+    .grid figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        min-width: 360px;
+        max-width: 360px;
+        max-height: 360px;
+        width: auto;
+        text-align: center;
+        cursor: pointer;
+    }
 
-.grid figure img {
-    filter: grayscale(0%);
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 1;
-    object-fit: contain;
+    .grid figure img {
+        filter: grayscale(0%);
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 1;
+        object-fit: cover;
+    }
+    .grid figure figcaption{
+        font-size: 1.25em;
+    }
 }
-
+@media (min-width:951px) and (max-width:1500px){
+    .grid figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        min-width: 300px;
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .grid figure img {
+        filter: grayscale(0%);
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 1;
+        object-fit: cover;
+    }
+    .grid figure figcaption{
+        font-size: 1em;
+    }
+    .grid figure h2{
+        font-size: 1.5em;
+    }
+    .grid figure i{
+        font-size: 0.75em;
+    }
+}
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -298,6 +319,7 @@ i.fab:hover, i.fa:hover {
         min-width: 90vw;
         width: 100%;
         margin: auto;
+        margin-bottom: 2vw;
     }
 
     figure.effect-layla figcaption{
