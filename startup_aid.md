@@ -5,4 +5,7 @@ permalink: /startup-aid/
 description: StartupAid by ECell IIIT-H
 ---
 
-Have an idea? E-Cell IIIT Hyderabad has the perfect opportunity for you to realize your ideas through a 4-sprint incubation period at the end of which select ideas will recieve a seed-fund of 5,00,000 INR from CIE and a fully sponsored trip to National University of Singapore for a workshop.
+Startup Aid is a 3-sprint program to help IIIT-H students take their startup idea from paper to the market by connecting the students with experts who provide valuable insights and help them structure their concepts. After successful completion of the 3 sprints, students can pitch their idea in front of CIE and receive funding. The first iteration of the program saw 5 ideas getting incubated.
+<br>
+Just need to have interest in startups and the enthusiasm to build one! This time, we have an exclusive ideation phase initially, to cater the motivated participants who don't have a concrete idea yet.
+Already have an interesting idea? You can start directly from the 2nd phase or if it needs more polishing, we welcome you to join the 1st phase.
