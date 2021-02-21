@@ -121,10 +121,10 @@
         img: Venika_Annam.jpg
         in: 
         mail: venika.annam@students.iiit.ac.in 
-      - name: Vanshpreet<br>Singh Kohli
+      - name: Vanshpreet<br>Singh<br>Kohli
         bg: green
         img: Vanshpreet_Kohli.jpg
-        in: 
+        in:  https://www.linkedin.com/in/vanshpreet-singh-kohli-631a771bb/
         mail: vanshpreet.k@research.iiit.ac.in 
       - name: Khush<br>Devendra Patel
         bg: grey
@@ -166,14 +166,15 @@
         bg: grey
       - name: Aayush<br>Bhandari
         bg: grey
-        img: 
+        img: Aayush_Bhandari.jpg
         in: https://www.linkedin.com/in/aayush-bhandari-5b179a207/
         mail: aayush.bhandari@students.iiit.ac.in
       - name: Akshit<br>Gureja
         bg: green
-        img: 
-        in: 
-        mail: 
+        img: akshit_gureja.jpg
+        in:  https://www.linkedin.com/in/akshit-gureja-5b0784207/
+        mail: akshit.gureja@research.iiit.ac.in
+
         
 - team: Events and Operations
   multiple: true
