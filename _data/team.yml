@@ -119,7 +119,7 @@
       - name: Venika<br>Sruthi<br>Annam
         bg: grey
         img: Venika_Annam.jpg
-        in: 
+        in: https://www.linkedin.com/in/venika-sruthi-0862831b9
         mail: venika.annam@students.iiit.ac.in 
       - name: Vanshpreet<br>Singh<br>Kohli
         bg: green
@@ -264,6 +264,11 @@
         img: NAIMEESH_TIWARI.jpg
         in: http://www.linkedin.com/in/naimeesh-narayan-tiwari-363483207
         mail: naimeesh.tiwari@students.iiit.ac.in
+      - name: Gautam<br>Ghai
+        bg: grey
+        img: Gautam_Ghai.jpg
+        in: https://www.linkedin.com/in/gautam-ghai-079439207
+        mail: gautam.ghai@students.iiit.ac.in
         
         
 - team: Finance
