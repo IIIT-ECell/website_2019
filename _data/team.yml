@@ -55,6 +55,27 @@
         mail: shaswat.goel@research.iiit.ac.in
         phone: 8130783814
         bg: grey
+      - name: Yash<br>Mehan
+        bg: green
+        img: Yash_Mehan.jpg
+        in:  https://www.linkedin.com/in/yash-mehan-14800b159/
+        mail: yash.m@research.iiit.ac.in
+      - name: Srijan Chakraborty
+        bg: grey
+        img: Srijan_Chakraborty.jpg
+        in: https://www.linkedin.com/in/srijan-chakraborty-160370207
+        mail: srijan.chakraborty@research.iiit.ac.in
+      - name: Snehit Gupta
+        bg: green
+        img: Srijan_Chakraborty.jpg
+        in: https://www.linkedin.com/in/snehit-gupta-9854331a2
+        mail: snehit.g@research.iiit.ac.in
+      - name: Rajarshi Ray
+        bg: grey
+        img: Rajarshi_Ray.jpg
+        in: https://www.linkedin.com/in/rajarshi-r-85b517174
+        mail: rajarshi.ray@students.iiit.ac.in
+    
 
 - team: Corporate Relations
   text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
@@ -95,7 +116,22 @@
         mail: tushar.jain@students.iiit.ac.in
         phone: 9618304352
         bg: green
-
+      - name: Venika<br>Sruthi<br>Annam
+        bg: grey
+        img: Venika_Annam.jpg
+        in: https://www.linkedin.com/in/venika-sruthi-0862831b9
+        mail: venika.annam@students.iiit.ac.in 
+      - name: Vanshpreet<br>Singh<br>Kohli
+        bg: green
+        img: Vanshpreet_Kohli.jpg
+        in:  https://www.linkedin.com/in/vanshpreet-singh-kohli-631a771bb/
+        mail: vanshpreet.k@research.iiit.ac.in 
+      - name: Khush<br>Devendra Patel
+        bg: grey
+        img: Khush_Patel.jpeg
+        in: https://www.linkedin.com/in/khush-patel-6344b51b4/
+        mail: khush.patel@students.iiit.ac.in
+        
 - team: Tech
   text: Noobs sit and wait for inspiration. We just get up and go to work.
   heads:
@@ -128,7 +164,18 @@
         mail: kshitijaa.jaglan@research.iiit.ac.in
         phone: 9318322417
         bg: grey
+      - name: Aayush<br>Bhandari
+        bg: grey
+        img: Aayush_Bhandari.jpg
+        in: https://www.linkedin.com/in/aayush-bhandari-5b179a207/
+        mail: aayush.bhandari@students.iiit.ac.in
+      - name: Akshit<br>Gureja
+        bg: green
+        img: akshit_gureja.jpg
+        in:  https://www.linkedin.com/in/akshit-gureja-5b0784207/
+        mail: akshit.gureja@research.iiit.ac.in
 
+        
 - team: Events and Operations
   multiple: true
   text: If something is important enough, you do it even if the odds aren't in your favour <br> - Elon Musk
@@ -197,7 +244,33 @@
         mail: vaibhav.kashera@research.iiit.ac.in
         phone: 8340647358
         bg: green
-
+      - name: Tanmay<br>Goyal
+        bg: grey
+        img: Tanmay_Goyal.jpeg
+        in: https://www.linkedin.com/in/tanmay-goyal-764a5118b/
+        mail: tanmay.g@research.iiit.ac.in
+      - name: Anurag<br>Gupta
+        bg: green
+        img: Anurag_Gupta.jpg
+        in: https://www.linkedin.com/in/anurag-g-054128110/
+        mail: anurag.g@students.iiit.ac.in
+      - name: Atharva<br>Joshi
+        bg: grey
+        img: Atharva_Joshi.jpg
+        in: linkedin.com/in/atharva-joshi-a99766207
+        mail: atharva.j@research.iiit.ac.in
+      - name: Naimeesh<br>Narayan Tiwari
+        bg: green
+        img: NAIMEESH_TIWARI.jpg
+        in: http://www.linkedin.com/in/naimeesh-narayan-tiwari-363483207
+        mail: naimeesh.tiwari@students.iiit.ac.in
+      - name: Gautam<br>Ghai
+        bg: grey
+        img: Gautam_Ghai.jpg
+        in: https://www.linkedin.com/in/gautam-ghai-079439207
+        mail: gautam.ghai@students.iiit.ac.in
+        
+        
 - team: Finance
   text: "Rule No.1: Never lose money.<br> Rule No.2: Never forget rule No.1. <br> - Warren Buffet"
   heads:
@@ -223,6 +296,11 @@
         mail: shaurya.dewan@students.iiit.ac.in
         phone: 9652676482
         bg: grey
+      - name: Harsha<br>Vardhan<br>Nemani
+        img: NEMANI_VARDHAN.jpg
+        in: https://www.linkedin.com/in/harsha-vardhan-a088951b8
+        mail: nemani.v@research.iiit.ac.in
+        bg: green   
 
 - team: Design
   text: "Design is not just what it looks like and feels like. Design is how it works. <br> - Steve Jobs"
@@ -263,6 +341,36 @@
         mail: saravanan.senthil@students.iiit.ac.in
         phone: 6383175134
         bg: grey
+      - name: Anjali<br>Singh
+        img: Anjali_Singh.jpeg
+        in: https://www.linkedin.com/in/anjali-singh-005
+        mail: anjali.s@students.iiit.ac.in
+        bg: green
+      - name: Saurav<br>Chhatani
+        img: Saurav_Chhatani.jpeg
+        in: https://www.linkedin.com/in/saurav-chhatani-3498b81bb
+        mail: saurav.chhatani@students.iiit.ac.in
+        bg: green
+      - name: Gokul<br>Praneetha
+        img: Gokul_Praneetha.jpg
+        in: https://www.linkedin.com/in/praneetha-gokul-2582aa188
+        mail: gokul.p@research.iiit.ac.in
+        bg: grey
+      - name: Vamshi<br>Krishna<br>Bonagiri
+        img: Vamshi_Bonagiri.jpg
+        in: https://www.linkedin.com/in/vamshi-krishna-bonagiri-ba221b1bb/
+        mail: vamshi.b@research.iiit.ac.in
+        bg: grey
+      - name: Eshika<br>Khandelwal
+        img: Eshika_Khandelwal.jpeg
+        in: https://www.linkedin.com/in/eshika-khandelwal-4b308b1b6/
+        mail: eshika.k@research.iiit.ac.in
+        bg: green
+      - name: Karmanjyot<br>Singh
+        img: Karmanjyot_Singh.jpg
+        in: https://www.linkedin.com/in/karmanjyot-singh-008753207
+        mail: karmanjyot.singh@students.iiit.ac.in
+        bg: green  
   
 - team: Marketing
   text: Good marketing makes the company look smart, great marketing makes the customer feel smart. <br> - Joe Chernov
@@ -304,6 +412,16 @@
         mail: venkat.adithya@research.iiit.ac.in
         phone: 8309737009
         bg: green
+      - name: Anish<br>Mathur
+        bg: grey
+        img: ANISH_MATHUR.jpg
+        in: linkedin.com/in/anish-mathur-180756207
+        mail: anish.mathur@students.iiit.ac.in
+      - name: Karthik<br>Prasanna
+        bg: green
+        img: Karthik_Prasanna_N.jpg
+        in: https://www.linkedin.com/in/karthik-prasanna-n-9357081b8
+        mail: prasanna.karthik@research.iiit.ac.in
 
 - team: Social Media
   text: Don't use social media to impress people; use it to impact people <br> - Dave Willis
@@ -330,6 +448,16 @@
         mail: hrishi.narayan@research.iiit.ac.in
         phone: 9958026136
         bg: grey
+      - name: Sudha<br>Tanay<br>Doddi
+        img: Sudha_Tanay_Doddi.jpg
+        in: https://www.linkedin.com/in/sudha-tanay-doddi-988549205
+        mail: sudha.tanay@research.iiit.ac.in
+        bg: green
+      - name: Rahul<br>Garg
+        img: Rahul_Garg.png
+        in: https://www.linkedin.com/in/rahul-garg-06617a207/
+        mail: rahul.garg@research.iiit.ac.in
+        bg: grey  
 
 - team: Team Affairs
   multiple: true
@@ -364,4 +492,9 @@
         mail: eshan.gupta@students.iiit.ac.in
         phone: 9872206651
         bg: grey
+      - name: Khushi<br>Agarwal
+        img: KHUSHI_AGARWAL.jpeg
+        in: https://www.linkedin.com/in/khushi-agarwal-727762207/
+        mail: khushi.agarwal@students.iiit.ac.in
+        bg: grey    
 

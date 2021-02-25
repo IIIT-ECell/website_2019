@@ -82,68 +82,11 @@ layout: page
 			</div>
 			<br>
 		</div>
-		{% if team.id != "overallcoord" %}
-		{% if team.team == "Events and Operations" %}
-		<div class="row align-self-center py-0 my-0">
-			<div class="col-12 col-md-6 py-0 my-0 d-flex text-center justify-content-center align-items-center member">
+				
+		<!-- <div class="row align-self-center"> -->
+			<div class="row col-12 col-md-12 d-flex flex-row text-center justify-content-center align-items-center member ">
 				{% for member in team.members %}
-				{% if member.name == "Sai<br>Tanmay" %}
-				</div>
-				</div>
-		<div class="row align-self-center py-0 my-0">
-			<div class="col-12 py-0 my-0 col-md-6 d-flex text-center justify-content-center align-items-center member">
-				<div class="grid">
-					<figure class="effect-layla">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
-						<figcaption>
-							<h2>{{member.name}}</h2>
-							<p><strong>Team Member</strong></p>
-							<a class="focus" href="{{member.fb}}" target="_blank">
-								<h3><i class="fab fa-facebook-f"></i></h3>
-							</a>
-							<a class="focus" href="{{member.in}}" target="_blank">
-								<h3><i class="fab fa-linkedin"></i></h3>
-							</a>
-							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
-								<h3><i class="fa fa-envelope"></i></h3>
-							</a>
-							<!--a class="focus" href="tel:{{member.phone}}" target="_blank">
-								<h3><i class="fa fa-phone"></i></h3-->
-							</a>
-						</figcaption>
-					</figure>
-				</div>
-				{% else %}
-				<div class="grid">
-					<figure class="effect-layla">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
-						<figcaption>
-							<h2>{{member.name}}</h2>
-							<p><strong>Team Member</strong></p>
-							<a class="focus" href="{{member.fb}}" target="_blank">
-								<h3><i class="fab fa-facebook-f"></i></h3>
-							</a>
-							<a class="focus" href="{{member.in}}" target="_blank">
-								<h3><i class="fab fa-linkedin"></i></h3>
-							</a>
-							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
-								<h3><i class="fa fa-envelope"></i></h3>
-							</a>
-							<!--a class="focus" href="tel:{{member.phone}}" target="_blank">
-								<h3><i class="fa fa-phone"></i></h3-->
-							</a>
-						</figcaption>
-					</figure>
-				</div>
-				{% endif %}
-				{% endfor %}
-			</div>
-		</div>
-		{% else %}
-		<div class="row align-self-center">
-			<div class="col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
-				{% for member in team.members %}
-				<div class="grid">
+				<div class="grid col-md-1">
 					<figure class="effect-layla">
 						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
 						<figcaption>
@@ -167,9 +110,7 @@ layout: page
 
 				{% endfor %}
 			</div>
-		</div>
-		{% endif %}
-		{% endif %}
+		<!-- </div> -->
 	</div>
 </div>
 </div>
