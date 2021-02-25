@@ -492,9 +492,12 @@
         mail: eshan.gupta@students.iiit.ac.in
         phone: 9872206651
         bg: grey
-      - name: Khushi<br>Agarwal
+      - name: Khushi<br>Agarwall
         img: KHUSHI_AGARWAL.jpeg
         in: https://www.linkedin.com/in/khushi-agarwal-727762207/
         mail: khushi.agarwal@students.iiit.ac.in
+        bg: grey
+      - name: Hououin hamlet<br>Kyouma
+        img: Harshit.jpeg
         bg: grey    
 
