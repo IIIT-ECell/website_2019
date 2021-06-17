@@ -8,6 +8,8 @@
         url: /talks
       - title: Workshops
         url: /workshops
+      - title: Campus Works
+        url: https://ecell.iiit.ac.in/cworks
       - title: Incubator Works
         url: /incubatorworks
       - title: image
@@ -17,20 +19,18 @@
 - title: Our Events
   url: /paticipate.html
   sublinks:
-      - title: Zenith
-        url: /zenith
-      - title: SummerUp
-        url: /summerup
       - title: Campus Ambassador
         url: /ca
+      - title: Fail! Talks
+        url: /fail
       - title: Megathon
         url: https://megathon.in
       - title: Startup Aid
         url: /startup-aid
-      - title: Fail! Talks
-        url: /fail
-      - title: Epoch
-        url: /epoch
+      - title: SummerUp
+        url: /summerup
+      - title: Zenith
+        url: /zenith
       - title: image
         path: /assets/imgs/participate.png
         type: image
