@@ -7,7 +7,7 @@
         in: https://www.linkedin.com/in/hemant-suresh-9531b81a0/
         mail: hemant.suresh@students.iiit.ac.in
         phone: 9390341866
-      - name: Ritvik<br>Aryan<br>Kalra
+      - name: Ritvik&ensp;Aryan<br>Kalra
         img: Ritvik_2020.jpeg
         fb: https://www.facebook.com/ritvikaryan.kalra
         in: https://www.linkedin.com/in/ritvik-kalra-0b569a1aa
@@ -43,12 +43,12 @@
         fb: https://www.facebook.com/srijan.chakraborty.1272
         in: https://www.linkedin.com/in/srijan-chakraborty-160370207
         mail: srijan.chakraborty@research.iiit.ac.in
-      - name: Snehit Gupta
+      - name: Snehit<br>Gupta
         bg: green
         img: SNEHIT_GUPTA.jpg
         in: https://www.linkedin.com/in/snehit-gupta-9854331a2
         mail: snehit.g@research.iiit.ac.in
-      - name: Rajarshi Ray
+      - name: Rajarshi<br>Ray
         bg: grey
         img: Rajarshi_Ray.jpg
         fb: https://www.facebook.com/rajarshi.ray.52090
@@ -72,12 +72,12 @@
         in: https://www.linkedin.com/in/naman-ahuja-402166190/
         mail: naman.ahuja@students.iiit.ac.in
         bg: grey
-      - name: Prateek<br>Sancheti
-        img: Prateek_Sancheti_2021.jpeg
-        fb: https://www.facebook.com/prateek.sancheti.73
-        in: https://www.linkedin.com/in/sanchetiprateek/
-        mail: tushar.jain@students.iiit.ac.in
-        bg: green
+      - name: Khush<br>Devendra<br>Patel
+        bg: grey
+        img: Khush_Patel.jpeg
+        fb: https://www.facebook.com/profile.php?id=100054978134703
+        in: https://www.linkedin.com/in/khush-patel-6344b51b4/
+        mail: khush.patel@students.iiit.ac.in
       - name: Venika<br>Sruthi<br>Annam
         bg: grey
         img: Venika_Annam.jpg
@@ -90,12 +90,13 @@
         fb: https://www.facebook.com/vs.potterhead
         in: https://www.linkedin.com/in/vanshpreet-singh-kohli-631a771bb/
         mail: vanshpreet.k@research.iiit.ac.in
-      - name: Khush<br>Devendra Patel
-        bg: grey
-        img: Khush_Patel.jpeg
-        fb: https://www.facebook.com/profile.php?id=100054978134703
-        in: https://www.linkedin.com/in/khush-patel-6344b51b4/
-        mail: khush.patel@students.iiit.ac.in
+      - name: Prateek<br>Sancheti
+        img: Prateek_2021.jpeg
+        fb: https://www.facebook.com/prateek.sancheti.73
+        in: https://www.linkedin.com/in/sanchetiprateek/
+        mail: tushar.jain@students.iiit.ac.in
+        bg: green 
+
 
 - team: Tech
   text: Noobs sit and wait for inspiration. We just get up and go to work.
@@ -316,7 +317,7 @@
         mail: aman.rajmeel@students.iiit.ac.in
         phone: 6350497176
         bg: green
-      - name: Khushi<br>Agarwall
+      - name: Khushi<br>Agarwal
         img: KHUSHI_AGARWAL.jpeg
         fb: https://www.facebook.com/profile.php?id=100057995556169
         in: https://www.linkedin.com/in/khushi-agarwal-727762207/
