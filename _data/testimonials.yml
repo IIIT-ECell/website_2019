@@ -2,19 +2,23 @@
 #   designation: "speedforces"
 #   text: "I love the E-CELL WEBSITE. It has helped me refresh my html skills from time to time."
 #   profilepic: "dummy.png"
+
 # - name: "Yoogottam"
 #   designation: "Vimboi"
 #   text: "Dk about Ecell but I love vim! Vim has the best ALE/YCM support for html in the world."
 #   profilepic: "dummy.png"
+
 - name: "Joveo"
-  designation:
-  text: "Platforms like Megathon provide a very fertile ground for ideas come up. It tests a contestant's mettle in every metric you could think of"
+  designation: "Global Leader in Programmatic Job Advertising"
+  text: "\"Platforms like Megathon provide a very fertile ground for ideas come up. It tests a contestant's mettle in every metric you could think of.\""
   profilepic: "/sponsors/joveo.png"
+
 - name: "EA"
-  designation: 
-  text: "We at EA have fun and it's great to see so many students having fun building solutions to problems given by us. Great job by E-Cell as well, the event is huge and wonderful."
+  designation: "Video Game Company"
+  text: "\"We at EA have fun and it's great to see so many students having fun building solutions to problems given by us. Great job by E-Cell as well, the event is huge and wonderful.\""
   profilepic: "/sponsors/easports.png"
+
 - name: "Prof. PJ Narayanan"
-  designation: "Director, IIIT Hyderabad"
-  text: "It (Megathon) is growing every year and good to have a lot of energy in building new things, new soltuions not just doing assignments."
+  designation: "The Director of IIIT Hyderabad"
+  text: "\"It (Megathon) is growing every year and good to have a lot of energy in building new things, new solutions not just doing assignments.\""
   profilepic: "/testimonials/PJN.jpg"
