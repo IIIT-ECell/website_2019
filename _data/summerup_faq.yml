@@ -1,16 +1,17 @@
 - question: I do not have a clear idea on what to build so how can I take part?
   answer: You need not have a clear idea in the beginning. We have marked the idea section in the form as “Not required” now and you can register without mentioning the idea. You can think of ideas after registration and discuss with your mentors about the same to understand how to go about implementing it. To those who have already submitted an idea, if you have a better idea to work on now, feel free to work on something else later after informing about the same to your mentor.
-- question: Do I have to work for all the 50 days? I feel my project can get over before the 50 days.
-  answer: You need not work for all 50 days. It is your project and we give you complete control over how to go about implementing it :). <br> The mentors assigned will not push you to work, but instead are your mentors so that you could ask them for guidance if in case you feel you’re stuck or don’t know how to implement a brilliant idea that you have.
+- question: Do I have to work for all the 40 days? I feel my project can get over before the 40 days.
+  answer: You need not work for all 40 days. It is your project and we give you complete control over how to go about implementing it :). <br> The mentors assigned will not push you to work, but instead are your mentors so that you could ask them for guidance if in case you feel you’re stuck or don’t know how to implement a brilliant idea that you have.
 - question: I have an idea but I do not have team members to work with so can I still take part?
   answer: Yes, definitely. You can choose to form a team later or go solo! We just want you to have fun coding this summer :D
 - question: I don’t have the expertise or the idea to build something large scale. What can I do?
   answer: You will be assigned mentors to help you in case you feel you’re stuck or don’t know how to begin working on your idea. Besides, you don’t have to build something huge. Even an MVP should fetch you the prize. And why worry about the prize when you’re getting an opportunity to sharpen your skills as a developer and are getting to learn much more than what your courses at IIIT offer? :)
 - question: What if my project idea is not as big or refined as the other projects? Will I still have a chance of getting a prize?
-  answer: We have kept three different categories of prizes:-
-    <br> <strong>a) Overall Winner </strong>(Prize:- 10,000):- To be awarded to the most innovative idea, that was coupled with a solid, great implementation.
-    <br> <strong>b) Best Idea </strong>(Prize:- 5,000):- To be awarded to the most creative, original idea which possibly couldn’t be implemented in the best of ways (possibly due to its complexity), but still wowed our judges.
+  answer: We have kept prizes for 4 teams this time:-
+    <br> <strong>a) First Place </strong>(Prize:- 20,000):- To the team with the most creative idea that was followed up with an efficient, well-executed implementation.
+    <br> <strong>b) Second Place </strong>(Prize:- 10,000):- To the runner-up team that had a great idea with an excellent implementation.
     <br> <strong>c) Best Technical Implementation </strong>(Prize:- 5,000):- To be awarded to the greatest, most impressive implementation of an idea, even if the idea itself isn’t the most innovative or very sustainable.
+    <br> <strong>d) Best Idea </strong>(Prize:- 5,000):- To be awarded to the most creative, original idea which possibly couldn’t be implemented in the best of ways (possibly due to its complexity), but still wowed our judges.
     <br> So, even if you feel that your idea is not ‘amazing’ as such, you can still get a prize in the ‘Best Technical Implementation’ category. Also, remember that since you are allowed to change your idea (after informing the mentor) as the event progresses, what might seem like a ‘normal’ idea now, can be modified to a ‘great’ idea later.
 - question: Who exactly are these mentors? Profs/Seniors or someone else?
   answer: The mentors will be seniors at IIIT Hyderabad and will have enough knowledge to guide you through your project. And we are always here for you in case you have any difficulties.
@@ -24,5 +25,3 @@
 
 - question: Will the mentors help us to code up the idea we have in mind?
   answer: It primarily depends on your mentor. The mentors are ideally there to help you code your idea up and not to actually code up your idea and we would not recommend that. This is for YOU to team up, code and have fun. Your mentors already know how exciting it is to write code! :D
-
-

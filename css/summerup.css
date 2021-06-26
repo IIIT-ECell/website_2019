@@ -201,3 +201,16 @@ body {
 .pagination li .page-link {
     color: #0c2f00;
 }
+
+.row-summerup-1 {
+    background-color: #ef476f;
+}
+.row-summerup-2 {
+    background-color: #ffd166;
+}
+.row-summerup-3 {
+    background-color: #06d6a0;
+}
+.row-summerup-4 {
+    background-color: #3a86ff;
+}
