@@ -75,6 +75,10 @@ body {
 
 .disable{
     background-color: #c0c0bf;
+
+}
+.enable{
+    background-image: linear-gradient(to right, #8080f8, rgb(105, 139, 219), #8fc3e5);
 }
 .ca-link:hover {
     cursor: pointer;
