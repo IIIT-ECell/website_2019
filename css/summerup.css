@@ -8,8 +8,8 @@ body {
     background-color: white;
 }
 
-.red-text{
-    color:red;
+.red-text {
+    color: red;
     font-size: medium;
 }
 .main-head {
@@ -74,14 +74,12 @@ body {
     background-color: #0466c8;
 }
 
-.disable{
+.disable {
     background-color: #c0c0bf;
-
 }
 .ca-link:hover {
     cursor: pointer;
     background-color: #07427e;
-    /* background-image: linear-gradient(#0466c8, #0466c8, #0353a4, #023e7d, #002855); */
     text-decoration: none;
 }
 
