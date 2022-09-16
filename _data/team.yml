@@ -4,11 +4,11 @@
       - name: Gokul<br>Praneetha
         img: Gokul_Praneetha.jpg
         mail: gokul.p@research.iiit.ac.in
-        phone: 
+        phone: 9160043838
       - name: Venika<br>Sruthi<br>Annam
         img: Venika_Annam.jpg
         mail: venika.annam@students.iiit.ac.in
-        phone: 
+        phone: 7671072608
 
 - team: Collaborations
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
@@ -16,13 +16,9 @@
       - name: Rajarshi<br>Ray
         img: Rajarshi_Ray.jpg
         mail: rajarshi.ray@students.iiit.ac.in
-        phone: 
+        phone: 8019392250
         bg: red
   members:
-      - name: Srijan Chakraborty
-        bg: grey
-        img: Srijan_Chakraborty.jpg
-        mail: srijan.chakraborty@research.iiit.ac.in
       - name: Raghav<br>Donakanti
         bg: green
         img: Raghav_Donakanti.jpg
@@ -55,10 +51,12 @@
       - name: Vanshpreet<br>Singh<br>Kohli
         bg: green
         img: Vanshpreet_Kohli.jpg
+        phone: 6284512618
         mail: vanshpreet.k@research.iiit.ac.in
       - name: Khush<br>Devendra<br>Patel
         bg: grey
         img: Khush_Patel.jpeg
+        phone: 8008338216
         mail: khush.patel@students.iiit.ac.in
   members:
       - name: Nipun<br>Tulsian
