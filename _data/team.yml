@@ -1,304 +1,270 @@
 - team: Overall Coordinators
   id: overallcoord
   heads:
-      - name: Gokul<br>Praneetha
-        img: Gokul_Praneetha.jpg
-        mail: gokul.p@research.iiit.ac.in
-        phone: 9160043838
-      - name: Venika<br>Sruthi<br>Annam
-        img: Venika_Annam.jpg
-        mail: venika.annam@students.iiit.ac.in
-        phone: 7671072608
+    - name: Gokul<br>Praneetha
+      img: Gokul_Praneetha.jpg
+      mail: gokul.p@research.iiit.ac.in
+      phone: 9160043838
+    - name: Venika<br>Sruthi<br>Annam
+      img: Venika_Annam.jpg
+      mail: venika.annam@students.iiit.ac.in
+      phone: 7671072608
 
 - team: Collaborations
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   heads:
-      - name: Rajarshi<br>Ray
-        img: Rajarshi_Ray.jpg
-        mail: rajarshi.ray@students.iiit.ac.in
-        phone: 8019392250
-        bg: red
+    - name: Rajarshi<br>Ray
+      img: Rajarshi_Ray.jpg
+      mail: rajarshi.ray@students.iiit.ac.in
+      phone: 8019392250
+      bg: red
   members:
-      - name: Raghav<br>Donakanti
-        bg: green
-        img: Raghav_Donakanti.jpg
-        mail: raghav.donakanti@students.iiit.ac.in
-      - name: Deeptansh<br>Sharma
-        bg: grey
-        img: Deeptansh_Sharma.jpg
-        mail: deeptansh.sharma@students.iiit.ac.in
+    - name: Raghav<br>Donakanti
+      bg: green
+      img: Raghav_Donakanti.jpg
+      mail: raghav.donakanti@students.iiit.ac.in
+    - name: Deeptansh<br>Sharma
+      bg: grey
+      img: Deeptansh_Sharma.jpg
+      mail: deeptansh.sharma@students.iiit.ac.in
 
 
 - team: Content Writing
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   members:
-      - name: Poorvi<br>H&ensp;C
-        img: Poorvi_H_C.jpeg
-        mail: poorvi.c@research.iiit.ac.in
-        bg: green
-      - name: Tanish<br>Taneja
-        bg: green
-        img: Tanish_Taneja.jpg
-        mail: tanish.taneja@research.iiit.ac.in
-      - name: Srija<br>Mukhopadhyay
-        bg: grey
-        img: Srija_Mukhopadhyay.jpeg
-        mail: srija.mukhopadhyay@research.iiit.ac.in
+    - name: Poorvi<br>H&ensp;C
+      img: Poorvi_H_C.jpeg
+      mail: poorvi.c@research.iiit.ac.in
+      bg: green
+    - name: Tanish<br>Taneja
+      bg: green
+      img: Tanish_Taneja.jpg
+      mail: tanish.taneja@research.iiit.ac.in
+    - name: Srija<br>Mukhopadhyay
+      bg: grey
+      img: Srija_Mukhopadhyay.jpeg
+      mail: srija.mukhopadhyay@research.iiit.ac.in
 
 - team: Corporate Relations
   text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
   heads:
-      - name: Vanshpreet<br>Singh<br>Kohli
-        bg: green
-        img: Vanshpreet_Kohli.jpg
-        phone: 6284512618
-        mail: vanshpreet.k@research.iiit.ac.in
-      - name: Khush<br>Devendra<br>Patel
-        bg: grey
-        img: Khush_Patel.jpeg
-        phone: 8008338216
-        mail: khush.patel@students.iiit.ac.in
+    - name: Vanshpreet<br>Singh<br>Kohli
+      bg: green
+      img: Vanshpreet_Kohli.jpg
+      phone: 6284512618
+      mail: vanshpreet.k@research.iiit.ac.in
+    - name: Khush<br>Devendra<br>Patel
+      bg: grey
+      img: Khush_Patel.jpeg
+      phone: 8008338216
+      mail: khush.patel@students.iiit.ac.in
   members:
-      - name: Nipun<br>Tulsian
-        img: Nipun_Tulsian.jpg
-        mail: nipun.tulsian@students.iiit.ac.in
-        bg: grey
-      - name: Nanda<br>Rajiv
-        bg: grey
-        img: Nanda_Rajiv.jpeg
-        mail: nanda.rajiv@research.iiit.ac.in
-      - name: Gaurav<br>Bhole
-        bg: grey
-        img: Gaurav_Bhole.jpg
-        mail: gaurav.bhole@research.iiit.ac.in
-      - name: Vedant<br>Nipane
-        img: Vedant_Nipane.jpg
-        mail: vedant.nipane@students.iiit.ac.in
-        bg: green 
+    - name: Nipun<br>Tulsian
+      img: Nipun_Tulsian.jpg
+      mail: nipun.tulsian@students.iiit.ac.in
+      bg: grey
+    - name: Nanda<br>Rajiv
+      bg: grey
+      img: Nanda_Rajiv.jpeg
+      mail: nanda.rajiv@research.iiit.ac.in
+    - name: Gaurav<br>Bhole
+      bg: grey
+      img: Gaurav_Bhole.jpg
+      mail: gaurav.bhole@research.iiit.ac.in
+    - name: Vedant<br>Nipane
+      img: Vedant_Nipane.jpg
+      mail: vedant.nipane@students.iiit.ac.in
+      bg: green
 
 
 - team: Tech
   text: Noobs sit and wait for inspiration. We just get up and go to work.
   heads:
-      - name: Aakash<br>Jain
-        img: Aakash_2020.jpeg
-        fb: https://www.facebook.com/profile.php?id=100008311955597
-        in: https://www.linkedin.com/in/aakash-jain-402145190/
-        mail: aakash.jain@students.iiit.ac.in
-        phone: 9390326968
-        bg: blue
+    - name: Akshit<br>Gureja
+      bg: green
+      img: akshit_gureja.jpg
+      fb: https://www.facebook.com/profile.php?id=100006873827514
+      in: https://www.linkedin.com/in/akshit-gureja-5b0784207/
+      mail: akshit.gureja@research.iiit.ac.in
   members:
-      - name: Swetha<br>Vipparla
-        bg: grey
-        img: Swetha_2021.jpg
-        fb: https://www.facebook.com/SwethaVipparla/
-        in: https://www.linkedin.com/in/swethavipparla/
-        mail: swetha.vipparla@students.iiit.ac.in
-      - name: Freyam<br>Mehta
-        bg: green
-        img: Freyam_2021.png
-        fb: http://facebook.com/freyam.mehta.5
-        in: https://www.linkedin.com/in/freyam-mehta
-        mail: freyam.mehta@students.iiit.ac.in
-      - name: Aayush<br>Bhandari
-        bg: grey
-        img: Aayush_Bhandari.jpg
-        in: https://www.linkedin.com/in/aayush-bhandari-5b179a207/
-        mail: aayush.bhandari@students.iiit.ac.in
-      - name: Akshit<br>Gureja
-        bg: green
-        img: akshit_gureja.jpg
-        fb: https://www.facebook.com/profile.php?id=100006873827514
-        in:  https://www.linkedin.com/in/akshit-gureja-5b0784207/
-        mail: akshit.gureja@research.iiit.ac.in
+    - name: Arjun<br>Muraleedharan
+      img: Arjun_Muraleedharan.jpg
+      mail: arjun.muraleedharan@students.iiit.ac.in
+      bg: green
+    - name: Rahul<br>Garg
+      img: Rahul_Garg.png
+      mail: rahul.garg@research.iiit.ac.in
+      bg: grey
+    - name: Swetha<br>Vipparla
+      bg: grey
+      img: Swetha_2021.jpg
+      fb: https://www.facebook.com/SwethaVipparla/
+      in: https://www.linkedin.com/in/swethavipparla/
+      mail: swetha.vipparla@students.iiit.ac.in
+    - name: Hardik<br>Mittal
+      img: Hardik_Mittal.jpeg
+      mail: hardik.mittal@research.iiit.ac.in
+      bg: green
+    - name: Shiven<br>Sinha
+      img: Shiven_Sinha.jpeg
+      mail: shiven.sinha@research.iiit.ac.in
+      bg: green
 
 
 - team: Events and Operations
   multiple: true
   text: If something is important enough, you do it even if the odds aren't in your favour <br> - Elon Musk
   heads:
-      - name: Vaibhav<br>Kashera
-        bg: green
-        img: Vaibhav_2020.jpg
-        fb: https://www.facebook.com/Vkashera1
-        in: https://www.linkedin.com/in/vaibhav-kashera-788256188
-        mail: vaibhav.kashera@research.iiit.ac.in
-        phone: 8340647358
+    - name: Vaibhav<br>Kashera
+      bg: green
+      img: Vaibhav_2020.jpg
+      fb: https://www.facebook.com/Vkashera1
+      in: https://www.linkedin.com/in/vaibhav-kashera-788256188
+      mail: vaibhav.kashera@research.iiit.ac.in
+      phone: 8340647358
   members:
-      - name: Pooja<br>Desur
-        img: Pooja_2020.jpeg
-        fb: https://www.facebook.com/profile.php?id=100009894364010
-        in: https://www.linkedin.com/in/pooja-desur-7a42271ab
-        mail: pooja.desur@students.iiit.ac.in
-        bg: grey
-      - name: Tanmay<br>Goyal
-        bg: grey
-        img: Tanmay_Goyal.jpeg
-        fb: https://www.facebook.com/tanmay.goyal.378
-        in: https://www.linkedin.com/in/tanmay-goyal-764a5118b/
-        mail: tanmay.g@research.iiit.ac.in
-      - name: Anurag<br>Gupta
-        bg: green
-        img: Anurag_Gupta.jpg
-        fb: https://www.facebook.com/Anuraggupta.ag1
-        in: https://www.linkedin.com/in/anurag-g-054128110/
-        mail: anurag.g@students.iiit.ac.in
-      - name: Atharva<br>Joshi
-        bg: grey
-        img: Atharva_Joshi.jpg
-        in: linkedin.com/in/atharva-joshi-a99766207
-        mail: atharva.j@research.iiit.ac.in
-      - name: Naimeesh<br>Narayan Tiwari
-        bg: green
-        img: NAIMEESH_TIWARI.jpg
-        fb: https://www.facebook.com/naimeesh.nt
-        in: http://www.linkedin.com/in/naimeesh-narayan-tiwari-363483207
-        mail: naimeesh.tiwari@students.iiit.ac.in
-      - name: Gautam<br>Ghai
-        bg: grey
-        img: Gautam_Ghai.jpg
-        fb: https://www.facebook.com/gautam.ghai.1004
-        in: https://www.linkedin.com/in/gautam-ghai-079439207
-        mail: gautam.ghai@students.iiit.ac.in
+    - name: Pooja<br>Desur
+      img: Pooja_2020.jpeg
+      fb: https://www.facebook.com/profile.php?id=100009894364010
+      in: https://www.linkedin.com/in/pooja-desur-7a42271ab
+      mail: pooja.desur@students.iiit.ac.in
+      bg: grey
+    - name: Tanmay<br>Goyal
+      bg: grey
+      img: Tanmay_Goyal.jpeg
+      fb: https://www.facebook.com/tanmay.goyal.378
+      in: https://www.linkedin.com/in/tanmay-goyal-764a5118b/
+      mail: tanmay.g@research.iiit.ac.in
+    - name: Anurag<br>Gupta
+      bg: green
+      img: Anurag_Gupta.jpg
+      fb: https://www.facebook.com/Anuraggupta.ag1
+      in: https://www.linkedin.com/in/anurag-g-054128110/
+      mail: anurag.g@students.iiit.ac.in
+    - name: Atharva<br>Joshi
+      bg: grey
+      img: Atharva_Joshi.jpg
+      in: linkedin.com/in/atharva-joshi-a99766207
+      mail: atharva.j@research.iiit.ac.in
+    - name: Naimeesh<br>Narayan Tiwari
+      bg: green
+      img: NAIMEESH_TIWARI.jpg
+      fb: https://www.facebook.com/naimeesh.nt
+      in: http://www.linkedin.com/in/naimeesh-narayan-tiwari-363483207
+      mail: naimeesh.tiwari@students.iiit.ac.in
+    - name: Gautam<br>Ghai
+      bg: grey
+      img: Gautam_Ghai.jpg
+      fb: https://www.facebook.com/gautam.ghai.1004
+      in: https://www.linkedin.com/in/gautam-ghai-079439207
+      mail: gautam.ghai@students.iiit.ac.in
 
 
 - team: Finance
   text: "Rule No.1: Never lose money.<br> Rule No.2: Never forget rule No.1. <br> - Warren Buffet"
   heads:
-      - name: Shaurya<br>Dewan
-        bg: grey
-        img: Shaurya_2020.jpg
-        fb: https://www.facebook.com/shaurya.dewan.77
-        in: https://www.linkedin.com/in/shaurya-dewan-b022241a4
-        mail: shaurya.dewan@students.iiit.ac.in
-        phone: 9652676482
+    - name: Shaurya<br>Dewan
+      bg: grey
+      img: Shaurya_2020.jpg
+      fb: https://www.facebook.com/shaurya.dewan.77
+      in: https://www.linkedin.com/in/shaurya-dewan-b022241a4
+      mail: shaurya.dewan@students.iiit.ac.in
+      phone: 9652676482
   members:
-      - name: Harsha<br>Vardhan<br>Nemani
-        img: NEMANI_VARDHAN.jpg
-        fb: https://www.facebook.com/profile.php?id=100054870770827
-        in: https://www.linkedin.com/in/harsha-vardhan-a088951b8
-        mail: nemani.v@research.iiit.ac.in
-        bg: green
+    - name: Harsha<br>Vardhan<br>Nemani
+      img: NEMANI_VARDHAN.jpg
+      fb: https://www.facebook.com/profile.php?id=100054870770827
+      in: https://www.linkedin.com/in/harsha-vardhan-a088951b8
+      mail: nemani.v@research.iiit.ac.in
+      bg: green
 
 - team: Design
   text: "Design is not just what it looks like and feels like. Design is how it works. <br> - Steve Jobs"
   members:
-      - name: Saravanan<br>Senthil
-        img: Saravanan_2021.png
-        fb: https://www.facebook.com/saru.d2
-        in: https://www.linkedin.com/in/saravanan-senthil-77b0801b4/
-        mail: saravanan.senthil@students.iiit.ac.in
-        bg: grey
-      - name: Anjali<br>Singh
-        img: Anjali_Singh.jpeg
-        fb: https://www.facebook.com/profile.php?id=100057663436291
-        in: https://www.linkedin.com/in/anjali-singh-005
-        mail: anjali.s@students.iiit.ac.in
-        bg: green
-      - name: Saurav<br>Chhatani
-        img: Saurav_Chhatani.jpeg
-        fb: https://www.facebook.com/sauravchhatani
-        in: https://www.linkedin.com/in/saurav-chhatani-3498b81bb
-        mail: saurav.chhatani@students.iiit.ac.in
-        bg: green
-      - name: Gokul<br>Praneetha
-        img: Gokul_Praneetha.jpg
-        fb: https://www.facebook.com/praneetha.gokul.5
-        in: https://www.linkedin.com/in/praneetha-gokul-2582aa188
-        mail: gokul.p@research.iiit.ac.in
-        bg: grey
-      - name: Vamshi<br>Krishna<br>Bonagiri
-        img: Vamshi_Bonagiri.jpg
-        fb: https://www.facebook.com/vamshi.bonagiri
-        in: https://www.linkedin.com/in/vamshi-krishna-bonagiri-ba221b1bb/
-        mail: vamshi.b@research.iiit.ac.in
-        bg: grey
-      - name: Eshika<br>Khandelwal
-        img: Eshika_Khandelwal.jpeg
-        fb: https://www.facebook.com/eshika04
-        in: https://www.linkedin.com/in/eshika-khandelwal-4b308b1b6/
-        mail: eshika.k@research.iiit.ac.in
-        bg: green
-      - name: Karmanjyot<br>Singh
-        img: Karmanjyot_Singh.jpg
-        fb: https://www.facebook.com/karmanjyot.singh.5
-        in: https://www.linkedin.com/in/karmanjyot-singh-008753207
-        mail: karmanjyot.singh@students.iiit.ac.in
-        bg: green
+    - name: Saravanan<br>Senthil
+      img: Saravanan_2021.png
+      fb: https://www.facebook.com/saru.d2
+      in: https://www.linkedin.com/in/saravanan-senthil-77b0801b4/
+      mail: saravanan.senthil@students.iiit.ac.in
+      bg: grey
+    - name: Anjali<br>Singh
+      img: Anjali_Singh.jpeg
+      fb: https://www.facebook.com/profile.php?id=100057663436291
+      in: https://www.linkedin.com/in/anjali-singh-005
+      mail: anjali.s@students.iiit.ac.in
+      bg: green
+    - name: Saurav<br>Chhatani
+      img: Saurav_Chhatani.jpeg
+      fb: https://www.facebook.com/sauravchhatani
+      in: https://www.linkedin.com/in/saurav-chhatani-3498b81bb
+      mail: saurav.chhatani@students.iiit.ac.in
+      bg: green
+    - name: Gokul<br>Praneetha
+      img: Gokul_Praneetha.jpg
+      fb: https://www.facebook.com/praneetha.gokul.5
+      in: https://www.linkedin.com/in/praneetha-gokul-2582aa188
+      mail: gokul.p@research.iiit.ac.in
+      bg: grey
+    - name: Vamshi<br>Krishna<br>Bonagiri
+      img: Vamshi_Bonagiri.jpg
+      fb: https://www.facebook.com/vamshi.bonagiri
+      in: https://www.linkedin.com/in/vamshi-krishna-bonagiri-ba221b1bb/
+      mail: vamshi.b@research.iiit.ac.in
+      bg: grey
+    - name: Eshika<br>Khandelwal
+      img: Eshika_Khandelwal.jpeg
+      fb: https://www.facebook.com/eshika04
+      in: https://www.linkedin.com/in/eshika-khandelwal-4b308b1b6/
+      mail: eshika.k@research.iiit.ac.in
+      bg: green
+    - name: Karmanjyot<br>Singh
+      img: Karmanjyot_Singh.jpg
+      fb: https://www.facebook.com/karmanjyot.singh.5
+      in: https://www.linkedin.com/in/karmanjyot-singh-008753207
+      mail: karmanjyot.singh@students.iiit.ac.in
+      bg: green
 
 - team: Marketing
   text: Good marketing makes the company look smart, great marketing makes the customer feel smart. <br> - Joe Chernov
   multiple: true
   heads:
-      - name: Aravind<br>Narayanan
-        bg: red
-        img: Aravind_2020.jpg
-        fb: https://www.facebook.com/aravind.narayanan.758
-        in: https://www.linkedin.com/in/aravind-narayanan-774665144
-        mail: aravind.narayanan@students.iiit.ac.in
-        phone: 7396943564
-      - name: Venkat<br>Adithya
-        bg: green
-        img: Venkat_2020.jpg
-        fb: https://www.facebook.com/venkatadithya.amula
-        in: https://www.linkedin.com/in/venkat-adithya-amula-3b633a197
-        mail: venkat.adithya@research.iiit.ac.in
-        phone: 8309737009
+    - name: Karthik<br>Prasanna
+      img: Karthik_Prasanna_N.jpg
+      fb: https://www.facebook.com/endangeredkarthik
+      in: https://www.linkedin.com/in/karthik-prasanna-n-9357081b8
+      mail: prasanna.karthik@research.iiit.ac.in
+      bg: grey
   members:
-      - name: Anish<br>Mathur
-        img: ANISH_MATHUR.jpg
-        fb: https://www.facebook.com/anish.mathur.73700
-        in: linkedin.com/in/anish-mathur-180756207
-        mail: anish.mathur@students.iiit.ac.in
-        bg: grey
-      - name: Shashwat<br>Singh
-        img: Shashwat_Singh_2021.jpg
-        fb: https://www.facebook.com/shashwat1002
-        in: https://www.linkedin.com/in/rahul-garg-06617a207/
-        mail: rahul.garg@research.iiit.ac.in
-        bg: green
-      - name: Karthik<br>Prasanna
-        img: Karthik_Prasanna_N.jpg
-        fb: https://www.facebook.com/endangeredkarthik
-        in: https://www.linkedin.com/in/karthik-prasanna-n-9357081b8
-        mail: prasanna.karthik@research.iiit.ac.in
-        bg: grey
-      - name: Sudha<br>Tanay<br>Doddi
-        img: Sudha_Tanay_Doddi.jpg
-        fb: https://www.facebook.com/tanay.d.37
-        in: https://www.linkedin.com/in/sudha-tanay-doddi-988549205
-        mail: sudha.tanay@research.iiit.ac.in
-        bg: green
-      - name: Rahul<br>Garg
-        img: Rahul_Garg.png
-        fb: https://www.facebook.com/profile.php?id=100058089934645
-        in: https://www.linkedin.com/in/rahul-garg-06617a207/
-        mail: rahul.garg@research.iiit.ac.in
-        bg: grey
-
+    - name: Yashaswi<br>L N Pasumarthy
+      img: Yashaswi_L_N_Pasumar.jpeg
+      mail: Yashaswi.l@research.iiit.ac.in
+      bg: grey
+    - name: Revanth<br>Gundam
+      img: Revanth_Gundam.jpg
+      mail: revanth.gundam@research.iiit.ac.in
+      bg: grey
+    - name: Shreya<br>Bollimuntha
+      img: Shreya_Bollimuntha.jpg
+      mail: shreya.bollimuntha@research.iiit.ac.in
+      bg: grey
+    - name: Rahul<br>Garg
+      img: Rahul_Garg.png
+      mail: rahul.garg@research.iiit.ac.in
+      bg: grey
 
 - team: Team Affairs
   multiple: true
   text: Coming together is a beginning. Keeping together is progress. Working together is success. <br>- Henry Ford
   heads:
-      - name: Eshan<br>Gupta
-        bg: green
-        img: Eshan_2020.jpg
-        fb: https://www.facebook.com/EG1616
-        in: https://www.linkedin.com/in/eshan-gupta-81871b196
-        mail: eshan.gupta@students.iiit.ac.in
-        phone: 9872206651
+    - name: Khushi<br>Agarwal
+      img: KHUSHI_AGARWAL.jpeg
+      fb: https://www.facebook.com/profile.php?id=100057995556169
+      in: https://www.linkedin.com/in/khushi-agarwal-727762207/
+      mail: khushi.agarwal@students.iiit.ac.in
+      bg: grey
   members:
-      - name: Aman
-        img: Aman_2020.jpg
-        fb: https://www.facebook.com/aman.meel.1
-        in: https://www.linkedin.com/in/aman-b7855a1b4
-        mail: aman.rajmeel@students.iiit.ac.in
-        phone: 6350497176
-        bg: green
-      - name: Khushi<br>Agarwal
-        img: KHUSHI_AGARWAL.jpeg
-        fb: https://www.facebook.com/profile.php?id=100057995556169
-        in: https://www.linkedin.com/in/khushi-agarwal-727762207/
-        mail: khushi.agarwal@students.iiit.ac.in
-        bg: grey
+    - name: Chinmay<br>Pateria
+      img: Chinmay_Pateria.png
+      mail: chinmay.pateria@research.iiit.ac.in
+      bg: grey
+
