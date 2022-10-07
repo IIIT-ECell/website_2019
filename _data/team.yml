@@ -10,6 +10,38 @@
       mail: venika.annam@students.iiit.ac.in
       phone: 7671072608
 
+- team: Corporate Relations
+  text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
+  heads:
+    - name: Vanshpreet<br>Singh<br>Kohli
+      bg: green
+      img: Vanshpreet_Kohli.jpg
+      phone: 6284512618
+      mail: vanshpreet.k@research.iiit.ac.in
+
+    - name: Khush<br>Devendra<br>Patel
+      bg: grey
+      img: Khush_Patel.jpeg
+      phone: 8008338216
+      mail: khush.patel@students.iiit.ac.in
+  members:
+    - name: Nipun<br>Tulsian
+      img: Nipun_Tulsian.jpg
+      mail: nipun.tulsian@students.iiit.ac.in
+      bg: grey
+    - name: Nanda<br>Rajiv
+      bg: grey
+      img: Nanda_Rajiv.jpeg
+      mail: nanda.rajiv@research.iiit.ac.in
+    - name: Gaurav<br>Bhole
+      bg: grey
+      img: Gaurav_Bhole.jpg
+      mail: gaurav.bhole@research.iiit.ac.in
+    - name: Vedant<br>Nipane
+      img: Vedant_Nipane.jpg
+      mail: vedant.nipane@students.iiit.ac.in
+      bg: green
+
 - team: Collaborations
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   heads:
@@ -44,39 +76,6 @@
       bg: grey
       img: Srija_Mukhopadhyay.jpeg
       mail: srija.mukhopadhyay@research.iiit.ac.in
-
-- team: Corporate Relations
-  text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later. <br> - Richard Branson
-  heads:
-    - name: Vanshpreet<br>Singh<br>Kohli
-      bg: green
-      img: Vanshpreet_Kohli.jpg
-      phone: 6284512618
-      mail: vanshpreet.k@research.iiit.ac.in
-
-    - name: Khush<br>Devendra<br>Patel
-      bg: grey
-      img: Khush_Patel.jpeg
-      phone: 8008338216
-      mail: khush.patel@students.iiit.ac.in
-  members:
-    - name: Nipun<br>Tulsian
-      img: Nipun_Tulsian.jpg
-      mail: nipun.tulsian@students.iiit.ac.in
-      bg: grey
-    - name: Nanda<br>Rajiv
-      bg: grey
-      img: Nanda_Rajiv.jpeg
-      mail: nanda.rajiv@research.iiit.ac.in
-    - name: Gaurav<br>Bhole
-      bg: grey
-      img: Gaurav_Bhole.jpg
-      mail: gaurav.bhole@research.iiit.ac.in
-    - name: Vedant<br>Nipane
-      img: Vedant_Nipane.jpg
-      mail: vedant.nipane@students.iiit.ac.in
-      bg: green
-
 
 - team: Tech
   text: Noobs sit and wait for inspiration. We just get up and go to work.
