@@ -63,25 +63,6 @@
       img: Rahul_Singal.jpg
       phone: 9971013352
 
-- team: Collaborations
-  text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
-  heads:
-    - name: Rajarshi<br>Ray
-      img: Rajarshi_Ray.jpg
-      mail: rajarshi.ray@students.iiit.ac.in
-      phone: 8019392250
-      bg: red
-  members:
-    - name: Raghav<br>Donakanti
-      bg: green
-      img: Raghav_Donakanti.jpg
-      mail: raghav.donakanti@students.iiit.ac.in
-    - name: Deeptansh<br>Sharma
-      bg: grey
-      img: Deeptansh_Sharma.jpg
-      mail: deeptansh.sharma@students.iiit.ac.in
-
-
 - team: Content Writing
   text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
   members:
@@ -348,20 +329,41 @@
       mail: zainab.raza@students.iiit.ac.in
       bg: grey
 
-- team: Team Affairs
+- team: Team Affairs and Collaborations
   multiple: true
   text: Coming together is a beginning. Keeping together is progress. Working together is success. <br>- Henry Ford
   heads:
-    - name: Khushi<br>Agarwal
-      img: KHUSHI_AGARWAL.jpeg
-      fb: https://www.facebook.com/profile.php?id=100057995556169
-      in: https://www.linkedin.com/in/khushi-agarwal-727762207/
-      mail: khushi.agarwal@students.iiit.ac.in
-      bg: grey
-      phone: 6392853881
-  members:
+    # - name: Khushi<br>Agarwal
+    #   img: KHUSHI_AGARWAL.jpeg
+    #   fb: https://www.facebook.com/profile.php?id=100057995556169
+    #   in: https://www.linkedin.com/in/khushi-agarwal-727762207/
+    #   mail: khushi.agarwal@students.iiit.ac.in
+    #   bg: grey
+    #   phone: 6392853881
+    # - name: Rajarshi<br>Ray
+    #   img: Rajarshi_Ray.jpg
+    #   mail: rajarshi.ray@students.iiit.ac.in
+    #   phone: 8019392250
+    #   bg: red
     - name: Chinmay<br>Pateria
-      img: Chinmay_Pateria.png
+      img: Chinmay_Pateria.jpeg
       mail: chinmay.pateria@research.iiit.ac.in
       bg: grey
-
+      phone: 9306205176
+  members:
+    # - name: Chinmay<br>Pateria
+    #   img: Chinmay_Pateria.png
+    #   mail: chinmay.pateria@research.iiit.ac.in
+    #   bg: grey
+    - name: Raghav<br>Donakanti
+      bg: green
+      img: Raghav_Donakanti.jpg
+      mail: raghav.donakanti@students.iiit.ac.in
+    - name: Deeptansh<br>Sharma
+      bg: grey
+      img: Deeptansh_Sharma.jpg
+      mail: deeptansh.sharma@students.iiit.ac.in
+    - name: Sidhi<br>Sankalp<br>Panda
+      bg: grey
+      img: Sidhi_Sankalp_Panda.png
+      mail: sidhi.panda@research.iiit.ac.in
