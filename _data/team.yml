@@ -117,10 +117,6 @@
       img: Hardik_Mittal.jpeg
       mail: hardik.mittal@research.iiit.ac.in
       bg: green
-    - name: Shiven<br>Sinha
-      img: Shiven_Sinha.jpeg
-      mail: shiven.sinha@research.iiit.ac.in
-      bg: green
     - name: Shrikara <br>A
       img: Shrikara_A.jpeg
       mail: shrikara.a@students.iiit.ac.in
@@ -231,6 +227,14 @@
       img: Rhythm_Aggarwal.jpg
       mail: rhythm.aggarwal@students.iiit.ac.in
       bg: green
+    - name: Harsh Gupta
+      img: Harsh_Gupta.jpg
+      mail: harsh.g@students.iiit.ac.in
+      bg: green
+    - name: Nitin Avuthu
+      img: Nitin_Avuthu.jpeg
+      mail: nitin.avuthu@research.iiit.ac.in
+      bg: green
     
 
 
@@ -274,6 +278,10 @@
     - name: Akshit<br>Kumar
       img: Akshit_Kumar.jpeg
       mail: akshit.kumar@research.iiit.ac.in
+      bg: green
+    - name: Akshat Shah 
+      img: Akshat_Shah.jpg
+      mail: akshat.shah@research.iiit.ac.in
       bg: green
 
 - team: Marketing
