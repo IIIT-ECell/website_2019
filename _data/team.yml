@@ -67,7 +67,7 @@
       phone: 9971013352
 
 - team: Content Writing
-  text: It's better to hang out with people better than you. Pick out associates whose behaviour us better than yours and you'll drift in that direction <br> - Warren Buffet
+  text: It's better to hang out with people better than you. Pick out associates whose behaviour is better than yours and you'll drift in that direction <br> - Warren Buffet
   members:
     - name: Poorvi<br>H&ensp;C
       img: Poorvi_H_C.jpeg
@@ -319,6 +319,7 @@
       bg: green
       img: Raghav_Donakanti.jpg
       mail: raghav.donakanti@students.iiit.ac.in
+      in: https://in.linkedin.com/in/raghav-donakanti-96a433261
     - name: Deeptansh<br>Sharma
       bg: grey
       img: Deeptansh_Sharma.jpg
