@@ -1,311 +1,244 @@
-/* BEGIN CUSTOM DECLARATIONS */
-@font-face {
-    font-family: "Bebas Neue";
-    src: url("../assets/fonts/BebasNeueRegular.ttf");
+/* Navbar styling starts */
+
+@import url("../css/fonts.css");
+
+:root {
+    --nav-link-color: #fff;
+    --dropdown-link-color: #000;
+    --nav-link-underline-color: #d43129;
+    --nav-bg-init: rgba(0, 34, 64, 0.4);
+    --nav-bg: rgba(0, 34, 64, 0.8);
 }
 
-@font-face {
-    font-family: "Norwester";
-    src: url("../assets/fonts/norwester.tff"), url("../fonts/norwester.eot");
+::selection {
+  background: rgba(40, 205, 193, 0.47);; /* WebKit/Blink Browsers */
 }
-
-/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,500'); */
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../assets/fonts/raleway/Raleway-Medium.ttf"),
-        url("../assets/fonts/raleway/Raleway-Regular.ttf");
-}
-
-.bebas {
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
-}
-
-/* .raleway {
-    font-family: 'Raleway';
-} */
-
-.norwester {
-    font-family: 'Norwester';
-}
-
-.verdana {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* END CUSTOM DECLARATIONS */
-a{
-    text-decoration: none;
-}
-html {
-    scroll-behavior: smooth;
-    font-size: 2vh;
-    width: 100%;
-}
-
-/* #back-vid {
-    height: 100vh;
-    width:100%;
-    overflow: hidden;
-} */
-
-#landing {
-    /* background: url('../assets/back/fail_back.gif'); */
-    background: url('../assets/back/fback.png');
-    background-size: contain;
-    background-repeat: no-repeat; 
-    background-position: center;
-    height: 100vh;
-    width:100%;
-    overflow: hidden;
-    overflow: hidden;
-}
-
-.active {
-    background-color: #ef2028;
-    color: #1b1b1d;
-}
-
-.wrapper {
-    display: flex;
-    width:100%;
-    align-items: stretch;
-}
-
-#sidebar {
-    width: 25vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-    z-index: 999;
-    background: #1b1b1d;
-    color: #1b1b1d;
-    transition: all 0.3s;
-}
-#sidebar.active{
-    margin-left:-25vw;
-}
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #1b1b1d;
-    color: #ef2028;
-}
-
-#sidebar ul.components {
-    padding: 20px 0px;
-    /* border-bottom: 1px solid #;  */
-}
-
-#sidebar ul p {
-    color: #ef2028;
-    padding: 10px;
-}
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #ef2028;
-    background: #1b1b1d;
-}
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #1b1b1d;
-    background: #ef2028;
-}
-
-#content {
-    margin-left: 25vw;
-    transition: all 0.3s;
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #1b1b1d;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-#sidebar.active + #navbar + #content{
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-#sidebar.active + #navbar{
-    margin-left: 0vw;
-}
-
-#navbar {
-    /* height:10vh;
-    margin-left: 25vw; */
-    position: fixed;
-    transition: all 0.3s;
-    z-index: 100;
-}
-
-.row.speaker {
-    justify-content: center;
-    align-items: center;
-}
-
-.row.speaker > div:first-child {
-    text-align: center;
-}
-
-
-
-@media (max-width:768px) {
-
-    .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    html {
-        font-size: 1rem;
-    }
-
-    #sidebar {
-        width: 75vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        z-index: 999;
-        background: #1b1b1d;
-        color: #ef2028;
-        transition: all 0.3s;
-    }
-    #sidebar.active {
-        margin-left: -75vw;
-    }
-    
-    #sidebar.active + #navbar + #content {
-        margin-left: 10vw;
-    }
-    #sidebar.active + #navbar{
-        margin-left: 0vw;
-    }
-    #navbar {
-        margin-left: 75vw;
-        z-index: 100;
-    }
-}
-
-
-@media (max-width:768px) and (orientation: portrait) {
-
-    html {
-        font-size: 0.8rem;
-    }
-}
-
-
-.section{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-@media (min-width:769px){
-    .section.container-fluid {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+::-moz-selection {
+  background: rgba(40, 205, 193, 0.47); /* Gecko Browsers */
 }
 
 body {
-    font-family: 'Raleway';
+    font-family: "BodyFont" !important;
 }
 
-h1 {
-    font-size: 8vh;
-    color:#ef2028;
-    padding: 4px;
-    font-family: 'Bebas Neue';
-}
-h2 {
-    font-size: 4vh;
-    color: #ef2028;
-}
+h1,
+h2,
 h3 {
-    font-size: 2vh;
-    color: #ef2028;
-    padding: 4px;
+    font-family: "CustomHeading", sans-serif;
 }
 
-.btn {
-    background: #1b1b1d;
-    color: #ef2028;
-}
-.speaker-image{
-    width: 100%;
-    height: auto;
-    position: center;
+#navbar {
+    background-color: var(--nav-bg-init);
+
+    /* for when curves go out */
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
 }
 
-.collapse.list-unstyled {
-    font-size: 0.9rem;
+
+#navbar-toggler {
+    cursor: pointer;
 }
 
-.container-fluid {
-    min-height: 100vh;
+@media (min-width: 992px) {
+    .navbar-curves {
+        background-color: var(--nav-bg) !important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 30% bottom/33%
+                no-repeat,
+            url(../assets/imgs/upper-circle-nav.svg) 98% top/33% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
+    }
+    h4{
+        font-size: 1.5em; 
+    }
+
 }
 
-#helper {
-    width: 100%;
-    background-color: white;
+/* Positioning curves to look good on high-res displays */
+@media (min-width: 1500px) {
+    .navbar-curves {
+        background-color: var(--nav-bg) !important;
+        background: url(../assets/imgs/lower-circle-nav.svg) 45% bottom/20%
+                no-repeat,
+            url(../assets/imgs/upper-circle-nav.svg) 95% top/20% no-repeat;
+        -webkit-transition: 0.75s;
+        transition: 0.75s;
+    }
+    h4{
+        font-size: 2em; 
+    }
+}
+
+#navbarSupportedContent ul li.nav-item {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0 30px;
+}
+
+/* Animated underline below links */
+#navbarSupportedContent ul li.nav-item a,
+#navbarSupportedContent ul li.nav-item:hover {
+    color: var(--nav-link-color);
+}
+
+/* 2 rules are defined for a normal fade-in but a faster fade-out */
+#navbarSupportedContent ul li.nav-item:before {
+    content: "";
     position: absolute;
+    width: 100%;
+    max-width: 200px;
+    height: 2px;
     bottom: 0;
     left: 0;
+    background-color: var(--nav-link-underline-color);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* for a faster fade-out */
+#navbarSupportedContent ul li.nav-item:before:hover {
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+#navbarSupportedContent ul li.nav-item:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* using !important since the selector would've been too specific
+ * selector: #navbarSupportedContent ul li.dropdown ul.dropdown-menu li a
+ */
+nav .dropdown-item {
+    color: var(--dropdown-link-color) !important;
+}
+
+nav .dropdown-menu {
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 0;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 2rem;
+
+    /* overriding bootstrap rule */
+    padding-top: 0 !important;
+}
+
+nav .dropdown-menu img {
+    width: 100%;
+    max-width: 150px;
+}
+
+nav .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+}
+
+nav .dropdown-menu .img-list-item {
     text-align: center;
 }
 
-#contact {
-    background-color: #001f3f;
-    /* background-image: url("http://www.open.edu/openlearn/ocw/pluginfile.php/1048644/mod_resource/content/0/a174_1_cover_image_1_edited.jpg"); */
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: white;
-    text-transform: uppercase;
-    padding-top: 80px !important;
+nav .dropdown-menu .sublinks {
+    padding-top: 2rem;
 }
 
-#contact .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav .dropdown-triangle {
+    margin: 0 auto;
+
+    /* the 21.7px came from the triangle height, source given below
+     *
+     * the 1px is simply an offset
+     */
+    margin-top: calc(-21.7px + 1px);
+
+    /* the following was generated from http://apps.eky.hk/css-triangle-generator */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 21.7px 12.5px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
 }
 
-#contact .container .row {
-    align-items: center;
-    justify-content: center;
+.nav-link-bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #084880;
 }
 
-#contact .container .row .col-sm-12 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-link-bold:hover {
+    font-weight: bold;
+    color: rgba(0, 34, 64, 1);
 }
 
-/* from custom-bootstrap.css */
-a:link{
-    color:white;
+.nav-link-disabled {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.nav-link-disabled:hover {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+/* adapted from https://codepen.io/bootpen/pen/jbbaRa */
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+    right: 0;
+}
+
+/* Navbar styling ends */
+
+
+
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style the icon links */
+.social-icons a {
+    color: red;
+    font-size: 30px;
+    margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s;
 }
-a:visited {
-    color: white;
+
+.social-icons a:hover {
+    color: lightskyblue;
 }
