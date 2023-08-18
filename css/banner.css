@@ -1,28 +1,27 @@
 #banner {
     position: fixed;
-    bottom: 0px;
+    bottom: 20px;
     left: 0;
     right: 0;
 
     width: 100%;
 
     padding: 2rem;
-    margin-bottom: 5px;
-
-    z-index: 5;
+    margin-bottom: 10px;
 
     display: flex;
     justify-content: center;
 
     border-radius: 2rem;
-    background: linear-gradient(to right, #92fe9ded, #00c9ffed);
-    color: black;
+    background: linear-gradient(to right, red, rgba(255, 0, 0, 0.856));
+    color: whitesmoke;
 }
 
 #close-button {
     position: absolute;
     right: 2rem;
     top: 2rem;
+    color:whitesmoke;
     cursor: pointer !important;
 }
 
@@ -65,8 +64,9 @@
     margin-top: 1.2rem !important;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: #002240;
-    color: white !important;
+    background-color: rgba(221, 18, 194, 0.856);
+    color: black !important;
+    font-weight: bold;
 }
 
 @media (max-width: 800px) {
