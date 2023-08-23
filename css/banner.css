@@ -13,8 +13,11 @@
     justify-content: center;
 
     border-radius: 2rem;
-    background: linear-gradient(to right, red, rgba(255, 0, 0, 0.856));
-    color: whitesmoke;
+    /* background: linear-gradient(orange,rgb(224, 26, 26)); */
+    /* background: linear-gradient(rgb(17, 221, 17), rgb(241, 241, 41));  */
+    background: #3d99f0; 
+    opacity: 96%;
+    color: rgb(14, 24, 44);
 }
 
 #close-button {
@@ -64,8 +67,8 @@
     margin-top: 1.2rem !important;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: rgba(221, 18, 194, 0.856);
-    color: black !important;
+    background-color: rgb(31, 182, 219);
+    color: white !important;
     font-weight: bold;
 }
 

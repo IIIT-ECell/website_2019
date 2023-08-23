@@ -242,3 +242,7 @@ footer {
 .social-icons a:hover {
     color: lightskyblue;
 }
+
+.video{
+    aspect-ratio: 3/10;
+}
