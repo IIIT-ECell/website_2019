@@ -1,40 +1,37 @@
----
-title: Fail!
-permalink: /fail/
----
+--- title: Fail! permalink: /fail/ ---
 
 <!DOCTYPE html>
 <html lang="en">
 
 <!-- taken directlry from head.html with ganal removed -->
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-    {% include ganal.html %}
+    <meta charset="utf-8"> {% include ganal.html %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="{{ "/css/custom-bootstrap.css" | prepend: site.baseurl }}"> -->
     <!-- <link rel="stylesheet" href="{{ "/css/materialize-colours.css" | prepend: site.baseurl }}"> -->
     <title>{{site.title}}</title>
-    <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/imgs/logos/logo-ecell.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/imgs/logos/logo-ecell.png" />
     <link rel="stylesheet" href="{{site.baseurl}}/css/fail.css">
 </head>
-        
+
 <body class="raleway" style="background-color: black;">
     <div id="landing">
-        <!-- <video id="back-vid" src="/assets/back/FAIL_INTRO.webm" type="video/webm" preload="preload" autoplay muted autobuffer> -->
-            <!-- <source src="/assets/back/FAIL_INTRO.webm" type="video/webm"></source> -->
-        <!-- </video> -->
+        <video id="back-vid" src="https://youtube.com/embed/o5pkY_uOP_g" type="video/webm" preload="preload" autoplay muted autobuffer>
+        <source src="https://youtube.com/embed/o5pkY_uOP_g" type="video/webm"></source>
+        </video>
     </div>
     <div class="wrapper" style="display:none">
         <nav id="sidebar">
             <div class="mb-3">
-                <img src="{{site.baseurl}}/assets/imgs/logos/fail_below_white.png" class="img-fluid p-5">
+                <img src="{{site.baseurl}}/assets/imgs/back/fback.png" class="img-fluid p-5">
             </div>
             <div class="sidebar-header">
                 <ul class="list-unstyled components text-center">
-                <li>
+                    <li>
                         <a href="https://ecell.iiit.ac.in/" onclick="hidebar()">E-Cell Home</a>
                     </li>
                     <li>
@@ -44,99 +41,106 @@ permalink: /fail/
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Speakers</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
-                                <a href="#speaker1" onclick="hidebar()">Ajay Kumar Siotra</a>
+                                <a href="#speaker1" onclick="hidebar()">Ashris Choudhury</a>
                             </li>
                             <li>
-                                <a href="#speaker2" onclick="hidebar()">Pankhuri Gidwani</a>
+                                <a href="#speaker2" onclick="hidebar()">Janvi Tiwari</a>
                             </li>
                             <li>
-                                <a href="#speaker3" onclick="hidebar()">Aditi Avasthi</a>
+                                <a href="#speaker3" onclick="hidebar()">Puja Marwaha</a>
                             </li>
                             <li>
-                                <a href="#speaker4" onclick="hidebar()">Dutee Chand</a>
+                                <a href="#speaker4" onclick="hidebar()">Tangminlal Haokip</a>
                             </li>
                             <li>
-                                <a href="#speaker5" onclick="hidebar()">Viiveck Verma</a>
+                                <a href="#speaker5" onclick="hidebar()">Vartika Joshi</a>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#register" onclick="hidebar()">Register</a>
                     </li>
                     <li>
                         <a href="#contact" onclick="hidebar()">Your Failure Story</a>
                     </li>
                 </ul>
             </div>
-            <div id="helper">
+            <!-- <div id="helper">
                 Sponsored by 
                 <a href="https://www.fintapp.com/" target="_blank">
                     <img src="{{site.baseurl}}/assets/imgs/sponsors/fintapp1.png" alt="fintapp" style="width: 50%;">
                 </a>
-            </div>
+            </div> -->
         </nav>
         <div id="navbar">
             <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark"> -->
-                <button type="button" id="sidebarCollapse" class="btn">
+            <button type="button" id="sidebarCollapse" class="btn">
                     <h2><i class="fas fa-bars"></i></h2>
                     <!-- <span>Toggle Sidebar</span> -->
                 </button>
             <!-- </nav> -->
         </div>
-        
+
         <div id="content" class="container-fluid">
             <div id="about" class="section container-fluid">
                 <div class="row p-5">
-                        <h1 class="text-center pr-5 mr-5">About FAIL!</h1>
-                        <p class="text-white pb-4">
-                            Started at the Massachusetts Institute of Technology with professors from MIT and the Ivy League colleges as past speakers,  FAIL! has now reached Asia at IIIT Hyderabad. Some past speakers of FAIL! include Mira Wilczek (President and CEO of Cogo Labs), Daniel Jackson (Professor and Associate Director of the Computer Science and Artificial Intelligence Lab at the Massachusetts Institute of Technology) and Deborah Blum(Director of the Knight Science Journalism Program).
-                        </p>
-                        <p class="text-white pb-4">
-                            FAIL! is aimed at facing the moments of failure head-on, sharing them and most importantly improving by them. It is a celebration of moments we don’t generally share.
-                        </p>
-                        <p class="text-white pb-4">
-                            Come listen to the failure stories of youth icons from all over India as they share their struggles on their journey to success:
-                        </p>
-                                
+                    <h1 class="text-center pr-5 mr-5">About FAIL?</h1>
+                    <p class="text-white pb-4">
+                        FAIL? where incredible keynote speakers from diverse backgrounds will share their inspiring stories of setbacks, challenges, and how they transformed failure into a stepping stone towards their ultimate success.
+                    </p>
+                    <p class="text-white pb-4">
+                        Learn from entrepreneurs, military officials, scientists, lawyers, and more about their journeys through adversity and how they turned the tables to reach their goals. Gain valuable insights, actionable strategies, and a fresh perspective on failure's
+                        role in shaping success. </p>
+                    <p class="text-white pb-4">
+                        FAIL? is aimed at facing the moments of failure head-on, sharing them and most importantly improving by them. It is a celebration of moments we don’t generally share. </p>
+
                 </div>
             </div>
+
+            <div style="padding:5px; align-items: center; justify-content: center; text-align: center; margin-bottom: 10vh;">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/o5pkY_uOP_g" title="FAIL? 2023 | E-Cell IIIT Hyderabad" width="100%" style="aspect-ratio: 16/8; border-radius: 2%;"></iframe></div>
+            </div>
+
+
             <div id="speaker1" class="section container-fluid">
                 <!-- <div class="section">     -->
-                    <div class="row speaker py-5">
-                        <div class="col-sm-4">
-                            <img class="img-fluid speaker-image" alt="Ajay Kumar Siotra" src="{{site.baseurl}}/assets/imgs/speakers/ajay_spekarer-1.png">
-                        </div>
-                        <div class="col-sm-8">
-                            <h2 class="text-center m-4">Ajay Kumar Siotra</h2>
-                            <div class="text-white px-3">
-                                    <p>
-                                        Ajay Kumar Siotra, one of Jammu's budding Entrepreneurs and owner of Cafe Scoorervala. An inspiration to many!
-                                    </p>
-                                    <p>
-                                        His passion for cooking reflected in his food. His MasterChef India apron was a mark of his determination.
-                                    </p>
-                                    <p>
-                                        Hurdling through the societal norms, Siotra followed his dreams. Elimination from the competition was a fall, but that definitely was his stepping stone to a bright future.
-                                    </p>
-                                    <p>
-                                        He will be sharing his experiences and failures on 2nd March 2019 at IIIT, Hyderabad.
-                                    </p>
-                            </div>
+                <div class="row speaker py-5">
+                    <div class="col-sm-4">
+                        <img class="img-fluid speaker-image" alt="Ashris choudhury" src="{{site.baseurl}}/assets/imgs/speakers/ashris_choudhury.png">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2 class="text-center m-4">Ashris Choudhury</h2>
+                        <div class="text-white px-3">
+                            <p>
+                                Meet Ashris Choudhary, the brilliant mind behind 'India in Pixels,' a visionary coder who's reshaping our perception of India through the power of visual data. Ashris's innovative approach to reimagining India's map using data-driven graphics has captivated
+                                audiences worldwide. From revealing hidden insights about our country to shedding light on the mechanics of polarization, his work is nothing short of inspiring!
+                            </p>
+                            <p>
+                                Get ready to be inspired by Ashris's journey, his setbacks, and his ultimate path to success on Septemeber 9th. Don't miss out on this incredible opportunity to learn from a true visionary!
+                            </p>
                         </div>
                     </div>
+                </div>
                 <!-- </div> -->
             </div>
             <div id="speaker2" class="section container-fluid">
                 <div class="row speaker py-5">
                     <div class="col-sm-4">
-                        <img class="img-fluid speaker-image" alt="Pankhuri Gidwani" src="{{site.baseurl}}/assets/imgs/speakers/pnkhuri_spekarer.png">
+                        <img class="img-fluid speaker-image" alt="Janvi Tiwari" src="{{site.baseurl}}/assets/imgs/speakers/janvi_tiwari.png">
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="text-center m-4">Pankhuri Gidwani</h2>
+                        <h2 class="text-center m-4">Janvi Tiwari</h2>
                         <div class="text-white px-3">
                             <p>
-                                Pankhuri Gidwani is the face of the new generation. As the 2nd runner up in Miss India 2016, and the brand ambassador of Women Power Line 1090, she's a testament to the fact that age is no barrier for making a mark.
+                                Join us in celebrating the remarkable journey of Ms. Janvi Tiwari, the visionary founder behind SOQO. With a heart devoted to empowering women, Janvi's brainchild is a beacon of change that goes beyond. SOQO not only ensures access to vital period care
+                                but also paves the way for girls' education, lighting the path to a brighter future.
                             </p>
                             <p>
-                                Listen to her at FAIL! where she will be sharing her experiences and failures on 2nd March 2019 at IIIT, Hyderabad.
+                                Her story is one of resilience, compassion, and unwavering commitment to progress. Discover the driving force behind SOQO's impact at the upcoming FAIL? event. Let's come together to honour and learn from this extraordinary changemaker on September 9th.
+                                Be ready to be inspired and uplifted by the power of one woman's dedication to making the world a better place.
                             </p>
+
                         </div>
                     </div>
                 </div>
@@ -145,16 +149,18 @@ permalink: /fail/
             <div id="speaker3" class="section container-fluid">
                 <div class="row speaker py-5">
                     <div class="col-sm-4">
-                        <img class="img-fluid speaker-image" alt="Aditi Avasthi" src="{{site.baseurl}}/assets/imgs/speakers/aditi_speaker_1.png">
-                    </div>                    
+                        <img class="img-fluid speaker-image" alt="Puja Marwaha" src="{{site.baseurl}}/assets/imgs/speakers/puja_marwaha.png">
+                    </div>
                     <div class="col-sm-8">
-                        <h2 class="text-center m-4">Aditi Avasthi</h2>
+                        <h2 class="text-center m-4">Puja Marwaha</h2>
                         <div class="text-white px-3">
                             <p>
-                                BBC’s 100 women tackling illiteracy, BW Disrupt’s list of 40 under 40, Fortune’s 40 under 40, BBC’s top 100 inspirational and innovative women, these are a few among the many lists Aditi Awasthi has made into after she founded Embibe, a technology and AI driven platform for education.
+                                In a world where children's voices often go unheard, Ms. Puja Marwaha stands tall as a guardian of hope and change. As the CEO of CRY, she's not just leading India's child rights movement; she's also igniting a fire of compassion and justice that ripples
+                                through communities. Puja's journey is a testament to the impact of dedication and perseverance.
                             </p>
                             <p>
-                                Join Aditi Avasthi on 2nd March 2019 at FAIL!, brought to you by E-Cell IIIT-Hyderabad, as she talks about the challenges she faced on her path to becoming the CEO of the world's largest AI platform in education.
+                                Join us on September 9th at FAIL? to delve into the realm of child rights advocacy through Puja's eyes. Her insights and experiences promise to enlighten and invigorate your passion for creating a brighter future for every child. Let's unite to honour
+                                the unstoppable spirit of Puja Marwaha and the cause she champions.
                             </p>
                         </div>
                     </div>
@@ -164,16 +170,19 @@ permalink: /fail/
             <div id="speaker4" class="section container-fluid">
                 <div class="row speaker py-5">
                     <div class="col-sm-4">
-                        <img class="img-fluid speaker-image" alt="Dutee Chand" src="{{site.baseurl}}/assets/imgs/speakers/duteechand_spekarer.png">
+                        <img class="img-fluid speaker-image" alt="Tangminlal Haokip" src="{{site.baseurl}}/assets/imgs/speakers/tangminlal_haokip.png">
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="text-center m-4">Dutee Chand</h2>
+                        <h2 class="text-center m-4">Tangminlal Haokip</h2>
                         <div class="text-white px-3">
                             <p>
-                                From being India's most loved athlete to facing the wrath of her own people, from being India's third ever woman athlete to qualify 100 metres event in summer Olympics to fighting for her rights in the court Dutee Chand is an epitome for all those people who choose fight over flight because when you choose fight you become a legend like our speaker Ms. Dutee Chand.
+                                Mr. Thangminlal Haokip – a brilliant legal mind hailing from the esteemed National Law School of India University in Bangalore. His adept understanding of legal intricacies and unique perspectives are sure to command your attention.
                             </p>
                             <p>
-                                Come listen to her on 2nd March at FAIL! at IIIT Hyderabad.
+                                Thangminlal Haokip's odyssey in the domain of law carries profound significance. Through unwavering dedication and remarkable achievements, he garnered widespread recognition and admiration.
+                            </p>
+                            <p>
+                                Get ready to be inspired by Ashris's journey, his setbacks, and his ultimate path to success on Septemeber 9th.
                             </p>
                         </div>
                     </div>
@@ -184,72 +193,117 @@ permalink: /fail/
             <div id="speaker5" class="section container-fluid">
                 <div class="row speaker py-5">
                     <div class="col-sm-4">
-                        <img class="img-fluid speaker-image" alt="Viiveck Verma" src="{{site.baseurl}}/assets/imgs/speakers/viiveck_speaker.png">
+                        <img class="img-fluid speaker-image" alt="Vartika Joshi" src="{{site.baseurl}}/assets/imgs/speakers/vartika_joshi.png">
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="text-center m-4">Viiveck Verma</h2>
+                        <h2 class="text-center m-4">Vartika Joshi</h2>
                         <div class="text-white px-3">
                             <p>
-                                From being in the corporate world for many years to be a startup ecosystem enabler, Viiveck Verma has donned many caps. The ex-CEO of Karvy Data Management Services who is now a Board Member of investing community Hyderabad Angels(the third largest startup investment ecosystem enabler in the country) and the chief strategy officer & head retail at Srinivasa Farms.
+                                Lieutenant Commander Vartika Joshi, the fearless skipper of the historic all-woman Indian crew aboard INSV Tarini. Her story is one of courage, determination, and breaking barriers.
                             </p>
                             <p>
-                                He is also the co-founder of IIIT Seed Fund and has investments in more than 15 companies ranging across domains.
-                            </p>
+                                As the leader of the first six-member all-woman Indian crew to achieve the incredible feat of circumnavigating the globe on INSV Tarini, Vartika Joshi has shown the world what strength and teamwork can achieve. </p>
                             <p>
-                                Come listen to him on 2nd March at FAIL! in IIIT Hyderabad.
+                                Through the vast oceans and challenging waters, she exemplified unwavering leadership, guiding her crewmates with resilience and a spirit of adventure.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+            <div id="register" style="padding:5px; align-items: center; justify-content: center; text-align: center; margin-bottom: 10vh;">
+                <div class="">
+                    <h1 class="text-center">Register for Event</h1>
+                    <br />
+                    <div>
+                        <a class="bg-transparent hover:bg-blue-200 text-red-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href="https://ecell.iiit.ac.in/fail/register">Buy tickets</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <!-- <iframe src="https://researchweb.iiit.ac.in/~abhigyan.ghosh/fail_wall.html">
     </iframe> -->
-    
+
     <div class="footer" id="contact">
         <div class="container  text-right">
             <div class="row">
-                <div class="col-sm-12 pb-3 text-center">
+                <!-- <div class="col-sm-12 pb-3 text-center">
                     <a href="https://researchweb.iiit.ac.in/~abhigyan.ghosh/fail_wall.html">See others' failure stories</a>
-                </div>
+                </div> -->
                 <div class="col-sm-12 text-center">
                     <h2>Share your failure story!</h2>
                 </div>
-                
+
             </div>
-                
+
         </div>
-        <form class="container" method="post" action="https://researchweb.iiit.ac.in/~abhigyan.ghosh/mail.php">             
-            
+        <form class="container" method="POST/GET" action="/fail">
+
             <!-- form element -->
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <textarea name="message" id="message" class="form-control" rows="3" placeholder="Your story" required></textarea>
                 </div>
                 <div class="col-sm-12">
-                    <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                    <input name="submit" type="button" class="btn btn-success" value="Send Message" onclick="sendEmail()">
                 </div>
             </div>
             <!-- end form element -->
         </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            function sendEmail() {
+                let Message = document.getElementById("message").value;
+                console.log(Message);
+                emailjs.init("fhXGPpCkZPmIMXFP7");
+                emailjs.send("service_fbnlqys", "template_ugp1bea", {
+                    message: Message,
+                });
+            }
+        </script>
+
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-12 col-md-12 col-sm-12">
                     <ul class="list-inline pt-3">
-                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.facebook.com/ecell.iiithyd/" target="_blank"><h2><i class="fab fa-facebook"></i></h2></a></li>
-                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.instagram.com/ecell_iiith/" target="_blank"><h2><i class="fab fa-instagram"></i></h2></a></li>
-                        <li class="list-inline-item p-2"><a class="faficon" href="https://twitter.com/ecell_iiithyd" target="_blank"><h2><i class="fab fa-twitter"></i></h2></a></li>
-                        <li class="list-inline-item p-2"><a class="faficon" href="https://www.youtube.com/channel/UCE8mniuxsSH_SVYTmKWxtfA" target="_blank"><h2><i class="fab fa-youtube"></i></h2></a></li>
-                        <li class="list-inline-item p-2"><a class="faficon" href="https://github.com/IIIT-ECell" target="_blank"><h2><i class="fab fa-github"></i></h2></a></li>
+                        <li class="list-inline-item p-2">
+                            <a class="faficon" href="https://www.facebook.com/ecell.iiithyd/" target="_blank">
+                                <h2><i class="fab fa-facebook"></i></h2>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-2">
+                            <a class="faficon" href="https://www.instagram.com/ecell_iiith/" target="_blank">
+                                <h2><i class="fab fa-instagram"></i></h2>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-2">
+                            <a class="faficon" href="https://id.linkedin.com/company/ecell-iiith" target="_blank">
+                                <h2><i class="fab fa-linkedin"></i></h2>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-2">
+                            <a class="faficon" href="https://www.youtube.com/channel/UCE8mniuxsSH_SVYTmKWxtfA" target="_blank">
+                                <h2><i class="fab fa-youtube"></i></h2>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-2">
+                            <a class="faficon" href="https://github.com/IIIT-ECell" target="_blank">
+                                <h2><i class="fab fa-github"></i></h2>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -257,50 +311,50 @@ permalink: /fail/
 <script>
     var $sidebarCollapseBtn;
     var lastScrollTop = 0;
-    $(document).scroll(function(event){
+    $(document).scroll(function(event) {
         event.preventDefault();
         var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            $("#landing").slideUp(()=>{
+        if (st > lastScrollTop) {
+            $("#landing").slideUp(() => {
                 $(".wrapper").slideDown();
             });
             // document.getElementById("#about").scrollIntoView();
         }
         lastScrollTop = st;
     });
-    $(document).ready(function () {
+    $(document).ready(function() {
         // $("#sidebar").mCustomScrollbar({
         //     theme: "minimal"
         // });
         $sidebarCollapseBtn = $("#sidebarCollapse");
-        $sidebarCollapseBtn.on("click", function(){
+        $sidebarCollapseBtn.on("click", function() {
             $('#sidebar').toggleClass('active');
         });
         toggleBtnState();
-        $.getJSON("https://researchweb.iiit.ac.in/~abhigyan.ghosh/messages.json",function(data){
+        $.getJSON("https://researchweb.iiit.ac.in/~abhigyan.ghosh/messages.json", function(data) {
             var items = [];
-            $.each(data, function(key,val){
+            $.each(data, function(key, val) {
                 console.log(val);
             });
         });
     });
 
-    function toggleBtnState(){
+    function toggleBtnState() {
         console.log(document.body.clientWidth);
-        if(document.body.clientWidth >= 769){
+        if (document.body.clientWidth >= 769) {
             console.log("Desktop");
             $sidebarCollapseBtn.hide();
             $("#sidebar").removeClass("active");
-        }else{
+        } else {
             console.log("Mobile");
             $("#sidebar").addClass("active");
-            $sidebarCollapseBtn.show();
-            $sidebarCollapseBtn.click();
+            // $sidebarCollapseBtn.show();
+            // $sidebarCollapseBtn.click();
         }
     }
 
     $(window).on("load", toggleBtnState);
-    
+
     // document.getElementById("back-vid").addEventListener('ended',()=>{
     //         console.log('video ended');
     //         $("#landing").slideUp(()=>{
@@ -308,18 +362,19 @@ permalink: /fail/
     //         });
     // },false);
 
-    $("#landing").ready(()=>{
-        setTimeout(()=>{
-            $("#landing").slideUp(()=>{
+    $("#landing").ready(() => {
+        setTimeout(() => {
+            $("#landing").slideUp(() => {
                 $(".wrapper").slideDown();
             });
-        },1000);
+        }, 1000);
     });
 
-    function hidebar(){
-        if(document.body.clientWidth <= 769){
+    function hidebar() {
+        if (document.body.clientWidth <= 769) {
             $("#sidebar").toggleClass("active");
         }
     }
 </script>
+
 </html>

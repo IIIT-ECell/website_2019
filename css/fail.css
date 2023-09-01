@@ -205,15 +205,13 @@ a[data-toggle="collapse"] {
 
 
 @media (max-width:768px) and (orientation: portrait) {
-
     html {
-        font-size: 0.8rem;
+        font-size: 16px;
     }
 }
 
 
 .section{
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -259,7 +257,7 @@ h3 {
 }
 
 .container-fluid {
-    min-height: 100vh;
+    margin-bottom: 10vh;
 }
 
 #helper {
