@@ -4,3 +4,4 @@ _site
 node_modules
 vendor
 .jekyll-cache
+.DS_Store
