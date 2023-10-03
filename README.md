@@ -2,6 +2,14 @@
 
 Built with Bootstrap 4
 
+## Testing Using Docker 
+
+1. [Install Docker](https://docs.docker.com/engine/install/).
+2. Fork and clone the repository. For solely local testing, just cloning will do.
+3. Ensure port `4000` is unused, or change the line `4000:4000` to `{your_desired_port}:4000` in `docker-compose.yml`.
+4. `cd` into the repo and run `docker compose up`. You may also need to try `docker-compose up` or give `sudo` access depending on your platform.
+5. Open `localhost:4000`. (`localhost:{your_desired_port}` if you changed the port in `docker-compose.yml`.)
+
 ## Testing locally
 
 _Note: we used github pages during site construction, that is being discontinued henceforth (since deployment to permanent server) due to issues with baseurl and \_config.yml_
