@@ -25,7 +25,7 @@ As of now, we're employing a very rudimentary deployment system, essentially scp
 
 The basic steps are highlighted hence:
 
-1. Build the site
+1. Build the site (available at _site/)
 2. scp all contents of \_site/ into the site/ directory of the server home
 
 Suggestions welcome
