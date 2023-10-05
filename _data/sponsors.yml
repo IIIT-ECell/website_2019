@@ -21,6 +21,8 @@
 
 - sponsors: Sponsors
   members:
+  - logo: stellantis.png
+    name: stellantis
   - logo: amazon.png
     name: amazon
   - logo: ibm.png
@@ -45,6 +47,14 @@
     name: easports
   - logo: redbullcom-logo.svg
     name: RedBull
+  - logo: plus-light-tech.png
+    name: Plus Light Tech
+  - logo: upciclo.png
+    name: upciclo
+  - logo: unstop.jpg
+    name: unstop
+  - logo: care-international.png
+    name: Care International
   - logo: monster.png
     name: Monster
   - logo: tech.png
