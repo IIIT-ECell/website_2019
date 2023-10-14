@@ -61,11 +61,18 @@ layout: page
 						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}">
 						<figcaption>
 							<h2>{{head.name}}</h2>
-							{% if team.id != "overallcoord" %}
-							<p><strong>Team Head</strong></p>
-							{% else %}
+
+							{% if team.id == "overallcoord" %}
 							<br><br>
+
+							{% elsif team.id == "officers" %}
+							<p><strong> {{head.post}} </strong></p>
+
+							{% else %}
+							<p><strong>Team Head</strong></p>
+
 							{% endif %}
+
 							<a class="focus" href="mailto:{{head.mail}}" target="_blank">
 								<h3><i class="fa fa-envelope"></i></h3>
 							</a>
