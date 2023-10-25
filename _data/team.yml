@@ -72,6 +72,11 @@
         mail: poorvi.c@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/mwlite/in/poorvi-hc-64a313225  
+  members:
+      - name: Shivam<br>Tiwari
+        img: Shivam_Tiwari.jpg
+        bg: green
+        in: https://www.linkedin.com/in/shivam-tiwari-05236024a
 
 - team: Tech
   text: We turn Coffee to Code!
@@ -93,7 +98,10 @@
         img: Monish_Singal.png
         mail: monish.singhal@research.iiit.ac.in
         bg: green
-        phone: 6362609865
+      - name: Amey<br>Karan
+        img: Amey_Karan.png
+        mail: amey.karan@research.iiit.ac.in
+        bg: green
       - name: Hemanth<br>Kumar&ensp; Reddy
         img: Hemanth_Kumar_Reddy.jpg
         mail: hemanth.sunkireddy@students.iiit.ac.in
@@ -120,10 +128,6 @@
         bg: grey
         img: Suyash_Sethia.jpg
         mail: suyash.sethia@research.iiit.ac.in
-      - name: Sujal<br>Deoda
-        bg: grey
-        img: Sujal_Deoda.jpeg
-        mail: sujal.deoda@research.iiit.ac.in
       - name: Mohammed<br>Ihsan<br>Ali
         bg: grey
         img: Mohammed_Ihsan_Ali.jpg
@@ -174,10 +178,6 @@
         bg: green
         in: https://www.linkedin.com/in/gnaneswar-kulindala-6663a8240
   members:
-      - name: Vansh<br>Marda
-        img: Vansh_Marda.jpg
-        mail: vansh.marda@students.iiit.ac.in
-        bg: green
       - name: Arpit<br>Pathak
         img: Arpit_Pathak.jpg
         mail: arpit.pathak@students.iiit.ac.in
@@ -186,22 +186,22 @@
         img: Akshat_Shah.jpg
         mail: akshat.shah@research.iiit.ac.in
         bg: green
+      - name: Ashna<br>Dua
+        img: Ashna_Dua.jpg
+        mail: ashna.dua@students.iiit.ac.in
+        bg: green
+        in: https://www.linkedin.com/in/ashnadua/
 
 - team: Marketing
   text: Good marketing makes the company look smart, great marketing makes the customer feel smart. <br> - Joe Chernov
   multiple: true
   heads:
-      - name: Ashwini<br>Kulkarni
-        mail: ashwini.kulkarni@research.iiit.ac.in
-        phone: 9989466199
-        img: Ashwini_Kulkarni.jpg
-        bg: grey
-  members:
       - name: Vrinda <br> Agarwal
         img: Vrinda_Agarwal.jpg
         mail: vrinda.agarwal@students.iiit.ac.in
         phone: 8874577777
         in: https://www.linkedin.com/in/vrinda-agarwal-94608b248/
+  members:
       - name: Prithvi <br> Karthik
         img: Prithvi_Karthik.jpeg
         mail: prithvi.karthik@students.iiit.ac.in
