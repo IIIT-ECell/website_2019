@@ -46,23 +46,19 @@
         mail: samkit.jain@students.iiit.ac.in
         img: Samkit_Jain.jpeg
         bg: green
-        phone: 7022570140
         in: https://www.linkedin.com/in/samkit-jain-463234250
       - name: Tejas<br>Cavale
         mail: tejas.cavale@students.iiit.ac.in
         img: Tejas_Cavale.jpg
         bg: green
-        phone: 8884616346
         in: https://www.linkedin.com/in/tejas-cavale-ba0498a3
       - name: Kushagra Dhingra
         mail: kushagra.dhingra@research.iiit.ac.in
         img: Kushagra_Dhingra.jpg
         bg: green
-        phone: 6387300996
       - name: Rahul<br>Singal
         mail: rahul.singal@research.iiit.ac.in
         img: Rahul_Singal.jpeg
-        phone: 9971013352
         in: www.linkedin.com/in/rahul-singal-02272b24a
 
 - team: Content Writing
@@ -86,13 +82,11 @@
       - name: Shrikara <br>A
         img: Shrikara_A.jpeg
         mail: shrikara.a@students.iiit.ac.in
-        phone: 8073489323
         bg: gray
         in: https://linkedin.com/in/shrikara-a-196013168
       - name: Vineeth <br> Bhat
-        img: Vineeth_Bhat.jpeg
+        img: Vineeth_Bhat.jpg
         mail: vineeth.bhat@students.iiit.ac.in
-        phone: 9972955800
         in: https://www.linkedin.com/in/vineethbhat/
         bg: green
   members:
@@ -109,7 +103,6 @@
         img: Hemanth_Kumar_Reddy.jpg
         mail: hemanth.sunkireddy@students.iiit.ac.in
         bg: green
-        phone: 9849092760
 
 - team: Events and Operations
   multiple: true
@@ -124,13 +117,8 @@
         bg: grey
         img: Rohan_Girish.png
         mail: rohan.girish@students.iiit.ac.in
-        phone: 9372398265
         in: https://www.linkedin.com/in/rohan-girish-238296246/
   members:
-      - name: Suyash<br>Sethia
-        bg: grey
-        img: Suyash_Sethia.jpg
-        mail: suyash.sethia@research.iiit.ac.in
       - name: Mohammed<br>Ihsan<br>Ali
         bg: grey
         img: Mohammed_Ihsan_Ali.jpg
@@ -202,26 +190,21 @@
       - name: Vrinda <br> Agarwal
         img: Vrinda_Agarwal.jpg
         mail: vrinda.agarwal@students.iiit.ac.in
-        phone: 8874577777
         in: https://www.linkedin.com/in/vrinda-agarwal-94608b248/
   members:
       - name: Prithvi <br> Karthik
         img: Prithvi_Karthik.jpeg
         mail: prithvi.karthik@students.iiit.ac.in
-        phone: 9824682464
         in: https://www.linkedin.com/in/prithvikarthik/
       - name: Soumil <br> Gupta
         img: Soumil_Gupta.jpg
         mail: soumil.gupta@students.iiit.ac.in
-        phone: 9998988901
         in: https://www.linkedin.com/in/soumilgupta21/
       - name: Asrith<br> Reddy <br> Patlolla
         img: Asrith_Reddy_Patlolla.jpeg
-        phone: 6305136627
         mail: asrith.reddy@students.iiit.ac.in
       - name: Zainab<br> Raza
         img: Zainab_Raza.jpg
-        phone: 7037793420
         mail: zainab.raza@students.iiit.ac.in
         bg: grey
 
@@ -239,5 +222,4 @@
         img: Chinmay_Pateria.jpeg
         mail: chinmay.pateria@research.iiit.ac.in
         bg: grey
-        phone: 9306205176
         in: https://www.linkedin.com/in/chinmay-pateria-0718b8220
