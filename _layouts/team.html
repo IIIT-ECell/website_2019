@@ -76,9 +76,11 @@ layout: page
 							<a class="focus" href="mailto:{{head.mail}}" target="_blank">
 								<h3><i class="fa fa-envelope"></i></h3>
 							</a>
+							{% if head.phone != nil %}
 							<a class="focus" href="tel:{{head.phone}}" target="_blank">
 								<h3><i class="fa fa-phone"></i></h3>
 							</a>
+							{% endif %}
 							{% if head.in != nil %}
 							<a class="focus" href="{{head.in}}" target="_blank">
 								<h3><i class="fab fa-linkedin"></i></h3>
@@ -104,9 +106,11 @@ layout: page
 							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
 								<h3><i class="fa fa-envelope"></i></h3>
 							</a>
-							<!-- <a class="focus" href="tel:{{member.phone}}" target="_blank">
+							{% if head.phone != nil %}
+							<a class="focus" href="tel:{{head.phone}}" target="_blank">
 								<h3><i class="fa fa-phone"></i></h3>
-							</a> -->
+							</a>
+							{% endif %}
 							{% if member.in != nil %}
 							<a class="focus" href="{{member.in}}" target="_blank">
 								<h3><i class="fab fa-linkedin"></i></h3>
