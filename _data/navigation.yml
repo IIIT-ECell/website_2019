@@ -39,5 +39,7 @@
   url: /sponsors.html
 - title: Our Team
   url: /team.html
-- title: Join Us
-  url: /join.html
+
+# Uncomment this to add the recuriement page in later session.
+# - title: Join Us
+#   url: /join.html
