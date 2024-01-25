@@ -35,6 +35,13 @@ title : Startup - Aid
         margin-left: 0%;
         margin-top: -10%;
 }
+.palette-bg-caramel{
+    background-color: #FFDAB9;
+
+}
+.palette-bg-caramel:hover{
+    background-color: #50382A;
+}
 .palette-bg-green {
     background-color: #1bbfb3;
 }
@@ -44,7 +51,7 @@ title : Startup - Aid
 }
 
 .row-idea {
-    background-color: #98E6E1;
+    background-color: #d6ccc2;
 }
 .palette-bg-red {
     background-color: #d43129;
@@ -64,6 +71,14 @@ title : Startup - Aid
 .row-market {
     background-color: rgba(212, 49, 41, 47%);
 }
+.hover-white:hover {
+    color: white !important;
+}
+
+.indented {
+    padding-left: 30px;
+}
+
 
 .para-right,
 .tile-row-right {
@@ -73,6 +88,7 @@ title : Startup - Aid
 .para-left {
     float: left;
 }
+
 .para-head {
     font-weight: bold;
     margin-bottom: 1.2rem !important;
@@ -141,7 +157,7 @@ title : Startup - Aid
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-<link href="../_site/css/index.css" rel="stylesheet" /> 
+<!-- <link href="../_site/css/index.css" rel="stylesheet" />     -->
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css">
 </head>
 
@@ -163,17 +179,28 @@ title : Startup - Aid
 <div class="container-fluid tiles-container col-sm-12 col-md-11">
     <div class="row tile-row tile-row-left row-idea">
         <div class="para col-md-8 para-left">
-            <h1 class="m-5 para-head">Ideation Phase</h1>
-            <p class="m-5 para-text">   
-                Entrepreneurship Cell, IIIT Hyderabad is a non-profit organization run by students, and has been established with the objective of creating, manifesting and guiding the entrepreneurial spirit in the student community and to encourage them to be successful entrepreneurs. We want to build an ecosystem where networking and knowledge sharing can happen. To this end, we conduct several events, seminars and workshops both for students of and beyond our college for the purpose of cultivating this entrepreneurial spirit.
-            </p>
+            <h1 class="m-5 para-head">Startup Aid Session 1</h1>
+<p class="m-5 para-text">
+    Below are a couple of resources for you to get an idea about an <b>'idea':</b>
+</p>
+<ul class="m-5 para-text indented">
+    <li><a href="https://paulgraham.com/startupideas.html">Paul Graham: How to get Startup Ideas</a></li>
+    <li><a href="https://youtu.be/DOtCl5PU8F0?si=K3z424Ggn3XBdOg6">Kevin Hale: How to Evaluate Startup Ideas</a></li>
+    <li><a href="https://bventure.com/how-to-get-and-evaluate-startup-ideas/">A summary of the session</a></li>
+</ul>
+<p class="m-5 para-text">
+    You may also go through the second module of Y Combinator's Startup School for more insights.
+    The important part is to be observant and apply the knowledge learnt. Do not get stuck on consuming resources. Act.
+</p>
             <div class="cta-btn-container">
                        <!-- as of now all the link lead to the same pdf -->
-                <a href="../assets/pdf/StartupAid.pdf" target="_blank"><button class="m-5 btn palette-bg-green cta-btn">Learn More</button></a>
+                       <a href="../assets/pdf/StartupAid.pdf" target="_blank">
+                        <button class="m-5 btn palette-bg-caramel cta-btn hover-white" style="color: black;">Learn More</button>
+                    </a>
             </div>
         </div>
         <div class="image col-md-4 image-right">
-            <img class="img-fluid ideation-image" src="../assets/imgs/eventsimages/entrepreneur.jpeg" alt="..." style="border-radius: 10px;" />
+            <img class="img-fluid ideation-image" src="../assets/imgs/eventsimages/startupaid/startupaid1.png" alt="..." style="border-radius: 10px;" />
         </div>
       
     </div>
