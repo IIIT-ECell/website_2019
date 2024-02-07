@@ -9,3 +9,6 @@ Startup Aid is a 3-sprint program to help IIIT-H students take their startup ide
 <br>
 Just need to have interest in startups and the enthusiasm to build one! This time, we have an exclusive ideation phase initially, to cater the motivated participants who don't have a concrete idea yet.
 Already have an interesting idea? You can start directly from the 2nd phase or if it needs more polishing, we welcome you to join the 1st phase.
+<br>
+<br>
+<br>
