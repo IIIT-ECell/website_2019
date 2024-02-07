@@ -27,8 +27,6 @@
         url: https://megathon.in
       - title: Startup Aid
         url: /startup-aid
-      - title: SummerUp
-        url: /summerup
       - title: Zenith
         url: /zenith
       - title: image
@@ -39,5 +37,7 @@
   url: /sponsors.html
 - title: Our Team
   url: /team.html
-- title: Join Us
-  url: /join.html
+
+# Uncomment this to add the recuriement page in later session.
+# - title: Join Us
+#   url: /join.html
