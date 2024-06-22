@@ -6,12 +6,12 @@
         img: Maitreya_Chitale.jpg
         mail: maitreya.chitale@research.iiit.ac.in
         in: https://www.linkedin.com/in/maitreya-chitale-a45a561b9/
-        phone: TODO
+        phone: +91 9820114966
       - name: Prithvi <br> Karthik
         img: Prithvi_Karthik.jpeg
         mail: prithvi.karthik@students.iiit.ac.in
         in: https://www.linkedin.com/in/prithvikarthik/
-        phone: TODO
+        phone: +91 9824682464
 
 
 - team: CIO and CMO
@@ -49,10 +49,25 @@
         mail: saumya.balina@students.iiit.ac.in
         in: https://www.linkedin.com/in/saumya-balina-30147a289/
         bg: green
-      - name: Bhavya<br>Ram V
+      - name: Bhavya<br>Ram&ensp;V
         img: Bhavya_Ram.jpeg
         mail: bhavyaram.v@research.iiit.ac.in
         in: https://www.linkedin.com/in/bhavya-v-1129242a9/
+        bg: green
+      - name: Vishak<br>Kashyap&ensp;K
+        img: Vishak_Kashyap.jpeg
+        mail: vishakkashyap.k@research.iiit.ac.in
+        in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
+        bg: green
+      - name: Atharv<br>Bhatt
+        img: Atharv_Bhatt.jpeg
+        mail: atharv.bhatt@students.iiit.ac.in
+        in: https://www.linkedin.com/in/atharv-bhatt-0260212b5/
+        bg: green
+      - name: Sujay<br>Belsare
+        img: Sujay_Belsare.jpeg
+        mail: sujay.belsare@students.iiit.ac.in
+        in: https://www.linkedin.com/in/sujay-belsare/
         bg: green
 
 - team: Content Writing
@@ -72,6 +87,20 @@
         img: Gopal_Kataria.jpg
         mail: gopal.kataria@research.iiit.ac.in
         in: https://www.linkedin.com/in/gopalkataria
+        bg: green
+      - name: Vishak<br>Kashyap&ensp;K
+        img: Vishak_Kashyap.jpeg
+        mail: vishakkashyap.k@research.iiit.ac.in
+        in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
+        bg: green
+      - name: Shlok<br>Sand
+        img: Shlok_Sand.jpeg
+        mail: shlok.sand@research.iiit.ac.in
+        in: www.linkedin.com/in/shlok-sand-5a9a51280
+        bg: green
+      - name: Namrata<br>Baliga
+        img: Namrata_Baliga.jpeg
+        mail: namrata.baliga@students.iiit.ac.in
         bg: green
 
 - team: Tech
@@ -98,6 +127,11 @@
         mail: ami.buch@students.iiit.ac.in
         in: https://www.linkedin.com/in/ami-buch-1a0874212
         bg: green
+      - name: Krish<br>Pandya
+        img: Krish_Pandya.jpeg
+        mail: krish.pandya@students.iiit.ac.in
+        in: https://www.linkedin.com/in/krish-pandya-020aaa261/
+        bg: green
 
 - team: Events and Operations
   multiple: true
@@ -116,6 +150,11 @@
       - name: Kevin<br>Thakkar
         img: Kevin_Thakkar.png
         mail: kevin.thakkar@students.iiit.ac.in
+        bg: grey
+      - name: Bhaskar<br>Bhatt
+        img: Bhaskar_Bhatt.jpeg
+        mail: bhaskar.bhatt@students.iiit.ac.in
+        in: https://www.linkedin.com/in/bhaskar-bhatt-8b3534281
         bg: grey
       - name: Krishna<br>Goel
         img: Krishna_Goel.jpg
@@ -160,12 +199,17 @@
         mail: mrudani.pimpalkhare@students.iiit.ac.in
         in: https://www.linkedin.com/in/mrudani-pimpalkhare-4b5b1a289
         bg: green
+      - name: Aviral<br>Gupta
+        img: Aviral_Gupta.jpg
+        mail: aviral.gupta@research.iiit.ac.in
+        in: https://www.linkedin.com/in/aviral-gupta-b565a6281/
+        bg: grey
 
 - team: Design
   text: "Design is not just what it looks like and feels like. Design is how it works. <br> - Steve Jobs"
   heads:
       - name: Sai<br>Praneeth
-        img: TODO
+        img: Sai_Praneeth.jpeg
         mail: sai.praneeth@students.iiit.ac.in
         bg: green
   members:
@@ -174,7 +218,7 @@
         mail: deep.sarda@students.iiit.ac.in
         in: https://www.linkedin.com/in/deep-sarda-297748236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
         bg: green
-      - name: K Roshan<br>Lal
+      - name: K&ensp;Roshan<br>Lal
         img: Roshan_Lal.jpg
         mail: kalluri.lal@students.iiit.ac.in
         in: https://www.linkedin.com/in/kalluri-roshan-lal-7936752a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
@@ -183,6 +227,19 @@
         img: Deekshitha_Sagiraju.jpg
         mail: sagiraju.deekshitha@students.iiit.ac.in
         in: https://www.linkedin.com/in/deekshitha-sagiraju-bb438a257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+        bg: green
+      - name: Vignesh<br>Vembar<br>Manikantan
+        img: Vignesh_Vembar.jpeg
+        mail: vigneshvembar.m@students.iiit.ac.in
+        in: https://www.linkedin.com/in/vignesh-vembar
+        bg: green
+      - name: Aaryan<br>Kashyap
+        img: Aaryan_Kashyap.jpeg
+        mail: aaryan.kashyap@research.iiit.ac.in
+        bg: green
+      - name: T&ensp;S&ensp;Mitra<br>Somayaji
+        img: Mitra_Somayaji.jpeg
+        mail: saravana.mitra@students.iiit.ac.in
         bg: green
 
 - team: Marketing
@@ -216,4 +273,33 @@
       - name: Siddarth<br>Gottumukkula
         img: Siddarth_Gottumukkula.jpg
         mail: siddarth.g@students.iiit.ac.in
+        bg: green
+      - name: Anshitha<br>Reddy
+        img: Anshitha_Reddy.png
+        mail: anshitha.penubolu@students.iiit.ac.in
+        bg: green
+ 
+- team: Innovation 
+  multiple: true
+  text: Innovation distinguishes between a leader and a follower. <br> - Steve Jobs
+  heads:
+      - name: Kushagra<br>Dhingra
+        mail: kushagra.dhingra@research.iiit.ac.in
+        img: Kushagra_Dhingra.jpg
+        bg: green
+      - name: Harsh<br>Gupta
+        img: Harsh_Gupta.jpg
+        mail: harsh.g@students.iiit.ac.in
+        bg: green
+        in: https://www.linkedin.com/in/harsh-gupta-4ba4a7254
+  members:
+      - name: Vishak<br>Kashyap&ensp;K
+        img: Vishak_Kashyap.jpeg
+        mail: vishakkashyap.k@research.iiit.ac.in
+        in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
+        bg: green
+      - name: Gopal<br>Kataria
+        img: Gopal_Kataria.jpg
+        mail: gopal.kataria@research.iiit.ac.in
+        in: https://www.linkedin.com/in/gopalkataria
         bg: green
