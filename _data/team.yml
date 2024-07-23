@@ -313,18 +313,18 @@
         mail: gaurav.behera@research.iiit.ac.in
         in: https://www.linkedin.com/in/gauravbehera/
         bg: green
-      - name: Amey Karan
-        img: Amey_Karan.jpeg
-        mail: amey.karan@research.iiit.ac.in
-        in: https://www.linkedin.com/in/ameykaran/
-        bg: green
-      - name: Ami Ashish Buch
-        img: Ami_Buch.jpg
-        mail: ami.buch@students.iiit.ac.in
-        in: https://www.linkedin.com/in/ami-buch-1a0874212
-        bg: green
       - name: Krish Pandya
         img: Krish_Pandya.jpeg
         mail: krish.pandya@students.iiit.ac.in
         in: https://www.linkedin.com/in/krish-pandya-020aaa261/
+        bg: green
+      - name: Shreyas Deb
+        img: Shreyas_Deb.png
+        mail: shreyas.deb@research.iiit.ac.in
+        in: https://www.linkedin.com/in/shreyas-deb-b6a144283/
+        bg: green
+      - name: Mani Tej Sriram
+        img: Mani_Tej_Sriram.jpeg
+        mail: manitej.sriram@students.iiit.ac.in
+        in: https://www.linkedin.com/in/mani-tej-sriram-26186328a/
         bg: green

@@ -32,7 +32,7 @@ layout: page
     </div>
 </header>
 
-<header class="w-100 h-auto d-flex justify-content-center align-items-center">
+<header class="w-100 h-auto d-flex justify-content-center align-items-center py-5">
     <h1 class="display-3 text-center"><strong>Team</strong></h1>
 </header>
 
@@ -50,7 +50,7 @@ layout: page
                 <div class="team-content">
                     <div class="team-heading-white">             
                         <div class="team-header">
-                            <svg width="311" height="311" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="100%" height="100%" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.53" filter="url(#filter0_d_1_1217)">
                                     <ellipse cx="155.402" cy="151.5" rx="151.402" ry="151.5" fill="#569BFF"/>
                                     <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
@@ -74,8 +74,8 @@ layout: page
                         </div>
                         <div class="team-members">
                             {% for head in team.heads %}
-                                <div class="team-member">
-                                    <svg width="244" height="244" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <figure class="team-member">
+                                    <svg width="100%" height="100%" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <defs>
                                             <clipPath id="circleView1">
                                                 <circle cx="121.5" cy="117.5" r="99.5" />
@@ -96,13 +96,28 @@ layout: page
                                         </g>
                                         <circle cx="121.5" cy="117.5" r="99.5" fill="#F0BCB1"/>
                                         <image 
-                                            width="244" 
-                                            height="244" 
+                                            width="100%" 
+                                            height="100%" 
                                             xlink:href="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" 
                                             clip-path="url(#circleView1)"
                                         />
                                     </svg>
-                                    <div class="caption">
+                                    <div class="icons">
+                                        <a href="mailto:{{head.mail}}" target="_blank">
+                                            <h3><i class="fa fa-envelope"></i></h3>
+                                        </a>
+                                        {% if head.phone != nil %}
+                                        <a href="tel:{{head.phone}}" target="_blank">
+                                            <h3><i class="fa fa-phone"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                        {% if head.in %}
+                                        <a href="{{head.in}}" target="_blank">
+                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                    <figcaption class="caption">
                                         <p>{{ head.name }} <br>
                                         {% if idUse == 'overallcoord' %}
                                             Overall Coordinator
@@ -112,15 +127,15 @@ layout: page
                                             Head
                                         {% endif %}
                                         </p>
-                                    </div>
-                                </div>
+                                    </figcaption>
+                                </figure>
                             {% endfor %}
                         </div>
                     </div>
                     <div class="team-members">
                         {% for member in team.members %}
-                        <div class="team-member">
-                            <svg width="240" height="244" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <figure class="team-member">
+                            <svg width="100%" height="100%" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <clipPath id="circleView2">
                                         <circle cx="121.5" cy="117.5" r="99.5" />
@@ -141,18 +156,33 @@ layout: page
                                 </g>
                                 <circle cx="121.5" cy="117.5" r="99.5" fill="#9FC6FF"/>
                                 <image 
-                                    width="240" 
-                                    height="244" 
+                                    width="100%" 
+                                    height="100%" 
                                     xlink:href="{{ site.baseurl }}/assets/imgs/team/{{member.img}}" 
                                     clip-path="url(#circleView2)"
                                 />
                             </svg>
-                            <div class="caption">
+                            <div class="icons">
+                                <a href="mailto:{{member.mail}}" target="_blank">
+                                    <h3><i class="fa fa-envelope"></i></h3>
+                                </a>
+                                {% if member.phone != nil %}
+                                <a href="tel:{{member.phone}}" target="_blank">
+                                    <h3><i class="fa fa-phone"></i></h3>
+                                </a>
+                                {% endif %}
+                                {% if member.in %}
+                                <a href="{{member.in}}" target="_blank">
+                                    <h3><i class="fab fa-linkedin"></i></h3>
+                                </a>
+                                {% endif %}
+                            </div>
+                            <figcaption class="caption">
                                 <p>{{ member.name }} <br>
                                 Member
                                 </p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         {% endfor %}
                     </div>
                 </div>
@@ -169,7 +199,7 @@ layout: page
                 <div class="team-content">
                     <div class="team-heading-blue">             
                         <div class="team-header">
-                            <svg width="311" height="311" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="100%" height="100%" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.53" filter="url(#filter0_d_1_1217)">
                                     <ellipse cx="155.402" cy="151.5" rx="151.402" ry="151.5" fill="#569BFF"/>
                                     <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
@@ -193,8 +223,8 @@ layout: page
                         </div>
                         <div class="team-members">
                             {% for head in team.heads %}
-                                <div class="team-member">
-                                    <svg width="244" height="244" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <figure class="team-member">
+                                    <svg width="100%" height="100%" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <defs>
                                             <clipPath id="circleView3">
                                                 <circle cx="121.5" cy="117.5" r="99.5" />
@@ -215,13 +245,28 @@ layout: page
                                         </g>
                                         <circle cx="121.5" cy="117.5" r="99.5" fill="#F0BCB1"/>
                                         <image 
-                                            width="244" 
-                                            height="244" 
+                                            width="100%" 
+                                            height="100%" 
                                             xlink:href="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" 
                                             clip-path="url(#circleView3)"
                                         />
                                     </svg>
-                                    <div class="caption">
+                                    <div class="icons">
+                                        <a href="mailto:{{head.mail}}" target="_blank">
+                                            <h3><i class="fa fa-envelope"></i></h3>
+                                        </a>
+                                        {% if head.phone != nil %}
+                                        <a href="tel:{{head.phone}}" target="_blank">
+                                            <h3><i class="fa fa-phone"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                        {% if head.in %}
+                                        <a href="{{head.in}}" target="_blank">
+                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                    <figcaption class="caption">
                                         <p>{{ head.name }} <br>
                                         {% if idUse == 'overallcoord' %}
                                             Overall Coordinator
@@ -231,15 +276,15 @@ layout: page
                                             Head
                                         {% endif %}
                                         </p>
-                                    </div>
-                                </div>
+                                    </figcaption>
+                                </figure>
                             {% endfor %}
                         </div>
                     </div>
                     <div class="team-members">
                         {% for member in team.members %}
-                        <div class="team-member">
-                            <svg width="240" height="244" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <figure class="team-member">
+                            <svg width="100%" height="100%" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <clipPath id="circleView4">
                                         <circle cx="121.5" cy="117.5" r="99.5" />
@@ -260,18 +305,33 @@ layout: page
                                 </g>
                                 <circle cx="121.5" cy="117.5" r="99.5" fill="#9FC6FF"/>
                                 <image 
-                                  width="240" 
-                                  height="244" 
+                                  width="100%" 
+                                  height="100%" 
                                   xlink:href="{{ site.baseurl }}/assets/imgs/team/{{member.img}}" 
                                   clip-path="url(#circleView4)"
                                 />
                             </svg>
-                            <div class="caption">
+                            <div class="icons">
+                                <a href="mailto:{{member.mail}}" target="_blank">
+                                    <h3><i class="fa fa-envelope"></i></h3>
+                                </a>
+                                {% if member.phone != nil %}
+                                <a href="tel:{{member.phone}}" target="_blank">
+                                    <h3><i class="fa fa-phone"></i></h3>
+                                </a>
+                                {% endif %}
+                                {% if member.in %}
+                                <a href="{{member.in}}" target="_blank">
+                                    <h3><i class="fab fa-linkedin"></i></h3>
+                                </a>
+                                {% endif %}
+                            </div>
+                            <figcaption class="caption">
                                 <p>{{ member.name }} <br>
                                 Member
                                 </p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         {% endfor %}
                     </div>
                 </div>
