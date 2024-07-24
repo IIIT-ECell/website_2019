@@ -10,125 +10,337 @@ layout: page
 	crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/team.js"></script>
 
-<header class="w-100 h-75">
-	<div class="container-fluid h-100 main-head">
-		<div class="row h-100">
-			<div class="col text-center d-flex align-items-center justify-content-center">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col text-white">
-							<h1>Team</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- 
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠘⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣾⡖⢦⣰⣿⢲⠸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢨⠻⢷⣟⠙⠿⠞⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠦⠤⠷⠶⠶⠂⠀⢸⠀⠀⠀⠀⠀⠀⢀⢀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⡆⡄⢸⠀⠀⠀⠀⠀⢠⠃⢸⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⡇⡇⢸⣇⡀⠀⠀⡠⠁⢠⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣸⠃⢻⠈⠈⠉⢙⣳⣥⣄⣀⠔⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠸⡆⠀⠀⠰⣧⣶⠌⠂⠀⠀⠉⠁⠀⠀⠉⠳⡄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠹⢦⣀⣀⣀⡀⠀⢀⣀⣀⡀⠀⢀⣀⡠⠚⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠉⡹⠉⠉⠉⠉⢉⠇⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠰⡉⠑⠁⢠⠃⠀⠀⣟⠓⠋⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠛⠒⠁⠀⠀⠀⠈⠓⠒⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ -->
+
+<header class="w-100 h-50">
+    <div class="container-fluid h-100 main-head">
+        
+    </div>
 </header>
 
-<div class="container py-5">
-	<div class="row">
-		<div class="col text-justify">
-			<h4>
-				"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a
-				civilization work."
-			</h4>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col text-right">
-			- Vince Lombardi
-		</div>
-	</div>
+<header class="w-100 h-auto d-flex justify-content-center align-items-center py-5">
+    <h1 class="display-3 text-center"><strong>Team</strong></h1>
+</header>
+
+<div class="team">
+    {% for team in site.data.team %}
+        {% assign idUse = team.team %}
+        {% if team.id %}
+            {% assign idUse = team.id %}
+        {% endif %}
+
+        {% assign even = forloop.index | modulo: 2 %}
+        
+        {% if even == 1 %}
+            <div class="palette-bg-white team-section">
+                <div class="team-content">
+                    <div class="team-heading-white">             
+                        <div class="team-header">
+                            <svg width="100%" height="100%" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.53" filter="url(#filter0_d_1_1217)">
+                                    <ellipse cx="155.402" cy="151.5" rx="151.402" ry="151.5" fill="#569BFF"/>
+                                    <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
+                                    <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
+                                    <path d="M259.331 151.5C259.331 208.935 212.8 255.496 155.402 255.496C98.0039 255.496 51.4735 208.935 51.4735 151.5C51.4735 94.0647 98.0039 47.5042 155.402 47.5042C212.8 47.5042 259.331 94.0647 259.331 151.5Z" fill="#9FC6FF"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_1_1217" x="0" y="0" width="310.804" height="311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1217"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1217" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <div class="team-name">{{team.team}}</div>
+                        </div>
+                        <div class="team-members">
+                            {% for head in team.heads %}
+                                <figure class="team-member">
+                                    <svg width="100%" height="100%" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <clipPath id="circleView1">
+                                                <circle cx="121.5" cy="117.5" r="99.5" />
+                                            </clipPath>
+                                            <filter id="filter0_d_1_1279" x="0" y="18.4014" width="244" height="225.599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dy="4"/>
+                                                <feGaussianBlur stdDeviation="2"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1279"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1279" result="shape"/>
+                                            </filter>
+                                        </defs>
+                                        <g filter="url(#filter0_d_1_1279)">
+                                            <path d="M240 118C240 138.501 234.659 158.649 224.502 176.458C214.346 194.266 199.725 209.122 182.08 219.56C164.435 229.998 144.375 235.659 123.876 235.985C103.377 236.311 83.1472 231.291 65.1793 221.419C47.2113 211.547 32.1254 197.164 21.408 179.687C10.6905 162.21 4.71139 142.242 4.05964 121.751C3.4079 101.26 8.10605 80.9531 17.6912 62.8305C27.2763 44.7079 41.4177 29.3953 58.722 18.4014L122 118H240Z" fill="#ED7C64"/>
+                                        </g>
+                                        <circle cx="121.5" cy="117.5" r="99.5" fill="#F0BCB1"/>
+                                        <image 
+                                            width="100%" 
+                                            height="100%" 
+                                            xlink:href="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" 
+                                            clip-path="url(#circleView1)"
+                                        />
+                                    </svg>
+                                    <div class="icons">
+                                        <a href="mailto:{{head.mail}}" target="_blank">
+                                            <h3><i class="fa fa-envelope"></i></h3>
+                                        </a>
+                                        {% if head.phone != nil %}
+                                        <a href="tel:{{head.phone}}" target="_blank">
+                                            <h3><i class="fa fa-phone"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                        {% if head.in %}
+                                        <a href="{{head.in}}" target="_blank">
+                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                    <figcaption class="caption">
+                                        <p>{{ head.name }} <br>
+                                        {% if idUse == 'overallcoord' %}
+                                            Overall Coordinator
+                                        {% elsif idUse == 'officers' %}
+                                            Vice Coordinator
+                                        {% else %}
+                                            Head
+                                        {% endif %}
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="team-members">
+                        {% for member in team.members %}
+                        <figure class="team-member">
+                            <svg width="100%" height="100%" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="circleView2">
+                                        <circle cx="121.5" cy="117.5" r="99.5" />
+                                    </clipPath>
+                                    <filter id="filter0_d_2135_33" x="0" y="22.0686" width="222.636" height="221.931" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2135_33"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2135_33" result="shape"/>
+                                    </filter>
+                                </defs>
+                                <g filter="url(#filter0_d_2135_33)">
+                                    <path d="M218.636 185.716C208.78 199.782 195.971 211.527 181.105 220.13C166.239 228.733 149.674 233.988 132.567 235.526C115.461 237.064 98.2241 234.849 82.0619 229.036C65.8997 223.222 51.2014 213.951 38.9936 201.869C26.7858 189.786 17.3628 175.185 11.3828 159.083C5.40277 142.982 3.00987 125.769 4.37122 108.647C5.73258 91.5255 10.8154 74.9072 19.2646 59.9532C27.7138 44.9992 39.3257 32.0699 53.2894 22.0685L122 118L218.636 185.716Z" fill="#8CBBFF"/>
+                                </g>
+                                <circle cx="121.5" cy="117.5" r="99.5" fill="#9FC6FF"/>
+                                <image 
+                                    width="100%" 
+                                    height="100%" 
+                                    xlink:href="{{ site.baseurl }}/assets/imgs/team/{{member.img}}" 
+                                    clip-path="url(#circleView2)"
+                                />
+                            </svg>
+                            <div class="icons">
+                                <a href="mailto:{{member.mail}}" target="_blank">
+                                    <h3><i class="fa fa-envelope"></i></h3>
+                                </a>
+                                {% if member.phone != nil %}
+                                <a href="tel:{{member.phone}}" target="_blank">
+                                    <h3><i class="fa fa-phone"></i></h3>
+                                </a>
+                                {% endif %}
+                                {% if member.in %}
+                                <a href="{{member.in}}" target="_blank">
+                                    <h3><i class="fab fa-linkedin"></i></h3>
+                                </a>
+                                {% endif %}
+                            </div>
+                            <figcaption class="caption">
+                                <p>{{ member.name }} <br>
+                                Member
+                                </p>
+                            </figcaption>
+                        </figure>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if team.team != 'Tech' %}
+                <div class="blue-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                {% endif %}
+            </div>
+        {% else %}
+            <div class="palette-bg-blue-faded team-section">
+                <div class="team-content">
+                    <div class="team-heading-blue">             
+                        <div class="team-header">
+                            <svg width="100%" height="100%" viewBox="0 0 311 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.53" filter="url(#filter0_d_1_1217)">
+                                    <ellipse cx="155.402" cy="151.5" rx="151.402" ry="151.5" fill="#569BFF"/>
+                                    <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
+                                    <ellipse cx="154.761" cy="150.858" rx="127.665" ry="127.748" fill="#8CBBFF"/>
+                                    <path d="M259.331 151.5C259.331 208.935 212.8 255.496 155.402 255.496C98.0039 255.496 51.4735 208.935 51.4735 151.5C51.4735 94.0647 98.0039 47.5042 155.402 47.5042C212.8 47.5042 259.331 94.0647 259.331 151.5Z" fill="#9FC6FF"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_1_1217" x="0" y="0" width="310.804" height="311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1217"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1217" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <div class="team-name">{{team.team}}</div>
+                        </div>
+                        <div class="team-members">
+                            {% for head in team.heads %}
+                                <figure class="team-member">
+                                    <svg width="100%" height="100%" viewBox="0 0 244 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <clipPath id="circleView3">
+                                                <circle cx="121.5" cy="117.5" r="99.5" />
+                                            </clipPath>
+                                            <filter id="filter0_d_1_1279" x="0" y="18.4014" width="244" height="225.599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dy="4"/>
+                                                <feGaussianBlur stdDeviation="2"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1279"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1279" result="shape"/>
+                                            </filter>
+                                        </defs>
+                                        <g filter="url(#filter0_d_1_1279)">
+                                            <path d="M240 118C240 138.501 234.659 158.649 224.502 176.458C214.346 194.266 199.725 209.122 182.08 219.56C164.435 229.998 144.375 235.659 123.876 235.985C103.377 236.311 83.1472 231.291 65.1793 221.419C47.2113 211.547 32.1254 197.164 21.408 179.687C10.6905 162.21 4.71139 142.242 4.05964 121.751C3.4079 101.26 8.10605 80.9531 17.6912 62.8305C27.2763 44.7079 41.4177 29.3953 58.722 18.4014L122 118H240Z" fill="#ED7C64"/>
+                                        </g>
+                                        <circle cx="121.5" cy="117.5" r="99.5" fill="#F0BCB1"/>
+                                        <image 
+                                            width="100%" 
+                                            height="100%" 
+                                            xlink:href="{{ site.baseurl }}/assets/imgs/team/{{head.img}}" 
+                                            clip-path="url(#circleView3)"
+                                        />
+                                    </svg>
+                                    <div class="icons">
+                                        <a href="mailto:{{head.mail}}" target="_blank">
+                                            <h3><i class="fa fa-envelope"></i></h3>
+                                        </a>
+                                        {% if head.phone != nil %}
+                                        <a href="tel:{{head.phone}}" target="_blank">
+                                            <h3><i class="fa fa-phone"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                        {% if head.in %}
+                                        <a href="{{head.in}}" target="_blank">
+                                            <h3><i class="fab fa-linkedin"></i></h3>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                    <figcaption class="caption">
+                                        <p>{{ head.name }} <br>
+                                        {% if idUse == 'overallcoord' %}
+                                            Overall Coordinator
+                                        {% elsif idUse == 'officers' %}
+                                            Vice Coordinator
+                                        {% else %}
+                                            Head
+                                        {% endif %}
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="team-members">
+                        {% for member in team.members %}
+                        <figure class="team-member">
+                            <svg width="100%" height="100%" viewBox="0 0 240 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="circleView4">
+                                        <circle cx="121.5" cy="117.5" r="99.5" />
+                                    </clipPath>
+                                    <filter id="filter0_d_2135_33" x="0" y="22.0686" width="222.636" height="221.931" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2135_33"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2135_33" result="shape"/>
+                                    </filter>
+                                </defs>
+                                <g filter="url(#filter0_d_2135_33)">
+                                    <path d="M218.636 185.716C208.78 199.782 195.971 211.527 181.105 220.13C166.239 228.733 149.674 233.988 132.567 235.526C115.461 237.064 98.2241 234.849 82.0619 229.036C65.8997 223.222 51.2014 213.951 38.9936 201.869C26.7858 189.786 17.3628 175.185 11.3828 159.083C5.40277 142.982 3.00987 125.769 4.37122 108.647C5.73258 91.5255 10.8154 74.9072 19.2646 59.9532C27.7138 44.9992 39.3257 32.0699 53.2894 22.0685L122 118L218.636 185.716Z" fill="#8CBBFF"/>
+                                </g>
+                                <circle cx="121.5" cy="117.5" r="99.5" fill="#9FC6FF"/>
+                                <image 
+                                  width="100%" 
+                                  height="100%" 
+                                  xlink:href="{{ site.baseurl }}/assets/imgs/team/{{member.img}}" 
+                                  clip-path="url(#circleView4)"
+                                />
+                            </svg>
+                            <div class="icons">
+                                <a href="mailto:{{member.mail}}" target="_blank">
+                                    <h3><i class="fa fa-envelope"></i></h3>
+                                </a>
+                                {% if member.phone != nil %}
+                                <a href="tel:{{member.phone}}" target="_blank">
+                                    <h3><i class="fa fa-phone"></i></h3>
+                                </a>
+                                {% endif %}
+                                {% if member.in %}
+                                <a href="{{member.in}}" target="_blank">
+                                    <h3><i class="fab fa-linkedin"></i></h3>
+                                </a>
+                                {% endif %}
+                            </div>
+                            <figcaption class="caption">
+                                <p>{{ member.name }} <br>
+                                Member
+                                </p>
+                            </figcaption>
+                        </figure>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="white-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
-
-{% for team in site.data.team %}
-{%assign idUse = team.team %}
-{% if team.id %}
-{%assign idUse = team.id %}
-{% endif %}
-<div class=" algn container" id="{{idUse}}">
-	<hr>
-	<h1 class="pb-4 mb-4" style="text-align: center;">{{ team.team }}</h1>
-	<h4 class="pb-4 mb-4" style="text-align: center;">{{ team.text }}</h4>
-	<div class="container-fluid mb-4 pb-4">
-
-		<div class="row align-self-center" style="float: centre;">
-			<div class="row col-12 col-md-12 d-flex flex-row text-center justify-content-center align-items-center member">
-				{% for head in team.heads %}
-				<div class="grid my-0 py-0">
-					<figure class="effect-layla">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{head.img}}">
-						<figcaption>
-							<h2>{{head.name}}</h2>
-
-							{% if team.id == "overallcoord" %}
-							<br><br>
-
-							{% elsif team.id == "officers" %}
-							<p><strong> {{head.post}} </strong></p>
-
-							{% else %}
-							<p><strong>Team Head</strong></p>
-
-							{% endif %}
-
-							<a class="focus" href="mailto:{{head.mail}}" target="_blank">
-								<h3><i class="fa fa-envelope"></i></h3>
-							</a>
-							{% if head.phone != nil %}
-							<a class="focus" href="tel:{{head.phone}}" target="_blank">
-								<h3><i class="fa fa-phone"></i></h3>
-							</a>
-							{% endif %}
-							{% if head.in != nil %}
-							<a class="focus" href="{{head.in}}" target="_blank">
-								<h3><i class="fab fa-linkedin"></i></h3>
-							</a>
-							{% endif %}
-						</figcaption>
-					</figure>
-				</div>
-				{% endfor %}
-			</div>
-			<br>
-		</div>
-
-		<div class="row align-self-center" style="float: centre;">
-			<div class="row col-12 col-md-12 d-flex flex-row text-center justify-content-center align-items-center member ">
-				{% for member in team.members %}
-				<div class="grid my-0 py-0">
-					<figure class="effect-layla">
-						<img src="{{ site.baseurl }}/assets/imgs/team/{{member.img}}">
-						<figcaption>
-							<h2>{{member.name}}</h2>
-							<p><strong>Team Member</strong></p>
-							<a class="focus" href="mailto:{{member.mail}}" target="_blank">
-								<h3><i class="fa fa-envelope"></i></h3>
-							</a>
-							{% if head.phone != nil %}
-							<a class="focus" href="tel:{{head.phone}}" target="_blank">
-								<h3><i class="fa fa-phone"></i></h3>
-							</a>
-							{% endif %}
-							{% if member.in != nil %}
-							<a class="focus" href="{{member.in}}" target="_blank">
-								<h3><i class="fab fa-linkedin"></i></h3>
-							</a>
-							{% endif %}
-						</figcaption>
-					</figure>
-				</div>
-
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</div>
-
-
-{% endfor %}
-<script>
-	ScrollReveal().reveal('.member', { interval: 300, easing: 'ease-in-out' });
-	ScrollReveal().reveal('.team-member', { interval: 300, easing: 'ease-in-out' });
-</script>
