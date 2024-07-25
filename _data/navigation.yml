@@ -4,6 +4,8 @@
   sublinks:
       - title: Hackathons
         url: /hackathons
+      - title: Articles
+        url: /articles
       - title: Talks
         url: /talks
       - title: Workshops
