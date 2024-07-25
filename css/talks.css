@@ -39,7 +39,7 @@ html {
 }
 
 .article-list {
-    border: 2px solid black;
+    border: 1px solid #ebebeb;
     background-color: #dd5e58;
     padding: 10px;
     border-top-right-radius: 25px;
