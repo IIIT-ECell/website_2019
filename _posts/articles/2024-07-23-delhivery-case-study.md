@@ -2,7 +2,7 @@
 layout : article_layout
 title : Delhivery Case Study
 author : Jai Akaash, Sudershan Sarraf, Parth Jindal, Krishna Goel, Ishaan Romil
-pub_date: 23rd July, 2024
+pub_date: 1st Jan 2024
 categories : articles
 img : delhivery_main.png
 permalink : /:categories/:title.html

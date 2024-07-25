@@ -39,17 +39,16 @@ html {
 }
 
 .article-list {
-    border: 1px solid #ebebeb;
+    border: 2px solid black;
     background-color: #dd5e58;
     padding: 10px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     position: sticky;
     top: 15%;
     margin-left: 20px;
-    min-height: 700px;
 }
 
 .article-list a {

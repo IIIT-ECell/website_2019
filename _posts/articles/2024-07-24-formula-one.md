@@ -2,7 +2,7 @@
 layout : article_layout
 title : Formula One A Multi-Billion Dollar Spectacle Fueled by Speed, Passion, and Money
 author : Gopal Kataria, Archisha Panda
-pub_date: 24th July, 2024
+pub_date: 1st Jan 2024
 categories : articles
 img : f1_main.png
 permalink : /:categories/:title.html
