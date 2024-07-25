@@ -7,7 +7,7 @@
                 <div class="row mb-4">
                   <div class="col">
                     <div class="card {{ post.hover_class }} col-md-12" onclick="redirect('{{ include.headertext }}', '{{site.baseurl}}{{ post.url }}')">
-                      <p style="background-color: #CD392C;"></p>
+                      <p></p>
                       <div class="card-header palette-bg-{{ post.bg }}">
                         <h1>{{ post.title }}</h1>
                       </div>
@@ -18,13 +18,12 @@
                           </div>
                           <div class="col-12 col-md-8 text-justify">
                             <b style="font-size: 20px;">
-                              <strong style="color: #CD392C;">By </strong>{{ post.author }} <strong  style="color: #CD392C;">
+                              <strong style="color: #99e7e2;">By </strong>{{ post.author }} <strong  style="color: #99e7e2;">
                               <br>
                               Published on </strong>{{ post.pub_date }}
                               <br><br>
                             </b>
                             {{ post.content | truncatewords:50 }}
-                            ...
                             <br><br>
                           </div>
                         </div>
