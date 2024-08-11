@@ -40,7 +40,7 @@ html {
 
 .article-list {
     border: 2px solid black;
-    background-color: #dd5e58;
+    /* background-color: rgba(221, 94, 88, 1); */
     padding: 10px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;

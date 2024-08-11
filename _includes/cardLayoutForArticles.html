@@ -14,7 +14,7 @@
                       <div class="card-body">
                         <div class="row">
                           <div class="col-12 col-md-4">
-                            <img src="{{ site.baseurl }}/assets/imgs/eventsimages/{{post.img}}" class="rounded img-fluid" height="250">
+                            <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{post.img}}" class="rounded img-fluid" height="250">
                           </div>
                           <div class="col-12 col-md-8 text-justify">
                             <b style="font-size: 20px;">
@@ -57,5 +57,21 @@
         window.location.href = url;
       }
     }
+
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const anchor = document.querySelector(`a[href='#${section.getAttribute("id")}']`);
+        console.log(anchor, `a[href='#${section.getAttribute("id")}']`);
+
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+          anchor.style.color = '#dd5e58'
+        } else {
+          anchor.style.color = 'black'
+        }
+      });
+    });
+
   </script>
   
