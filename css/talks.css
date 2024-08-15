@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 .card {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -27,45 +23,4 @@ html {
 
 .palette-bg-grey {
     background-color: #ebebeb;
-}
-
-.hover-class {
-    transition: transform 0.3s ease;
-}
-
-.hover-class:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.article-list {
-    border: 2px solid black;
-    /* background-color: rgba(221, 94, 88, 1); */
-    padding: 10px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    position: sticky;
-    top: 15%;
-    margin-left: 20px;
-}
-
-.article-list a {
-    text-decoration: none;
-    color: black;
-}
-
-.article-list a:hover {
-    text-decoration: underline
-}
-
-.section {
-    scroll-margin-top: 200px;
-}
-
-@media (max-width: 768px) {
-    .article-list {
-        display: none;
-    }
 }
