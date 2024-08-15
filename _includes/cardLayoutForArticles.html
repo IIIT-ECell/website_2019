@@ -14,7 +14,7 @@
                       <div class="card-body">
                         <div class="row">
                           <div class="col-12 col-md-4">
-                            <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{post.img}}" class="rounded img-fluid" height="250">
+                            <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid" height="250">
                           </div>
                           <div class="col-12 col-md-8 text-justify">
                             <b style="font-size: 20px;">
@@ -41,7 +41,7 @@
           <ul>
             {% for post in site.posts %}
               {% if post.path contains include.headertext %}
-                <a href="#{{ post.title }}"><li>{{ post.title }}</li></a>
+                <a href="#{{ post.title }}"><li>{{ post.title }}</li></a><hr>
               {% endif %}
             {% endfor %}
           </ul>
