@@ -2,7 +2,7 @@
 layout : article_layout
 title : The meteoric rise and spectacular fall of the two jewels of the Indian Startup Ecosystem
 author : Shlok Sand
-pub_date: 1st Jan 2024
+pub_date: 16th Aug 2024
 categories : articles
 img : rise_and_fall.png
 permalink : /:categories/:title.html
