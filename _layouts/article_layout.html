@@ -21,6 +21,8 @@ layout: page
             <a href="/articles/#{{ page.title }}" style="text-decoration: none;"><button class="btn btn-light">Go back</button></a>
         </div>
         <div class="col-12 col-md-4">
+          {% assign article_count = site.posts | where_exp: "post", "post.path contains 'articles'" | size %}
+          {% if article_count > 1 %}
           <div class="article-list">
             <h2>Also Read</h2>
             {% for post in site.posts %}
@@ -33,6 +35,7 @@ layout: page
               {% endif %}
             {% endfor %}
           </div>
+          {% endif %}
         </div>
     </div>
 </div>
