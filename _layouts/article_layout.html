@@ -22,8 +22,8 @@ layout: page
         </div>
         <div class="col-12 col-md-4">
           {% assign article_count = site.posts | where_exp: "post", "post.path contains 'articles'" | size %}
-          {% if article_count > 1 %}
           <div class="article-list">
+          {% if article_count > 1 %}
             <h2>Also Read</h2>
             {% for post in site.posts %}
               {% if post.path contains 'articles' and post.title != page.title %}
@@ -34,8 +34,20 @@ layout: page
                 <hr>
               {% endif %}
             {% endfor %}
-          </div>
+          <!-- </div> -->
           {% endif %}
+          <!-- <div class="article-list"> -->
+          <h2>Coming Soon</h2>
+          {% for post in site.posts %}
+            {% if post.path contains 'upcoming' %}
+              <div class="side-menu">
+                <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid">
+                <p><b>{{ post.title }}</b></p>
+              </div>
+              <hr>
+            {% endif %}
+          {% endfor %}
+          </div>
         </div>
     </div>
 </div>
