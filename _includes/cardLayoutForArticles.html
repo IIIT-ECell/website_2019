@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        {% for post in site.posts %}
+          {% if post.path contains include.headertext %}
+            <section id="{{ post.title }}" class="section">
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="card {{ post.hover_class }} col-md-12" onclick="redirect('{{ include.headertext }}', '{{site.baseurl}}{{ post.url }}')">
+                      <p></p>
+                      <div class="card-header palette-bg-{{ post.bg }}">
+                        <h1>{{ post.title }}</h1>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid" height="250">
+                          </div>
+                          <div class="col-12 col-md-8 text-justify">
+                            <b style="font-size: 20px;">
+                              <strong style="color: #dd5e58;">By </strong>{{ post.author }} <strong  style="color: #dd5e58;">
+                              <br>
+                              Published on </strong>{{ post.pub_date }}
+                              <br><br>
+                            </b>
+                            {{ post.content | truncatewords:50 }}
+                            <br><br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="article-list">
+          <h2>Articles</h2>
+          <ul>
+            {% for post in site.posts %}
+              {% if post.path contains include.headertext %}
+                <a href="#{{ post.title }}"><li>{{ post.title }}</li></a><hr>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    ScrollReveal().reveal('body > .container > .row', { interval: 300 });
+    function redirect(headertext, url) {
+      if (headertext == 'articles') {
+        window.location.href = url;
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const anchor = document.querySelector(`a[href='#${section.getAttribute("id")}']`);
+        console.log(anchor, `a[href='#${section.getAttribute("id")}']`);
+
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+          anchor.style.color = '#dd5e58'
+        } else {
+          anchor.style.color = 'black'
+        }
+      });
+    });
+
+  </script>
+  
