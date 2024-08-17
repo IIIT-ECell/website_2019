@@ -37,16 +37,19 @@ layout: page
           <!-- </div> -->
           {% endif %}
           <!-- <div class="article-list"> -->
-          <h2>Coming Soon</h2>
-          {% for post in site.posts %}
-            {% if post.path contains 'upcoming' %}
-              <div class="side-menu">
-                <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid">
-                <p><b>{{ post.title }}</b></p>
-              </div>
-              <hr>
-            {% endif %}
-          {% endfor %}
+          {% assign upcoming_count = site.posts | where_exp: "post", "post.path contains 'upcoming'" | size %}
+          {% if upcoming_count > 0 %}
+            <h2>Coming Soon</h2>
+            {% for post in site.posts %}
+              {% if post.path contains 'upcoming' %}
+                <div class="side-menu">
+                  <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid">
+                  <p><b>{{ post.title }}</b></p>
+                </div>
+                <hr>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
           </div>
         </div>
     </div>
