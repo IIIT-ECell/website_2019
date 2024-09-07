@@ -63,7 +63,7 @@
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
         const anchor = document.querySelector(`a[href='#${section.getAttribute("id")}']`);
-        console.log(anchor, `a[href='#${section.getAttribute("id")}']`);
+        // console.log(anchor, `a[href='#${section.getAttribute("id")}']`);
 
         if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
           anchor.style.color = '#dd5e58'
