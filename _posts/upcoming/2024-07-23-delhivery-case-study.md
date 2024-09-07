@@ -115,7 +115,7 @@ than the previous year. Their income went up by 5%, going from Rs 6882 crore in 
 A 8% year-over-year (y-o-y) increase from Rs 1,796 crore in Q2 FY23 to Rs 1,942 crore in Q2 FY24 was reported by Delhivery Limited as revenue from services. Earnings before interest, taxes, depreciation, and amortization, or adjusted EBITDA, lost Rs 125 crore in Q2 FY23 but Rs 13 crore in Q2 FY24, a 90% year- over-year decrease. The loss after tax decreased by 59% year over year to Rs 103 crore in Q2 FY24 from Rs 254 crore in Q2 FY23 over the same period.
 
 <div style="background-color: #D9D9D9;">
-    <img src="{{site.baseurl}}/assets/imgs/eventsimages/barchart.png" class="rounded img-fluid col-md-12" alt="Body image">
+    <img src="../../assets/imgs/articlesimages/barchart.png" class="rounded img-fluid col-md-12" alt="Body image">
 </div>
 <br>
 
