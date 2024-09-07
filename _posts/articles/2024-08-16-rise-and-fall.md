@@ -62,7 +62,7 @@ However the real blow was that the halo which hovered over Sharma who has on sev
 
 The company though claims that is working closely with the authorities concerned at addressing compliance issues but the future looks very dark and murky. Once the face of Digital India , Paytm now is in serious danger of becoming redundant and running itself to the ground. Its original stakeholders have more or less fled the sinking ship and morale is at an all time low.
 
-### Only time will tell if the Sun has finally set on India's first fintech unicorn.
+### Only time will tell if the Sun has finally set on India's first fintech unicorn
 
 <hr>
 

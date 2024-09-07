@@ -9,11 +9,12 @@ layout: page
     <div class="row">
         <div class="col-md-8 mx-auto">
             <a href="/articles/#{{ page.title }}" style="text-decoration: none; position: absolute; margin-top: -60px;"><button class="btn btn-light">←</button></a>
-            <h1 style="text-align: center;">{{ page.title }}</h1>
+            <hr>
+            <h1>{{ page.title }}</h1>
             <p style="text-align: right;">- <span style="color: #CD392C;">By</span> {{ page.author }}</p>
             <p style="text-align: right;">- <span style="color: #CD392C;">Published on</span> {{ page.pub_date }}</p>
             <hr>
-            <div style="background-color: #D9D9D9;">
+            <div >
                 <img src="{{site.baseurl}}/assets/imgs/articlesimages/{{ page.img }}" class="rounded img-fluid col-md-12">
             </div>
             <hr>
@@ -22,8 +23,8 @@ layout: page
         </div>
         <div class="col-12 col-md-4">
           {% assign article_count = site.posts | where_exp: "post", "post.path contains 'articles'" | size %}
-          {% if article_count > 1 %}
           <div class="article-list">
+          {% if article_count > 1 %}
             <h2>Also Read</h2>
             {% for post in site.posts %}
               {% if post.path contains 'articles' and post.title != page.title %}
@@ -34,8 +35,23 @@ layout: page
                 <hr>
               {% endif %}
             {% endfor %}
-          </div>
+          <!-- </div> -->
           {% endif %}
+          <!-- <div class="article-list"> -->
+          {% assign upcoming_count = site.posts | where_exp: "post", "post.path contains 'upcoming'" | size %}
+          {% if upcoming_count > 0 %}
+            <h2>Coming Soon</h2>
+            {% for post in site.posts %}
+              {% if post.path contains 'upcoming' %}
+                <div class="side-menu">
+                  <img src="{{ site.baseurl }}/assets/imgs/articlesimages/{{ post.img }}" class="rounded img-fluid">
+                  <p><b>{{ post.title }}</b></p>
+                </div>
+                <hr>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          </div>
         </div>
     </div>
 </div>

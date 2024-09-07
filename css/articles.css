@@ -38,7 +38,7 @@ html {
 }
 
 .article-list a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .article-list .side-menu {
