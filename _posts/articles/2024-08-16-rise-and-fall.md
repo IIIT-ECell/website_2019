@@ -10,7 +10,7 @@ hover_class: 'hover-class'
 bg: green
 ---
 
-This is the story of the two poster boys of the much heralded Digital India who ushered in a new era by floating startups that became breathtaking showpieces of India's new economy perennially transforming their respective domains, with millions of customers each in digital payments and digital education. Vijay Shekhar Sharma and Byju Raveendran have inspired and given hope to the ever burgeoning aspirational middle class Indian youth at a scale never witnessed before in Independent India.
+<div class="drop-cap">This is the story of the two poster boys of the much heralded Digital India who ushered in a new era by floating startups that became breathtaking showpieces of India's new economy perennially transforming their respective domains, with millions of customers each in digital payments and digital education. Vijay Shekhar Sharma and Byju Raveendran have inspired and given hope to the ever burgeoning aspirational middle class Indian youth at a scale never witnessed before in Independent India.</div>
 
 Their lives are symbolic of India’s evolution. Both grew up in non-metropolitan boroughs, away from the hustle-bustle of chaste English speaking cosmopolitan India. Byju in Kannur, a sleepy town in the backdrop of Kerala, and Sharma in Uttar Pradesh’s infamous Aligarh.
 
