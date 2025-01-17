@@ -14,7 +14,7 @@ bg: green
 
 ## Team budgets
 
-Top-tier teams like Mercedes and Ferrari are financial juggernauts, wielding budgets that would make a small nation envious. In 2019, Mercedes, holding the title for the largest budget, spent a total of $484 million (Rs 3,388 crore , according to USD rate in 2019) during the F1 season, while Ferrari allocated $463 million (Rs 3,388 crore) [1]. Recognizing the significant gap in budgets among teams, the "Fédération Internationale de l'Automobile" (FIA), the governing body of F1, implemented a cost cap of $145 million starting from the 2021 season, with the budget cap for 2023 set at $135 million.
+Top-tier teams like Mercedes and Ferrari are financial juggernauts, wielding budgets that would make a small nation envious. In 2019, Mercedes, holding the title for the largest budget, spent a total of $484 million (Rs 3,388 crore , according to USD rate in 2019) during the F1 season, while Ferrari allocated $463 million (Rs 3,241 crore) [1]. Recognizing the significant gap in budgets among teams, the "Fédération Internationale de l'Automobile" (FIA), the governing body of F1, implemented a cost cap of $145 million starting from the 2021 season, with the budget cap for 2023 set at $135 million.
 
 <br>
 <div>

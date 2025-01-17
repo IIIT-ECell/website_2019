@@ -57,6 +57,7 @@ html {
 
 .section {
     scroll-margin-top: 200px;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
