@@ -8,13 +8,13 @@ layout: page
 <div class="container">
     <div class="row">
         <div class="col-md-8 mx-auto">
-            <a href="/articles/#{{ page.title }}" style="text-decoration: none; position: absolute; margin-top: -60px;"><button class="btn btn-light">←</button></a>
+          <a href="/articles/#{{ page.title }}"><button class="btn btn-light">←</button></a>
             <hr>
             <h1>{{ page.title }}</h1>
             <p style="text-align: right;">- <span style="color: #CD392C;">By</span> {{ page.author }}</p>
             <p style="text-align: right;">- <span style="color: #CD392C;">Published on</span> {{ page.pub_date }}</p>
             <hr>
-            <div >
+            <div>
                 <img src="{{site.baseurl}}/assets/imgs/articlesimages/{{ page.img }}" class="rounded img-fluid col-md-12">
             </div>
             <hr>
