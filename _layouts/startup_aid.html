@@ -1,249 +1,461 @@
 ---
 layout: page 
-title : Startup - Aid
+title: Startup Aid
+noTopSpacing: true
 ---
 
-
-
 <style>
-.container {
-        position: relative;
-        text-align: center;
-    }
-    
-.container h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-    }
-.tile-row { 
-    width: 80%;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-head {
     position: relative;
-    margin: 2rem 10px;
-    border-radius: 2rem;
-    margin-bottom: 4rem; 
+    height: 95vh;
+    width: auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("{{site.baseurl}}/assets/imgs/eventsimages/startup_aid.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-bottom: 80px;
 }
 
-.tiles-container {
-    position: relative;
-    max-width: 1300px;
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 
-.ideation-image{
-        margin-left: 0%;
-        margin-top: -10%;
-}
-.palette-bg-caramel{
-    background-color: #FFDAB9;
-
-}
-.palette-bg-caramel:hover{
-    background-color: #50382A;
-}
-.palette-bg-green {
-    background-color: #1bbfb3;
-}
-
-.palette-bg-green:hover {
-    background-color: #4db6ac;
-}
-
-.row-idea {
-    background-color: #d6ccc2;
-}
-.palette-bg-red {
-    background-color: #d43129;
-}
-
-.palette-bg-red:hover {
-    background-color: #dd5e58;
-}
-
-.palette-bg-blue {
-    background-color: #002240;
-}
-
-.palette-bg-blue:hover {
-    background-color: #084880;
-}
-.row-market {
-    background-color: rgba(212, 49, 41, 47%);
-}
-.hover-white:hover {
-    color: white !important;
-}
-
-.indented {
-    padding-left: 30px;
-}
-
-
-.para-right,
-.tile-row-right {
-    float: right;
-}
-.image-left,
-.para-left {
-    float: left;
-}
-
-.para-head {
+.header-title {
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 1.2rem !important;
-    color: #002142;
-    font-family: "CustomHeading", sans-serif;
+    margin-bottom: 1rem;
 }
 
-.row-implementation .para-head{
-    color: white;
-} 
- 
-
-.para-text {
-    text-align: justify;
-    margin-top: 1.2rem !important;
-    margin-bottom: 1.2rem !important;
+.header-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
-.para {
-    max-width: 90vw;
-    box-sizing: border-box;
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 3rem;
+    }
+    .header-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+.white-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.white-wave svg {
     position: relative;
-    border-radius: 10px;
-    z-index: 1;
-    width: 80%;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 64px;
+    transform: rotateY(180deg);
 }
-.image {
-    box-sizing: border-box;
-    z-index: 2;
-    border-radius: 3px;
-    width: 20%;
-    height: 100%; /* this allows for all fancy alignments of the image */
+
+.white-wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
     position: relative;
 }
 
-
-.market-image {
-    margin-left: -25%;
-    margin-top: -10%;
-}
-.cta-btn {
-    padding: 10px 60px;
-    border-radius: 1.5rem;
-    margin-top: 1.2rem !important;
-    color: white;
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
-.cta-btn:hover {
-    color: white;
+.timeline-date {
+    width: 120px;
+    padding-right: 2rem;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
 }
 
-.row-implementation {
-    color: white;
+.timeline-date::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
     background-color: #185a9d;
-    margin-bottom: 6rem;
+    border-radius: 50%;
+    z-index: 1;
 }
-.implement-image {
-    margin-left: 0%;
-    margin-top: -10%;
+
+.timeline-content {
+    flex: 1;
+    border-left: 3px solid #185a9d;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin-left: -1px;
+}
+
+.phase-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.phase-card:hover {
+    transform: translateY(-5px);
+}
+
+.prizes-section {
+    padding: 4rem 0;
+    margin: 4rem 0;
+}
+
+.prizes-section .phase-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.prizes-section .phase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.prizes-section .prize-title {
+    font-size: 1.25rem;
+    color: #185a9d;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.prizes-section .phase-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.prizes-section .phase-card i {
+    font-size: 2.5rem;
+    color: #185a9d;
+    margin-bottom: 1.5rem;
+}
+
+.prizes-section .col-md-3 {
+    margin-bottom: 2rem;}
+
+.registration-section {
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    padding: 5rem 0;
+    color: white;
+    border-radius: 20px;
+    margin: 4rem auto;
+    max-width: 1100px;
+}
+
+.registration-section h2 {
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.registration-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: white;
+}
+
+.registration-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.registration-point {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.registration-point:hover {
+    transform: translateY(-5px);
+}
+
+.registration-point i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.registration-point p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.register-now-btn {
+    background-color: white;
+    color: #185a9d;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    font-size: 1.1rem;
+}
+
+.register-now-btn:hover {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.register-now-btn.disabled {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.register-now-btn.disabled:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #666;
+    transform: none;
+}
+
+.registration-cta {
+    background-color: #185a9d;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
 }
 
 </style>
 
-
-<!-- style ends -->
-
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
-<!-- <link href="../_site/css/index.css" rel="stylesheet" />     -->
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css">
-</head>
-
-<div class="container"  style="text-align: center;" >
-    <div class="container">
-        <img src="{{site.baseurl}}/assets/imgs/eventsimages/startup_aid.jpg" class="rounded img-fluid" style="border-radius: 20px;">  
-        <h1 style="font-weight: bold; font-size: 100px; font-family: 'Roboto', sans-serif;">{{ page.title }}</h1>
+<header class="w-100">
+    <div class="main-head">
+        <div class="header-content">
+            <h1 class="header-title">Startup Aid</h1>
+            <p class="header-subtitle">A 45-day entrepreneurship sprint to launch your startup journey</p>
+            <a href="#register" class="btn registration-cta">Register Now</a>
+        </div>
+        <div class="white-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
-</div>
+</header>
 
-<!-- From here the cards start that are for the 3 phases... -->
-<br><br>
-<div class="container-fluid tiles-container col-sm-12 col-md-11">
-    <div class="row tile-row tile-row-left row-idea">
-        <div class="para col-md-8 para-left">
-            <h1 class="m-5 para-head">Startup Aid Session 1</h1>
-<p class="m-5 para-text">
-    Below are a couple of resources for you to get an idea about an <b>'idea':</b>
-</p>
-<ul class="m-5 para-text indented">
-    <li><a href="https://paulgraham.com/startupideas.html">Paul Graham: How to get Startup Ideas</a></li>
-    <li><a href="https://youtu.be/DOtCl5PU8F0?si=K3z424Ggn3XBdOg6">Kevin Hale: How to Evaluate Startup Ideas</a></li>
-    <li><a href="https://bventure.com/how-to-get-and-evaluate-startup-ideas/">A summary of the session</a></li>
-</ul>
-<p class="m-5 para-text">
-    You may also go through the second module of Y Combinator's Startup School for more insights.
-    The important part is to be observant and apply the knowledge learnt. Do not get stuck on consuming resources. Act.
-</p>
-            <div class="cta-btn-container">
-                       <!-- as of now all the link lead to the same pdf -->
-                       <a href="../assets/pdf/StartupAid.pdf" target="_blank">
-                        <button class="m-5 btn palette-bg-caramel cta-btn hover-white" style="color: black;">Learn More</button>
-                    </a>
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+            <h2 class="mb-4">About The Program</h2>
+            <p class="lead mb-4 text-justify">StartUp Aid is an intensive 45-day expedition designed to equip you with essential entrepreneurship skills, focusing on the key aspects of launching a startup.</p>
+            
+            <p class="mb-4 text-justify">Throughout the program, you'll take part in seven high-impact sessions, including:</p>
+            
+            <ul class="list-unstyled text-justify mb-4">
+                <li class="mb-3">
+                    <strong class="text-primary">✦ Five Masterclasses</strong> - Learn directly from experienced entrepreneurs and industry leaders as they share insights and real-world experiences.
+                </li>
+                <li class="mb-3">
+                    <strong class="text-primary">✦ Minithon</strong> - Put your skills to the test by rapidly prototyping your ideas.
+                </li>
+                <li class="mb-3">
+                    <strong class="text-primary">✦ The Final Pitch</strong> - Present your startup to a panel of external investors and judges, who will decide the winners of StartUp Aid 2025.
+                </li>
+            </ul>
+    
+            <p class="mb-4 text-justify">To ensure hands-on learning, each masterclass will be paired with a challenge, a short task designed to reinforce key takeaways from the session. These challenges will be tailored to the insights shared by our guest speakers, giving you practical experience in applying what you learn.</p>
+            
+            <p class="font-weight-bold text-justify">Whether you're refining an idea or preparing to launch, StartUp Aid is your chance to gain real-world startup experience and take your entrepreneurial skills to the next level.</p>
+        </div>
+    </div>
+
+    <div class="timeline-container">
+        <h2 class="text-center mb-5">Program Timeline</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">March 3rd</div>
+            <div class="timeline-content">
+                <h4>The First Ascent</h4>
+                <p>This session will provide valuable insights into the ideation process, helping you generate, refine, and strengthen your startup ideas. Whether you're just starting out or looking to enhance an existing concept, this session will set the stage for innovation and success.</p>
             </div>
         </div>
-        <div class="image col-md-4 image-right">
-            <img class="img-fluid ideation-image" src="../assets/imgs/eventsimages/startupaid/startupaid1.png" alt="..." style="border-radius: 10px;" />
+        <div class="timeline-item">
+            <div class="timeline-date">March 10th</div>
+            <div class="timeline-content">
+                <h4>Scouting the Terrain</h4>
+                <p>Understand your audience and refine your idea with precision. This session will help you identify the right target demographic, ensuring that your product meets the needs of those who will benefit from it. Gain valuable insights into market research and user-centric design to create a solution that is both impactful and effective.</p>
+            </div>
+        </div>  
+        <div class="timeline-item">
+            <div class="timeline-date">March 17th</div>
+            <div class="timeline-content">
+                <h4>Funding the Expedition</h4>
+                <p>This session will take you through the entire process of securing and managing funds for your startup. You'll gain insights into the roles of angel investors, venture capitalists, and capital raises, while also exploring key financial concepts such as runway, equity management, and cash flow strategies. Learn how to navigate the financial landscape effectively and set your startup up for long-term success.</p>
+            </div>
         </div>
-      
-    </div>
-</div>
-
-<div class="container-fluid tiles-container col-sm-12 col-md-11">
-<div class="row tile-row tile-row-right row-market">
-    <div class="image col-md-4 image-left">
-        <img class="img-fluid market-image" src="../assets/imgs/eventsimages/fail_2.jpg"  style="border-radius: 20px;"/>
-    </div>
-    <div class="para col-md-8 para-right">
-        <h1 class="m-5 para-head">Market Analysis</h1>
-        <p class="m-5 para-text">
-           Market goes up and it goes down, but one must stand above and beyond, throughtout the heaven and earth I alone am the choosen one.   
-        </p>
-        <div class="cta-btn-container">
-                   <!-- as of now all the link lead to the same pdf -->
-            <a href="../assets/pdf/StartupAid.pdf"><button class="m-5 btn cta-btn palette-bg-red">Learn more</button></a>
+        <div class="timeline-item">
+            <div class="timeline-date">March 26th</div>
+            <div class="timeline-content">
+                <h4>Building the Bridge</h4>
+                <p>Get hands-on with Figma and other essential design tools in this interactive session led by the E-Cell team. You’ll learn the fundamentals of digital prototyping before taking on an exciting challenge—developing a prototype or proof-of-concept for your idea within just 6 hours. This is your chance to bring your vision to life and refine it with practical, real-time application!</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">April 7th</div>
+            <div class="timeline-content">
+                <h4>Leaving your Mark</h4>
+                <p>Learn how to craft powerful and targeted marketing strategies for your product in this essential session. You’ll gain expert insights on designing effective campaigns that directly appeal to the demographic identified during the market analysis task. Master the art of positioning, messaging, and outreach to ensure your product resonates with the right audience.</p>
+            </div>
+        </div>  
+        <div class="timeline-item">
+            <div class="timeline-date">April 14th</div>
+            <div class="timeline-content">
+                <h4>The Tipping Point</h4>
+                <p>Master the art of the perfect pitch in this session. You’ll learn how to effectively communicate your product’s value, integrating key entrepreneurial concepts covered in previous sessions. Gain the skills to deliver a compelling, persuasive pitch that captures attention and drives impact.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">April 21st</div>
+            <div class="timeline-content">
+                <h4>The Final Summit</h4>
+                <p>Selected participants will have the exclusive opportunity to pitch their ideas before a panel of esteemed investors. This high-stakes session will not only test your ability to present a compelling business case but also determine the final winners of StartUp Aid 2025. Seize this chance to showcase your startup’s potential and make a lasting impression!</p>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
-<div class="container-fluid tiles-container col-sm-12 col-md-11">
-<div class="row tile-row tile-row-left row-implementation">
-    <div class="para col-md-8 para-left">
-        <h1 class="m-5 para-head">Implementation</h1>
-        <p class="m-5 para-text">
-            Get someone to go to JC to buy oreo shake, make a app. Make Profit, make money, spend money, get old, die.
-
-        </p>
-        <div class="cta-btn-container">
-            <!-- as of now all the link lead to the same pdf -->
-            <a href="../assets/pdf/StartupAid.pdf">
-                <button class="m-5 btn palette-bg-blue cta-btn" >Learn more</button>
-            </a>
+    <div class="prizes-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Rewards & Recognition</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="phase-card text-center">
+                        <i class="fas fa-trophy"></i>
+                        <h3 class="prize-title">₹1.5 Lakh Prize Pool</h3>
+                        <p>Startup Aid 2025 offers a massive ₹1.5 Lakh prize pool, giving participants the chance to win big across various challenges and the final pitch.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="phase-card text-center">
+                        <i class="fas fa-medal"></i>
+                        <h3 class="prize-title">Challenge Prizes</h3>
+                        <p>Engage in multiple hands-on challenges throughout the program, with exciting rewards at every stage to keep you motivated and pushing forward.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="phase-card text-center">
+                        <i class="fas fa-users"></i>
+                        <h3 class="prize-title">Industry Exposure</h3>
+                        <p>Gain direct access to top entrepreneurs, investors, and industry experts. Network, receive expert feedback, and explore potential opportunities to scale your idea.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="phase-card text-center">
+                        <i class="fas fa-building"></i>
+                        <h3 class="prize-title">Incubation & Support from CIE</h3>
+                        <p>The winning team will receive incubation at CIE, providing them with a launchpad to bring their startup vision to life. Additionally, all teams selected for the final pitch will receive support from CIE.</p>
+                    </div>
+                </div>  
+            </div>
         </div>
     </div>
-    <div class="image col-md-4 image-right">
-        <img class="img-fluid implement-image" src="../assets/imgs/eventsimages/startup_aid.jpg" style="border-radius: 20px;" />
+
+    <div id="register" class="registration-section">
+        <div class="container">
+            <h2 class="text-center">How to Participate</h2>
+            <div class="registration-points">
+                <div class="registration-point">
+                    <i class="fas fa-users"></i>
+                    <p>Form teams of up to 4 members</p>
+                </div>
+                <div class="registration-point">
+                    <i class="fas fa-globe"></i>
+                    <p>Open to participants outside IIIT</p>
+                </div>
+                <div class="registration-point">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Physical presence required for final pitch</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn register-now-btn disabled" disabled title="Registrations opening soon">
+                    Registrations Opening Soon
+                </button>
+            </div>
+        </div>
     </div>
-</div>
 </div>
 
 <script src="https://unpkg.com/scrollreveal"></script>
-
-
 <script>
-    ScrollReveal().reveal('.tile-row', { delay: 200, easing: 'ease-in-out', reset: true });
-    ScrollReveal().reveal('.para', { delay: 250, easing: 'ease-in-out', reset: true });
-    ScrollReveal().reveal('.image', { delay: 300, easing: 'ease-in-out', reset: true });
+    ScrollReveal().reveal('.phase-card', { 
+        delay: 200,
+        distance: '80px',
+        origin: 'bottom',
+        interval: 100
+    });
+    ScrollReveal().reveal('.timeline-item', {
+        delay: 200,
+        distance: '40px',
+        origin: 'left',
+        interval: 200
+    });
+    ScrollReveal().reveal('.registration-point', {
+        delay: 200,
+        distance: '40px',
+        origin: 'bottom',
+        interval: 100
+    });
 </script>
