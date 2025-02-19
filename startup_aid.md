@@ -3,6 +3,7 @@ layout: startup_aid
 title: Startup Aid
 permalink: /startup-aid/
 description: StartupAid by ECell IIIT-H
+noTopSpacing: true
 ---
 
 Startup Aid is a 3-sprint program to help IIIT-H students take their startup idea from paper to the market by connecting the students with experts who provide valuable insights and help them structure their concepts. After successful completion of the 3 sprints, students can pitch their idea in front of CIE and receive funding. The first iteration of the program saw 5 ideas getting incubated.
