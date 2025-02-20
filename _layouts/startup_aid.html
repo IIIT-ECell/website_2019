@@ -280,6 +280,97 @@ html {
     font-size: 1.1rem;
 }
 
+.faq-section {
+    max-width: 800px;
+    margin: 6rem auto;
+    padding: 0 1rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.faq-button {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #185a9d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-button:hover {
+    background-color: rgba(24,90,157,0.05);
+}
+
+.faq-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.faq-button i {
+    transition: transform 0.3s ease;
+}
+
+.faq-button[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    padding: 0 1.5rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    transform-origin: top;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-section.collapse:not(.show) {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.faq-section.collapse.show {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.faq-button[aria-expanded="true"] {
+    color: #43cea2;
+    background-color: rgba(24,90,157,0.05);
+}
+
+.faq-button[aria-expanded="true"] i {
+    transform: rotate(180deg);
+    color: #43cea2;
+}
+
+@media (max-width: 768px) {
+    .faq-button {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-content {
+        padding: 0 1rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 </style>
 
 <header class="w-100">
@@ -336,7 +427,7 @@ html {
             <div class="timeline-date">March 10th</div>
             <div class="timeline-content">
                 <h4>Scouting the Terrain</h4>
-                <p>Understand your audience and refine your idea with precision. This session will help you identify the right target demographic, ensuring that your product meets the needs of those who will benefit from it. Gain valuable insights into market research and user-centric design to create a solution that is both impactful and effective.</p>
+                <p>Understand your audience, analyze your competition, and refine your idea with precision. This session will help you identify the right target demographic while assessing competitors to position your product effectively. Gain valuable insights into market research, user-centric design, and strategic differentiation to create a solution that stands out.</p>
             </div>
         </div>  
         <div class="timeline-item">
@@ -436,10 +527,215 @@ html {
             </div>
         </div>
     </div>
+
+    <div class="faq-section">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq1">
+                    <span>What is StartUp Aid 2025?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq1" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        StartUp Aid 2025 is an intensive 45-day program designed to equip participants with essential entrepreneurship skills, focusing on key aspects of launching a startup. It includes masterclasses, challenges, prototyping sessions, and a final pitch competition judged by investors.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq2">
+                    <span>Who can apply for StartUp Aid 2025?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq2" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        The program is open to all students who are eager to develop their entrepreneurial skills. Both individuals and teams can participate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq3">
+                    <span>Is there a registration fee?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq3" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        No, participation in StartUp Aid 2025 is completely free.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq4">
+                    <span>What is the team size?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq4" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Teams can have up to 4 members, and individuals are also welcome to participate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq5">
+                    <span>Do I need a startup idea to apply?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq5" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        No, you can join even if you don't have an idea yet. The program will help you develop and refine one.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq6">
+                    <span>What types of industries or startup ideas are accepted?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq6" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        There are no restrictions—StartUp Aid welcomes ideas from all sectors, including technology, healthcare, sustainability, and more.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq7">
+                    <span>Should we implement the coded solution?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq7" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        No, code implementation is not required. The focus is on developing an implementable idea, and participants are encouraged to create prototypes or proof-of-concept models to strengthen their final pitch and demonstrate feasibility.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq8">
+                    <span>What is the format of the program?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq8" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        The program consists of five masterclasses, a minithon(a prototyping hackathon) challenge, and a final pitch competition, with hands-on learning through challenges and real-world applications.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq9">
+                    <span>How does the leaderboard system work?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq9" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        The leaderboard is updated after each session based on performance in tasks and challenges. The top three participants/teams are recognized with prizes. The leaderboard resets after each session.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq10">
+                    <span>How are leaderboard points calculated?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq10" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Points are awarded based on performance in challenges, engagement in sessions, and completion of assigned tasks.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq11">
+                    <span>If the leaderboard resets every session, how is the final ranking determined?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq11" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        The final round selection is based on cumulative performance and consistency across multiple sessions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq12">
+                    <span>Will there be a cap on teams in the final round?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq12" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Yes, a cutoff will be applied based on total leaderboard points to determine the finalists.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq13">
+                    <span>What happens after the program ends?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq13" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        The winning team of StartUp Aid 2025 will be incubated at CIE, where they will receive essential resources, mentorship, and networking opportunities. Finalists will also receive mentorship to refine their ideas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq14">
+                    <span>Am I eligible if I already have a startup?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq14" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        No, this program is designed for aspiring entrepreneurs who have not yet launched a startup. If you already have a registered startup, you are not eligible to participate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq15">
+                    <span>Can I participate if I'm from a non-business or non-tech background?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq15" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Absolutely! The program is open to students from all disciplines, and entrepreneurship thrives on diverse perspectives.
+                    </div>
+                </div>  
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq16">
+                    <span>Can I join as a solo participant and form a team later?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq16" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Yes, individual participants will have opportunities to connect with others and form teams during the program.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-5 text-muted">If you have any additional queries, feel free to contact <strong><a href="mailto:ecell@iiit.ac.in" class="text-primary">E-Cell</a></strong>.</p>
+    </div>
 </div>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
+    document.querySelectorAll('.faq-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', !expanded);
+        });
+    });
     ScrollReveal().reveal('.phase-card', { 
         delay: 200,
         distance: '80px',
