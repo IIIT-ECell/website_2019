@@ -371,6 +371,79 @@ html {
     }
 }
 
+.rulebook-section {
+    margin: 6rem 0;
+}
+
+.rulebook-card {
+    background: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.rulebook-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.rulebook-icon {
+    font-size: 3.5rem;
+    color: #185a9d;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.rulebook-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rulebook-btn {
+    background-color: #185a9d;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #185a9d;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.rulebook-btn:hover {
+    background-color: transparent;
+    color: #185a9d;
+    text-decoration: none;
+}
+
+.rulebook-btn i {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .rulebook-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .rulebook-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .rulebook-text {
+        font-size: 1rem;
+    }
+}
+
 </style>
 
 <header class="w-100">
@@ -414,10 +487,27 @@ html {
         </div>
     </div>
 
+    <div class="rulebook-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Program Rulebook</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="rulebook-card">
+                        <i class="fas fa-book-open rulebook-icon"></i>
+                        <p class="rulebook-text">Please read the complete rulebook carefully before registering for Startup Aid 2025.</p>
+                        <a href="https://docs.google.com/document/d/1bo6AbkS6t2V8Wk7SrgDZIILBdhOEg7jJtQvITNyE7wU/edit?usp=sharing" target="_blank" class="rulebook-btn" title="Check Rulebook">
+                            <i class="fas fa-external-link-alt"></i>View Rulebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="timeline-container">
         <h2 class="text-center mb-5">Program Timeline</h2>
         <div class="timeline-item">
-            <div class="timeline-date">March 3rd</div>
+            <div class="timeline-date">March 4th</div>
             <div class="timeline-content">
                 <h4>The First Ascent</h4>
                 <p>This session will provide valuable insights into the ideation process, helping you generate, refine, and strengthen your startup ideas. Whether you're just starting out or looking to enhance an existing concept, this session will set the stage for innovation and success.</p>
