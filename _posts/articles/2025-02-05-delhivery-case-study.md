@@ -12,7 +12,7 @@ bg: green
 
 <div class="drop-cap">As the sun dipped low over Gurugram, Suraj Saharan found himself deep in thought within the glass-walled headquarters of Delhivery. It was a moment of reflection on the remarkable journey that Delhivery had undertaken since its humble beginnings. From its roots as a restaurant food delivery service, Delhivery has blossomed into India's largest integrated 3rd Party Logistics Service Provider.</div>
 
-Delhivery had initially ventured into the e- commerce sector with a mission to revolutionize logistics. Faced with challenges like delayed cash cycles and tedious processes, it embarked on a path of innovation. Today, it stands tall, offering a plethora of services including express parcel delivery, partial and full-truck loading, cross-border supply chain, and warehousing.    
+Delhivery had initially ventured into the e- commerce sector with a mission to revolutionize logistics. Faced with challenges like delayed cash cycles and tedious processes, it embarked on a path of innovation. Today, it stands tall, offering a plethora of services including express parcel delivery, partial and full-truck loading, cross-border supply chain, and warehousing.
 
 With its unwavering commitment to efficiency and customer satisfaction, Delhivery has become synonymous with reliability and excellence in the logistics industry, serving every pin code in the country with the lowest cost network. This article takes a deep dive into the journey of the company, including the strategies that contributed to its success.
 
