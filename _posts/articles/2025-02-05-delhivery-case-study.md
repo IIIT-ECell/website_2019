@@ -1,7 +1,7 @@
 ---
 layout : article_layout
 title : "Delhivery: A case study"
-author : Aviral Gupta, Vedant Nipane, Rahul Singhal
+author : Aviral Gupta, Vedant Nipane, Rahul Singal
 pub_date: 5th Feb 2025
 categories : articles
 img : delhivery_main.png
@@ -12,11 +12,11 @@ bg: green
 
 <div class="drop-cap">As the sun dipped low over Gurugram, Suraj Saharan found himself deep in thought within the glass-walled headquarters of Delhivery. It was a moment of reflection on the remarkable journey that Delhivery had undertaken since its humble beginnings. From its roots as a restaurant food delivery service, Delhivery has blossomed into India's largest integrated 3rd Party Logistics Service Provider.</div>
 
-Delhivery had initially ventured into the e- commerce sector with a mission to revolutionize logistics. Faced with challenges like delayed cash cycles and tedious processes, it embarked on a path of innovation. Today, it stands tall, offering a plethora of services including express parcel delivery, partial and full-truck loading, cross-border supply chain, and warehousing.
+Delhivery had initially ventured into the e- commerce sector with a mission to revolutionize logistics. Faced with challenges like delayed cash cycles and tedious processes, it embarked on a path of innovation. Today, it stands tall, offering a plethora of services including express parcel delivery, partial and full-truck loading, cross-border supply chain, and warehousing.    
 
 With its unwavering commitment to efficiency and customer satisfaction, Delhivery has become synonymous with reliability and excellence in the logistics industry, serving every pin code in the country with the lowest cost network. This article takes a deep dive into the journey of the company, including the strategies that contributed to its success.
 
-## **From humble origins**
+## From humble origins
 
 <br>
 <div>
@@ -31,11 +31,11 @@ The founding story of Delhivery is a tale of entrepreneurial vision and adaptabi
 
 The Indian e-commerce revolution had its modest beginnings with online ticket bookings by the Indian Railways in 2002. However, the true turning point came with Flipkart's entry into online book sales in 2007. As the industry evolved, embracing various models like B2C marketplaces and inventory-led platforms, logistics emerged as the linchpin enabling its expansion. Flipkart's introduction of Cash on Delivery (CoD) in 2010 ignited unprecedented growth, transforming the online shopping experience for millions of Indians.
 
-In this dynamic landscape, Delhivery was born in 2010, founded by a small team of 5: Sahil Barua, Suraj Saharan, Mohit Tandon, Bhavesh Manglani and Kapil Bharati**.** Initially serving as a last-mile delivery partner for local eateries in Gurugram, Delhivery quickly recognized the potential of e-commerce and pivoted to align itself with emerging online platforms like Urbantouch and Healthkart.
+In this dynamic landscape, Delhivery was born in 2010, founded by a small team of 5: Sahil Barua, Suraj Saharan, Mohit Tandon, Bhavesh Manglani and Kapil Bharati. Initially serving as a last-mile delivery partner for local eateries in Gurugram, Delhivery quickly recognized the potential of e-commerce and pivoted to align itself with emerging online platforms like Urbantouch and Healthkart.
 
 Delhivery's journey took off rapidly. By the end of 2011, its shipment volumes surged, underscoring its pivotal role in India's e-commerce ecosystem. The introduction of CoD brought both challenges and opportunities, prompting Delhivery to innovate and ensure smooth transactions and customer satisfaction.
 
-## **An innovation driven business model**
+## An innovation driven business model
 
 Delhivery expanded with the increasing demands of India’s growing logistic sector using its innovative business model, which revolves around leveraging technology to streamline logistics operations. Some of the key aspects are as follows:
 
@@ -43,7 +43,7 @@ Delhivery expanded with the increasing demands of India’s growing logistic sec
 
 2. **Flexible Service Offerings:** It also offers a range of services tailored to meet the diverse needs of the nation, from first-mile pickup to last-mile delivery, from middle-mile transportation to warehousing solutions and much more. By offering modular and customisable services, it caters to businesses of all sizes across the globe and across industries.
 
-3. **_Customer-Centric Approach_ :** The company kept a strong emphasis on customer satisfaction to provide a seamless delivery experience. The company has offered features such as real-time package tracking, proactive communication, and flexible delivery options from its infancy- to enhance customer convenience and transparency.
+3. **Customer-Centric Approach :** The company kept a strong emphasis on customer satisfaction to provide a seamless delivery experience. The company has offered features such as real-time package tracking, proactive communication, and flexible delivery options from its infancy- to enhance customer convenience and transparency.
 
 4. **Scalable Operations:** Delhivery has always been a scalable business model allowing for rapid expansion while maintaining operations. The company strategically invested in infrastructure, technology, and talent to support its growth trajectory and meet evolving market demands. For instance, in the initial years, the company spent heavily in takeovers and establishments by even going in the red sometimes. But these seemingly dicey moves reaped fortunes to the company. An example could be the acquisition of ‘SpotOnʼ\[8], a logistic company, which helped to triple their volumes in just 2 years.
 
@@ -51,7 +51,7 @@ Delhivery expanded with the increasing demands of India’s growing logistic sec
 
 In this way, the organisation cemented its position as one of the top logistical service providers.
 
-## **The Growth Trajectory**
+## The Growth Trajectory
 
 Delhivery has undergone significant geographic expansion within India, establishing a robust network that spans across major cities, towns, and rural areas. By strategically expanding its operational footprint, Delhivery has been able to reach even the remotest corners of the country, facilitating last-mile delivery and logistics services to millions of customers.
 
@@ -63,7 +63,7 @@ Through strategic initiatives and acquisitions, Delhivery continues to drive inn
 
 The statistics speak for itself; the company has shipped a remarkable 3 billion parcels\[6] so far, served more than 33,000 businesses\[6] and covered 18.8 million+ square feet\[6] of logistic infrastructure.
 
-## **Financial and other milestones**
+## Financial and other milestones
 
 Like most other companies, Delhivery has experienced its share of highs and lows. However, it has achieved key milestones many startups dream of. Following a funding round where it raised a massive $413 million\[2] from prominent investors, it reached _unicorn_ status. Furthermore in March 2022, it went public, releasing an IPO.
 
@@ -82,7 +82,7 @@ Delhivery has also forged numerous significant partnerships, including a collabo
 
 Furthermore, Delhivery solidified its partnership with FedEx Express through a strategic alliance transaction initiated in July and finalized on December 9, 2021\[10]. This alliance is poised to amalgamate Delhivery's extensive pan-India network and cutting-edge technology solutions with FedEx's global network prowess. The synergistic collaboration is expected to deliver unparalleled benefits to customers, combining the strengths of both entities to offer enhanced services and solutions.
 
-## **Challenges**
+## Challenges
 
 That's not to say the road ahead is easy. Delhivery encounters a myriad of challenges in the dynamic landscape of logistics and e-commerce. This includes retaining customers in a competitive market, adhering to food quality standards, handling damaged items during delivery and navigating stiff competition from other service providers.
 
