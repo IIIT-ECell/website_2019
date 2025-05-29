@@ -2,7 +2,7 @@
 layout : article_layout
 title : "The Fight for Equal Pay in Sports: Why Do Women’s Leagues Earn Less?"
 author : Shivam Singh
-pub_date: 29th May 2025
+pub_date: 30th May 2025
 categories : articles
 img : women_pay_main.png
 permalink : /:categories/:title.html
