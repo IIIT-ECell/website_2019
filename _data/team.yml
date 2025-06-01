@@ -1,17 +1,16 @@
 - team: Coordinators
   id: overallcoord
   heads:
-  members:
-      - name: Vishak Kashyap K
-        img: Vishak_Kashyap_K.jpg
-        mail: vishakkashyap.k@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
-      - name: Shaik K N Akthar
-        img: Shaik_K_N_Akthar.jpg
-        mail: akthar.shaik@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/k-n-akthar-shaik/
+    - name: Vishak Kashyap K
+      img: Vishak_Kashyap_K.jpg
+      mail: vishakkashyap.k@research.iiit.ac.in
+      bg: green
+      in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
+    - name: Shaik K N Akthar
+      img: Shaik_K_N_Akthar.jpg
+      mail: akthar.shaik@students.iiit.ac.in
+      bg: green
+      in: https://www.linkedin.com/in/k-n-akthar-shaik/
 
 - team: Content Writing
   text: It's better to hang out with people better than you. Pick out associates whose behaviour is better than yours and you'll drift in that direction   - Warren Buffet
