@@ -47,7 +47,7 @@ html {
 
 .article-list .side-menu img {
     margin-right: 20px;
-    max-width: 100px; 
+    max-width: 100px;
 }
 
 .article-list .side-menu p {
@@ -57,6 +57,12 @@ html {
 .section {
     scroll-margin-top: 200px;
     margin-top: 30px;
+}
+
+/* Offset for reference links to center them better on screen */
+div[id^="ref"] {
+    scroll-margin-top: 200px;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
@@ -74,10 +80,16 @@ figcaption {
 }
 
 .drop-cap::first-letter {
-    font-size: 3em; /* Makes the first letter larger */
-    font-weight: bold; /* Makes the letter bold */
-    float: left; /* Aligns the letter to the left of the text */
-    line-height: 1; /* Adjusts the line height */
-    margin-right: 8px; /* Adds spacing between the first letter and the text */
-    color: #333; /* Optional: Sets the color of the first letter */
+    font-size: 3em;
+    /* Makes the first letter larger */
+    font-weight: bold;
+    /* Makes the letter bold */
+    float: left;
+    /* Aligns the letter to the left of the text */
+    line-height: 1;
+    /* Adjusts the line height */
+    margin-right: 8px;
+    /* Adds spacing between the first letter and the text */
+    color: #333;
+    /* Optional: Sets the color of the first letter */
 }
