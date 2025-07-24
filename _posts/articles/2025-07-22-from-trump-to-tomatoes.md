@@ -2,7 +2,7 @@
 layout : article_layout
 title : "From Trump to Tomatoes: How the new American tariffs affect the Indian consumer"
 author : Pragati Prasad
-pub_date: 22nd July 2025
+pub_date: 24th July 2025
 categories : articles
 img : from-trump-to-tomatoes/main.png
 permalink : /:categories/:title.html
