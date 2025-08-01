@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About E-Cell
+title: About E-Cell | E-Cell IIIT-H
 
 ---
 

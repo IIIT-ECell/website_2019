@@ -1,6 +1,6 @@
 ---
 layout: startup_aid
-title: Startup Aid
+title: Startup Aid | E-Cell IIIT-H
 permalink: /startup-aid/
 description: StartupAid by ECell IIIT-H
 noTopSpacing: true

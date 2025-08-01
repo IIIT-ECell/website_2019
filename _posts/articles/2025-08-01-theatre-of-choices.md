@@ -2,7 +2,7 @@
 layout : article_layout
 title : "The Theatre of Choices"
 author : Krrish Gupta
-pub_date: 2nd August 1025
+pub_date: 2nd August 2025
 categories : articles
 img : theatre-of-choices/main.png
 permalink : /:categories/:title.html
