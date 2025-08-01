@@ -1,6 +1,6 @@
 ---
 layout: zenith
-title: Zenith
+title: Zenith | E-Cell IIIT-H
 noTopSpacing: true
 permalink: /zenith/
 ---
