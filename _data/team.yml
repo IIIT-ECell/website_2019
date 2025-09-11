@@ -193,7 +193,17 @@
         img: Anivarth_varma_Penumetcha.jpg
         mail: anivath.penumetcha@research.iiit.ac.in
         bg: green
-        in: https://www.linkedin.com/in/anivarth-varma-penumetcha-912304362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+        in: https://www.linkedin.com/in/anivarth-varma-penumetcha-912304362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=
+      - name: Sanjana Punna
+        img: Sanjana_Punna.jpeg
+        mail: sanjana.punna@students.iiit.ac.in
+        bg: green
+        in: https://www.linkedin.com/in/sanjana-punna-989593320/
+      - name: Mohit Sriram Nallagatla
+        img: Mohit_Sriram.jpeg
+        mail: mohitsriram.n@students.iiit.ac.in
+        bg: green
+        in: https://www.linkedin.com/in/mohit-sriram-95632b334/
 
 - team: Events and Operations
   multiple: true
