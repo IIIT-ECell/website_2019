@@ -1,461 +1,464 @@
 ---
-layout: page 
+layout: page
 title: Startup Aid
 noTopSpacing: true
 ---
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
+    .main-head {
+        position: relative;
+        height: 95vh;
+        width: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{{site.baseurl}}/assets/imgs/eventsimages/startup_aid.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 80px;
+    }
 
-.main-head {
-    position: relative;
-    height: 95vh;
-    width: auto;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url("{{site.baseurl}}/assets/imgs/eventsimages/startup_aid.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    margin-bottom: 80px;
-}
+    .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
 
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 100%;
-}
-
-.header-title {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.header-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
     .header-title {
-        font-size: 3rem;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
     }
+
     .header-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
-}
 
-.white-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+    @media (max-width: 768px) {
+        .header-title {
+            font-size: 3rem;
+        }
 
-.white-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 64px;
-    transform: rotateY(180deg);
-}
+        .header-subtitle {
+            font-size: 1.2rem;
+        }
+    }
 
-.white-wave .shape-fill {
-    fill: #FFFFFF;
-}
+    .white-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
 
-.timeline-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    position: relative;
-}
+    .white-wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 64px;
+        transform: rotateY(180deg);
+    }
 
-.timeline-item {
-    display: flex;
-    margin-bottom: 2rem;
-    position: relative;
-}
+    .white-wave .shape-fill {
+        fill: #FFFFFF;
+    }
 
-.timeline-date {
-    width: 120px;
-    padding-right: 2rem;
-    text-align: right;
-    font-weight: bold;
-    position: relative;
-}
+    .timeline-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+    }
 
-.timeline-date::after {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background-color: #185a9d;
-    border-radius: 50%;
-    z-index: 1;
-}
+    .timeline-item {
+        display: flex;
+        margin-bottom: 2rem;
+        position: relative;
+    }
 
-.timeline-content {
-    flex: 1;
-    border-left: 3px solid #185a9d;
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-    margin-left: -1px;
-}
+    .timeline-date {
+        width: 120px;
+        padding-right: 2rem;
+        text-align: right;
+        font-weight: bold;
+        position: relative;
+    }
 
-.phase-card {
-    background: white;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
+    .timeline-date::after {
+        content: '';
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        background-color: #185a9d;
+        border-radius: 50%;
+        z-index: 1;
+    }
 
-.phase-card:hover {
-    transform: translateY(-5px);
-}
+    .timeline-content {
+        flex: 1;
+        border-left: 3px solid #185a9d;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        margin-left: -1px;
+    }
 
-.prizes-section {
-    padding: 4rem 0;
-    margin: 4rem 0;
-}
+    .phase-card {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
-.prizes-section .phase-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 10px;
-    padding: 2.5rem 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
+    .phase-card:hover {
+        transform: translateY(-5px);
+    }
 
-.prizes-section .phase-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
+    .prizes-section {
+        padding: 4rem 0;
+        margin: 4rem 0;
+    }
 
-.prizes-section .prize-title {
-    font-size: 1.25rem;
-    color: #185a9d;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    min-height: 3rem;
-    display: flex;
-    align-items: center;
-}
+    .prizes-section .phase-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 10px;
+        padding: 2.5rem 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
 
-.prizes-section .phase-card p {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #555;
-}
+    .prizes-section .phase-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
 
-.prizes-section .phase-card i {
-    font-size: 2.5rem;
-    color: #185a9d;
-    margin-bottom: 1.5rem;
-}
+    .prizes-section .prize-title {
+        font-size: 1.25rem;
+        color: #185a9d;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+    }
 
-.prizes-section .col-md-3 {
-    margin-bottom: 2rem;}
-
-.registration-section {
-    background: linear-gradient(135deg, #185a9d, #43cea2);
-    padding: 5rem 0;
-    color: white;
-    border-radius: 20px;
-    margin: 4rem auto;
-    max-width: 1100px;
-}
-
-.registration-section h2 {
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    position: relative;
-}
-
-.registration-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: white;
-}
-
-.registration-points {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.registration-point {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 1.5rem 2rem;
-    border-radius: 15px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.registration-point:hover {
-    transform: translateY(-5px);
-}
-
-.registration-point i {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.registration-point p {
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-.register-now-btn {
-    background-color: white;
-    color: #185a9d;
-    padding: 1rem 3rem;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-    font-size: 1.1rem;
-}
-
-.register-now-btn:hover {
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-}
-
-.register-now-btn.disabled {
-    background-color: #e0e0e0;
-    border-color: #e0e0e0;
-    color: #666;
-    cursor: not-allowed;
-    opacity: 0.8;
-}
-
-.register-now-btn.disabled:hover {
-    background-color: #e0e0e0;
-    border-color: #e0e0e0;
-    color: #666;
-    transform: none;
-}
-
-.registration-cta {
-    background-color: #185a9d;
-    color: white;
-    padding: 1rem 3rem;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-}
-
-.faq-section {
-    max-width: 800px;
-    margin: 6rem auto;
-    padding: 0 1rem;
-}
-
-.faq-item {
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-}
-
-.faq-button {
-    width: 100%;
-    padding: 1.5rem;
-    text-align: left;
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #185a9d;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq-button:hover {
-    background-color: rgba(24,90,157,0.05);
-}
-
-.faq-button:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.faq-button i {
-    transition: transform 0.3s ease;
-}
-
-.faq-button[aria-expanded="true"] i {
-    transform: rotate(180deg);
-}
-
-.faq-content {
-    padding: 0 1.5rem 1.5rem;
-    color: #555;
-    line-height: 1.6;
-    transform-origin: top;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq-section.collapse:not(.show) {
-    display: block;
-    visibility: hidden;
-    height: 0;
-    opacity: 0;
-    transform: translateY(-10px);
-}
-
-.faq-section.collapse.show {
-    visibility: visible;
-    height: auto;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.faq-button[aria-expanded="true"] {
-    color: #43cea2;
-    background-color: rgba(24,90,157,0.05);
-}
-
-.faq-button[aria-expanded="true"] i {
-    transform: rotate(180deg);
-    color: #43cea2;
-}
-
-@media (max-width: 768px) {
-    .faq-button {
-        padding: 1rem;
+    .prizes-section .phase-card p {
+        margin: 0;
         font-size: 0.95rem;
+        line-height: 1.5;
+        color: #555;
     }
-    
-    .faq-content {
-        padding: 0 1rem 1rem;
-        font-size: 0.9rem;
-    }
-}
 
-.rulebook-section {
-    margin: 6rem 0;
-}
-
-.rulebook-card {
-    background: white;
-    border-radius: 10px;
-    padding: 3rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.rulebook-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.rulebook-icon {
-    font-size: 3.5rem;
-    color: #185a9d;
-    margin-bottom: 2rem;
-    display: inline-block;
-}
-
-.rulebook-text {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.rulebook-btn {
-    background-color: #185a9d;
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid #185a9d;
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-}
-
-.rulebook-btn:hover {
-    background-color: transparent;
-    color: #185a9d;
-    text-decoration: none;
-}
-
-.rulebook-btn i {
-    margin-right: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .rulebook-card {
-        padding: 2rem 1.5rem;
-    }
-    
-    .rulebook-icon {
-        font-size: 3rem;
+    .prizes-section .phase-card i {
+        font-size: 2.5rem;
+        color: #185a9d;
         margin-bottom: 1.5rem;
     }
-    
-    .rulebook-text {
-        font-size: 1rem;
-    }
-}
 
+    .prizes-section .col-md-3 {
+        margin-bottom: 2rem;
+    }
+
+    .registration-section {
+        background: linear-gradient(135deg, #185a9d, #43cea2);
+        padding: 5rem 0;
+        color: white;
+        border-radius: 20px;
+        margin: 4rem auto;
+        max-width: 1100px;
+    }
+
+    .registration-section h2 {
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        position: relative;
+    }
+
+    .registration-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .registration-points {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .registration-point {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem 2rem;
+        border-radius: 15px;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .registration-point:hover {
+        transform: translateY(-5px);
+    }
+
+    .registration-point i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .registration-point p {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .register-now-btn {
+        background-color: white;
+        color: #185a9d;
+        padding: 1rem 3rem;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        border: 2px solid white;
+        font-size: 1.1rem;
+    }
+
+    .register-now-btn:hover {
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+    }
+
+    .register-now-btn.disabled {
+        background-color: #e0e0e0;
+        border-color: #e0e0e0;
+        color: #666;
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+
+    .register-now-btn.disabled:hover {
+        background-color: #e0e0e0;
+        border-color: #e0e0e0;
+        color: #666;
+        transform: none;
+    }
+
+    .registration-cta {
+        background-color: #185a9d;
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+    }
+
+    .faq-section {
+        max-width: 800px;
+        margin: 6rem auto;
+        padding: 0 1rem;
+    }
+
+    .faq-item {
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .faq-button {
+        width: 100%;
+        padding: 1.5rem;
+        text-align: left;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #185a9d;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-button:hover {
+        background-color: rgba(24, 90, 157, 0.05);
+    }
+
+    .faq-button:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .faq-button i {
+        transition: transform 0.3s ease;
+    }
+
+    .faq-button[aria-expanded="true"] i {
+        transform: rotate(180deg);
+    }
+
+    .faq-content {
+        padding: 0 1.5rem 1.5rem;
+        color: #555;
+        line-height: 1.6;
+        transform-origin: top;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-section.collapse:not(.show) {
+        display: block;
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    .faq-section.collapse.show {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .faq-button[aria-expanded="true"] {
+        color: #43cea2;
+        background-color: rgba(24, 90, 157, 0.05);
+    }
+
+    .faq-button[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        color: #43cea2;
+    }
+
+    @media (max-width: 768px) {
+        .faq-button {
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .faq-content {
+            padding: 0 1rem 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .rulebook-section {
+        margin: 6rem 0;
+    }
+
+    .rulebook-card {
+        background: white;
+        border-radius: 10px;
+        padding: 3rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .rulebook-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .rulebook-icon {
+        font-size: 3.5rem;
+        color: #185a9d;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .rulebook-text {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rulebook-btn {
+        background-color: #185a9d;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid #185a9d;
+        font-size: 1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .rulebook-btn:hover {
+        background-color: transparent;
+        color: #185a9d;
+        text-decoration: none;
+    }
+
+    .rulebook-btn i {
+        margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .rulebook-card {
+            padding: 2rem 1.5rem;
+        }
+
+        .rulebook-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .rulebook-text {
+            font-size: 1rem;
+        }
+    }
 </style>
 
 <header class="w-100">
     <div class="main-head">
         <div class="header-content">
             <h1 class="header-title">Startup Aid</h1>
-            <p class="header-subtitle">A 45-day entrepreneurship sprint to launch your startup journey</p>
-            <a href="#register" class="btn registration-cta">Register Now</a>
+            <p class="header-subtitle">A 40-day entrepreneurship sprint to launch your startup journey</p>
+            <a class="btn registration-cta disabled">Coming Soon</a>
         </div>
         <div class="white-wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </div>
@@ -465,94 +468,122 @@ html {
     <div class="row mb-5">
         <div class="col-md-8 mx-auto text-center">
             <h2 class="mb-4">About The Program</h2>
-            <p class="lead mb-4 text-justify">StartUp Aid is an intensive 45-day expedition designed to equip you with essential entrepreneurship skills, focusing on the key aspects of launching a startup.</p>
-            
-            <p class="mb-4 text-justify">Throughout the program, you'll take part in seven high-impact sessions, including:</p>
-            
+            <p class="lead mb-4 text-justify">StartUp Aid is an intensive 40-day expedition designed to equip you with
+                essential entrepreneurship skills, focusing on the key aspects of launching a startup.</p>
+
+            <p class="mb-4 text-justify">Throughout the program, you'll take part in eight high-impact sessions,
+                including:</p>
+
             <ul class="list-unstyled text-justify mb-4">
                 <li class="mb-3">
-                    <strong class="text-primary">✦ Five Masterclasses</strong> - Learn directly from experienced entrepreneurs and industry leaders as they share insights and real-world experiences.
+                    <strong class="text-primary">✦ Five Masterclasses</strong> - Learn directly from experienced
+                    entrepreneurs and industry leaders as they share insights and real-world experiences.
                 </li>
                 <li class="mb-3">
-                    <strong class="text-primary">✦ Minithon</strong> - Put your skills to the test by rapidly prototyping your ideas.
+                    <strong class="text-primary">✦ Two Mentoring Sessions</strong> - Validate and improve your ideas
+                    through the experiences of well-established entrepreneurs.
                 </li>
                 <li class="mb-3">
-                    <strong class="text-primary">✦ The Final Pitch</strong> - Present your startup to a panel of external investors and judges, who will decide the winners of StartUp Aid 2025.
+                    <strong class="text-primary">✦ The Final Pitch</strong> - Present your startup to a panel of
+                    external investors and judges, who will decide the winners of StartUp Aid 2026.
                 </li>
             </ul>
-    
-            <p class="mb-4 text-justify">To ensure hands-on learning, each masterclass will be paired with a challenge, a short task designed to reinforce key takeaways from the session. These challenges will be tailored to the insights shared by our guest speakers, giving you practical experience in applying what you learn.</p>
-            
-            <p class="font-weight-bold text-justify">Whether you're refining an idea or preparing to launch, StartUp Aid is your chance to gain real-world startup experience and take your entrepreneurial skills to the next level.</p>
+
+            <p class="mb-4 text-justify">To ensure hands-on learning, there are three small challenges, each associated
+                with a masterclass, which are short tasks designed to reinforce key takeaways from the session. These
+                challenges will be tailored to the insights shared by our guest speakers, giving you practical
+                experience in applying what you learn.</p>
+
+            <p class="font-weight-bold text-justify">Whether you're refining an idea or preparing to launch, StartUp Aid
+                is your chance to gain real-world startup experience and take your entrepreneurial skills to the next
+                level</p>
         </div>
     </div>
 
-    <div class="rulebook-section">
+    <!-- <div class="rulebook-section">
         <div class="container">
             <h2 class="text-center mb-5">Program Rulebook</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="rulebook-card">
                         <i class="fas fa-book-open rulebook-icon"></i>
-                        <p class="rulebook-text">Please read the complete rulebook carefully before registering for Startup Aid 2025.</p>
-                        <a href="https://docs.google.com/document/d/1bo6AbkS6t2V8Wk7SrgDZIILBdhOEg7jJtQvITNyE7wU/edit?usp=sharing" target="_blank" class="rulebook-btn" title="Check Rulebook">
+                        <p class="rulebook-text">Please read the complete rulebook carefully before registering for
+                            Startup Aid 2026.</p>
+                        <a href="https://docs.google.com/document/d/1bo6AbkS6t2V8Wk7SrgDZIILBdhOEg7jJtQvITNyE7wU/edit?usp=sharing"
+                            target="_blank" class="rulebook-btn" title="Check Rulebook">
                             <i class="fas fa-external-link-alt"></i>View Rulebook
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="timeline-container">
         <h2 class="text-center mb-5">Program Timeline</h2>
         <div class="timeline-item">
-            <div class="timeline-date">March 4th</div>
+            <div class="timeline-date">March 6</div>
             <div class="timeline-content">
-                <h4>The First Ascent</h4>
-                <p>This session will provide valuable insights into the ideation process, helping you generate, refine, and strengthen your startup ideas. Whether you're just starting out or looking to enhance an existing concept, this session will set the stage for innovation and success.</p>
+                <h4>Roll The Dice</h4>
+                <p><strong>Ideation & Market Analysis</strong><br>Every venture begins with a calculated risk. Refine
+                    your idea, validate it with real users, and study the board before you make your move.</p>
             </div>
         </div>
         <div class="timeline-item">
-            <div class="timeline-date">March 12th</div>
+            <div class="timeline-date">March 14</div>
             <div class="timeline-content">
-                <h4>Scouting the Terrain</h4>
-                <p>Understand your audience, analyze your competition, and refine your idea with precision. This session will help you identify the right target demographic while assessing competitors to position your product effectively. Gain valuable insights into market research, user-centric design, and strategic differentiation to create a solution that stands out.</p>
-            </div>
-        </div>  
-        <div class="timeline-item">
-            <div class="timeline-date">March 17th</div>
-            <div class="timeline-content">
-                <h4>Funding the Expedition</h4>
-                <p>This session will take you through the entire process of securing and managing funds for your startup. You'll gain insights into the roles of angel investors, venture capitalists, and capital raises, while also exploring key financial concepts such as runway, equity management, and cash flow strategies. Learn how to navigate the financial landscape effectively and set your startup up for long-term success.</p>
+                <h4>Choose Your Property</h4>
+                <p><strong>Mentor Cafe - I</strong><br>Sit across the table from experienced founders and industry
+                    experts. Get direct feedback, challenge your assumptions, and rethink your strategy before you
+                    scale.</p>
             </div>
         </div>
         <div class="timeline-item">
-            <div class="timeline-date">March 26th</div>
+            <div class="timeline-date">March 17</div>
             <div class="timeline-content">
-                <h4>Building the Bridge</h4>
-                <p>Get hands-on with Figma and other essential design tools in this interactive session led by the E-Cell team. You’ll learn the fundamentals of digital prototyping before taking on an exciting challenge—developing a prototype or proof-of-concept for your idea within just 6 hours. This is your chance to bring your vision to life and refine it with practical, real-time application!</p>
+                <h4>The Banker’s Table</h4>
+                <p><strong>Financing</strong><br>In business, numbers speak first. Define your revenue model, calculate
+                    margins, estimate valuation, and understand what keeps you out of bankruptcy.</p>
             </div>
         </div>
         <div class="timeline-item">
-            <div class="timeline-date">April 7th</div>
+            <div class="timeline-date">March 25</div>
             <div class="timeline-content">
-                <h4>Leaving your Mark</h4>
-                <p>Learn how to craft powerful and targeted marketing strategies for your product in this essential session. You’ll gain expert insights on designing effective campaigns that directly appeal to the demographic identified during the market analysis task. Master the art of positioning, messaging, and outreach to ensure your product resonates with the right audience.</p>
-            </div>
-        </div>  
-        <div class="timeline-item">
-            <div class="timeline-date">April 14th</div>
-            <div class="timeline-content">
-                <h4>The Tipping Point</h4>
-                <p>Master the art of the perfect pitch in this session. You’ll learn how to effectively communicate your product’s value, integrating key entrepreneurial concepts covered in previous sessions. Gain the skills to deliver a compelling, persuasive pitch that captures attention and drives impact.</p>
+                <h4>The Utility Works</h4>
+                <p><strong>Software Prototyping</strong><br>Infrastructure powers the board. Transform your concept into
+                    a working prototype — functional, testable, real. </p>
             </div>
         </div>
         <div class="timeline-item">
-            <div class="timeline-date">April 21st</div>
+            <div class="timeline-date">April 5</div>
             <div class="timeline-content">
-                <h4>The Final Summit</h4>
-                <p>Selected participants will have the exclusive opportunity to pitch their ideas before a panel of esteemed investors. This high-stakes session will not only test your ability to present a compelling business case but also determine the final winners of StartUp Aid 2025. Seize this chance to showcase your startup’s potential and make a lasting impression!</p>
+                <h4>Secure the Deed</h4>
+                <p><strong>Mentor Cafe - II</strong><br>Return to the table with progress in hand. Refine your
+                    prototype, sharpen your strategy, and prepare for the final stretch.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">April 7</div>
+            <div class="timeline-content">
+                <h4>Houses To Hotels</h4>
+                <p><strong>Branding</strong><br>Growth demands identity. Craft your logo, voice, and positioning — and
+                    build a brand that stands tall on its block.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">April 10</div>
+            <div class="timeline-content">
+                <h4>Make the Deal</h4>
+                <p><strong>Pitching</strong><br>Confidence closes contracts. Structure your pitch, defend your
+                    valuation, and convince the room your venture deserves investment.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">April 12</div>
+            <div class="timeline-content">
+                <h4>The Final Roll</h4>
+                <p><strong>Final Showcase</strong><br>The final square. The highest stakes. Pitch before judges in a
+                    real-world equity simulation and play for more than just prize money.</p>
             </div>
         </div>
     </div>
@@ -564,31 +595,36 @@ html {
                 <div class="col-md-3">
                     <div class="phase-card text-center">
                         <i class="fas fa-trophy"></i>
-                        <h3 class="prize-title">₹1.5 Lakh Prize Pool</h3>
-                        <p>Startup Aid 2025 offers a massive ₹1.5 Lakh prize pool, giving participants the chance to win big across various challenges and the final pitch.</p>
+                        <h3 class="prize-title">₹2 Lakh+ Prize Pool</h3>
+                        <p>Startup Aid 2026 offers a massive ₹2 Lakh+ prize pool, giving participants the chance to win
+                            big across various challenges and the final pitch.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="phase-card text-center">
                         <i class="fas fa-medal"></i>
                         <h3 class="prize-title">Challenge Prizes</h3>
-                        <p>Engage in multiple hands-on challenges throughout the program, with exciting rewards at every stage to keep you motivated and pushing forward.</p>
+                        <p>Engage in multiple hands-on challenges throughout the program, with a reward of Rs.10,000 to
+                            the top performer, at every stage to keep you motivated and pushing forward.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="phase-card text-center">
                         <i class="fas fa-users"></i>
                         <h3 class="prize-title">Industry Exposure</h3>
-                        <p>Gain direct access to top entrepreneurs, investors, and industry experts. Network, receive expert feedback, and explore potential opportunities to scale your idea.</p>
+                        <p>Gain direct access to top entrepreneurs, investors, and industry experts. Network, receive
+                            expert feedback, and explore potential opportunities to scale your idea.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="phase-card text-center">
                         <i class="fas fa-building"></i>
                         <h3 class="prize-title">Incubation & Support from CIE</h3>
-                        <p>The winning team will receive incubation at CIE, providing them with a launchpad to bring their startup vision to life. Additionally, all teams selected for the final pitch will receive support from CIE.</p>
+                        <p>The winning team will receive incubation at CIE, providing them with a launchpad to bring
+                            their startup vision to life. Additionally, all teams selected for the final pitch will
+                            receive support from CIE.</p>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -611,8 +647,8 @@ html {
                 </div>
             </div>
             <div class="text-center">
-                <a href="https://forms.office.com/r/9q1s3ihFM8" target="_blank" class="btn register-now-btn" title="Register for StartUp Aid 2025">
-                    Register Your Team
+                <a class="btn register-now-btn disabled" title="Registration Coming Soon">
+                    Coming Soon
                 </a>
             </div>
         </div>
@@ -623,24 +659,28 @@ html {
         <div class="accordion" id="faqAccordion">
             <div class="faq-item">
                 <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq1">
-                    <span>What is StartUp Aid 2025?</span>
+                    <span>What is StartUp Aid 2026?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div id="faq1" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        StartUp Aid 2025 is an intensive 45-day program designed to equip participants with essential entrepreneurship skills, focusing on key aspects of launching a startup. It includes masterclasses, challenges, prototyping sessions, and a final pitch competition judged by investors.
+                        StartUp Aid 2026 is an intensive 40-day program designed to equip participants with essential
+                        entrepreneurship skills, focusing on key aspects of launching a startup. It includes
+                        masterclasses, challenges, prototyping sessions, and a final pitch competition judged by
+                        investors.
                     </div>
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq2">
-                    <span>Who can apply for StartUp Aid 2025?</span>
+                    <span>Who can apply for StartUp Aid 2026?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div id="faq2" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        The program is open to all students who are eager to develop their entrepreneurial skills. Both individuals and teams can participate.
+                        The program is open to all students who are eager to develop their entrepreneurial skills. Both
+                        individuals and teams can participate.
                     </div>
                 </div>
             </div>
@@ -652,7 +692,7 @@ html {
                 </button>
                 <div id="faq3" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        No, participation in StartUp Aid 2025 is completely free.
+                        There is a registration fee of Rs. 200 for non-IIIT participants.
                     </div>
                 </div>
             </div>
@@ -676,7 +716,8 @@ html {
                 </button>
                 <div id="faq5" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        No, you can join even if you don't have an idea yet. The program will help you develop and refine one.
+                        No, you can join even if you don't have an idea yet. The program will help you develop and
+                        refine one.
                     </div>
                 </div>
             </div>
@@ -688,7 +729,8 @@ html {
                 </button>
                 <div id="faq6" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        There are no restrictions—StartUp Aid welcomes ideas from all sectors, including technology, healthcare, sustainability, and more.
+                        There are no restrictions—StartUp Aid welcomes ideas from all sectors, including technology,
+                        healthcare, sustainability, and more.
                     </div>
                 </div>
             </div>
@@ -700,7 +742,9 @@ html {
                 </button>
                 <div id="faq7" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        No, code implementation is not required. The focus is on developing an implementable idea, and participants are encouraged to create prototypes or proof-of-concept models to strengthen their final pitch and demonstrate feasibility.
+                        No, code implementation is not required. The focus is on developing an implementable idea, and
+                        participants are encouraged to create prototypes or proof-of-concept models to strengthen their
+                        final pitch and demonstrate feasibility.
                     </div>
                 </div>
             </div>
@@ -712,19 +756,22 @@ html {
                 </button>
                 <div id="faq8" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        The program consists of five masterclasses, a minithon(a prototyping hackathon) challenge, and a final pitch competition, with hands-on learning through challenges and real-world applications.
+                        There are five masterclasses, two mentoring sessions and a final showcase to determine the
+                        winners, with three hands-on challenges in between.
                     </div>
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq9">
-                    <span>How does the leaderboard system work?</span>
+                    <span>How does the Leaderboard System work?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div id="faq9" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        The leaderboard is updated after each session based on performance in tasks and challenges. The top three participants/teams are recognized with prizes. The leaderboard resets after each session.
+                        The leaderboard is updated after each session based on performance in tasks and challenges. The
+                        top three participant/team will be awarded a cash prize of Rs. 10000. The leaderboard resets
+                        after each session.
                     </div>
                 </div>
             </div>
@@ -736,7 +783,8 @@ html {
                 </button>
                 <div id="faq10" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        Points are awarded based on performance in challenges, engagement in sessions, and completion of assigned tasks.
+                        Points are awarded based on performance in challenges, engagement in sessions, and completion of
+                        assigned tasks.
                     </div>
                 </div>
             </div>
@@ -748,7 +796,8 @@ html {
                 </button>
                 <div id="faq11" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        The final round selection is based on cumulative performance and consistency across multiple sessions.
+                        The final round selection is based on cumulative performance and consistency across multiple
+                        sessions.
                     </div>
                 </div>
             </div>
@@ -772,7 +821,9 @@ html {
                 </button>
                 <div id="faq13" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        The winning team of StartUp Aid 2025 will be incubated at CIE, where they will receive essential resources, mentorship, and networking opportunities. Finalists will also receive mentorship to refine their ideas.
+                        The winning team of StartUp Aid 2026 will be incubated at CIE, where they will receive essential
+                        resources, mentorship, and networking opportunities. Finalists will also receive mentorship to
+                        refine their ideas.
                     </div>
                 </div>
             </div>
@@ -784,7 +835,8 @@ html {
                 </button>
                 <div id="faq14" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        No, this program is designed for aspiring entrepreneurs who have not yet launched a startup. If you already have a registered startup, you are not eligible to participate.
+                        No, this program is designed for aspiring entrepreneurs who have not yet launched a startup. If
+                        you already have a registered startup, you are not eligible to participate.
                     </div>
                 </div>
             </div>
@@ -796,9 +848,10 @@ html {
                 </button>
                 <div id="faq15" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        Absolutely! The program is open to students from all disciplines, and entrepreneurship thrives on diverse perspectives.
+                        Absolutely! The program is open to students from all disciplines, and entrepreneurship thrives
+                        on diverse perspectives.
                     </div>
-                </div>  
+                </div>
             </div>
 
             <div class="faq-item">
@@ -808,13 +861,28 @@ html {
                 </button>
                 <div id="faq16" class="collapse" data-parent="#faqAccordion">
                     <div class="faq-content">
-                        Yes, individual participants will have opportunities to connect with others and form teams during the program.
+                        Yes, individual participants will have opportunities to connect with others and form teams
+                        during the program.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button" type="button" data-toggle="collapse" data-target="#faq17">
+                    <span>What if I’m not able to attend a session?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq17" class="collapse" data-parent="#faqAccordion">
+                    <div class="faq-content">
+                        Recordings for the masterclasses will be available. However, showing up for the Mentor Cafe
+                        sessions is mandatory and compensation will not be provided for those.
                     </div>
                 </div>
             </div>
         </div>
-        
-        <p class="text-center mt-5 text-muted">If you have any additional queries, feel free to contact <strong><a href="mailto:ecell@iiit.ac.in" class="text-primary">E-Cell</a></strong>.</p>
+
+        <p class="text-center mt-5 text-muted">If you have any additional queries, feel free to contact <strong><a
+                    href="mailto:ecell@iiit.ac.in" class="text-primary">E-Cell</a></strong>.</p>
     </div>
 </div>
 
@@ -826,7 +894,7 @@ html {
             button.setAttribute('aria-expanded', !expanded);
         });
     });
-    ScrollReveal().reveal('.phase-card', { 
+    ScrollReveal().reveal('.phase-card', {
         delay: 200,
         distance: '80px',
         origin: 'bottom',
