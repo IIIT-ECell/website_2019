@@ -1,27 +1,5 @@
-- team: Coordinators
-  id: overallcoord
-  heads:
-    - name: Vishak Kashyap K
-      img: Vishak_Kashyap_K.jpg
-      mail: vishakkashyap.k@research.iiit.ac.in
-      bg: green
-      in: https://www.linkedin.com/in/vishak-kashyap-k-0a0265217/
-      phone: +919740101754
-    - name: Shaik K N Akthar
-      img: Shaik_K_N_Akthar.jpg
-      mail: akthar.shaik@students.iiit.ac.in
-      bg: green
-      in: https://www.linkedin.com/in/k-n-akthar-shaik/
-      phone: +917396077658
-
 - team: Content Writing
   text: It's better to hang out with people better than you. Pick out associates whose behaviour is better than yours and you'll drift in that direction   - Warren Buffet
-  heads:
-      - name: Ishaan Romil
-        img: Ishaan_Romil.jpg
-        mail: ishaan.romil@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/ishaan-romil/
   members:
       - name: Devashree Kulkarni 
         img: Devashree_Kulkarni.jpg
@@ -38,31 +16,14 @@
         mail: sricharan.v@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/sricharan-v-049304319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Shreyash Lohare
-        img: Shreyash_Lohare.jpg
-        mail: shreyash.lohare@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/shreyash-lohare-178aa6314/
       - name: Krrish Gupta
         img: Krrish_Gupta.jpg
         mail: krrish.gupta@students.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/krrish-gupta-85bb81257/
 
-
 - team: Corporate Relations
   text: If somebody offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later.   - Richard Branson
-  heads:
-      - name: Sujay Belsare
-        img: Sujay_Belsare.jpg
-        mail: sujay.belsare@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/sujay-belsare?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-      - name: Bhavya Ram V
-        img: Bhavya_Ram_V.jpg
-        mail: bhavyaram.v@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/bhavya-v-1129242a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
   members:
       - name: Anushka Saini
         img: Anushka_Saini.jpg
@@ -79,11 +40,6 @@
         mail: shravan.kannan@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/shravan-kannan2006/
-      - name: Naman Singhal
-        img: Naman_Singhal.jpg
-        mail: naman.s@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/naman-singhal2006/
       - name: Udhav Malpani 
         img: Udhav_Malpani.jpg
         mail: Udhav.malpani@research.iiit.ac.in
@@ -97,17 +53,6 @@
 
 - team: Marketing
   text: Good marketing makes the company look smart, great marketing makes the customer feel smart.   - Joe Chernov
-  heads:
-      - name: Vishal Rao
-        img: Vishal_Rao.jpg
-        mail: vishal.rao@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/vishal-rao-6a1751220/
-      - name: Ananth Yegavakota
-        img: Ananth_Yegavakota.jpg
-        mail: ananth.yegavakota@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/ananth-yegavakota-9652ab21b/
   members:
       - name: Swati Yelamanchili
         img: Swati_Yelamanchili.jpg
@@ -129,41 +74,20 @@
         mail: inesh.roy@research.iiit.ac.in
         bg: green
         in: www.linkedin.com/in/inesh-roy
-      - name: Pranshul Shenoy
-        img: Pranshul_Shenoy.jpg
-        mail: pranshul.shenoy@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/PranshulShenoy
       - name: Gaurav Reddy Yerreddi
         img: Gaurav_Reddy_Yerreddi.PNG
         mail: gauravreddy.yerreddi@research.iiit.ac.in
         bg: green
         in: https://in.linkedin.com/in/gaurav-reddy-yerreddi-48216a255
-      - name: Manidhar Sukasi
-        img: Manidhar_Sukasi.jpg
-        mail: sukasi.manidhar@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/manidhar-sukasi
 
 - team: Design
   text: "Design is not just what it looks like and feels like. Design is how it works.   - Steve Jobs"
-  heads:
-      - name: Chaitanya Thogata
-        img: Chaitanya_Thogata.jpg
-        mail: chaitanya.thogata@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/chaitanya-thogata-205225366
   members:
       - name: Maithily Bhala
         img: Maithily_Bhala.jpg
         mail: maithily.bhala@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/maithily-bhala-54b0a4315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-      - name: Kalluri Roshan Lal
-        img: Kalluri_Roshan_Lal.jpg
-        mail: kalluri.lal@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/kalluri-roshan-lal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
       - name: Samyak Soni
         img: Samyak_Soni.jpg
         mail: samyak.soni@research.iiit.ac.in
@@ -179,16 +103,6 @@
         mail: anushka.s@students.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/anushka-sinha-7b8808267/
-      - name: Anivarth varma penumetcha
-        img: Anivarth_varma_Penumetcha.jpg
-        mail: anivath.penumetcha@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/anivarth-varma-penumetcha-912304362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=
-      - name: Sanjana Punna
-        img: Sanjana_Punna.jpeg
-        mail: sanjana.punna@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/sanjana-punna-989593320/
       - name: Mohit Sriram Nallagatla
         img: Mohit_Sriram.jpeg
         mail: mohitsriram.n@students.iiit.ac.in
@@ -198,43 +112,17 @@
 - team: Events and Operations
   multiple: true
   text: If something is important enough, you do it even if the odds aren't in your favour   - Elon Musk
-  heads:
-      - name: Vaibhav Wadhwani
-        img: Vaibhav_Wadhwani.jpg
-        mail: vaibhav.wadhwani@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/vaibhavwadhwani/
-      - name: Eshaan Sharma 
-        img: Eshaan_Sharma.jpg
-        mail: eshaan.sharma@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/eshaan-sharma-3b7419283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Gopal Kataria
-        img: Gopal_Kataria.jpg
-        mail: gopal.kataria@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/gopalkataria
   members:
       - name: Akshith kandagatla 
         img: Akshith_kandagatla.jpg
         mail: kandagatla.akshith@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/kandagatla-akshith-4b9a5131b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Saksham Goyal
-        img: Saksham_Goyal.jpg
-        mail: Saksham.Goyal@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/saksham-goyal-5604b4317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
       - name: Aaryan Nakul Shah 
         img: Aaryan_Nakul_Shah.jpg
         mail: aaryan.shah@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/aaryan-shah-529466287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Bhavya Ahuja
-        img: Bhavya_Ahuja.jpg
-        mail: bhavya.ahuja@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/bhavya-ahuja-india?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
       - name: Gyandeep Das
         img: Gyandeep_Das.jpg
         mail: Gyandeep.das@research.iiit.ac.in
@@ -245,56 +133,19 @@
         mail: manya.jain@students.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/manya-jain-73355b360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Madhur Kankane
-        img: Madhur_Kankane.jpg
-        mail: madhur.kankane@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/madhur-kankane-55301b283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 - team: Tech
   text: We turn Coffee into Code!
-  heads:
-      - name: Shreyas Deb
-        img: Shreyas_Deb.jpg
-        mail: shreyas.deb@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/shreyasdeb/
-      - name: Krish Pandya
-        img: Krish_Pandya.jpeg
-        mail: krish.pandya@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/krish-pandya-020aaa261/
   members:
       - name: Advait Dintakurti
         img: Advait_Dintakurti.jpg
         mail: advait.dintakurti@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/advaitdintakurti
-      - name: Aviral Gupta
-        img: Aviral_Gupta.jpg
-        mail: aviral.gupta@research.iiit.ac.in
-        bg: green
-        in: www.linkedin.com/in/avilo
-      - name: Animish Sharma 
-        img: Animish_Sharma.jpg
-        mail: animish.sharma@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/animish-sharma-b4531a276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-      - name: Mrudani Pimpalkhare
-        img: Mrudani_Pimpalkhare.jpg
-        mail: mrudani.pimpalkhare@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/mrudani-pimpalkhare/
 
 - team: Public Relations
   multiple: true
   text: Coming together is a beginning. Keeping together is progress. Working together is success.  - Henry Ford
-  heads:
-      - name: Anshitha Penubolu
-        img: Anshitha_Penubolu.jpg
-        mail: anshitha.penubolu@students.iiit.ac.in
-        bg: green
-        in: www.linkedin.com/in/anshitha-penubolu-b76801289
   members:
       - name: Shreem Shukla
         img: Shreem_Shukla.jpg
@@ -306,16 +157,6 @@
         mail: chandrani.saha@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/chandranisaha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-      - name: Kushagra Agrawal
-        img: Kushagra_Agrawal.jpg
-        mail: kushagra.agrawal@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/kushagra-agrawal-735a89312/
-      - name: Samarth Rao
-        img: Samarth_Rao.jpg
-        mail: samarth.rao@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/samarth-rao-3230b2174?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
       - name: Kavya Pandey
         img: Kavya_Pandey.jpg
         mail: kavya.pandey@students.iiit.ac.in
