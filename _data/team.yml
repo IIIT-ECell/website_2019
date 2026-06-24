@@ -70,6 +70,11 @@
         mail: shriya.kansal@students.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/shriya-kansal/
+      - name: Mohit Sriram Nallagatla
+        img: Mohit_Sriram.jpeg
+        mail: mohitsriram.n@students.iiit.ac.in
+        bg: green
+        in: https://www.linkedin.com/in/mohit-sriram-95632b334/
       - name: Gaurav Reddy Yerreddi
         img: Gaurav_Reddy_Yerreddi.PNG
         mail: gauravreddy.yerreddi@research.iiit.ac.in
@@ -115,11 +120,6 @@
         mail: samyak.soni@research.iiit.ac.in
         bg: green
         in: https://www.linkedin.com/in/samyak-soni-143a5431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-      - name: Mohit Sriram Nallagatla
-        img: Mohit_Sriram.jpeg
-        mail: mohitsriram.n@students.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/mohit-sriram-95632b334/
   members:
       - name: Maithily Bhala
         img: Maithily_Bhala.jpg
@@ -177,11 +177,6 @@
         bg: green
         in: https://www.linkedin.com/in/manya-jain-73355b360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
   members:
-      - name: Akshith kandagatla
-        img: Akshith_kandagatla.jpg
-        mail: kandagatla.akshith@research.iiit.ac.in
-        bg: green
-        in: https://www.linkedin.com/in/kandagatla-akshith-4b9a5131b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
       - name: Shanmukh Saladi
         img: Shanmukh_Saladi.jpeg
         mail: saladishannu@gmail.com
